@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device://width, initial-scale=1.0">
+    <title>Cyberpunk Card</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000; /* Deep black background */
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .card {
+            width: 350px;
+            padding: 40px;
+            background: #000;
+            border: 4px solid;
+            /* Neon gradient border */
+            border-image: linear-gradient(45deg, #00ffff, #ff00ff) 1;
+            border-radius: 10px; /* Note: border-image can sometimes override border-radius in some browsers */
+            text-align: center;
+            box-shadow: 0 0 20px #00ffff, 0 0 40px #ff00ff; /* Neon glow */
+        }
+        h1 {
+            color: #fff;
+            font-size: 2.5rem;
+            margin: 0;
+            text-transform: uppercase;
+            /* Glowing text effect */
+            text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
+        }
+        p {
+            color: #00ffff;
+            font-size: 1rem;
+            margin-top: 20px;
+            text-shadow: 0 0 5px #00ffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>CYBERPUNK</h1>
+        <p>NEON PROTOCOL ACTIVATED</p>
+    </div>
+</body>
+</html>

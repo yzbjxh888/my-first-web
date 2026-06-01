@@ -2,28 +2,220 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agentic Era</title>
+    <meta name never="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentic DevOps OS | Dashboard</title>
     <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-color: #38bdf8;
+            --success-color: #22c55e;
+        }
+
         body {
             margin: 0;
-            display: flex;
-            justify justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: #121212;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.5;
         }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 1rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
         h1 {
-            font-size: 4rem;
-            background: linear-gradient(45deg, #00dbde, #fc00ff);
+            font-size: 3.5rem;
+            margin: 0;
+            background: linear-gradient(to right, #38bdf8, #818cf8);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            letter-spacing: -0.025em;
+        }
+
+        p.subtitle {
+            color: var(--text-secondary);
+            font-size: 1.25rem;
+            margin-top: 1rem;
+        }
+
+        /* Architecture Grid */
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-color);
+        }
+
+        .card h3 {
+            margin: 0 0 0.5rem 0;
+            color: var(--accent-color);
+            font-size: 1.25rem;
+        }
+
+        .card p {
+            margin: 0;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Workflow Timeline */
+        .workflow {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        .workflow-step {
             text-align: center;
+            z-index: 1;
+        }
+
+        .step-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--accent-color);
+            color: var(--bg-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 0.5rem;
+            font-weight: bold;
+        }
+
+        .step-label {
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .workflow-line {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            right: 10%;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.1);
+            z-index: 0;
+            transform: translateY(-50%);
+        }
+
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            background: rgba(34, 197, 94, 0.1);
+            color: var(--success-color);
+            margin-top: 2rem;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--success-color);
+            border-radius: 50%;
+            margin-right: 0.5rem;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.4; }
+            100% { opacity: 1; }
         }
     </style>
 </head>
 <body>
-    <h1>Agentic Era Begins</h1>
+    <div class="container">
+        <header>
+            <h1>Agentic DevOps OS</h1>
+            <p class="subtitle">Building the Semantic Web, One Commit at a Time.</p>
+            <div class="status-badge">
+                <span class="status-dot"></span> System Status: Online
+            </div>
+        </header>
+
+        <section>
+            <h2 class="section-title">Core Architecture</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>🧠 Intelligence</h3>
+                    <p>Prompts, Skills, and Heuristics. The cognitive core of the agent.</p>
+                </div>
+                <div class="card">
+                    <h3>⚙️ Operations</h3>
+                    <p>Workflows, Configs, and Logs. The engine that drives execution.</p>
+                </div>
+                <div class="card">
+                    <h3>📚 Knowledge</h3>
+                    <p>Raw Markdown, Structured JSON, and Ontology. The semantic memory.</p>
+                </div>
+                <div class="card">
+                    <h3>📦 Artifacts</h3>
+                    <p>Rendered Web, API Endpoints, and Reports. The tangible outputs.</p>
+                </div>
+                <div class="card">
+                    <h3>🛡️ Harness</h3>
+                    <p>Tests, Mocks, and Scenarios. The validation and reliability layer.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Automated Workflow</h2>
+            <div class="workflow">
+                <div class="workflow-line"></div>
+                <div class="workflow-step">
+                    <div class="step-icon">D</div>
+                    <div class="step-label">[dev]</div>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-icon">I</div>
+                    <div class="step-label">[inspect]</div>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-icon">P</div>
+                    <div class="step-label">[deploy]</div>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
