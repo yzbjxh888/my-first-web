@@ -1,3 +1,1 @@
-# About Me
-
-I am a developer exploring the intersection of AI and Web Development.\n\n增加一段话：我正在构建一个由 AI 驱动的语义化知识库，旨在让信息对 AI 更加友好。
+# About Me\n\n重新设计我的 index.html，让它变成一个带深色背景、渐变文字标题的页面，标题写着“Agentic Era Begins”。
