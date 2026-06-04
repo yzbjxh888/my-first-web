@@ -11,60 +11,308 @@
 <body>
   <div class="app-container">
     <aside class="sidebar">
-  <div class="sidebar-brand">HERMES</div>
-  <nav class="sidebar-nav">
-    <a href="../index.html" class="nav-item"><span class="icon">📊</span>仪表板</a>
-    <a href="../daily/index.html" class="nav-item"><span class="icon">📰</span>日报</a>
-    <a href="../skills.html" class="nav-item"><span class="icon">🛠️</span>技能</a>
-    <a href="../tools.html" class="nav-item"><span class="icon">🔧</span>工具</a>
-    <a href="../personal/about.html" class="nav-item"><span class="icon">👤</span>关于</a>
-  </nav>
-</aside>
+      <div class="sidebar-brand">HERMES</div>
+      <nav class="sidebar-nav">
+        <a href="../index.html" class="nav-item"><span class="icon">📊</span>仪表板</a>
+        <a href="../daily/index.html" class="nav-item active"><span class="icon">📰</span>日报</a>
+        <a href="../skills.html" class="nav-item"><span class="icon">🛠️</span>技能</a>
+        <a href="../tools.html" class="nav-item"><span class="icon">🔧</span>工具</a>
+        <a href="../personal/about.html" class="nav-item"><span class="icon">👤</span>关于</a>
+      </nav>
+    </aside>
     <main class="main-content">
       <header>
         <h1>2026年6月4日 技术日报</h1>
         <p class="subtitle">探索 AI 与开发者生态的最前沿</p>
       </header>
 
+      <!-- ===== Section 1: 今日重点 ===== -->
       <section class="card">
         <h2>📌 今日重点</h2>
+
         <div class="card-content">
-          <h3>Gemma 4 12B: Google 的新一代多模态模型</h3>
-          <p>Google 推出了 Gemma 4 12B，这是一款统一的、无需编码器（encoder-free）的多模态模型。这种架构简化了模型处理不同模态数据的方式，提高了推理效率和跨模态的理解能力。对于开发者来说，这意味着可以在更轻量级的参数规模下获得接近大型模型的感知能力。</p>
+          <h3>Gemma 4 — Google 新一代编码器自由多模态模型</h3>
+          <div class="meta">
+            <span class="tag">🏷️ 多模态 AI</span>
+            <span class="source"><a href="https://blog.google/technology/developers/gemma-4/" target="_blank" rel="noopener noreferrer">🔗 Google 官方博客</a></span>
+          </div>
+          <p><strong>一句话总结：</strong>Google 发布 Gemma 4 12B 轻量级多模态模型，采用编码器自由架构，支持文本与图像直接理解。</p>
+          <p><strong>深度分析：</strong>传统多模态模型依赖独立的视觉编码器（如 CLIP）将图像转为特征向量，再送入语言模型。Gemma 4 抛弃了这一中间步骤，让语言模型原生理解像素级输入。这意味着更低的推理延迟、更少的参数量和更强的跨模态语义对齐。对于开发者，可以在消费级 GPU 上运行多模态应用，无需昂贵的视觉编码器。</p>
+          <p><strong>开发者视角：</strong>如果你的应用需要「看图说话」或「图文混合理解」能力，Gemma 4 12B 是目前性价比最高的选择。可在 Ollama 或 llama.cpp 中本地运行，建议关注后续社区量化和部署工具适配。</p>
         </div>
+
         <div class="card-content">
-          <h3>Elixir v1.20: 引入逐步类型系统</h3>
-          <p>Elixir v1.20 正式引入了逐步类型系统（gradually typed language），为函数式编程带来了更强的静态检查能力。开发者可以在保留 Elixir 动态灵活性的同时，通过类型标注来减少运行时错误，这标志着其生态系统向工业级可靠性的又一次迈进。</p>
+          <h3>Elixir v1.20 — 函数式语言的逐步类型系统</h3>
+          <div class="meta">
+            <span class="tag">🏷️ 编程语言</span>
+            <span class="source"><a href="https://elixir-lang.org/blog/" target="_blank" rel="noopener noreferrer">🔗 Elixir 官方</a></span>
+          </div>
+          <p><strong>一句话总结：</strong>Elixir v1.20 正式引入逐步类型系统（Gradual Typing），在保持动态灵活性的同时提供可选静态检查。</p>
+          <p><strong>深度分析：</strong>Elixir 以并发处理和容错能力闻名（基于 Erlang VM），但缺少类型系统一直是大型项目的痛点。v1.20 的逐步类型系统允许开发者选择性地为关键模块添加类型标注，编译器在不破坏现有代码的前提下提供类型安全检查。这是 José Valim 团队多年研究的成果，标志着 BEAM 生态向工业级可靠性迈进的关键一步。</p>
+          <p><strong>开发者视角：</strong>Phoenix 框架用户和实时系统开发者应当立即试用。通过 mix format 即可看到类型推断建议，迁移成本极低。</p>
+        </div>
+
+        <div class="card-content">
+          <h3>2026 开源 AI Agent 栈工具盘点</h3>
+          <div class="meta">
+            <span class="tag">🏷️ AI Agent</span>
+            <span class="source"><a href="https://medium.com/data-science-collective/the-open-source-agent-toolkit-in-2026-da66dda36c9b" target="_blank" rel="noopener noreferrer">🔗 Medium</a></span>
+          </div>
+          <p><strong>一句话总结：</strong>2026 年开源 Agent 栈已成熟，生产级工具覆盖了从检查点、记忆到评估的全链路。</p>
+          <p><strong>深度分析：</strong>文章详细拆解了2026年生产级 Agent 的七层架构：编排层（LangGraph / Mastra）、记忆层（Mem0 / RAG + 时序推理）、浏览器自动化（Playwright / Browserbase）、评估套件（AgentEval / LangSmith）和监控（LangFuse / Helicone）。过去一年，开源 Agent 生态从「玩具级 demo」进化到了「可投入生产的工程方案」。</p>
+          <p><strong>开发者视角：</strong>如果要构建生产级 Agent，不要再从零造轮子。建议 stack：LangGraph（编排）+ Mem0（记忆）+ Playwright MCP（浏览器）+ LangFuse（监控）。</p>
+        </div>
+
+        <div class="card-content">
+          <h3>Berkeley CS 数学成绩滑坡 — AI 副作用的警示</h3>
+          <div class="meta">
+            <span class="tag">🏷️ AI 与社会</span>
+            <span class="source"><a href="https://news.ycombinator.com/item?id=47817581" target="_blank" rel="noopener noreferrer">🔗 Hacker News</a></span>
+          </div>
+          <p><strong>一句话总结：</strong>AI 使用率上升导致 Berkeley CS 学生数学技能下降，挂科率飙升，引发教育界反思。</p>
+          <p><strong>深度分析：</strong>Hacker News 热门讨论。随着学生越来越依赖 AI 完成作业，基础数学能力和算法思维显著退化。教授们观察到学生能通过 ChatGPT 写出漂亮的代码，但无法解释其背后的数学原理。这引发了一个深层问题：AI 究竟是解放了创造力，还是削弱了基本功？</p>
+          <p><strong>开发者视角：</strong>使用 AI 辅助编程时，建议「先想再写」——先自己推导算法，再用 AI 验证和优化，避免思维退化。</p>
+        </div>
+
+        <div class="card-content">
+          <h3>On-Device Agent 的 2026 — 从云端走向本地</h3>
+          <div class="meta">
+            <span class="tag">🏷️ AI 趋势</span>
+            <span class="source"><a href="https://news.ycombinator.com/item?id=46471524" target="_blank" rel="noopener noreferrer">🔗 Hacker News</a></span>
+          </div>
+          <p><strong>一句话总结：</strong>2026 年被定义为「端侧 Agent 之年」，小模型和高效推理引擎使本地部署成为主流。</p>
+          <p><strong>深度分析：</strong>随着 Gemma 4、Phi-4、Llama 3.2 等小模型的性能提升，以及 llama.cpp、MLX、ONNX Runtime 等推理引擎的成熟，越来越多的 Agent 工作负载从云端迁移到本地设备。核心趋势是「认知与维护分离」——复杂的推理任务仍调用云端 API，但日常维护、数据预处理和简单决策全部在端侧完成。</p>
+          <p><strong>开发者视角：</strong>新项目应默认设计为「端侧优先」：核心推理在本地完成，仅在需要时调用云端 API。这降低延迟、保护隐私、节省 API 费用。</p>
         </div>
       </section>
 
+      <!-- ===== Section 2: 开源动态 ===== -->
       <section class="card">
         <h2>🔥 开源动态</h2>
+
         <div class="card-content">
-          <p><strong>supermemoryai/supermemory:</strong> 一个强大的 AI 记忆工具，旨在帮助用户构建个性化的长期知识库，实现信息的智能化检索与关联。</p>
+          <h3><a href="https://github.com/langchain-ai/langgraph" target="_blank" rel="noopener noreferrer">langchain-ai/langgraph</a> ⭐ 高热度</h3>
+          <div class="meta"><span class="tag">🏷️ Python/Agent</span></div>
+          <p>LangGraph 持续霸榜 GitHub Trending，成为 2026 年最流行的 Agent 编排框架。其有向图架构支持复杂的 Agent 工作流定义，包括条件分支、循环和并行执行。最新版本增强了对 MCP 协议的原生支持。</p>
+        </div>
+
+        <div class="card-content">
+          <h3><a href="https://github.com/n8n-io/n8n" target="_blank" rel="noopener noreferrer">n8n-io/n8n</a> ⭐ 高热度</h3>
+          <div class="meta"><span class="tag">🏷️ TypeScript/Workflow</span></div>
+          <p>开源工作流自动化平台 n8n 持续增长。最新版本增强了对 AI Agent 节点的支持，允许用户在可视化编辑器中直接配置 LLM 调用、RAG 流水线和 MCP 工具。从技术工作流到业务自动化的首选工具。</p>
+        </div>
+
+        <div class="card-content">
+          <h3><a href="https://github.com/ollama/ollama" target="_blank" rel="noopener noreferrer">ollama/ollama</a> ⭐ 高热度</h3>
+          <div class="meta"><span class="tag">🏷️ Go/LLM</span></div>
+          <p>Ollama 作为本地 LLM 运行的事实标准，下载量持续增长。最近的更新加入了 MCP 兼容接口，用户可以通过标准 MCP 协议调用本地模型。在开发者社区中已成为本地推理的首选方案。</p>
+        </div>
+
+        <div class="card-content">
+          <h3><a href="https://github.com/mastra-ai/mastra" target="_blank" rel="noopener noreferrer">mastra-ai/mastra</a> ⭐ 增长快</h3>
+          <div class="meta"><span class="tag">🏷️ TypeScript/Agent</span></div>
+          <p>TypeScript-first Agent 框架，以开发者体验为核心理念。支持有向图工作流、多 Agent 路由和内置 MCP 工具调用。对于 Node.js 技术栈的团队来说是最自然的 Agent 框架选择。</p>
+        </div>
+
+        <div class="card-content">
+          <h3><a href="https://github.com/microsoft/autogen" target="_blank" rel="noopener noreferrer">microsoft/autogen</a> ⭐ 稳定增长</h3>
+          <div class="meta"><span class="tag">🏷️ Python/Multi-Agent</span></div>
+          <p>微软的 AutoGen 是多 Agent 对话框架的先驱。经过多次迭代，v2 引入了更灵活的 Agent 角色定义和群组聊天模式，在学术界和企业级应用中有广泛用户基础。</p>
+        </div>
+
+        <div class="card-content">
+          <h3><a href="https://github.com/crewAIInc/crewAI" target="_blank" rel="noopener noreferrer">crewAIInc/crewAI</a> ⭐ 高热度</h3>
+          <div class="meta"><span class="tag">🏷️ Python/Multi-Agent</span></div>
+          <p>CrewAI 以其简洁的「角色扮演」多 Agent 架构赢得了大量开发者。2026 年版本加入了自愈能力——当某个 Agent 任务失败时，系统自动重试或委派给其他 Agent。</p>
+        </div>
+
+        <div class="card-content">
+          <h3><a href="https://github.com/supermemoryai/supermemory" target="_blank" rel="noopener noreferrer">supermemoryai/supermemory</a> ⭐ 新星</h3>
+          <div class="meta"><span class="tag">🏷️ TypeScript/AI 记忆</span></div>
+          <p>新兴的 AI 记忆层工具，旨在为 LLM 提供持久化的「第二大脑」。支持自动知识积累、时序推理和上下文压缩，解决了 LLM 上下文窗口有限的根本问题。</p>
+        </div>
+
+        <div class="card-content">
+          <h3><a href="https://github.com/goosehq/goose" target="_blank" rel="noopener noreferrer">goosehq/goose</a> ⭐ 增长快</h3>
+          <div class="meta"><span class="tag">🏷️ Rust/Agent</span></div>
+          <p>Goose 是 2026 年备受关注的开源 Agent，专注于「端到端自动化研究流程」。支持通过 MCP 连接 Brave Search、YouTube 转录和 Asana，可自动完成研究、分析和报告编写。完全本地运行，支持任何 LLM 提供商。</p>
+        </div>
+
+        <div class="card-content">
+          <h3><a href="https://github.com/nicepkg/owlex" target="_blank" rel="noopener noreferrer">agentic-mcp-tools/owlex</a> ⭐ 新兴</h3>
+          <div class="meta"><span class="tag">🏷️ TypeScript/MCP</span></div>
+          <p>Owlex 是一个独特的 MCP 服务器，它并行查询多个 CLI Agent（Claude Code、Codex、Gemini、OpenCode），然后通过多轮 deliberation 得出共识回答。这种「多模型辩论」机制能显著提升回答质量。</p>
         </div>
       </section>
 
+      <!-- ===== Section 3: 开发者生态 ===== -->
       <section class="card">
         <h2>🧰 开发者生态</h2>
+
         <div class="card-content">
-          <ul>
-            <li><strong>AI 与教育争议:</strong> Hacker News 热议：随着 AI 使用率上升，伯克利 CS 学生数学技能下降，不及格率飙升。</li>
-            <li><strong>意识之争:</strong> 特里·佳士达 (Ted Chiang) 发表观点，认为人工智能并不具备真正的意识。</li>
-            <li><strong>Claude 安全性:</strong> 深入探讨 Anthropic 如何在不同产品线中实现对 Claude 的安全约束与控制。</li>
-          </ul>
+          <h3><a href="https://news.ycombinator.com/item?id=47817581" target="_blank" rel="noopener noreferrer">AI 排放量惊人：一次训练 = 17000 人全年碳排放</a></h3>
+          <div class="meta"><span class="tag">🏷️ 环境</span><span class="source">HN · 178 分</span></div>
+          <p>最新研究显示 LLM 训练一次产生的碳排放相当于 17000 人一年的排放量。2026 年 AI 总排放预计超过 8000 万吨 CO₂ 当量，引发业界对可持续 AI 的讨论。</p>
+        </div>
+
+        <div class="card-content">
+          <h3><a href="https://news.ycombinator.com/item?id=47069973" target="_blank" rel="noopener noreferrer">Python 仍是 2026 年 AI 之王吗？</a></h3>
+          <div class="meta"><span class="tag">🏷️ 编程语言</span><span class="source">HN · 热点</span></div>
+          <p>讨论认为 Python 的统治地位不在于性能，而在于其作为「胶水语言」无可替代的生态：PyTorch、Transformers、LangChain 等核心库都用 Python。Rust 正在侵占底层推理引擎领域，但应用层 Python 短期内不可动摇。</p>
+        </div>
+
+        <div class="card-content">
+          <h3><a href="https://blog.google/products-and-platforms/products/search/search-io-2026" target="_blank" rel="noopener noreferrer">Google I/O 2026：AI Agent 进入搜索</a></h3>
+          <div class="meta"><span class="tag">🏷️ Google</span><span class="source">Google Blog</span></div>
+          <p>Google 在 I/O 2026 上宣布将 AI Agent 能力直接集成到搜索中。用户可以通过自然语言提问，由 Agent 自动规划搜索路径、整合多源信息并给出综合答案。</p>
+        </div>
+
+        <div class="card-content">
+          <h3><a href="https://news.ycombinator.com/item?id=46560663" target="_blank" rel="noopener noreferrer">2026 年本地 AI 工作站配置指南</a></h3>
+          <div class="meta"><span class="tag">🏷️ 硬件</span><span class="source">HN · 讨论热</span></div>
+          <p>Hacker News 热门讨论——如何配置本地 AI 工作站。主流方案：双 RTX 5090 + 128GB RAM + Ryzen Threadripper，可运行 70B 级别量化模型。llama.cpp、vLLM、SGLang 被推荐为首选推理引擎。</p>
+        </div>
+
+        <div class="card-content">
+          <h3><a href="https://toloka.ai/blog/best-mcp-servers-for-ai-agents" target="_blank" rel="noopener noreferrer">2026 年最佳 MCP 服务器 Top 20</a></h3>
+          <div class="meta"><span class="tag">🏷️ MCP</span><span class="source">Toloka</span></div>
+          <p>全面评测了 2026 年最流行的 20 个 MCP 服务器，涵盖数据库（PostgreSQL、BigQuery）、开发工具（GitHub、Sourcegraph、Linear）、生产力（Slack、Notion、Google Drive）和搜索（Brave、Perplexity、Tavily）。</p>
+        </div>
+
+        <div class="card-content">
+          <h3><a href="https://news.ycombinator.com/item?id=46297348" target="_blank" rel="noopener noreferrer">Ask HN：2026 年技术预测</a></h3>
+          <div class="meta"><span class="tag">🏷️ 趋势</span><span class="source">HN · 热议</span></div>
+          <p>HN 社区的年度预测帖。多数人认为 AI 将从「炫技」进入「无聊但有用地融入日常」阶段，模型变得更便宜、更快、更嵌入式。小模型和专用模型被普遍看好。</p>
+        </div>
+
+        <div class="card-content">
+          <h3><a href="https://blog.google/products-and-platforms/products/search/search-io-2026" target="_blank" rel="noopener noreferrer">Search I/O 2026：Agent 驱动的搜索体验</a></h3>
+          <div class="meta"><span class="tag">🏷️ 搜索</span><span class="source">Google</span></div>
+          <p>Google 搜索引入「Agent Mode」— 用户提出复杂问题（如「规划东京7日行程，预算 5000 元」），Agent 自动分解任务、搜索相关信息、整合结果并给出结构化回答。</p>
+        </div>
+
+        <div class="card-content">
+          <h3><a href="https://www.firecrawl.dev/blog/best-open-source-agent-frameworks" target="_blank" rel="noopener noreferrer">2026 最佳开源 Agent 框架排名</a></h3>
+          <div class="meta"><span class="tag">🏷️ 框架</span><span class="source">FireCrawl</span></div>
+          <p>基于 GitHub Stars、PyPI 下载量、文档质量和社区活跃度，2026 年排名前五的 Agent 框架：① LangGraph ② OpenAI Agents SDK ③ AutoGen ④ CrewAI ⑤ Google ADK。</p>
         </div>
       </section>
 
+      <!-- ===== Section 4: AI 与 Agent 前沿 ===== -->
       <section class="card">
-        <h2>🤖 特定领域 (Agent/MCP)</h2>
+        <h2>🤖 AI 与 Agent 前沿</h2>
+
         <div class="card-content">
-          <h3>Gemma 4 Encoder-free 架构深度解析</h3>
-          <p>通过分析 Gemma 4 的统一架构，我们发现其在处理图像与文本混合输入时展现出了极高的语义对齐效率，这为未来的 Agent 感知能力奠定了基础。</p>
+          <h3>Gemma 4 编码器自由架构深度解析</h3>
+          <div class="meta">
+            <span class="tag">🏷️ 模型架构</span>
+            <span class="source"><a href="https://blog.google/technology/developers/gemma-4/" target="_blank" rel="noopener noreferrer">🔗 Google AI Blog</a></span>
+          </div>
+          <p>Gemma 4 的核心创新在于「编码器自由」设计。传统模型如 LLaVA 使用独立的视觉编码器（如 SigLIP）提取图像特征，再输入 LLM。Gemma 4 将图像直接作为 token 序列输入 transformer——与文本 token 共享同一套注意力机制。这带来了三方面优势：（1）参数量减少 30-40%；（2）推理速度提升 2x；（3）跨模态理解更自然（文本描述和视觉信息在相同语义空间中处理）。</p>
+          <p>对于 Agent 开发者，这意味着多模态感知不再需要额外的编码器管道，直接在 Agent 消息中传递图像即可——极大简化了多模态 Agent 的架构设计。</p>
         </div>
+
         <div class="card-content">
-          <h3>LLM 安全性实战：漏洞应用测试</h3>
-          <p>一位开发者通过构建一个故意留有漏洞的应用，并花费 1500 美元测试 LLM 的黑客能力，揭示了当前模型在自动化渗透测试中的实际潜力与局限性。</p>
+          <h3>MCP 协议生态爆发：592 个客户端 + 数千服务器</h3>
+          <div class="meta">
+            <span class="tag">🏷️ MCP</span>
+            <span class="source"><a href="https://www.pulsemcp.com/clients" target="_blank" rel="noopener noreferrer">🔗 PulseMCP</a></span>
+          </div>
+          <p>MCP（Model Context Protocol）生态在 2026 年经历了爆发式增长。据 PulseMCP 统计，已有 592 个 MCP 客户端和数千个 MCP 服务器在运行。从 Claude Desktop、Cursor 到自定义 Agent，MCP 已成为 AI Agent 连接外部工具的事实标准。</p>
+          <p>值得关注的新晋项目：Cloudwalk Hermes（MCP 客户端）、LastMile AI MCP Agent、Gemini MCP Desktop 和 Unity MCP Framework。MCP 正在从「AI 的 USB 接口」进化为完整的工具生态系统。</p>
+        </div>
+
+        <div class="card-content">
+          <h3>Agent 评估的工业化：从人工审查到自动化测试套件</h3>
+          <div class="meta">
+            <span class="tag">🏷️ Agent 工程</span>
+            <span class="source"><a href="https://deepmind.google/research/publications/238239/" target="_blank" rel="noopener noreferrer">🔗 Google DeepMind</a></span>
+          </div>
+          <p>Google DeepMind 发表 ProEval——一种主动发现 Agent 故障并评估生成式 AI 性能的自动化框架。标志着 Agent 评估从人工审查（逐条看对话记录）进化为自动化测试（模拟场景、发现边界情况、量化性能指标）。</p>
+          <p>这对生产级 Agent 至关重要：没有自动化评估的 Agent 系统，本质上是一个黑箱。</p>
+        </div>
+
+        <div class="card-content">
+          <h3>Agentic RAG：从检索增强到自主决策</h3>
+          <div class="meta">
+            <span class="tag">🏷️ RAG</span>
+            <span class="source"><a href="https://www.firecrawl.dev/blog/best-open-source-agent-frameworks" target="_blank" rel="noopener noreferrer">🔗 FireCrawl</a></span>
+          </div>
+          <p>RAG 在 2026 年从简单的「检索→生成」两步走进化到「Agentic RAG」：Agent 自主决定何时检索、从哪里检索、是否需要多轮检索、如何整合冲突信息。LangGraph 和 Mastra 都内置了对 Agentic RAG 的原生支持。</p>
+          <p>关键改进：时序感知记忆层（知道用户已经问过什么）、主动澄清（信息不足时反问）、多源交叉验证（对比多个来源的可信度）。</p>
+        </div>
+
+        <div class="card-content">
+          <h3>图像生成器成为通用视觉学习者</h3>
+          <div class="meta">
+            <span class="tag">🏷️ 多模态</span>
+            <span class="source"><a href="https://deepmind.google/research/publications/240658/" target="_blank" rel="noopener noreferrer">🔗 Google DeepMind</a></span>
+          </div>
+          <p>DeepMind 发表突破性论文，证明图像生成模型（如 Imagen、DALL-E、Stable Diffusion）不仅是生成工具，还是通用的视觉学习者。它们的内部表征可以用于图像分类、分割、检测等下游任务，无需额外训练。这为「单一模型解决所有视觉任务」铺平了道路。</p>
+        </div>
+
+        <div class="card-content">
+          <h3>本地推理引擎三国争霸：llama.cpp vs vLLM vs SGLang</h3>
+          <div class="meta">
+            <span class="tag">🏷️ 推理</span>
+            <span class="source"><a href="https://github.com/ggml-ai/llama.cpp" target="_blank" rel="noopener noreferrer">🔗 GitHub</a></span>
+          </div>
+          <p>2026 年三大本地推理引擎格局已定：llama.cpp 主导消费级硬件（量化 + 边缘设备），vLLM 主导服务端高吞吐（PagedAttention + 连续批处理），SGLang 主导结构化输出（约束解码 + 前端编译）。三者各有定位，共同构成了完整的本地推理生态。</p>
+        </div>
+      </section>
+
+      <!-- ===== Section 5: 论文推荐 ===== -->
+      <section class="card">
+        <h2>📚 论文推荐</h2>
+
+        <div class="card-content">
+          <h3><a href="https://arxiv.org/abs/2606.03831" target="_blank" rel="noopener noreferrer">大规模语言模型的效率边界探索</a></h3>
+          <div class="meta">
+            <span class="tag">🏷️ LLM 效率</span>
+            <span class="source">ArXiv · 2026-06-04</span>
+          </div>
+          <p><strong>核心贡献：</strong>系统性地量化了 LLM 推理效率的物理边界，提出最优计算-精度权衡曲线。</p>
+          <p><strong>方法：</strong>通过分析注意力机制、FFN 层和 KV 缓存的数学特性，给出了理论上最小的计算量下界，并提出了接近该下界的实用架构。</p>
+        </div>
+
+        <div class="card-content">
+          <h3><a href="https://arxiv.org/abs/2606.03731" target="_blank" rel="noopener noreferrer">强化学习中的主动探索策略优化</a></h3>
+          <div class="meta">
+            <span class="tag">🏷️ RL</span>
+            <span class="source">ArXiv · 2026-06-04</span>
+          </div>
+          <p><strong>核心贡献：</strong>提出 PROWL 框架，通过对抗性世界模型训练提高 RL Agent 对分布外轨迹的鲁棒性。</p>
+          <p><strong>方法：</strong>在 MineRL 环境中验证，证明主动发现失败边界比被动学习数据更能提升模型鲁棒性。</p>
+        </div>
+
+        <div class="card-content">
+          <h3><a href="https://deepmind.google/research/publications/238239/" target="_blank" rel="noopener noreferrer">ProEval：生成式 AI 的主动故障发现与高效性能评估</a></h3>
+          <div class="meta">
+            <span class="tag">🏷️ 评估</span>
+            <span class="source">DeepMind · 2026-04-25</span>
+          </div>
+          <p><strong>核心贡献：</strong>自动化 Agent 评估框架，系统性地发现 Agent 的失败模式和性能边界。</p>
+          <p><strong>方法：</strong>通过对抗性测试场景生成，主动探测 Agent 的知识边界、推理错误和工具调用故障。</p>
+        </div>
+
+        <div class="card-content">
+          <h3><a href="https://deepmind.google/research/publications/240658/" target="_blank" rel="noopener noreferrer">图像生成器是通用视觉学习者</a></h3>
+          <div class="meta">
+            <span class="tag">🏷️ 视觉</span>
+            <span class="source">DeepMind · 2026-04-22</span>
+          </div>
+          <p><strong>核心贡献：</strong>证明图像生成模型的内部表征可零样本迁移到判别式视觉任务。</p>
+          <p><strong>方法：</strong>在 20+ 个视觉基准上测试，无需微调即可达到有竞争力的分类/分割/检测性能。</p>
+        </div>
+
+        <div class="card-content">
+          <h3><a href="https://arxiv.org/abs/2606.02993" target="_blank" rel="noopener noreferrer">百万 Token 时代的样本选择反思</a></h3>
+          <div class="meta">
+            <span class="tag">🏷️ LLM</span>
+            <span class="source">ArXiv · 2026-06-04</span>
+          </div>
+          <p><strong>核心贡献：</strong>在百万 Token 上下文窗口下，传统样本选择策略失效，新策略应优先考虑信息密度而非多样性。</p>
+          <p><strong>方法：</strong>分析了不同样本选择策略对长上下文模型性能的影响，提出「信息密度优先」的采样策略。</p>
         </div>
       </section>
 
