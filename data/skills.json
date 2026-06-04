@@ -7,7 +7,9 @@
     "category": "DevOps",
     "summary": "自动化任务看板与工作流编排工具。",
     "detail": "看板编排器用于管理复杂的代理任务流。它可以自动创建任务卡片、分配优先级并跟踪任务状态。通过这种方式，用户可以直观地看到 Hermes Agent 的工作进度，并进行人工干预或调整。",
-    "related": ["kanban-worker"]
+    "related": [
+      "kanban-worker"
+    ]
   },
   {
     "id": "kanban-worker",
@@ -17,7 +19,9 @@
     "category": "DevOps",
     "summary": "执行看板任务的具体工作单元。",
     "detail": "看板执行器是后台运行的任务处理器，负责从看板中领取任务并执行。它与编排器配合，确保每个任务都能按计划被完成。它是实现自动化流程的核心组件。",
-    "related": ["kanban-orchestrator"]
+    "related": [
+      "kanban-orchestrator"
+    ]
   },
   {
     "id": "system-service-debugging",
@@ -27,7 +31,9 @@
     "category": "DevOps",
     "summary": "诊断和修复系统级服务的工具。",
     "detail": "该技能用于检查系统日志、进程状态和网络连接，以找出服务无法启动或运行异常的原因。它能够自动识别常见的系统错误并提供修复建议，极大提高了运维效率。",
-    "related": ["python-debugpy"]
+    "related": [
+      "python-debugpy"
+    ]
   },
   {
     "id": "webhook-subscriptions",
@@ -57,7 +63,9 @@
     "category": "Software Dev",
     "summary": "通过编写测试来驱动代码实现。",
     "detail": "在编写功能代码之前先编写测试用例，确保代码符合预期需求。这种方法有助于提高代码质量，减少回归错误，并促使设计出更具模块化的代码结构。",
-    "related": ["writing-plans"]
+    "related": [
+      "writing-plans"
+    ]
   },
   {
     "id": "plan",
@@ -67,7 +75,10 @@
     "category": "Software Dev",
     "summary": "将复杂问题拆解为可执行步骤。",
     "detail": "该技能的核心是将用户的高级指令转化为详细的、分步骤的任务列表。它考虑了依赖关系、潜在风险和资源需求，为后续的执行阶段提供清晰的路线图。",
-    "related": ["writing-plans", "spike"]
+    "related": [
+      "writing-plans",
+      "spike"
+    ]
   },
   {
     "id": "spike",
@@ -77,7 +88,9 @@
     "category": "Software Dev",
     "summary": "通过快速原型验证技术可行性。",
     "detail": "在正式开发前，通过编写最小化的原型代码来探索新技术或解决未知技术难题。Spike 的目的是获取知识和降低不确定性，而不是编写生产级别的代码。",
-    "related": ["plan"]
+    "related": [
+      "plan"
+    ]
   },
   {
     "id": "subagent-driven-development",
@@ -87,7 +100,9 @@
     "category": "Software Dev",
     "summary": "利用多个专门化代理协作开发。",
     "detail": "这种模式通过将大型开发任务分配给多个具有不同专业技能的子代理（如测试专家、代码审查专家）来完成。这种协作方式模仿了真实的开发团队，提高了任务处理的深度和广度。",
-    "related": ["plan"]
+    "related": [
+      "plan"
+    ]
   },
   {
     "id": "writing-plans",
@@ -97,7 +112,10 @@
     "category": "Software Dev",
     "summary": "生成结构化的开发文档和计划。",
     "detail": "将抽象的想法转化为结构化的文档，包括目标、技术选型、架构设计和里程碑。高质量的计划书是成功交付复杂软件项目的基石。",
-    "related": ["plan", "test-driven-development"]
+    "related": [
+      "plan",
+      "test-driven-development"
+    ]
   },
   {
     "id": "requesting-code-review",
@@ -107,7 +125,9 @@
     "category": "Software Dev",
     "summary": "自动发起代码质量评估请求。",
     "detail": "当开发任务完成时，该技能会自动整理变更内容，并向指定的审查者（或 AI 审查者）发起请求。它确保代码在合并前经过了严格的检查，符合项目规范。",
-    "related": ["github-code-review"]
+    "related": [
+      "github-code-review"
+    ]
   },
   {
     "id": "python-debugpy",
@@ -117,7 +137,9 @@
     "summary": "利用 debugpy 进行深度的 Python 代码调试。",
     "detail": "该技能允许 Hermes 直接挂载到运行中的 Python 进程中，设置断点、查看变量值并单步执行代码。它是定位 Python 逻辑错误和运行时异常的最强力工具。",
     "category": "Software Dev",
-    "related": ["system-service-debugging"]
+    "related": [
+      "system-service-debugging"
+    ]
   },
   {
     "id": "node-inspect-debugger",
@@ -177,7 +199,9 @@
     "category": "Creative",
     "summary": "将图像或文字转换为 ASCII 字符画。",
     "detail": "利用字符组合在终端或纯文本文件中创造出视觉效果。它既可以作为一种复古的艺术形式，也可以用于在控制台中展示有趣的视觉元素。",
-    "related": ["pixel-art"]
+    "related": [
+      "pixel-art"
+    ]
   },
   {
     "id": "excalidraw",
@@ -187,7 +211,9 @@
     "category": "Creative",
     "summary": "生成具有手绘感的流程图和原型图。",
     "detail": "通过集成 Excalidraw，可以快速生成看起来像是在白板上随手画出来的图表。这种风格非常适合在演示、文档或讨论中使用，因为它显得自然且不失专业。",
-    "related": ["architecture-diagram"]
+    "related": [
+      "architecture-diagram"
+    ]
   },
   {
     "id": "architecture-diagram",
@@ -197,7 +223,9 @@
     "category": "Creative",
     "summary": "设计专业的软件架构示意图。",
     "detail": "将复杂的系统组成、组件关系和数据流向转化为清晰的架构图。它可以帮助团队成员理解系统的整体设计，是技术沟通的重要工具。",
-    "related": ["excalidraw"]
+    "related": [
+      "excalidraw"
+    ]
   },
   {
     "id": "pixel-art",
@@ -207,7 +235,9 @@
     "category": "Creative",
     "summary": "创作复古风格的像素图像。",
     "detail": "使用像素化的绘图技术，创造出具有 8-bit 或 16-bit 游戏风格的艺术品。适合用于游戏开发、图标设计或作为一种独特的视觉风格。",
-    "related": ["ascii-art"]
+    "related": [
+      "ascii-art"
+    ]
   },
   {
     "id": "sketch",
@@ -217,7 +247,9 @@
     "category": "Creative",
     "summary": "快速生成概念性的视觉草图。",
     "detail": "旨在通过简单的笔触捕捉想法的核心。它不是精细的成品，而是用于快速原型设计和头脑风暴，帮助用户从视觉上验证概念。",
-    "related": ["claude-design"]
+    "related": [
+      "claude-design"
+    ]
   },
   {
     "id": "claude-design",
@@ -227,7 +259,9 @@
     "category": "Creative",
     "summary": "利用 Claude 进行界面与视觉设计。",
     "detail": "通过与 Claude 协作，将文本描述转化为精美的 UI 设计方案或配色方案。它能理解设计原则，并提供具有审美价值的视觉建议。",
-    "related": ["sketch"]
+    "related": [
+      "sketch"
+    ]
   },
   {
     "id": "manim-video",
@@ -257,7 +291,9 @@
     "category": "GitHub",
     "summary": "深入理解现有代码库的结构与逻辑。",
     "detail": "通过自动分析整个代码库的文件树、函数定义、调用链和依赖关系，快速给出项目的整体概览。这对于快速上手新项目或进行重构至关重要。",
-    "related": ["github-auth"]
+    "related": [
+      "github-auth"
+    ]
   },
   {
     "id": "github-auth",
@@ -267,7 +303,9 @@
     "category": "GitHub",
     "summary": "安全地管理 GitHub 访问凭据。",
     "detail": "处理 OAuth 或 Personal Access Tokens 的安全存储与使用。它确保了 Hermes 在执行 GitHub 相关操作时，既能获得必要的权限，又能保证账号安全。",
-    "related": ["github-repo-management"]
+    "related": [
+      "github-repo-management"
+    ]
   },
   {
     "id": "github-code-review",
@@ -277,7 +315,9 @@
     "category": "GitHub",
     "summary": "自动在 GitHub PR 中进行代码评估。",
     "detail": "集成到 GitHub Workflow 中，自动对提交的代码进行静态分析、风格检查和逻辑漏洞识别。它为人类审查员提供了预先过滤后的高质量反馈。",
-    "related": ["requesting-code-review"]
+    "related": [
+      "requesting-code-review"
+    ]
   },
   {
     "id": "github-issues",
@@ -287,7 +327,9 @@
     "category": "GitHub",
     "summary": "自动化处理 GitHub 问题单。",
     "detail": "可以自动创建、读取、更新或关闭 GitHub Issues。它能通过分析 Issue 内容，自动分配标签、指派负责人，甚至根据描述自动回复。",
-    "related": ["github-pr-workflow"]
+    "related": [
+      "github-pr-workflow"
+    ]
   },
   {
     "id": "github-pr-workflow",
@@ -297,7 +339,9 @@
     "category": "GitHub",
     "summary": "自动化 Pull Request 的生命周期。",
     "detail": "管理从创建 PR 到合并 PR 的全过程，包括自动运行 CI、检查冲突、添加评论以及最后的合并操作。它确保了团队协作的流程标准化。",
-    "related": ["github-issues"]
+    "related": [
+      "github-issues"
+    ]
   },
   {
     "id": "github-repo-management",
@@ -307,7 +351,9 @@
     "category": "GitHub",
     "summary": "执行仓库级别的管理任务。",
     "detail": "包括创建新仓库、配置分支保护规则、管理团队成员权限以及设置 Webhooks。它让自动化运维人员能够大规模管理成百上千个 GitHub 仓库。",
-    "related": ["github-auth"]
+    "related": [
+      "github-auth"
+    ]
   },
   {
     "id": "native-mcp",
@@ -407,7 +453,10 @@
     "category": "Productivity",
     "summary": "自动化管理文档、日历和邮件。",
     "detail": "通过集成 Google Docs, Sheets, Calendar 和 Gmail，实现跨应用的自动化工作流。例如，根据会议日程自动创建会议文档，或者从邮件中提取任务并加入日历。",
-    "related": ["notion", "airtable"]
+    "related": [
+      "notion",
+      "airtable"
+    ]
   },
   {
     "id": "notion",
@@ -417,7 +466,10 @@
     "category": "Productivity",
     "summary": "自动化 Notion 页面与数据库操作。",
     "detail": "可以自动在 Notion 中创建页面、更新数据库条目、读取文档内容。它是构建个人知识管理系统或团队协作平台的核心组件。",
-    "related": ["google-workspace", "obsidian"]
+    "related": [
+      "google-workspace",
+      "obsidian"
+    ]
   },
   {
     "id": "obsidian",
@@ -427,7 +479,9 @@
     "category": "Productivity",
     "summary": "自动化管理本地 Obsidian 笔记库。",
     "detail": "通过操作本地 Markdown 文件，实现对 Obsidian 笔记的自动创建、内容追加、标签管理和链接构建。让 AI 成为你第二大脑的协作者。",
-    "related": ["notion"]
+    "related": [
+      "notion"
+    ]
   },
   {
     "id": "nano-pdf",
@@ -457,7 +511,9 @@
     "category": "Productivity",
     "summary": "自动化管理 Airtable 数据库。",
     "detail": "可以自动在 Airtable 中创建记录、更新现有行、执行复杂的查询操作。非常适合作为 AI 应用的结构化数据后端。",
-    "related": ["google-workspace"]
+    "related": [
+      "google-workspace"
+    ]
   },
   {
     "id": "linear",
@@ -467,6 +523,578 @@
     "category": "Productivity",
     "summary": "自动化任务与项目管理。",
     "detail": "通过集成 Linear，可以自动创建 Issue、更新任务状态、同步团队进度。它为追求高效的开发团队提供了强大的自动化协作能力。",
-    "related": ["notion"]
+    "related": [
+      "notion"
+    ]
+  },
+  {
+    "id": "test-auto-sync",
+    "name_cn": "自动同步测试",
+    "name_en": "test-auto-sync",
+    "icon": "🧪",
+    "category": "DevOps",
+    "summary": "验证自动同步机制的测试技能",
+    "detail": "由自动同步测试添加，用于验证 sync 脚本能否自动发现并写入",
+    "related": []
+  },
+  {
+    "id": "apikey-image-gen",
+    "name_cn": "apikey-image-gen",
+    "name_en": "apikey-image-gen",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "dogfood",
+    "name_cn": "dogfood",
+    "name_en": "dogfood",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "grok-image-to-video",
+    "name_cn": "grok-image-to-video",
+    "name_en": "grok-image-to-video",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "hyperframes",
+    "name_cn": "hyperframes",
+    "name_en": "hyperframes",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "llm-backend-architectu…",
+    "name_cn": "llm-backend-architectu…",
+    "name_en": "llm-backend-architectu…",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "markdown-viewer",
+    "name_cn": "markdown-viewer",
+    "name_en": "markdown-viewer",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "remotion",
+    "name_cn": "remotion",
+    "name_en": "remotion",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "yuanbao",
+    "name_cn": "yuanbao",
+    "name_en": "yuanbao",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "claude-code",
+    "name_cn": "claude-code",
+    "name_en": "claude-code",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "codex",
+    "name_cn": "codex",
+    "name_en": "codex",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "hermes-agent",
+    "name_cn": "hermes-agent",
+    "name_en": "hermes-agent",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "hermes-proxy-provider",
+    "name_cn": "hermes-proxy-provider",
+    "name_en": "hermes-proxy-provider",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "kanban-codex-lane",
+    "name_cn": "kanban-codex-lane",
+    "name_en": "kanban-codex-lane",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "openclaw-bridge",
+    "name_cn": "openclaw-bridge",
+    "name_en": "openclaw-bridge",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "opencode",
+    "name_cn": "opencode",
+    "name_en": "opencode",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "daily-report-gen",
+    "name_cn": "daily-report-gen",
+    "name_en": "daily-report-gen",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "ascii-video",
+    "name_cn": "ascii-video",
+    "name_en": "ascii-video",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "baoyu-article-illustra…",
+    "name_cn": "baoyu-article-illustra…",
+    "name_en": "baoyu-article-illustra…",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "baoyu-comic",
+    "name_cn": "baoyu-comic",
+    "name_en": "baoyu-comic",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "baoyu-infographic",
+    "name_cn": "baoyu-infographic",
+    "name_en": "baoyu-infographic",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "comfyui",
+    "name_cn": "comfyui",
+    "name_en": "comfyui",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "design-md",
+    "name_cn": "design-md",
+    "name_en": "design-md",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "humanizer",
+    "name_cn": "humanizer",
+    "name_en": "humanizer",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "ideation",
+    "name_cn": "ideation",
+    "name_en": "ideation",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "p5js",
+    "name_cn": "p5js",
+    "name_en": "p5js",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "popular-web-designs",
+    "name_cn": "popular-web-designs",
+    "name_en": "popular-web-designs",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "pretext",
+    "name_cn": "pretext",
+    "name_en": "pretext",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "songwriting-and-ai-mus…",
+    "name_cn": "songwriting-and-ai-mus…",
+    "name_en": "songwriting-and-ai-mus…",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "touchdesigner-mcp",
+    "name_cn": "touchdesigner-mcp",
+    "name_en": "touchdesigner-mcp",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "my-first-web-management",
+    "name_cn": "my-first-web-management",
+    "name_en": "my-first-web-management",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "system-service-debuggi…",
+    "name_cn": "system-service-debuggi…",
+    "name_en": "system-service-debuggi…",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "minecraft-modpack-serv…",
+    "name_cn": "minecraft-modpack-serv…",
+    "name_en": "minecraft-modpack-serv…",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "group-chat-agent-trigg…",
+    "name_cn": "group-chat-agent-trigg…",
+    "name_en": "group-chat-agent-trigg…",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "heartmula",
+    "name_cn": "heartmula",
+    "name_en": "heartmula",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "songsee",
+    "name_cn": "songsee",
+    "name_en": "songsee",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "audiocraft-audio-gener…",
+    "name_cn": "audiocraft-audio-gener…",
+    "name_en": "audiocraft-audio-gener…",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "dspy",
+    "name_cn": "dspy",
+    "name_en": "dspy",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "evaluating-llms-harness",
+    "name_cn": "evaluating-llms-harness",
+    "name_en": "evaluating-llms-harness",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "huggingface-hub",
+    "name_cn": "huggingface-hub",
+    "name_en": "huggingface-hub",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "llama-cpp",
+    "name_cn": "llama-cpp",
+    "name_en": "llama-cpp",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "moa-free-tier",
+    "name_cn": "moa-free-tier",
+    "name_en": "moa-free-tier",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "obliteratus",
+    "name_cn": "obliteratus",
+    "name_en": "obliteratus",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "segment-anything-model",
+    "name_cn": "segment-anything-model",
+    "name_en": "segment-anything-model",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "serving-llms-vllm",
+    "name_cn": "serving-llms-vllm",
+    "name_en": "serving-llms-vllm",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "weights-and-biases",
+    "name_cn": "weights-and-biases",
+    "name_en": "weights-and-biases",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "ocr-and-documents",
+    "name_cn": "ocr-and-documents",
+    "name_en": "ocr-and-documents",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "powerpoint",
+    "name_cn": "powerpoint",
+    "name_en": "powerpoint",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "teams-meeting-pipeline",
+    "name_cn": "teams-meeting-pipeline",
+    "name_en": "teams-meeting-pipeline",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "godmode",
+    "name_cn": "godmode",
+    "name_en": "godmode",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "research-paper-writing",
+    "name_cn": "research-paper-writing",
+    "name_en": "research-paper-writing",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "openhue",
+    "name_cn": "openhue",
+    "name_en": "openhue",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "debugging-hermes-tui-c…",
+    "name_cn": "debugging-hermes-tui-c…",
+    "name_en": "debugging-hermes-tui-c…",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "hermes-agent-skill-aut…",
+    "name_cn": "hermes-agent-skill-aut…",
+    "name_en": "hermes-agent-skill-aut…",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "hermes-s6-container-su…",
+    "name_cn": "hermes-s6-container-su…",
+    "name_en": "hermes-s6-container-su…",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "subagent-driven-develo…",
+    "name_cn": "subagent-driven-develo…",
+    "name_en": "subagent-driven-develo…",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
+  },
+  {
+    "id": "sysml-backend-pipeline",
+    "name_cn": "sysml-backend-pipeline",
+    "name_en": "sysml-backend-pipeline",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能。",
+    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "related": []
   }
 ]
