@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MCP Tools | Hermes Agent</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <a href="index.html" class="logo">HERMES</a>
+      <div class="nav-links">
+        <a href="daily/index.html">Daily</a>
+        <a href="skills.html">Skills</a>
+        <a href="tools.html">Tools</a>
+        <a href="personal/about.html">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" style="padding-top: 4rem; padding-bottom: 2rem;">
+    <div class="container">
+      <h1>MCP Tools</h1>
+      <p>Available integrations and Model Context Protocol tools.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <div id="tools-container" class="grid">
+      <!-- Tools will be injected here -->
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Powered by Hermes Agent · © 2026</p>
+    </div>
+  </footer>
+
+  <script>
+    const tools = [
+      { name: 'Firecrawl', category: 'Web Scraping', description: 'Advanced web scraping and crawling capabilities.', icon: '🌐' },
+      { name: 'Tavily', category: 'AI Search', description: 'Search engine optimized for AI agents.', icon: '🔍' },
+      { name: 'Brave Search', category: 'Web Search', description: 'Privacy-focused web search integration.', icon: '🛡️' },
+      { name: 'OpenHue', category: 'Smart Home', description: 'Control smart home devices via agentic commands.', icon: '💡' },
+      { name: 'Airtable', category: 'Database', description: 'Structured data management and retrieval.', icon: '📊' },
+      { name: 'Notion', category: 'Knowledge', description: 'Personal knowledge base management.', icon: '📓' },
+      { name: 'Obsidian', category: 'Notes', description: 'Local-first knowledge management.', icon: '💎' },
+      { name: 'Linear', category: 'Project Mgmt', description: 'Streamlined project and task management.', icon: '🚀' },
+      { name: 'Google Workspace', category: 'Productivity', description: 'Full integration with Docs, Sheets, and Gmail.', icon: '☁️' },
+      { name: 'GitHub', category: 'Code/PR', description: 'Automated repository and PR management.', icon: '🐙' },
+      { name: 'HuggingFace Hub', category: 'ML Models', description: 'Access to the world\'s leading AI models.', icon: '🤗' },
+      { name: 'YouTube', category: 'Content', description: 'Video content analysis and retrieval.', icon: '🎥' },
+      { name: 'Spotify', category: 'Music', description: 'Audio content and playlist management.', icon: '🎵' },
+      { name: 'Discord/Slack/Telegram', category: 'Messaging', description: 'Multi-platform communication bridge.', icon: '💬' }
+    ];
+
+    function renderTools() {
+      const container = document.getElementById('tools-container');
+      container.innerHTML = '';
+      
+      tools.forEach(tool => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `
+          <div style="font-size: 2rem; margin-bottom: 1rem;">${tool.icon}</div>
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
+            <h3 style="margin-bottom: 0;">${tool.name}</h3>
+            <span style="background: var(--accent-glow); color: var(--accent); padding: 2px 8px; border-radius: var(--radius-sm); font-size: 0.75rem; font-weight: 600; border: 1px solid var(--accent);">
+              ${tool.category}
+            </span>
+          </div>
+          <p>${tool.description}</p>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    renderTools();
+  </script>
+</body>
+</html>

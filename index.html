@@ -1,221 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name never="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agentic DevOps OS | Dashboard</title>
-    <style>
-        :root {
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
-            --text-primary: #f8fafc;
-            --text-secondary: #94a3b8;
-            --accent-color: #38bdf8;
-            --success-color: #22c55e;
-        }
-
-        body {
-            margin: 0;
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-primary);
-            line-height: 1.5;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 3rem 1rem;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-
-        h1 {
-            font-size: 3.5rem;
-            margin: 0;
-            background: linear-gradient(to right, #38bdf8, #818cf8);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            letter-spacing: -0.025em;
-        }
-
-        p.subtitle {
-            color: var(--text-secondary);
-            font-size: 1.25rem;
-            margin-top: 1rem;
-        }
-
-        /* Architecture Grid */
-        .section-title {
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-            color: var(--text-secondary);
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 4rem;
-        }
-
-        .card {
-            background: var(--card-bg);
-            padding: 1.5rem;
-            border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: transform 0.2s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-4px);
-            border-color: var(--accent-color);
-        }
-
-        .card h3 {
-            margin: 0 0 0.5rem 0;
-            color: var(--accent-color);
-            font-size: 1.25rem;
-        }
-
-        .card p {
-            margin: 0;
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-        }
-
-        /* Workflow Timeline */
-        .workflow {
-            background: var(--card-bg);
-            padding: 2rem;
-            border-radius: 12px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: relative;
-        }
-
-        .workflow-step {
-            text-align: center;
-            z-index: 1;
-        }
-
-        .step-icon {
-            width: 40px;
-            height: 40px;
-            background: var(--accent-color);
-            color: var(--bg-color);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 0.5rem;
-            font-weight: bold;
-        }
-
-        .step-label {
-            font-size: 0.875rem;
-            font-weight: 500;
-        }
-
-        .workflow-line {
-            position: absolute;
-            top: 50%;
-            left: 10%;
-            right: 10%;
-            height: 2px;
-            background: rgba(255, 255, 255, 0.1);
-            z-index: 0;
-            transform: translateY(-50%);
-        }
-
-        .status-badge {
-            display: inline-flex;
-            align-items: center;
-            padding: 0.25rem 0.75rem;
-            border-radius: 9999px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            background: rgba(34, 197, 94, 0.1);
-            color: var(--success-color);
-            margin-top: 2rem;
-        }
-
-        .status-dot {
-            width: 8px;
-            height: 8px;
-            background: var(--success-color);
-            border-radius: 50%;
-            margin-right: 0.5rem;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0% { opacity: 1; }
-            50% { opacity: 0.4; }
-            100% { opacity: 1; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hermes Agent | Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <nav>
     <div class="container">
-        <header>
-            <h1>Agentic DevOps OS</h1>
-            <p class="subtitle">Building the Semantic Web, One Commit at a Time.</p>
-            <div class="status-badge">
-                <span class="status-dot"></span> System Status: Online
-            </div>
-        </header>
-
-        <section>
-            <h2 class="section-title">Core Architecture</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>🧠 Intelligence</h3>
-                    <p>Prompts, Skills, and Heuristics. The cognitive core of the agent.</p>
-                </div>
-                <div class="card">
-                    <h3>⚙️ Operations</h3>
-                    <p>Workflows, Configs, and Logs. The engine that drives execution.</p>
-                </div>
-                <div class="card">
-                    <h3>📚 Knowledge</h3>
-                    <p>Raw Markdown, Structured JSON, and Ontology. The semantic memory.</p>
-                </div>
-                <div class="card">
-                    <h3>📦 Artifacts</h3>
-                    <p>Rendered Web, API Endpoints, and Reports. The tangible outputs.</p>
-                </div>
-                <div class="card">
-                    <h3>🛡️ Harness</h3>
-                    <p>Tests, Mocks, and Scenarios. The validation and reliability layer.</p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2 class="section-title">Automated Workflow</h2>
-            <div class="workflow">
-                <div class="workflow-line"></div>
-                <div class="workflow-step">
-                    <div class="step-icon">D</div>
-                    <div class="step-label">[dev]</div>
-                </div>
-                <div class="workflow-step">
-                    <div class="step-icon">I</div>
-                    <div class="step-label">[inspect]</div>
-                </div>
-                <div class="workflow-step">
-                    <div class="step-icon">P</div>
-                    <div class="step-label">[deploy]</div>
-                </div>
-            </div>
-        </section>
+      <a href="index.html" class="logo">HERMES</a>
+      <div class="nav-links">
+        <a href="daily/index.html">Daily</a>
+        <a href="skills.html">Skills</a>
+        <a href="tools.html">Tools</a>
+        <a href="personal/about.html">About</a>
+      </div>
     </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <h1>Hermes Agent</h1>
+      <p>Building the Semantic Web, One Commit at a Time.</p>
+      <div class="status-badge">
+        <span class="status-dot"></span>
+        Online
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <section id="service-stack">
+      <h2>Service Stack</h2>
+      <div class="grid" id="service-grid">
+        <!-- Loaded via JS -->
+        <p>Loading service status...</p>
+      </div>
+    </section>
+
+    <section id="latest-brief">
+      <h2>Latest Daily Brief</h2>
+      <div id="latest-brief-container">
+        <p>Loading latest report...</p>
+      </div>
+    </section>
+
+    <section id="skills-preview">
+      <h2>Skills</h2>
+      <div class="grid" id="skills-grid">
+        <!-- Loaded via JS -->
+        <p>Loading skills preview...</p>
+      </div>
+    </section>
+
+    <section id="mcp-tools-preview">
+      <h2>MCP Tools</h2>
+      <div class="grid" id="tools-grid">
+        <!-- Loaded via JS -->
+        <p>Loading tools preview...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Powered by Hermes Agent · © 2026</p>
+    </div>
+  </footer>
+
+  <script>
+    async function init() {
+      try {
+        const statusRes = await fetch('status.json');
+        const statusData = await statusRes.json();
+        
+        // Update Service Stack
+        const serviceGrid = document.getElementById('service-grid');
+        serviceGrid.innerHTML = '';
+        
+        Object.entries(statusData.services).forEach(([key, data]) => {
+          const card = document.createElement('div');
+          card.className = 'card';
+          const isOnline = data.status === 'online';
+          card.innerHTML = `
+            <h3>${key.charAt(0).toUpperCase() + key.slice(1)}</h3>
+            <p>${data.type}</p>
+            <div class="status-row">
+              <div class="status-indicator">
+                <span class="dot ${isOnline ? 'online' : 'offline'}"></span>
+                ${isOnline ? 'Online' : 'Offline'}
+              </div>
+            </div>
+          `;
+          serviceGrid.appendChild(card);
+        });
+
+        // Update Latest Daily Brief (Placeholder implementation since no reports exist yet)
+        const latestBriefContainer = document.getElementById('latest-brief-container');
+        // In a real scenario, we'd fetch the list of reports and get the first one
+        latestBriefContainer.innerHTML = `
+          <div class="card" style="cursor: pointer;" onclick="window.location.href='daily/index.html'">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+              <span style="color: var(--accent); font-weight: 600;">Next Report Coming Soon</span>
+              <span style="color: var(--text-muted); font-size: 0.875rem;">Estimated: 4h</span>
+            </div>
+            <h3>No reports available yet</h3>
+            <p>The first daily brief will appear shortly after site activation.</p>
+          </div>
+        `;
+
+        // Skills Preview (Static counts for now)
+        const skillsGrid = document.getElementById('skills-grid');
+        const skillCategories = [
+          { name: 'DevOps', count: 5 },
+          { name: 'Software Dev', count: 8 },
+          { name: 'Research', count: 4 },
+          { name: 'Creative', count: 6 },
+          { name: 'Data Science', count: 1 },
+          { name: 'GitHub', count: 6 }
+        ];
+        skillsGrid.innerHTML = '';
+        skillCategories.forEach(cat => {
+          const card = document.createElement('div');
+          card.className = 'card';
+          card.innerHTML = `
+            <h3>${cat.name}</h3>
+            <p>${cat.count} skills available</p>
+          `;
+          skillsGrid.appendChild(card);
+        });
+
+        // Tools Preview
+        const toolsGrid = document.getElementById('tools-grid');
+        const tools = ['Firecrawl', 'Tavily', 'Brave Search', 'GitHub', 'Notion'];
+        toolsGrid.innerHTML = '';
+        tools.forEach(tool => {
+          const card = document.createElement('div');
+          card.className = 'card';
+          card.innerHTML = `
+            <h3>${tool}</h3>
+            <p>MCP Integration</p>
+          `;
+          toolsGrid.appendChild(card);
+        });
+
+      } catch (err) {
+        console.error('Error initializing dashboard:', err);
+      }
+    }
+
+    init();
+  </script>
 </body>
 </html>

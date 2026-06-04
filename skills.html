@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills | Hermes Agent</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <a href="index.html" class="logo">HERMES</a>
+      <div class="nav-links">
+        <a href="daily/index.html">Daily</a>
+        <a href="skills.html">Skills</a>
+        <a href="tools.html">Tools</a>
+        <a href="personal/about.html">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" style="padding-top: 4rem; padding-bottom: 2rem;">
+    <div class="container">
+      <h1>Hermes Skills</h1>
+      <p>A comprehensive directory of specialized agentic capabilities.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <div class="filter-bar">
+      <input type="text" id="skill-search" placeholder="Search skills (e.g. 'devops', 'github', 'research')..." onkeyup="filterSkills()">
+    </div>
+
+    <div id="skills-container" class="grid">
+      <!-- Skills will be injected here -->
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Powered by Hermes Agent · © 2026</p>
+    </div>
+  </footer>
+
+  <script>
+    const skills = [
+      { name: 'kanban-orchestrator', category: 'DevOps', description: 'Orchestrates kanban workflows for complex tasks.' },
+      { name: 'kanban-worker', category: 'DevOps', description: 'Handles individual unit tasks within a kanban system.' },
+      { name: 'system-service-debugging', category: 'DevOps', description: 'Diagnoses and debugs system-level services.' },
+      { name: 'webhook-subscriptions', category: 'DevOps', description: 'Manages and monitors webhook subscriptions.' },
+      { name: 'search-api-setup-cn', category: 'DevOps', description: 'Sets up search APIs in Chinese environments.' },
+      
+      { name: 'test-driven-development', category: 'Software Dev', description: 'Applies TDD principles to code generation.' },
+      { name: 'plan', category: 'Software Dev', description: 'Creates detailed technical plans.' },
+      { name: 'spike', category: 'Software Dev', description: 'Conducts architectural spikes to validate ideas.' },
+      { name: 'subagent-driven-development', category: 'Software Dev', description: 'Coordinates multiple subagents for development.' },
+      { name: 'writing-plans', category: 'Software Dev', description: 'Generates structured implementation plans.' },
+      { name: 'requesting-code-review', category: 'Software Dev', description: 'Automates the code review process.' },
+      { name: 'python-debugpy', category: 'Software Dev', description: 'Uses debugpy for Python debugging.' },
+      { name: 'node-inspect-debugger', category: 'Software Dev', description: 'Uses node inspect for Node.js debugging.' },
+
+      { name: 'arxiv', category: 'Research', description: 'Searches and summarizes arXiv papers.' },
+      { name: 'blogwatcher', category: 'Research', description: 'Monitors specified blogs for updates.' },
+      { name: 'llm-wiki', category: 'Research', description: 'Retrieves information from LLM-related wikis.' },
+      { name: 'polymarket', category: 'Research', description: 'Analyzes market data from Polymarket.' },
+
+      { name: 'ascii-art', category: 'Creative', description: 'Generates complex ASCII art.' },
+      { name: 'excalidraw', category: 'Creative', description: 'Creates diagrams using Excalidraw.' },
+      { name: 'architecture-diagram', category: 'Creative', description: 'Generates system architecture diagrams.' },
+      { name: 'pixel-art', category: 'Creative', description: 'Generates retro-style pixel art.' },
+      { name: 'sketch', category: 'Creative', description: 'Creates rough sketches for visual concepts.' },
+      { name: 'claude-design', category: 'Creative', description: 'Generates design concepts using Claude.' },
+
+      { name: 'jupyter-live-kernel', category: 'Data Science', description: 'Runs live Jupyter kernels for data analysis.' },
+
+      { name: 'codebase-inspection', category: 'GitHub', description: 'Inspects large codebases for structure and context.' },
+      { name: 'github-auth', category: 'GitHub', description: 'Handles GitHub authentication and workflows.' },
+      { name: 'github-code-review', category: 'GitHub', description: 'Automates code review on GitHub.' },
+      { name: 'github-issues', category: 'GitHub', description: 'Manages and tracks GitHub issues.' },
+      { name: 'github-pr-workflow', category: 'GitHub', description: 'Automates PR workflows and reviews.' },
+      { name: 'github-repo-management', category: 'GitHub', description: 'Manages repositories and organization settings.' },
+
+      { name: 'native-mcp', category: 'MCP', description: 'Core implementation of Model Context Protocol.' },
+
+      { name: 'minecraft-modpack-server', category: 'Gaming', description: 'Sets up and manages Minecraft modpack servers.' },
+      { name: 'pokemon-player', category: 'Gaming', description: 'Plays Pokémon games via agentic interface.' },
+
+      { name: 'youtube-content', category: 'Media', description: 'Analyzes and summarizes YouTube content.' },
+      { name: 'gif-search', category: 'Media', description: 'Searches for high-quality GIFs.' },
+      { name: 'spotify', category: 'Media', description: 'Plays and manages Spotify playlists.' },
+
+      { name: 'xurl', category: 'Social', description: 'Processes and extracts metadata from URLs.' },
+      { name: 'group-chat-agent-trigger', category: 'Social', description: 'Triggers agent actions from group chats.' },
+
+      { name: 'himalaya', category: 'Email', description: 'Processes and manages email communication.' },
+
+      { name: 'google-workspace', category: 'Productivity', description: 'Integrates with Google Workspace tools.' },
+      { name: 'notion', category: 'Productivity', description: 'Integrates with Notion databases and pages.' },
+      { name: 'obsidian', category: 'Productivity', description: 'Integrates with Obsidian vaults.' },
+      { name: 'nano-pdf', category: 'Productivity', description: 'Processes and manages PDF documents.' },
+      { name: 'maps', category: 'Productivity', description: 'Integrates with Google Maps functionality.' },
+      { name: 'airtable', category: 'Productivity', description: 'Integrates with Airtable bases.' },
+      { name: 'linear', category: 'Productivity', description: 'Integrates with Linear project management.' }
+    ];
+
+    function renderSkills(filteredSkills) {
+      const container = document.getElementById('skills-container');
+      container.innerHTML = '';
+      filteredSkills.forEach(skill => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
+            <h3 style="margin-bottom: 0;">${skill.name}</h3>
+            <span style="background: var(--accent-glow); color: var(--accent); padding: 2px 8px; border-radius: var(--radius-sm); font-size: 0.75rem; font-weight: 600; border: 1px solid var(--accent);">
+              ${skill.category}
+            </span>
+          </div>
+          <p>${skill.description}</p>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function filterSkills() {
+      const query = document.getElementById('skill-search').value.toLowerCase();
+      const filtered = skills.filter(skill => 
+        skill.name.toLowerCase().includes(query) || 
+        skill.category.toLowerCase().includes(query) ||
+        skill.description.toLowerCase().includes(query)
+      );
+      renderSkills(filtered);
+    }
+
+    // Initial render
+    renderSkills(skills);
+  </script>
+</body>
+</html>

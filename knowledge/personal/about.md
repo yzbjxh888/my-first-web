@@ -1,1 +1,1 @@
-# About Me\n\n重新设计我的 index.html，让它变成一个带深色背景、渐变文字标题的页面，标题写着“Agentic Era Begins”。
+# About Me\n\n重新设计我的 index.html，让它变成一个带深色背景、渐变文字标题的页面，标题写着“Agentic Era Begins”。\n\n在 tech 目录下增加一个知识点：MCP 协议的基础概念\n\n在 tech 目录下增加一个知识点：智能体架构设计
