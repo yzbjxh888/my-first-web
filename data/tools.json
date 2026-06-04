@@ -1,0 +1,172 @@
+[
+  {
+    "id": "firecrawl",
+    "name_cn": "Firecrawl",
+    "name_en": "Firecrawl",
+    "icon": "🕷️",
+    "category": "web",
+    "summary": "将整个网站转换为干净的 Markdown 格式。",
+    "detail": "Firecrawl 是一款强大的网页抓取工具，专门为 LLM 设计。它可以自动处理动态内容、绕过反爬虫机制，并将抓取到的网页内容转化为结构化的 Markdown 格式，非常适合构建 RAG 应用。",
+    "status": "connected"
+  },
+  {
+    "id": "tavily",
+    "name_cn": "Tavily",
+    "name_en": "Tavily",
+    "icon": "🔍",
+    "category": "web",
+    "summary": "专为 AI 智能体设计的实时搜索引擎。",
+    "detail": "Tavily 不仅仅是一个搜索引擎，它能够直接返回经过清理、适合 LLM 处理的搜索结果。它减少了信息噪音，提高了 AI 进行事实检索的准确性和效率。",
+    "status": "connected"
+  },
+  {
+    "id": "brave-search",
+    "name_cn": "Brave Search",
+    "name_en": "Brave Search",
+    "icon": "🛡️",
+    "category": "web",
+    "summary": "隐私优先的实时搜索 API。",
+    "detail": "Brave Search 提供了一个独立且隐私保护的索引。通过其 API，AI 可以获取实时的互联网信息，而无需担心数据追踪或隐私泄露问题。",
+    "status": "connected"
+  },
+  {
+    "id": "openhue",
+    "name_cn": "OpenHue",
+    "name_en": "OpenHue",
+    "icon": "💡",
+    "category": "iot",
+    "summary": "智能灯光与环境控制。",
+    "detail": "通过 OpenHue 协议，AI 可以控制智能家居中的灯光系统。无论是调节氛围、设置提醒还是自动化场景，都能通过简单的自然语言指令实现。",
+    "status": "pending"
+  },
+  {
+    "id": "airtable",
+    "name_cn": "Airtable",
+    "name_en": "Airtable",
+    "icon": "📊",
+    "category": "knowledge",
+    "summary": "云端结构化数据管理平台。",
+    "detail": "Airtable 结合了电子表格的易用性和数据库的强大功能。AI 可以利用它来存储复杂的数据结构、管理任务流程或作为轻量级后端。",
+    "status": "connected"
+  },
+  {
+    "id": "notion",
+    "name_cn": "Notion",
+    "name_en": "Notion",
+    "icon": "📝",
+    "category": "knowledge",
+    "summary": "全能型知识管理与协作空间。",
+    "detail": "Notion 是一个集笔记、文档、数据库和项目管理于一体的平台。AI 可以自动化创建页面、整理知识库并维护复杂的项目状态。",
+    "status": "connected"
+  },
+  {
+    "id": "obsidian",
+    "name_cn": "Obsidian",
+    "name_en": "Obsidian",
+    "icon": "🧠",
+    "category": "knowledge",
+    "summary": "本地优先的知识库管理工具。",
+    "detail": "Obsidian 基于 Markdown 文件，强调隐私和本地存储。AI 可以作为你的数字助手，帮你自动建立笔记间的双向链接，实现知识的自动化生长。",
+    "status": "connected"
+  },
+  {
+    "id": "linear",
+    "name_cn": "Linear",
+    "name_en": "Linear",
+    "icon": "⚡",
+    "category": "dev",
+    "summary": "高效的软件项目管理工具。",
+    "detail": "Linear 专注于为现代开发团队提供极致流畅的任务管理体验。AI 可以自动同步代码变更、创建 Issue 并跟踪开发进度。",
+    "status": "connected"
+  },
+  {
+    "id": "google-workspace",
+    "name_cn": "Google Workspace",
+    "name_en": "Google Workspace",
+    "icon": "📂",
+    "category": "knowledge",
+    "summary": "集成化的办公生产力套件。",
+    "detail": "包含 Docs, Sheets, Gmail 等核心办公应用。AI 可以实现跨应用的自动化，例如根据邮件内容自动填充表格或撰写文档。",
+    "status": "connected"
+  },
+  {
+    "id": "github",
+    "name_cn": "GitHub",
+    "name_en": "GitHub",
+    "icon": "🐙",
+    "category": "dev",
+    "summary": "全球领先的代码托管与协作平台。",
+    "detail": "通过集成 GitHub，AI 可以实现自动代码审查、Issue 管理、PR 处理以及仓库级别的自动化操作。",
+    "status": "connected"
+  },
+  {
+    "id": "huggingface-hub",
+    "name_cn": "HuggingFace Hub",
+    "name_en": "HuggingFace Hub",
+    "icon": "🤗",
+    "category": "ai",
+    "summary": "AI 模型与数据集的中央仓库。",
+    "detail": "HuggingFace 是 AI 领域的“GitHub”。AI 可以通过该平台检索、下载和部署最新的开源模型及数据集，实现能力的快速迭代。",
+    "status": "connected"
+  },
+  {
+    "id": "youtube",
+    "name_cn": "YouTube",
+    "name_en": "YouTube",
+    "icon": "📺",
+    "category": "media",
+    "summary": "全球最大的视频分享平台。",
+    "detail": "AI 可以通过 YouTube API 检索视频、获取字幕并进行内容总结，实现视频信息的智能化处理。",
+    "status": "connected"
+  },
+  {
+    "id": "spotify",
+    "name_cn": "Spotify",
+    "name_en": "Spotify",
+    "icon": "🎵",
+    "category": "media",
+    "summary": "领先的流媒体音乐服务。",
+    "detail": "通过 Spotify API，AI 可以根据用户的偏好或当前状态自动控制音乐播放、创建歌单并进行搜索。",
+    "status": "connected"
+  },
+  {
+    "id": "himalaya",
+    "name_cn": "Himalaya",
+    "name_en": "Himalaya",
+    "icon": "📧",
+    "category": "social",
+    "summary": "自动化邮件助手。",
+    "detail": "Himalaya 专门用于提升邮件处理效率，通过 AI 实现邮件分类、自动草拟回复以及关键信息提取。",
+    "status": "connected"
+  },
+  {
+    "id": "discord",
+    "name_cn": "Discord",
+    "name_en": "Discord",
+    "icon": "💬",
+    "category": "social",
+    "summary": "实时社区与即时通讯平台。",
+    "detail": "AI 可以作为 Discord Bot 存在，在服务器中响应指令、管理频道以及与社区成员进行交互。",
+    "status": "connected"
+  },
+  {
+    "id": "telegram",
+    "name_cn": "Telegram",
+    "name_en": "Telegram",
+    "icon": "✈️",
+    "category": "social",
+    "summary": "高度安全的即时通讯工具。",
+    "detail": "利用 Telegram 的 Bot API，可以构建功能强大的自动化代理，实现跨平台的即时通讯与任务处理。",
+    "status": "connected"
+  },
+  {
+    "id": "slack",
+    "name_cn": "Slack",
+    "name_en": "Slack",
+    "icon": "🌈",
+    "category": "social",
+    "summary": "团队协作与沟通平台。",
+    "detail": "Slack 是企业级协作的首选。AI 可以集成到 Slack 工作流中，自动总结频道讨论、提醒任务并触发后续动作。",
+    "status": "connected"
+  }
+]

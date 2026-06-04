@@ -1,52 +1,39 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hermes Agent | 日报存档</title>
-  <link rel="stylesheet" href="../styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermes Agent | 日报存档</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="app-container">
-    <aside class="sidebar">
-      <div class="sidebar-logo">HERMES</div>
-      <nav class="sidebar-nav">
-        <a href="../index.html" class="nav-item">
-          <span class="icon">📊</span>仪表板
-        </a>
-        <a href="index.html" class="nav-item active">
-          <span class="icon">📅</span>日报
-        </a>
-        <a href="../skills.html" class="nav-item">
-          <span class="icon">🛠️</span>技能
-        </a>
-        <a href="../tools.html" class="nav-item">
-          <span class="icon">🧰</span>工具
-        </a>
-        <a href="../personal/about.html" class="nav-item">
-          <span class="icon">👤</span>关于
-        </a>
-      </nav>
-    </aside>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-brand">Hermes Agent</div>
+            <nav class="sidebar-nav">
+                <a href="index.html" class="nav-item"><span>🏠</span> 仪表板</a>
+                <a href="daily/index.html" class="nav-item active"><span>📅</span> 日报</a>
+                <a href="skills.html" class="nav-item"><span>🛠️</span> 技能</a>
+                <a href="tools.html" class="nav-item"><span>🧰</span> 工具</a>
+                <a href="personal/about.html" class="nav-item"><span>👤</span> 关于</a>
+            </nav>
+        </aside>
 
-    <main class="main-content">
-      <h1 class="gradient-text">日报存档</h1>
-      <p style="color: var(--text-secondary); margin-bottom: 2rem;">所有历史每日简报记录</p>
+        <main class="main-content">
+            <h1 class="gradient-text">日报存档</h1>
+            <p class="subtitle">查看历史自动化运行报告</p>
 
-      <div class="list-view">
-        <div style="text-align: center; padding: 4rem 0; color: var(--text-secondary);">
-          <div style="font-size: 3rem; margin-bottom: 1rem;">📁</div>
-          <p>暂无日报，系统将在开机后自动生成</p>
-        </div>
-      </div>
+            <div id="daily-list" class="grid">
+                <!-- Placeholder for empty state -->
+                <div style="grid-column: 1 / -1; text-align: center; padding: 4rem 0; color: var(--text-muted);">
+                    <p>暂无存档记录，请等待系统生成报告。</p>
+                </div>
+            </div>
 
-      <footer class="footer">
-        <p>Powered by Hermes Agent · © 2026 · www.zhangjunxiang.asia</p>
-      </footer>
-    </main>
-  </div>
+            <footer>
+                &copy; 2026 Hermes Agent. Built by Zhang Junxiang.
+            </footer>
+        </main>
+    </div>
 </body>
 </html>

@@ -1,201 +1,143 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hermes Agent | 工具墙</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermes Agent | 工具墙</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="app-container">
-    <aside class="sidebar">
-      <div class="sidebar-logo">HERMES</div>
-      <nav class="sidebar-nav">
-        <a href="index.html" class="nav-item">
-          <span class="icon">📊</span>仪表板
-        </a>
-        <a href="daily/index.html" class="nav-item">
-          <span class="icon">📅</span>日报
-        </a>
-        <a href="skills.html" class="nav-item">
-          <span class="icon">🛠️</span>技能
-        </a>
-        <a href="tools.html" class="nav-item active">
-          <span class="icon">🧰</span>工具
-        </a>
-        <a href="personal/about.html" class="nav-item">
-          <span class="icon">👤</span>关于
-        </a>
-      </nav>
-    </aside>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-brand">Hermes Agent</div>
+            <nav class="sidebar-nav">
+                <a href="index.html" class="nav-item"><span>🏠</span> 仪表板</a>
+                <a href="daily/index.html" class="nav-item"><span>📅</span> 日报</a>
+                <a href="skills.html" class="nav-item"><span>🛠️</span> 技能</a>
+                <a href="tools.html" class="nav-item active"><span>🧰</span> 工具</a>
+                <a href="personal/about.html" class="nav-item"><span>👤</span> 关于</a>
+            </nav>
+        </aside>
 
-    <main class="main-content">
-      <h1 class="gradient-text">工具墙</h1>
-      <p style="color: var(--text-secondary); margin-bottom: 2rem;">集成于 Hermes Agent 的 MCP 工具集</p>
+        <main class="main-content">
+            <h1 class="gradient-text">工具墙</h1>
+            <p class="subtitle">已集成的 MCP 工具与服务</p>
 
-      <div class="grid">
-        <!-- Firecrawl -->
-        <div class="card">
-          <div class="card-icon">🕷️</div>
-          <div class="card-title">Firecrawl (网页爬虫)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Web</span>
-          <p class="card-desc" style="margin-top: 0.5rem;">智能网页抓取，支持 JavaScript 渲染和结构化数据提取。</p>
-          <div style="display: flex; align-items: center; font-size: 0.75rem; margin-top: 0.5rem;">
-            <span class="status-dot status-online"></span><span style="color: #22c55e;">已连接</span>
-          </div>
-        </div>
+            <div class="controls">
+                <div id="filter-tabs" class="filter-tabs">
+                    <div class="filter-tab active" data-category="all">全部</div>
+                    <!-- Categories will be loaded here -->
+                </div>
+            </div>
 
-        <!-- Tavily -->
-        <div class="card">
-          <div class="card-icon">🔍</div>
-          <div class="card-title">Tavily (AI 搜索)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">AI</div>
-          <p class="card-desc" style="margin-top: 0.5rem;">AI 驱动的搜索引擎，为 LLM 优化搜索结果。</p>
-          <div style="display: flex; align-items: center; font-size: 0.75rem; margin-top: 0.5rem;">
-            <span class="status-dot status-online"></span><span style="color: #22c55e;">已连接</span>
-          </div>
-        </div>
+            <div id="tools-container">
+                <!-- Tools will be loaded here -->
+            </div>
 
-        <!-- Brave Search -->
-        <div class="card">
-          <div class="card-icon">🛡️</div>
-          <div class="card-title">Brave Search (搜索)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Search</div>
-          <p class="card-desc" style="margin-top: 0.5rem;">隐私优先的网页搜索引擎。</p>
-          <div style="display: flex; align-items: center; font-size: 0.75rem; margin-top: 0.5rem;">
-            <span class="status-dot status-online"></span><span style="color: #22c55e;">已连接</span>
-          </div>
-        </div>
+            <footer>
+                &copy; 2026 Hermes Agent. Built by Zhang Junxiang.
+            </footer>
+        </main>
+    </div>
 
-        <!-- OpenHue -->
-        <div class="card">
-          <div class="card-icon">💡</div>
-          <div class="card-title">OpenHue (智能灯控)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">IoT</div>
-          <p class="card-desc" style="margin-top: 0.5rem;">通过 OpenHue CLI 控制 Philips Hue 灯光、场景和房间。</p>
-          <div style="display: flex; align-items: center; font-size: 0.75rem; margin-top: 0.5rem;">
-            <span class="status-dot status-inactive"></span><span style="color: #64748b;">未就绪</span>
-          </div>
-        </div>
+    <script>
+        let allTools = [];
+        let currentCategory = 'all';
 
-        <!-- Airtable -->
-        <div class="card">
-          <div class="card-icon">📊</div>
-          <div class="card-title">Airtable (低代码数据库)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Database</div>
-          <p class="card-desc" style="margin-top: 0.5rem;">通过 REST API 进行记录增删改查。</p>
-          <div style="display: flex; align-items: center; font-size: 0.75rem; margin-top: 0.5rem;">
-            <span class="status-dot status-online"></span><span style="color: #22c55e;">已连接</span>
-          </div>
-        </div>
+        async function loadTools() {
+            try {
+                const response = await fetch('data/tools.json');
+                allTools = await response.json();
+                
+                // Get status from status.json
+                let statuses = {};
+                try {
+                    const statusRes = await fetch('status.json');
+                    statuses = await statusRes.json();
+                } catch (e) {
+                    console.error("Failed to load status.json", e);
+                }
 
-        <!-- Notion -->
-        <div class="card">
-          <div class="card-icon">📝</div>
-          <div class="card-title">Notion (知识管理)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Knowledge</div>
-          <p class="card-desc" style="margin-top: 0.5rem;">页面、数据库操作和 Markdown 导入导出。</p>
-          <div style="display: flex; align-items: center; font-size: 0.75rem; margin-top: 0.5rem;">
-            <span class="status-dot status-online"></span><span style="color: #22c55e;">已连接</span>
-          </div>
-        </div>
+                // Generate category tabs
+                const categories = ['all', ...new Set(allTools.map(t => t.category))];
+                const filterTabs = document.getElementById('filter-tabs');
+                filterTabs.innerHTML = '';
+                categories.forEach(cat => {
+                    const tab = document.createElement('div');
+                    tab.className = `filter-tab ${cat === 'all' ? 'active' : ''}`;
+                    tab.textContent = cat === 'all' ? '全部' : cat;
+                    tab.onclick = () => {
+                        document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+                        tab.classList.add('active');
+                        currentCategory = cat;
+                        renderTools(statuses);
+                    };
+                    filterTabs.appendChild(tab);
+                });
 
-        <!-- Obsidian -->
-        <div class="card">
-          <div class="card-icon">📓</div>
-          <div class="card-title">Obsidian (笔记)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Knowledge</div>
-          <p class="card-desc" style="margin-top: 0.5rem;">读取、搜索、创建和编辑 Obsidian 仓库笔记。</p>
-          <div style="display: flex; align-items: center; font-size: 0.75rem; margin-top: 0.5rem;">
-            <span class="status-dot status-online"></span><span style="color: #22c55e;">已连接</span>
-          </div>
-        </div>
+                renderTools(statuses);
+            } catch (e) {
+                console.error(e);
+                document.getElementById('tools-container').innerHTML = '<p>无法加载工具数据。</p>';
+            }
+        }
 
-        <!-- Linear -->
-        <div class="card">
-          <div class="card-icon">📈</div>
-          <div class="card-title">Linear (项目管理)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">PM</div>
-          <p class="card-desc" style="margin-top: 0.5rem;">通过 GraphQL 管理问题、项目和团队。</p>
-          <div style="display: flex; align-items: center; font-size: 0.75rem; margin-top: 0.5rem;">
-            <span class="status-dot status-online"></span><span style="color: #22c55e;">已连接</span>
-          </div>
-        </div>
+        function renderTools(statuses) {
+            const container = document.getElementById('tools-container');
+            container.innerHTML = '';
 
-        <!-- Google Workspace -->
-        <div class="card">
-          <div class="card-icon">📁</div>
-          <div class="card-title">Google Workspace (办公套件)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Office</div>
-          <p class="card-desc" style="margin-top: 0.5rem;">Gmail、日历、文档、表格等办公工具。</p>
-          <div style="display: flex; align-items: center; font-size: 0.75rem; margin-top: 0.5rem;">
-            <span class="status-dot status-online"></span><span style="color: #22c55e;">已连接</span>
-          </div>
-        </div>
+            const filtered = allTools.filter(tool => {
+                return currentCategory === 'all' || tool.category === currentCategory;
+            });
 
-        <!-- GitHub -->
-        <div class="card">
-          <div class="card-icon">🐙</div>
-          <div class="card-title">GitHub (代码托管)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Dev</span>
-          <p class="card-desc" style="margin-top: 0.5rem;">代码管理、PR、Issue、CI/CD 全流程。</p>
-          <div style="display: flex; align-items: center; font-size: 0.75rem; margin-top: 0.5rem;">
-            <span class="status-dot status-online"></span><span style="color: #22c55e;">已连接</span>
-          </div>
-        </div>
+            if (filtered.length === 0) {
+                container.innerHTML = '<p>未找到匹配的工具。</p>';
+                return;
+            }
 
-        <!-- HuggingFace Hub -->
-        <div class="card">
-          <div class="card-icon">🤗</div>
-          <div class="card-title">HuggingFace Hub (模型中心)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">AI</div>
-          <p class="card-desc" style="margin-top: 0.5rem;">搜索、下载、上传 ML 模型和数据集。</p>
-          <div style="display: flex; align-items: center; font-size: 0.75rem; margin-top: 0.5rem;">
-            <span class="status-dot status-online"></span><span style="color: #22c55e;">已连接</span>
-          </div>
-        </div>
+            const grid = document.createElement('div');
+            grid.className = 'grid';
 
-        <!-- YouTube -->
-        <div class="card">
-          <div class="card-icon">🎥</div>
-          <div class="card-title">YouTube (视频内容)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Media</div>
-          <p class="card-desc" style="margin-top: 0.5rem;">获取 YouTube 字幕并转换为各种格式的内容。</p>
-          <div style="display: flex; align-items: center; font-size: 0.75rem; margin-top: 0.5rem;">
-            <span class="status-dot status-online"></span><span style="color: #22c55e;">已连接</span>
-          </div>
-        </div>
+            filtered.forEach(tool => {
+                const statusVal = statuses[tool.id] || tool.status || 'pending';
+                const isConnected = ['connected', 'active', 'PONG', '200'].includes(statusVal.toString().toLowerCase());
+                const dotClass = isConnected ? 'green' : (statusVal === 'pending' ? 'gray' : 'red');
+                const statusText = isConnected ? '已连接' : (statusVal === 'pending' ? '未就绪' : '离线');
 
-        <!-- Spotify -->
-        <div class="card">
-          <div class="card-icon">🎵</div>
-          <div class="card-title">Spotify (音乐)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Media</div>
-          <p class="card-desc" style="margin-top: 0.5rem;">音乐播放、搜索和播放列表管理。</p>
-          <div style="display: flex; align-items: center; font-size: 0.75rem; margin-top: 0.5rem;">
-            <span class="status-dot status-online"></span><span style="color: #22c55e;">已连接</span>
-          </div>
-        </div>
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.innerHTML = `
+                    <div class="card-header">
+                        <span class="card-icon">${tool.icon}</span>
+                        <div style="display: flex; flex-direction: column;">
+                            <span class="card-title">${tool.name_cn}</span>
+                            <span style="font-size: 0.75rem; opacity: 0.7;">${tool.name_en}</span>
+                        </div>
+                        <div style="margin-left: auto; display: flex; align-items: center; gap: 0.4rem;">
+                            <div class="status-dot ${dotClass}"></div>
+                            <span style="font-size: 0.7rem; opacity: 0.8;">${statusText}</span>
+                        </div>
+                    </div>
+                    <div class="card-subtitle">${tool.category}</div>
+                    <div class="card-summary">${tool.summary}</div>
+                    <div class="card-detail">
+                        <div class="detail-content">
+                            <p>${tool.detail}</p>
+                        </div>
+                    </div>
+                `;
+                card.onclick = () => {
+                    const isExpanded = card.classList.contains('expanded');
+                    document.querySelectorAll('.card.expanded').forEach(c => c.classList.remove('expanded'));
+                    if (!isExpanded) card.classList.add('expanded');
+                };
+                grid.appendChild(card);
+            });
 
-        <!-- Himalaya -->
-        <div class="card">
-          <div class="card-icon">📧</div>
-          <div class="card-title">Himalaya (邮件)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Mail</div>
-          <p class="card-desc" style="margin-top: 0.5rem;">通过命令行管理 IMAP/SMTP 邮件。</p>
-          <div style="display: flex; align-items: center; font-size: 0.75rem; margin-top: 0.5rem;">
-            <span class="status-dot status-online"></span><span style="color: #22c55e;">已连接</span>
-          </div>
-        </div>
-      </div>
+            container.appendChild(grid);
+        }
 
-      <footer class="footer">
-        <p>Powered by Hermes Agent · © 2026 · www.zhangjunxiang.asia</p>
-      </footer>
-    </main>
-  </div>
+        loadTools();
+    </script>
 </body>
 </html>

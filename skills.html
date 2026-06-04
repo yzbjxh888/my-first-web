@@ -1,270 +1,176 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hermes Agent | 技能目录</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermes Agent | 技能目录</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="app-container">
-    <aside class="sidebar">
-      <div class="sidebar-logo">HERMES</div>
-      <nav class="sidebar-nav">
-        <a href="index.html" class="nav-item">
-          <span class="icon">📊</span>仪表板
-        </a>
-        <a href="daily/index.html" class="nav-item">
-          <span class="icon">📅</span>日报
-        </a>
-        <a href="skills.html" class="nav-item active">
-          <span class="icon">🛠️</span>技能
-        </a>
-        <a href="tools.html" class="nav-item">
-          <span class="icon">🧰</span>工具
-        </a>
-        <a href="personal/about.html" class="nav-item">
-          <span class="icon">👤</span>关于
-        </a>
-      </nav>
-    </aside>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-brand">Hermes Agent</div>
+            <nav class="sidebar-nav">
+                <a href="index.html" class="nav-item"><span>🏠</span> 仪表板</a>
+                <a href="daily/index.html" class="nav-item"><span>📅</span> 日报</a>
+                <a href="skills.html" class="nav-item active"><span>🛠️</span> 技能</a>
+                <a href="tools.html" class="nav-item"><span>🧰</span> 工具</a>
+                <a href="personal/about.html" class="nav-item"><span>👤</span> 关于</a>
+            </nav>
+        </aside>
 
-    <main class="main-content">
-      <h1 class="gradient-text">技能目录</h1>
-      <p style="color: var(--text-secondary); margin-bottom: 2rem;">Hermes Agent 的核心能力集</p>
+        <main class="main-content">
+            <h1 class="gradient-text">技能目录</h1>
+            <p class="subtitle">Hermes Agent 的核心能力集</p>
 
-      <!-- DevOps -->
-      <h2 class="section-header">DevOps</h2>
-      <div class="grid">
-        <div class="card">
-          <div class="card-icon">📋</div>
-          <div class="card-title">看板编排器 (kanban-orchestrator)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">DevOps</span>
-          <p class="card-desc" style="margin-top: 0.5rem;">将复杂任务分解为子任务，通过看板系统分配给工作节点。</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">👷</div>
-          <div class="card-title">看板工作节点 (kanban-worker)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">DevOps</span>
-          <p class="card-desc" style="margin-top: 0.5rem;">执行看板任务的生命周期管理。</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🐞</div>
-          <div class="card-title">系统服务调试 (system-service-debugging)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">DevOps</span>
-          <p class="card-desc" style="margin-top: 0.5rem;">管理和调试 systemd 用户服务的统一框架。</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🔔</div>
-          <div class="card-title">Webhook 订阅 (webhook-subscriptions)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">DevOps</span>
-          <p class="card-desc" style="margin-top: 0.5rem;">创建动态 webhook 订阅，实现事件驱动的自动运行。</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🌐</div>
-          <div class="card-title">搜索 API 配置 (search-api-setup-cn)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">DevOps</span>
-          <p class="card-desc" style="margin-top: 0.5rem;">配置中国区的搜索 API 和模型提供商。</p>
-        </div>
-      </div>
+            <div class="controls">
+                <input type="text" id="search-bar" class="search-bar" placeholder="搜索技能名称或描述...">
+                <div id="filter-tabs" class="filter-tabs">
+                    <div class="filter-tab active" data-category="all">全部</div>
+                    <!-- Categories will be loaded here -->
+                </div>
+            </div>
 
-      <!-- Software Dev -->
-      <h2 class="section-header">Software Dev</h2>
-      <div class="grid">
-        <div class="card">
-          <div class="card-icon">🔄</div>
-          <div class="card-title">测试驱动开发 (test-driven-development)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Dev</span>
-          <p class="card-desc" style="margin-top: 0.5rem;">遵循 RED-GREEN-REFACTOR 循环。</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">📝</div>
-          <div class="card-title">计划模式 (plan)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Dev</span>
-          <p class="card-desc" style="margin-top: 0.5rem;">编写执行计划并保存到 .hermes/plans/</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🧪</div>
-          <div class="card-title">探索实验 (spike)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Dev</span>
-          <p class="card-desc" style="margin-top: 0.5rem;">快速验证创意的沙盒实验。</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🤖</div>
-          <div class="card-title">子代理驱动开发 (subagent-driven-development)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Dev</span>
-          <p class="card-desc" style="margin-top: 0.5rem;">通过子代理执行实现计划。</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">✍️</div>
-          <div class="card-title">编写计划 (writing-plans)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Dev</span>
-          <p class="card-desc" style="margin-top: 0.5rem;">将实现任务分解为可执行的步骤。</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🔍</div>
-          <div class="card-title">代码审查 (requesting-code-review)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Dev</span>
-          <p class="card-desc" style="margin-top: 0.5rem;">提交前的安全检查和质量把关。</p>
-        </div>
-      </div>
+            <div id="skills-container">
+                <!-- Skills will be loaded here -->
+            </div>
 
-      <!-- Research -->
-      <h2 class="section-header">Research</h2>
-      <div class="grid">
-        <div class="card">
-          <div class="card-icon">📚</div>
-          <div class="card-title">论文搜索 (arxiv)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Research</span>
-          <p class="card-desc" style="margin-top: 0.5rem;">按关键词、作者或类别搜索 arXiv 学术论文。</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🕵️</div>
-          <div class="card-title">博客监控 (blogwatcher)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Research</span>
-          <p class="card-desc" style="margin-top: 0.5rem;">通过 blogwatcher-cli 监控博客和 RSS 订阅源。</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">📖</div>
-          <div class="card-title">LLM 知识库 (llm-wiki)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Research</span>
-          <p class="card-desc" style="margin-top: 0.5rem;">构建和查询互联的 Markdown 知识库。</p>
-        </div>
-      </div>
+            <footer>
+                &copy; 2026 Hermes Agent. Built by Zhang Junxiang.
+            </footer>
+        </main>
+    </div>
 
-      <!-- Creative -->
-      <h2 class="section-header">Creative</h2>
-      <div class="grid">
-        <div class="card">
-          <div class="card-icon">🎨</div>
-          <div class="card-title">ASCII 艺术 (ascii-art)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Creative</span>
-          <p class="card-desc" style="margin-top: 0.5rem;">使用 pyfiglet、cowsay、boxes 等工具创作。</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">✏️</div>
-          <div class="card-title">手绘图表 (excalidraw)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Creative</span>
-          <p class="card-desc" style="margin-top: 0.5rem;">创建手绘风格的架构/流程图。</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">📐</div>
-          <div class="card-title">架构图 (architecture-diagram)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Creative</span>
-          <p class="card-desc" style="margin-top: 0.5rem;">深色主题的 SVG 架构图。</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">👾</div>
-          <div class="card-title">像素艺术 (pixel-art)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Creative</span>
-          <p class="card-desc" style="margin-top: 0.5rem;">使用 NES、Game Boy、PICO-8 时代调色板。</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🖼️</div>
-          <div class="card-title">快速原型 (sketch)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Creative</span>
-          <p class="card-desc" style="margin-top: 0.5rem;">一次性 HTML 原型，2-3 种设计变体。</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🎬</div>
-          <div class="card-title">数学动画 (manim-video)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Creative</span>
-          <p class="card-desc" style="margin-top: 0.5rem;">3Blue1Brown 风格的教学动画。</p>
-        </div>
-      </div>
+    <script>
+        let allSkills = [];
+        let currentCategory = 'all';
+        let searchQuery = '';
 
-      <!-- Data Science -->
-      <h2 class="section-header">Data Science</h2>
-      <div class="grid">
-        <div class="card">
-          <div class="card-icon">🐍</div>
-          <div class="card-title">Jupyter 内核 (jupyter-live-kernel)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Data Science</span>
-          <p class="card-desc" style="margin-top: 0.5rem;">通过活跃的 Jupyter 内核进行迭代 Python 开发。</p>
-        </div>
-      </div>
+        async function loadSkills() {
+            try {
+                const response = await fetch('data/skills.json');
+                allSkills = await response.json();
+                
+                // Generate category tabs
+                const categories = ['all', ...new Set(allSkills.map(s => s.category))];
+                const filterTabs = document.getElementById('filter-tabs');
+                filterTabs.innerHTML = '';
+                categories.forEach(cat => {
+                    const tab = document.createElement('div');
+                    tab.className = `filter-tab ${cat === 'all' ? 'active' : ''}`;
+                    tab.textContent = cat === 'all' ? '全部' : cat;
+                    tab.onclick = () => {
+                        document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+                        tab.classList.add('active');
+                        currentCategory = cat;
+                        renderSkills();
+                    };
+                    filterTabs.appendChild(tab);
+                });
 
-      <!-- GitHub -->
-      <h2 class="section-header">GitHub</h2>
-      <div class="grid">
-        <div class="card">
-          <div class="card-icon">🔍</div>
-          <div class="card-title">代码审查 (github-code-review)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">GitHub</span>
-          <p class="card-desc" style="margin-top: 0.5rem;">审查 PR 差异并通过 gh 或 REST 添加行内评论。</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🎫</div>
-          <div class="card-title">问题管理 (github-issues)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">GitHub</span>
-          <p class="card-desc" style="margin-top: 0.5rem;">通过 gh 或 REST 创建、分类、标记和分配问题。</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🚀</div>
-          <div class="card-title">PR 工作流 (github-pr-workflow)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">GitHub</span>
-          <p class="card-desc" style="margin-top: 0.5rem;">从分支创建到合并的完整 PR 生命周期。</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🕵️</div>
-          <div class="card-title">代码库检查 (codebase-inspection)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">GitHub</span>
-          <p class="card-desc" style="margin-top: 0.5rem;">使用 pygount 分析代码：行数、语言、比例。</p>
-        </div>
-      </div>
+                renderSkills();
+            } catch (e) {
+                console.error(e);
+                document.getElementById('skills-container').innerHTML = '<p>无法加载技能数据。</p>';
+            }
+        }
 
-      <!-- MCP -->
-      <h2 class="section-header">MCP</h2>
-      <div class="grid">
-        <div class="card">
-          <div class="card-icon">🔌</div>
-          <div class="card-title">MCP 原生客户端 (native-mcp)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">MCP</span>
-          <p class="card-desc" style="margin-top: 0.5rem;">连接 MCP 服务器，注册工具（stdio/HTTP 协议）。</p>
-        </div>
-      </div>
+        function renderSkills() {
+            const container = document.getElementById('skills-container');
+            container.innerHTML = '';
 
-      <!-- Media -->
-      <h2 class="section-header">Media</h2>
-      <div class="grid">
-        <div class="card">
-          <div class="card-icon">📺</div>
-          <div class="card-title">YouTube 内容 (youtube-content)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Media</span>
-          <p class="card-desc" style="margin-top: 0.5rem;">将 YouTube 字幕转换为摘要、推文、博客。</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🖼️</div>
-          <div class="card-title">GIF 搜索 (gif-search)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Media</span>
-          <p class="card-desc" style="margin-top: 0.5rem;">通过 Tenor API 搜索和下载 GIF。</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🎵</div>
-          <div class="card-title">Spotify 控制 (spotify)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Media</span>
-          <p class="card-desc" style="margin-top: 0.5rem;">播放、搜索、排队和管理播放列表。</p>
-        </div>
-      </div>
+            const filtered = allSkills.filter(skill => {
+                const matchesCategory = currentCategory === 'all' || skill.category === currentCategory;
+                const matchesSearch = skill.name_cn.toLowerCase().includes(searchQuery.toLowerCase()) || 
+                                    skill.summary.toLowerCase().includes(searchQuery.toLowerCase());
+                return matchesCategory && matchesSearch;
+            });
 
-      <!-- Social -->
-      <h2 class="section-header">Social</h2>
-      <div class="grid">
-        <div class="card">
-          <div class="card-icon">🐦</div>
-          <div class="card-title">X/Twitter (xurl)</div>
-          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Social</span>
-          <p class="card-desc" style="margin-top: 0.5rem;">通过 xurl CLI 发帖、搜索、私信。</p>
-        </div>
-      </div>
+            if (filtered.length === 0) {
+                container.innerHTML = '<p>未找到匹配的技能。</p>';
+                return;
+            }
 
-      <footer class="footer">
-        <p>Powered by Hermes Agent · © 2026 · www.zhangjunxiang.asia</p>
-      </footer>
-    </main>
-  </div>
+            // Group by category for rendering
+            const grouped = filtered.reduce((acc, skill) => {
+                if (!acc[skill.category]) acc[skill.category] = [];
+                acc[skill.category].push(skill);
+                return acc;
+            }, {});
+
+            Object.entries(grouped).forEach(([category, skills]) => {
+                const section = document.createElement('div');
+                section.className = 'category-section';
+                section.innerHTML = `<h2 class="category-header">${category}</h2>`;
+                
+                const grid = document.createElement('div');
+                grid.className = 'grid';
+
+                skills.forEach(skill => {
+                    const card = document.createElement('div');
+                    card.className = 'card';
+                    card.innerHTML = `
+                        <div class="card-header">
+                            <span class="card-icon">${skill.icon}</span>
+                            <span class="card-title">${skill.name_cn} <span style="font-size:0.8rem; font-weight:normal; opacity:0.7">(${skill.name_en})</span></span>
+                        </div>
+                        <div class="card-subtitle">${skill.category}</div>
+                        <div class="card-summary">${skill.summary}</div>
+                        <div class="badge">${skill.category}</div>
+                        <div class="card-detail">
+                            <div class="detail-content">
+                                <p>${skill.detail}</p>
+                                ${skill.related.length > 0 ? `
+                                    <div class="related-skills">
+                                        <span style="font-size:0.8rem; opacity:0.6">相关技能:</span>
+                                        ${skill.related.map(id => {
+                                            const rel = allSkills.find(s => s.id === id);
+                                            return rel ? `<a href="#" class="related-link" onclick="event.preventDefault(); scrollToSkill('${id}')">${rel.name_cn}</a>` : '';
+                                        }).join('')}
+                                    </div>
+                                ` : ''}
+                            </div>
+                        </div>
+                    `;
+                    card.onclick = (e) => {
+                        // Prevent toggle if clicking a related link
+                        if (e.target.classList.contains('related-link')) return;
+                        
+                        const isExpanded = card.classList.contains('expanded');
+                        // Collapse all others
+                        document.querySelectorAll('.card.expanded').forEach(c => c.classList.remove('expanded'));
+                        
+                        if (!isExpanded) {
+                            card.classList.add('expanded');
+                        }
+                    };
+                    grid.appendChild(card);
+                });
+
+                section.appendChild(grid);
+                container.appendChild(section);
+            });
+        }
+
+        function scrollToSkill(id) {
+            // Find the skill card in the DOM and click it
+            const cards = document.querySelectorAll('.card');
+            for (const card of cards) {
+                if (card.querySelector('.card-title').textContent.includes(id) || 
+                    card.querySelector('.card-title').textContent.includes(allSkills.find(s => s.id === id)?.name_cn)) {
+                    card.click();
+                    card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    break;
+                }
+            }
+        }
+
+        document.getElementById('search-bar').oninput = (e) => {
+            searchQuery = e.target.value;
+            renderSkills();
+        };
+
+        loadSkills();
+    </script>
 </body>
 </html>
