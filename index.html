@@ -70,21 +70,22 @@
                 const data = await response.json();
                 list.innerHTML = '';
                 
-                const services = data.services || {};
-                Object.entries(services).forEach(([service, info]) => {
-                    const status = info.status;
+                const services = data.services || [];
+                services.forEach(item => {
+                    const status = item.status;
                     const isOnline = ['active', 'PONG', '200', 'connected'].includes(status.toString().toLowerCase());
                     const dotClass = isOnline ? 'green' : 'red';
                     const text = isOnline ? '运行中' : '离线';
                     
-                    const item = document.createElement('div');
-                    item.className = 'status-item';
-                    item.innerHTML = `
+                    const el = document.createElement('div');
+                    el.className = 'status-item';
+                    el.innerHTML = `
+                        <span style="font-size: 1.1rem; margin-right: 0.5rem;">${item.icon || ''}</span>
                         <div class="status-dot ${dotClass}"></div>
-                        <span style="flex: 1;">${service} <span style="font-size: 0.7rem; opacity: 0.5;">(${info.type})</span></span>
+                        <span style="flex: 1;">${item.name} <span style="font-size: 0.7rem; opacity: 0.5;">(${item.type})</span></span>
                         <span style="color: ${isOnline ? 'var(--success)' : 'var(--error)'}; font-size: 0.875rem;">${text}</span>
                     `;
-                    list.appendChild(item);
+                    list.appendChild(el);
                 });
             } catch (e) {
                 list.innerHTML = '<p>无法加载服务状态。</p>';
