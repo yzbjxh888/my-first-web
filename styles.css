@@ -296,6 +296,35 @@ body {
   border-bottom: 1px solid var(--border);
 }
 
+/* ──────────────────────────────────────
+   Daily Report specific styles
+   ────────────────────────────────────── */
+.meta {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.tag {
+  background: #2d3748;
+  color: #38bdf8;
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.source a {
+  color: #38bdf8;
+  text-decoration: underline;
+}
+
+.source a:hover {
+  color: #7dd3fc;
+}
+
 /* Footer */
 footer {
   margin-top: 4rem;

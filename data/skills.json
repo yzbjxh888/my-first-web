@@ -693,8 +693,8 @@
     "name_en": "daily-report-gen",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Generate daily tech report (开源动态, 开发者生态, 特定领域) and deploy via Git push to Vercel",
-    "detail": "自动化日报生成系统：每 4 小时检查一次，通过爬取 GitHub Trending、Hacker News、Lobste.rs 等技术源，生成结构化的中文技术日报并自动部署到网站。",
+    "summary": "每日生成中文技术日报：含原文链接、深度分析、丰富内容",
+    "detail": "自动化日报生成系统。每4小时通过 cron 触发数据采集，爬取 GitHub Trending、Hacker News、Lobste.rs、HuggingFace Papers、ArXiv 等技术源。生成结构化的中文技术日报，每条内容均附带原文链接。涵盖：今日重点（深度分析）、开源动态（含 Star 数）、开发者生态、AI与Agent前沿、论文推荐五大板块。",
     "related": []
   },
   {
@@ -831,7 +831,7 @@
     "id": "my-first-web-management",
     "name_cn": "my-first-web-management",
     "name_en": "my-first-web-management",
-    "icon": "🔌",
+    "icon": "🌐",
     "category": "Other",
     "summary": "网站全生命周期管理：CRUD 技能/工具/服务 + 自动同步 + Vercel 部署",
     "detail": "个人网站的全面管理手册。涵盖内容更新、技能/工具数据 CRUD、服务状态监控、Vercel 部署和自动同步。支持统一侧边栏导航（📊仪表板 📰日报 🛠️技能 🔧工具 👤关于）、中文描述、绝对路径链接，确保本地 WSL 和 Vercel 部署双环境正常访问。",
