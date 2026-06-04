@@ -543,8 +543,8 @@
     "name_en": "apikey-image-gen",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Generate or edit images through Hermes Web UI using the selected/requested profile's fun-codex provider from config.yaml.",
+    "detail": "# APIKEY Image Generation",
     "related": []
   },
   {
@@ -553,8 +553,8 @@
     "name_en": "dogfood",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Exploratory QA of web apps: find bugs, evidence, reports.",
+    "detail": "# Dogfood: Systematic Web Application QA Testing",
     "related": []
   },
   {
@@ -563,8 +563,8 @@
     "name_en": "grok-image-to-video",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Animate a local image into a short mp4 video through Hermes Web UI using xAI Grok Imagine.",
+    "detail": "# Grok Image To Video",
     "related": []
   },
   {
@@ -573,18 +573,18 @@
     "name_en": "hyperframes",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Create AI videos with HyperFrames in Hermes using HTML, CSS, and JavaScript compositions, then validate and render them to MP4. Use for short video intros, cinematic trailers, product promos, subtitle animations, HUD/tech visuals, web-to-video work, and motion graphics.",
+    "detail": "# HyperFrames",
     "related": []
   },
   {
-    "id": "llm-backend-architectu…",
+    "id": "llm-backend-architecture",
     "name_cn": "llm-backend-architectu…",
-    "name_en": "llm-backend-architectu…",
+    "name_en": "llm-backend-architecture",
     "icon": "🔌",
-    "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "category": "software-development",
+    "summary": "Pattern for running complex, long-context prompts (143KB+) without LLM hallucination, token explosion, or context fragmentation — external state manager handles AST persistence, command interception, and context injection.",
+    "detail": "# LLM + External Backend Architecture",
     "related": []
   },
   {
@@ -593,8 +593,8 @@
     "name_en": "markdown-viewer",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Create rich diagrams, data visualizations, technical architecture views, and editorial content cards directly in Markdown using the Markdown Viewer Agent Skills pack. Use for Mermaid-like diagram requests, PlantUML architecture diagrams, Vega charts, JSON Canvas maps, infographics, UML, cloud/network/security/data/IoT diagrams, and polished Markdown documentation visuals.",
+    "detail": "# Markdown Viewer",
     "related": []
   },
   {
@@ -603,8 +603,8 @@
     "name_en": "remotion",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Create editable AI video projects with Remotion and React, then preview and render them to MP4. Use for vertical short videos, product demos, story-driven animations, HUD/tech visuals, feed ads, tutorial videos, subtitles, voiceover, sound effects, and code-based video iteration.",
+    "detail": "# Remotion",
     "related": []
   },
   {
@@ -613,8 +613,8 @@
     "name_en": "yuanbao",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Yuanbao (元宝) groups: @mention users, query info/members.",
+    "detail": "# Yuanbao Group Interaction",
     "related": []
   },
   {
@@ -623,8 +623,8 @@
     "name_en": "claude-code",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Delegate coding to Claude Code CLI (features, PRs).",
+    "detail": "# Claude Code — Hermes Orchestration Guide",
     "related": []
   },
   {
@@ -633,8 +633,8 @@
     "name_en": "codex",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Delegate coding to OpenAI Codex CLI (features, PRs).",
+    "detail": "# Codex CLI",
     "related": []
   },
   {
@@ -643,8 +643,8 @@
     "name_en": "hermes-agent",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Configure, extend, or contribute to Hermes Agent.",
+    "detail": "# Hermes Agent",
     "related": []
   },
   {
@@ -653,8 +653,8 @@
     "name_en": "hermes-proxy-provider",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Configure Hermes to use custom API providers through SOCKS5/HTTP proxies (v2rayNG, corporate proxies) for region-blocked or firewalled LLM endpoints.",
+    "detail": "# Hermes Proxy Provider",
     "related": []
   },
   {
@@ -663,8 +663,8 @@
     "name_en": "kanban-codex-lane",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Use when a Hermes Kanban worker wants to run Codex CLI as an isolated implementation lane while Hermes keeps ownership of task lifecycle, reconciliation, testing, and handoff.",
+    "detail": "# Kanban Codex Lane",
     "related": []
   },
   {
@@ -673,8 +673,8 @@
     "name_en": "openclaw-bridge",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Bridge Hermes with OpenClaw's multi-agent orchestration system — #任务 (full pipeline via AO) and #专家 (single expert dispatch)",
+    "detail": "# OpenClaw Bridge Skill",
     "related": []
   },
   {
@@ -683,8 +683,8 @@
     "name_en": "opencode",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Delegate coding to OpenCode CLI (features, PR review).",
+    "detail": "# OpenCode CLI",
     "related": []
   },
   {
@@ -693,8 +693,8 @@
     "name_en": "daily-report-gen",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Generate daily tech report (开源动态, 开发者生态, 特定领域) and deploy via Git push to Vercel",
+    "detail": "# Daily Report Generator",
     "related": []
   },
   {
@@ -703,18 +703,18 @@
     "name_en": "ascii-video",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "ASCII video: convert video/audio to colored ASCII MP4/GIF.",
+    "detail": "# ASCII Video Production Pipeline",
     "related": []
   },
   {
-    "id": "baoyu-article-illustra…",
+    "id": "baoyu-article-illustrator",
     "name_cn": "baoyu-article-illustra…",
-    "name_en": "baoyu-article-illustra…",
+    "name_en": "baoyu-article-illustrator",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Article illustrations: type × style × palette consistency.",
+    "detail": "# Article Illustrator",
     "related": []
   },
   {
@@ -723,8 +723,8 @@
     "name_en": "baoyu-comic",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Knowledge comics (知识漫画): educational, biography, tutorial.",
+    "detail": "# Knowledge Comic Creator",
     "related": []
   },
   {
@@ -733,8 +733,8 @@
     "name_en": "baoyu-infographic",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Infographics: 21 layouts x 21 styles (信息图, 可视化).",
+    "detail": "# Infographic Generator",
     "related": []
   },
   {
@@ -743,8 +743,8 @@
     "name_en": "comfyui",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Generate images, video, and audio with ComfyUI — install, launch, manage nodes/models, run workflows with parameter injection. Uses the official comfy-cli for lifecycle and direct REST/WebSocket API for execution.",
+    "detail": "# ComfyUI",
     "related": []
   },
   {
@@ -753,8 +753,8 @@
     "name_en": "design-md",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Author/validate/export Google's DESIGN.md token spec files.",
+    "detail": "# DESIGN.md Skill",
     "related": []
   },
   {
@@ -763,18 +763,18 @@
     "name_en": "humanizer",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Humanize text: strip AI-isms and add real voice.",
+    "detail": "# Humanizer: Remove AI Writing Patterns",
     "related": []
   },
   {
-    "id": "ideation",
+    "id": "creative-ideation",
     "name_cn": "ideation",
     "name_en": "ideation",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Generate project ideas via creative constraints.",
+    "detail": "# Creative Ideation",
     "related": []
   },
   {
@@ -783,8 +783,8 @@
     "name_en": "p5js",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "p5.js sketches: gen art, shaders, interactive, 3D.",
+    "detail": "# p5.js Production Pipeline",
     "related": []
   },
   {
@@ -793,8 +793,8 @@
     "name_en": "popular-web-designs",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "54 real design systems (Stripe, Linear, Vercel) as HTML/CSS.",
+    "detail": "# Popular Web Designs",
     "related": []
   },
   {
@@ -803,18 +803,18 @@
     "name_en": "pretext",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Use when building creative browser demos with @chenglou/pretext — DOM-free text layout for ASCII art, typographic flow around obstacles, text-as-geometry games, kinetic typography, and text-powered generative art. Produces single-file HTML demos by default.",
+    "detail": "# Pretext Creative Demos",
     "related": []
   },
   {
-    "id": "songwriting-and-ai-mus…",
+    "id": "songwriting-and-ai-music",
     "name_cn": "songwriting-and-ai-mus…",
-    "name_en": "songwriting-and-ai-mus…",
+    "name_en": "songwriting-and-ai-music",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Songwriting craft and Suno AI music prompts.",
+    "detail": "# Songwriting & AI Music Generation",
     "related": []
   },
   {
@@ -823,8 +823,8 @@
     "name_en": "touchdesigner-mcp",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Control a running TouchDesigner instance via twozero MCP — create operators, set parameters, wire connections, execute Python, build real-time visuals. 36 native tools.",
+    "detail": "# TouchDesigner Integration (twozero MCP)",
     "related": []
   },
   {
@@ -833,38 +833,38 @@
     "name_en": "my-first-web-management",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Full website lifecycle + CRUD for skills/tools/services + auto-sync",
+    "detail": "# My First Web — 网站管理手册",
     "related": []
   },
   {
-    "id": "system-service-debuggi…",
+    "id": "system-service-debugging",
     "name_cn": "system-service-debuggi…",
-    "name_en": "system-service-debuggi…",
+    "name_en": "system-service-debugging",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Unified framework for managing and debugging systemd user services on WSL. Supports module-group and per-service operations: start/stop/enable/disable/Restart-toggle. SKILL.md is the entry point — load reference files for group details.",
+    "detail": "# System Service Debugging & Management",
     "related": []
   },
   {
-    "id": "minecraft-modpack-serv…",
+    "id": "minecraft-modpack-server",
     "name_cn": "minecraft-modpack-serv…",
-    "name_en": "minecraft-modpack-serv…",
+    "name_en": "minecraft-modpack-server",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Host modded Minecraft servers (CurseForge, Modrinth).",
+    "detail": "# Minecraft Modpack Server Setup",
     "related": []
   },
   {
-    "id": "group-chat-agent-trigg…",
+    "id": "group-chat-agent-trigger",
     "name_cn": "group-chat-agent-trigg…",
-    "name_en": "group-chat-agent-trigg…",
+    "name_en": "group-chat-agent-trigger",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "用户发群聊地址，我就能快速查出群聊中的角色和消息内容",
+    "detail": "# 群聊快速定位",
     "related": []
   },
   {
@@ -873,8 +873,8 @@
     "name_en": "heartmula",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "HeartMuLa: Suno-like song generation from lyrics + tags.",
+    "detail": "# HeartMuLa - Open-Source Music Generation",
     "related": []
   },
   {
@@ -883,18 +883,18 @@
     "name_en": "songsee",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Audio spectrograms/features (mel, chroma, MFCC) via CLI.",
+    "detail": "# songsee",
     "related": []
   },
   {
-    "id": "audiocraft-audio-gener…",
+    "id": "audiocraft",
     "name_cn": "audiocraft-audio-gener…",
-    "name_en": "audiocraft-audio-gener…",
+    "name_en": "audiocraft-audio-generation",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "AudioCraft: MusicGen text-to-music, AudioGen text-to-sound.",
+    "detail": "# AudioCraft: Audio Generation",
     "related": []
   },
   {
@@ -903,8 +903,8 @@
     "name_en": "dspy",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "DSPy: declarative LM programs, auto-optimize prompts, RAG.",
+    "detail": "# DSPy: Declarative Language Model Programming",
     "related": []
   },
   {
@@ -923,8 +923,8 @@
     "name_en": "huggingface-hub",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "HuggingFace hf CLI: search/download/upload models, datasets.",
+    "detail": "# Hugging Face CLI (`hf`) Reference Guide",
     "related": []
   },
   {
@@ -933,8 +933,8 @@
     "name_en": "llama-cpp",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "llama.cpp local GGUF inference + HF Hub model discovery.",
+    "detail": "# llama.cpp + GGUF",
     "related": []
   },
   {
@@ -943,8 +943,8 @@
     "name_en": "moa-free-tier",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Run Mixture of Agents (MoA) pipeline using OpenRouter free models — dynamically discovers available models at runtime, auto-probes rate limits, and falls back gracefully.",
+    "detail": "# MoA Free-Tier Pipeline",
     "related": []
   },
   {
@@ -953,28 +953,28 @@
     "name_en": "obliteratus",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "OBLITERATUS: abliterate LLM refusals (diff-in-means).",
+    "detail": "# OBLITERATUS Skill",
     "related": []
   },
   {
-    "id": "segment-anything-model",
+    "id": "segment-anything",
     "name_cn": "segment-anything-model",
     "name_en": "segment-anything-model",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "SAM: zero-shot image segmentation via points, boxes, masks.",
+    "detail": "# Segment Anything Model (SAM)",
     "related": []
   },
   {
-    "id": "serving-llms-vllm",
+    "id": "vllm",
     "name_cn": "serving-llms-vllm",
     "name_en": "serving-llms-vllm",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "vLLM: high-throughput LLM serving, OpenAI API, quantization.",
+    "detail": "# vLLM - High-Performance LLM Serving",
     "related": []
   },
   {
@@ -983,8 +983,8 @@
     "name_en": "weights-and-biases",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "W&B: log ML experiments, sweeps, model registry, dashboards.",
+    "detail": "# Weights & Biases: ML Experiment Tracking & MLOps",
     "related": []
   },
   {
@@ -993,8 +993,8 @@
     "name_en": "ocr-and-documents",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Extract text from PDFs/scans (pymupdf, marker-pdf).",
+    "detail": "# PDF & Document Extraction",
     "related": []
   },
   {
@@ -1003,8 +1003,8 @@
     "name_en": "powerpoint",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Create, read, edit .pptx decks, slides, notes, templates.",
+    "detail": "# Powerpoint Skill",
     "related": []
   },
   {
@@ -1013,8 +1013,8 @@
     "name_en": "teams-meeting-pipeline",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Operate the Teams meeting summary pipeline via Hermes CLI — summarize meetings, inspect pipeline status, replay jobs, manage Microsoft Graph subscriptions.",
+    "detail": "# Teams Meeting Pipeline",
     "related": []
   },
   {
@@ -1023,8 +1023,8 @@
     "name_en": "godmode",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Jailbreak LLMs: Parseltongue, GODMODE, ULTRAPLINIAN.",
+    "detail": "# G0DM0D3 Jailbreaking Skill",
     "related": []
   },
   {
@@ -1033,8 +1033,8 @@
     "name_en": "research-paper-writing",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Write ML papers for NeurIPS/ICML/ICLR: design→submit.",
+    "detail": "# Research Paper Writing Pipeline",
     "related": []
   },
   {
@@ -1043,48 +1043,48 @@
     "name_en": "openhue",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Control Philips Hue lights, scenes, rooms via OpenHue CLI.",
+    "detail": "# OpenHue CLI",
     "related": []
   },
   {
-    "id": "debugging-hermes-tui-c…",
+    "id": "debugging-hermes-tui-commands",
     "name_cn": "debugging-hermes-tui-c…",
-    "name_en": "debugging-hermes-tui-c…",
+    "name_en": "debugging-hermes-tui-commands",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Debug Hermes TUI slash commands: Python, gateway, Ink UI.",
+    "detail": "# Debugging Hermes TUI Slash Commands",
     "related": []
   },
   {
-    "id": "hermes-agent-skill-aut…",
+    "id": "hermes-agent-skill-authoring",
     "name_cn": "hermes-agent-skill-aut…",
-    "name_en": "hermes-agent-skill-aut…",
+    "name_en": "hermes-agent-skill-authoring",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Author in-repo SKILL.md: frontmatter, validator, structure.",
+    "detail": "# Authoring Hermes-Agent Skills (in-repo)",
     "related": []
   },
   {
-    "id": "hermes-s6-container-su…",
+    "id": "hermes-s6-container-supervision",
     "name_cn": "hermes-s6-container-su…",
-    "name_en": "hermes-s6-container-su…",
+    "name_en": "hermes-s6-container-supervision",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Modify, debug, or extend the s6-overlay supervision tree inside the Hermes Agent Docker image — adding new services, debugging profile gateways, understanding the Architecture B main-program pattern.",
+    "detail": "# Hermes s6-overlay Container Supervision",
     "related": []
   },
   {
-    "id": "subagent-driven-develo…",
+    "id": "subagent-driven-development",
     "name_cn": "subagent-driven-develo…",
-    "name_en": "subagent-driven-develo…",
+    "name_en": "subagent-driven-development",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "Execute plans via delegate_task subagents (2-stage review).",
+    "detail": "# Subagent-Driven Development",
     "related": []
   },
   {
@@ -1093,8 +1093,8 @@
     "name_en": "sysml-backend-pipeline",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
+    "summary": "SysML modeling via sysml1.6.md + Backend state manager. Prompt loaded once per session. Generates system model tree (SysML model notation).",
+    "detail": "# SysML Backend Pipeline",
     "related": []
   }
 ]

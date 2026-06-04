@@ -1,18 +1,52 @@
 {
   "version": 2,
   "builds": [
-    { "src": "**/*.html", "use": "@vercel/static" },
-    { "src": "**/*.css", "use": "@vercel/static" },
-    { "src": "**/*.json", "use": "@vercel/static" },
-    { "src": "**/*.js", "use": "@vercel/static" }
+    {
+      "src": "**/*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "**/*.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "**/*.json",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "**/*.js",
+      "use": "@vercel/static"
+    }
   ],
   "routes": [
-    { "src": "/", "dest": "/index.html" },
-    { "src": "/daily/?", "dest": "/daily/index.html" },
-    { "src": "/(.*)\\.html", "dest": "/$1.html" },
-    { "src": "/(.*)\\.css", "dest": "/$1.css" },
-    { "src": "/(.*)\\.json", "dest": "/$1.json" },
-    { "src": "/(.*)\\.js", "dest": "/$1.js" }
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/daily/?",
+      "dest": "/daily/index.html"
+    },
+    {
+      "src": "/daily/([0-9-]+)",
+      "dest": "/daily/$1.html"
+    },
+    {
+      "src": "/(.*)\\.html",
+      "dest": "/$1.html"
+    },
+    {
+      "src": "/(.*)\\.css",
+      "dest": "/$1.css"
+    },
+    {
+      "src": "/(.*)\\.json",
+      "dest": "/$1.json"
+    },
+    {
+      "src": "/(.*)\\.js",
+      "dest": "/$1.js"
+    }
   ],
   "cleanUrls": true
 }
