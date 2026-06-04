@@ -1,79 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hermes Agent | Dashboard</title>
+  <title>Hermes Agent | 仪表板</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="app-container">
+    <aside class="sidebar">
+      <div class="sidebar-logo">HERMES</div>
+      <nav class="sidebar-nav">
+        <a href="index.html" class="nav-item active">
+          <span class="icon">📊</span>仪表板
+        </a>
+        <a href="daily/index.html" class="nav-item">
+          <span class="icon">📅</span>日报
+        </a>
+        <a href="skills.html" class="nav-item">
+          <span class="icon">🛠️</span>技能
+        </a>
+        <a href="tools.html" class="nav-item">
+          <span class="icon">🧰</span>工具
+        </a>
+        <a href="personal/about.html" class="nav-item">
+          <span class="icon">👤</span>关于
+        </a>
+      </nav>
+    </aside>
 
-  <nav>
-    <div class="container">
-      <a href="index.html" class="logo">HERMES</a>
-      <div class="nav-links">
-        <a href="daily/index.html">Daily</a>
-        <a href="skills.html">Skills</a>
-        <a href="tools.html">Tools</a>
-        <a href="personal/about.html">About</a>
-      </div>
-    </div>
-  </nav>
+    <main class="main-content">
+      <section class="hero">
+        <h1 class="gradient-text">Hermes Agent</h1>
+        <p>智能代理与自动化工作流引擎</p>
+        <div style="margin-top: 1rem;">
+          <span class="badge" style="background: rgba(34, 197, 94, 0.2); color: #22c55e;">
+            <span class="status-dot status-online"></span>🟢 Online
+          </span>
+        </div>
+      </section>
 
-  <header class="hero">
-    <div class="container">
-      <h1>Hermes Agent</h1>
-      <p>Building the Semantic Web, One Commit at a Time.</p>
-      <div class="status-badge">
-        <span class="status-dot"></span>
-        Online
-      </div>
-    </div>
-  </header>
+      <section>
+        <h2 class="section-header">服务状态</h2>
+        <div class="grid" id="service-grid">
+          <!-- Loaded via JS -->
+          <p>正在加载服务状态...</p>
+        </div>
+      </section>
 
-  <main class="container">
-    
-    <section id="service-stack">
-      <h2>Service Stack</h2>
-      <div class="grid" id="service-grid">
-        <!-- Loaded via JS -->
-        <p>Loading service status...</p>
-      </div>
-    </section>
+      <section>
+        <h2 class="section-header">每日简报预览</h2>
+        <div id="latest-brief-container">
+          <div class="card">
+            <p>正在加载最新简报...</p>
+          </div>
+        </div>
+      </section>
 
-    <section id="latest-brief">
-      <h2>Latest Daily Brief</h2>
-      <div id="latest-brief-container">
-        <p>Loading latest report...</p>
-      </div>
-    </section>
+      <section>
+        <h2 class="section-header">技能概览</h2>
+        <div class="grid" id="skills-grid">
+          <!-- Loaded via JS -->
+        </div>
+      </section>
 
-    <section id="skills-preview">
-      <h2>Skills</h2>
-      <div class="grid" id="skills-grid">
-        <!-- Loaded via JS -->
-        <p>Loading skills preview...</p>
-      </div>
-    </section>
+      <section>
+        <h2 class="section-header">工具集成</h2>
+        <div class="grid" id="tools-grid">
+          <!-- Loaded via JS -->
+        </div>
+      </section>
 
-    <section id="mcp-tools-preview">
-      <h2>MCP Tools</h2>
-      <div class="grid" id="tools-grid">
-        <!-- Loaded via JS -->
-        <p>Loading tools preview...</p>
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>Powered by Hermes Agent · © 2026</p>
-    </div>
-  </footer>
+      <footer class="footer">
+        <p>Powered by Hermes Agent · © 2026 · www.zhangjunxiang.asia</p>
+      </footer>
+    </main>
+  </div>
 
   <script>
     async function init() {
@@ -85,68 +90,93 @@
         const serviceGrid = document.getElementById('service-grid');
         serviceGrid.innerHTML = '';
         
+        const serviceMap = {
+          'dify': { name: 'Dify', icon: '🤖' },
+          'firecrawl': { name: 'Firecrawl', icon: '🕷️' },
+          'tavily': { name: 'Tavily', icon: '🔍' },
+          'redis': { name: 'Redis', icon: '🚀' },
+          'postgresql': { name: 'PostgreSQL', icon: '🐘' }
+        };
+
         Object.entries(statusData.services).forEach(([key, data]) => {
+          const service = serviceMap[key] || { name: key, icon: '⚙️' };
           const card = document.createElement('div');
           card.className = 'card';
-          const isOnline = data.status === 'online';
+          
+          let statusClass = 'status-inactive';
+          let statusText = '未知';
+          
+          if (data.status === 'active' || data.status === '200' || data.status === 'PONG') {
+            statusClass = 'status-online';
+            statusText = '运行中';
+          } else if (data.status === 'offline' || data.status === 'inactive') {
+            statusClass = 'status-offline';
+            statusText = '离线';
+          }
+
           card.innerHTML = `
-            <h3>${key.charAt(0).toUpperCase() + key.slice(1)}</h3>
-            <p>${data.type}</p>
-            <div class="status-row">
-              <div class="status-indicator">
-                <span class="dot ${isOnline ? 'online' : 'offline'}"></span>
-                ${isOnline ? 'Online' : 'Offline'}
-              </div>
+            <div class="card-icon">${service.icon}</div>
+            <div class="card-title">${service.name}</div>
+            <div class="card-desc">${data.type}</div>
+            <div style="display: flex; align-items: center; font-size: 0.75rem;">
+              <span class="status-dot ${statusClass}"></span>
+              ${statusText}
             </div>
           `;
           serviceGrid.appendChild(card);
         });
 
-        // Update Latest Daily Brief (Placeholder implementation since no reports exist yet)
+        // Update Latest Daily Brief
         const latestBriefContainer = document.getElementById('latest-brief-container');
-        // In a real scenario, we'd fetch the list of reports and get the first one
         latestBriefContainer.innerHTML = `
           <div class="card" style="cursor: pointer;" onclick="window.location.href='daily/index.html'">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-              <span style="color: var(--accent); font-weight: 600;">Next Report Coming Soon</span>
-              <span style="color: var(--text-muted); font-size: 0.875rem;">Estimated: 4h</span>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+              <span style="color: var(--accent); font-weight: 600; font-size: 0.875rem;">暂无最新报告</span>
+              <span style="color: var(--text-secondary); font-size: 0.75rem;">预计下次生成: 4h 后</span>
             </div>
-            <h3>No reports available yet</h3>
-            <p>The first daily brief will appear shortly after site activation.</p>
+            <h3 style="font-size: 1rem; margin-bottom: 0.25rem;">等待系统自动生成...</h3>
+            <p style="font-size: 0.75rem; color: var(--text-secondary);">系统将在开机并完成初始化后，自动生成今日的每日简报。</p>
           </div>
         `;
 
-        // Skills Preview (Static counts for now)
+        // Skills Preview
         const skillsGrid = document.getElementById('skills-grid');
         const skillCategories = [
-          { name: 'DevOps', count: 5 },
-          { name: 'Software Dev', count: 8 },
-          { name: 'Research', count: 4 },
-          { name: 'Creative', count: 6 },
-          { name: 'Data Science', count: 1 },
-          { name: 'GitHub', count: 6 }
+          { name: 'DevOps', icon: '🛠️', count: 5 },
+          { name: 'Software Dev', icon: '💻', count: 6 },
+          { name: 'Research', icon: '🔬', count: 3 },
+          { name: 'Creative', icon: '🎨', count: 6 },
+          { name: 'Data Science', icon: '📊', count: 1 },
+          { name: 'GitHub', icon: '🐙', count: 4 }
         ];
         skillsGrid.innerHTML = '';
         skillCategories.forEach(cat => {
           const card = document.createElement('div');
           card.className = 'card';
           card.innerHTML = `
-            <h3>${cat.name}</h3>
-            <p>${cat.count} skills available</p>
+            <div class="card-icon">${cat.icon}</div>
+            <div class="card-title">${cat.name}</div>
+            <div class="card-desc">${cat.count} 项技能</div>
           `;
           skillsGrid.appendChild(card);
         });
 
         // Tools Preview
         const toolsGrid = document.getElementById('tools-grid');
-        const tools = ['Firecrawl', 'Tavily', 'Brave Search', 'GitHub', 'Notion'];
+        const tools = [
+          { name: 'Firecrawl', icon: '🕷️' },
+          { name: 'Tavily', icon: '🔍' },
+          { name: 'Notion', icon: '📝' },
+          { name: 'GitHub', icon: '🐙' }
+        ];
         toolsGrid.innerHTML = '';
         tools.forEach(tool => {
           const card = document.createElement('div');
           card.className = 'card';
           card.innerHTML = `
-            <h3>${tool}</h3>
-            <p>MCP Integration</p>
+            <div class="card-icon">${tool.icon}</div>
+            <div class="card-title">${tool.name}</div>
+            <div class="card-desc">MCP 工具集成</div>
           `;
           toolsGrid.appendChild(card);
         });

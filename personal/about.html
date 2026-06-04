@@ -1,21 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal/About</title>
-    <style>
-        body { font-family: sans-serif; line-height: 1.6; padding: 2rem; max-width: 800px; margin: auto; background: #f4f4f4; }
-        article { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        nav { margin-bottom: 2rem; background: #eee; padding: 1rem; border-radius: 8px; }
-        ul { list-style: none; padding-left: 1.5rem; }
-        li { margin: 0.5rem 0; }
-        a { color: #007bff; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>关于 | Hermes Agent</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .about-content {
+      max-width: 800px;
+    }
+    .about-content h2 {
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+      font-size: 1.25rem;
+    }
+    .about-content p {
+      color: var(--text-secondary);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+    .about-content .highlight {
+      color: var(--text-primary);
+      font-weight: 500;
+    }
+    .tech-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 0.5rem;
+      margin: 1rem 0;
+    }
+    .tech-list li {
+      background: var(--bg-card);
+      padding: 0.5rem 0.75rem;
+      border-radius: var(--radius-sm);
+      color: var(--text-secondary);
+      font-size: 0.875rem;
+      list-style: none;
+      border: 1px solid var(--border);
+    }
+  </style>
 </head>
 <body>
-    <nav><a href="/">🏠 Home</a></nav>
-    <article><h1>About Me\n\n重新设计我的 index.html，让它变成一个带深色背景、渐变文字标题的页面，标题写着“Agentic Era Begins”。</h1></article>
+
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="logo">HERMES</a>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="../index.html" class="nav-item">
+        <span class="nav-icon">📊</span>
+        <span class="nav-label">仪表板</span>
+      </a>
+      <a href="../daily/index.html" class="nav-item">
+        <span class="nav-icon">📰</span>
+        <span class="nav-label">日报</span>
+      </a>
+      <a href="../skills.html" class="nav-item">
+        <span class="nav-icon">🛠️</span>
+        <span class="nav-label">技能</span>
+      </a>
+      <a href="../tools.html" class="nav-item">
+        <span class="nav-icon">🔧</span>
+        <span class="nav-label">工具</span>
+      </a>
+      <a href="about.html" class="nav-item active">
+        <span class="nav-icon">👤</span>
+        <span class="nav-label">关于</span>
+      </a>
+    </nav>
+    <div class="sidebar-footer">
+      <div class="status-dot sidebar-dot"></div>
+      <span style="font-size: 0.75rem; color: var(--text-muted);">Hermes Agent · v1.0</span>
+    </div>
+  </aside>
+
+  <div class="main-content">
+    <header class="page-header">
+      <div class="container">
+        <h1>👤 关于</h1>
+        <p>关于这个网站、它的主人，以及背后的 Hermes Agent</p>
+      </div>
+    </header>
+
+    <main class="container about-content">
+      
+      <h2>🧑 网站主人</h2>
+      <p>
+        <span class="highlight">张俊翔 (Zhang Junxiang)</span>，全栈开发者与 AI 基础设施工程师。
+        专注于构建 Agentic DevOps 系统 — 将大型语言模型与传统工程工具深度整合，
+        实现从代码编写、服务部署到内容生成的全面自动化。
+      </p>
+      <p>
+        技术栈覆盖前后端、数据库、AI/ML 全链路。
+        日常开发环境为 <span class="highlight">WSL (Windows Subsystem for Linux)</span> + VS Code，
+        GitHub 托管代码，Vercel 部署前端。
+      </p>
+
+      <h2>🤖 Hermes Agent</h2>
+      <p>
+        <span class="highlight">Hermes Agent</span> 是一个开源 AI 编程助手，
+        具备 50+ 可加载技能、原生 MCP 客户端、多平台消息适配、
+        定时任务调度（Cron）、Webhook 订阅、并行子代理等强大能力。
+      </p>
+      <p>
+        Hermes 不仅是代码助手，更是一个完整的 <span class="highlight">Agentic 操作系统</span>：
+        它能管理 systemd 服务、操作数据库、爬取网页、生成内容、
+        监控系统状态、控制智能家居设备，并通过 Telegram/Discord/Slack
+        等平台与你交互。
+      </p>
+
+      <h2>⚙️ 技术栈</h2>
+      <ul class="tech-list">
+        <li>🐍 Python / FastAPI</li>
+        <li>🌐 TypeScript / React</li>
+        <li>🗄️ PostgreSQL / Redis</li>
+        <li>🐳 Docker / Docker Compose</li>
+        <li>⚡ Vercel / GitHub Actions</li>
+        <li>🔧 Dify / LangChain</li>
+        <li>🧠 OpenAI / Google Gemini</li>
+        <li>🔥 Firecrawl / Tavily</li>
+        <li>📝 Obsidian / Notion</li>
+        <li>🛠️ systemd / WSL</li>
+      </ul>
+
+      <h2>📡 在线服务</h2>
+      <p>
+        本机运行的服务栈（systemd --user）：
+      </p>
+      <ul class="tech-list" style="grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));">
+        <li>✅ Dify (AI 平台)</li>
+        <li>✅ Redis (缓存)</li>
+        <li>✅ PostgreSQL (存储)</li>
+        <li>✅ LangChain (Agent 框架)</li>
+        <li>✅ Firecrawl (网页抓取)</li>
+        <li>🌐 Tavily (搜索 API)</li>
+      </ul>
+
+      <h2>📬 联系方式</h2>
+      <p>
+        GitHub: <a href="https://github.com/yzbjxh888" style="color: var(--accent);" target="_blank">@yzbjxh888</a><br>
+        邮箱: yzbjxh888@gmail.com<br>
+        网站: <a href="https://www.zhangjunxiang.asia" style="color: var(--accent);" target="_blank">www.zhangjunxiang.asia</a>
+      </p>
+
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>Powered by Hermes Agent · © 2026</p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Highlight active nav item based on path
+    const navItems = document.querySelectorAll('.nav-item');
+    navItems.forEach(item => {
+      if (window.location.pathname.includes('about')) {
+        item.classList.remove('active');
+        document.querySelector('a[href*="about"]')?.classList.add('active');
+      }
+    });
+  </script>
 </body>
 </html>

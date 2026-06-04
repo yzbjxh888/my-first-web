@@ -1,145 +1,270 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skills | Hermes Agent</title>
+  <title>Hermes Agent | 技能目录</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="app-container">
+    <aside class="sidebar">
+      <div class="sidebar-logo">HERMES</div>
+      <nav class="sidebar-nav">
+        <a href="index.html" class="nav-item">
+          <span class="icon">📊</span>仪表板
+        </a>
+        <a href="daily/index.html" class="nav-item">
+          <span class="icon">📅</span>日报
+        </a>
+        <a href="skills.html" class="nav-item active">
+          <span class="icon">🛠️</span>技能
+        </a>
+        <a href="tools.html" class="nav-item">
+          <span class="icon">🧰</span>工具
+        </a>
+        <a href="personal/about.html" class="nav-item">
+          <span class="icon">👤</span>关于
+        </a>
+      </nav>
+    </aside>
 
-  <nav>
-    <div class="container">
-      <a href="index.html" class="logo">HERMES</a>
-      <div class="nav-links">
-        <a href="daily/index.html">Daily</a>
-        <a href="skills.html">Skills</a>
-        <a href="tools.html">Tools</a>
-        <a href="personal/about.html">About</a>
+    <main class="main-content">
+      <h1 class="gradient-text">技能目录</h1>
+      <p style="color: var(--text-secondary); margin-bottom: 2rem;">Hermes Agent 的核心能力集</p>
+
+      <!-- DevOps -->
+      <h2 class="section-header">DevOps</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="card-icon">📋</div>
+          <div class="card-title">看板编排器 (kanban-orchestrator)</div>
+          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">DevOps</span>
+          <p class="card-desc" style="margin-top: 0.5rem;">将复杂任务分解为子任务，通过看板系统分配给工作节点。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">👷</div>
+          <div class="card-title">看板工作节点 (kanban-worker)</div>
+          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">DevOps</span>
+          <p class="card-desc" style="margin-top: 0.5rem;">执行看板任务的生命周期管理。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🐞</div>
+          <div class="card-title">系统服务调试 (system-service-debugging)</div>
+          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">DevOps</span>
+          <p class="card-desc" style="margin-top: 0.5rem;">管理和调试 systemd 用户服务的统一框架。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🔔</div>
+          <div class="card-title">Webhook 订阅 (webhook-subscriptions)</div>
+          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">DevOps</span>
+          <p class="card-desc" style="margin-top: 0.5rem;">创建动态 webhook 订阅，实现事件驱动的自动运行。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🌐</div>
+          <div class="card-title">搜索 API 配置 (search-api-setup-cn)</div>
+          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">DevOps</span>
+          <p class="card-desc" style="margin-top: 0.5rem;">配置中国区的搜索 API 和模型提供商。</p>
+        </div>
       </div>
-    </div>
-  </nav>
 
-  <header class="hero" style="padding-top: 4rem; padding-bottom: 2rem;">
-    <div class="container">
-      <h1>Hermes Skills</h1>
-      <p>A comprehensive directory of specialized agentic capabilities.</p>
-    </div>
-  </header>
+      <!-- Software Dev -->
+      <h2 class="section-header">Software Dev</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="card-icon">🔄</div>
+          <div class="card-title">测试驱动开发 (test-driven-development)</div>
+          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Dev</span>
+          <p class="card-desc" style="margin-top: 0.5rem;">遵循 RED-GREEN-REFACTOR 循环。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📝</div>
+          <div class="card-title">计划模式 (plan)</div>
+          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Dev</span>
+          <p class="card-desc" style="margin-top: 0.5rem;">编写执行计划并保存到 .hermes/plans/</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🧪</div>
+          <div class="card-title">探索实验 (spike)</div>
+          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Dev</span>
+          <p class="card-desc" style="margin-top: 0.5rem;">快速验证创意的沙盒实验。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🤖</div>
+          <div class="card-title">子代理驱动开发 (subagent-driven-development)</div>
+          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Dev</span>
+          <p class="card-desc" style="margin-top: 0.5rem;">通过子代理执行实现计划。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">✍️</div>
+          <div class="card-title">编写计划 (writing-plans)</div>
+          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Dev</span>
+          <p class="card-desc" style="margin-top: 0.5rem;">将实现任务分解为可执行的步骤。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🔍</div>
+          <div class="card-title">代码审查 (requesting-code-review)</div>
+          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Dev</span>
+          <p class="card-desc" style="margin-top: 0.5rem;">提交前的安全检查和质量把关。</p>
+        </div>
+      </div>
 
-  <main class="container">
-    
-    <div class="filter-bar">
-      <input type="text" id="skill-search" placeholder="Search skills (e.g. 'devops', 'github', 'research')..." onkeyup="filterSkills()">
-    </div>
+      <!-- Research -->
+      <h2 class="section-header">Research</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="card-icon">📚</div>
+          <div class="card-title">论文搜索 (arxiv)</div>
+          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Research</span>
+          <p class="card-desc" style="margin-top: 0.5rem;">按关键词、作者或类别搜索 arXiv 学术论文。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🕵️</div>
+          <div class="card-title">博客监控 (blogwatcher)</div>
+          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Research</span>
+          <p class="card-desc" style="margin-top: 0.5rem;">通过 blogwatcher-cli 监控博客和 RSS 订阅源。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📖</div>
+          <div class="card-title">LLM 知识库 (llm-wiki)</div>
+          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Research</span>
+          <p class="card-desc" style="margin-top: 0.5rem;">构建和查询互联的 Markdown 知识库。</p>
+        </div>
+      </div>
 
-    <div id="skills-container" class="grid">
-      <!-- Skills will be injected here -->
-    </div>
+      <!-- Creative -->
+      <h2 class="section-header">Creative</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="card-icon">🎨</div>
+          <div class="card-title">ASCII 艺术 (ascii-art)</div>
+          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Creative</span>
+          <p class="card-desc" style="margin-top: 0.5rem;">使用 pyfiglet、cowsay、boxes 等工具创作。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">✏️</div>
+          <div class="card-title">手绘图表 (excalidraw)</div>
+          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Creative</span>
+          <p class="card-desc" style="margin-top: 0.5rem;">创建手绘风格的架构/流程图。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📐</div>
+          <div class="card-title">架构图 (architecture-diagram)</div>
+          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Creative</span>
+          <p class="card-desc" style="margin-top: 0.5rem;">深色主题的 SVG 架构图。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">👾</div>
+          <div class="card-title">像素艺术 (pixel-art)</div>
+          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Creative</span>
+          <p class="card-desc" style="margin-top: 0.5rem;">使用 NES、Game Boy、PICO-8 时代调色板。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🖼️</div>
+          <div class="card-title">快速原型 (sketch)</div>
+          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Creative</span>
+          <p class="card-desc" style="margin-top: 0.5rem;">一次性 HTML 原型，2-3 种设计变体。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🎬</div>
+          <div class="card-title">数学动画 (manim-video)</div>
+          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Creative</span>
+          <p class="card-desc" style="margin-top: 0.5rem;">3Blue1Brown 风格的教学动画。</p>
+        </div>
+      </div>
 
-  </main>
+      <!-- Data Science -->
+      <h2 class="section-header">Data Science</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="card-icon">🐍</div>
+          <div class="card-title">Jupyter 内核 (jupyter-live-kernel)</div>
+          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Data Science</span>
+          <p class="card-desc" style="margin-top: 0.5rem;">通过活跃的 Jupyter 内核进行迭代 Python 开发。</p>
+        </div>
+      </div>
 
-  <footer>
-    <div class="container">
-      <p>Powered by Hermes Agent · © 2026</p>
-    </div>
-  </footer>
+      <!-- GitHub -->
+      <h2 class="section-header">GitHub</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="card-icon">🔍</div>
+          <div class="card-title">代码审查 (github-code-review)</div>
+          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">GitHub</span>
+          <p class="card-desc" style="margin-top: 0.5rem;">审查 PR 差异并通过 gh 或 REST 添加行内评论。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🎫</div>
+          <div class="card-title">问题管理 (github-issues)</div>
+          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">GitHub</span>
+          <p class="card-desc" style="margin-top: 0.5rem;">通过 gh 或 REST 创建、分类、标记和分配问题。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🚀</div>
+          <div class="card-title">PR 工作流 (github-pr-workflow)</div>
+          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">GitHub</span>
+          <p class="card-desc" style="margin-top: 0.5rem;">从分支创建到合并的完整 PR 生命周期。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🕵️</div>
+          <div class="card-title">代码库检查 (codebase-inspection)</div>
+          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">GitHub</span>
+          <p class="card-desc" style="margin-top: 0.5rem;">使用 pygount 分析代码：行数、语言、比例。</p>
+        </div>
+      </div>
 
-  <script>
-    const skills = [
-      { name: 'kanban-orchestrator', category: 'DevOps', description: 'Orchestrates kanban workflows for complex tasks.' },
-      { name: 'kanban-worker', category: 'DevOps', description: 'Handles individual unit tasks within a kanban system.' },
-      { name: 'system-service-debugging', category: 'DevOps', description: 'Diagnoses and debugs system-level services.' },
-      { name: 'webhook-subscriptions', category: 'DevOps', description: 'Manages and monitors webhook subscriptions.' },
-      { name: 'search-api-setup-cn', category: 'DevOps', description: 'Sets up search APIs in Chinese environments.' },
-      
-      { name: 'test-driven-development', category: 'Software Dev', description: 'Applies TDD principles to code generation.' },
-      { name: 'plan', category: 'Software Dev', description: 'Creates detailed technical plans.' },
-      { name: 'spike', category: 'Software Dev', description: 'Conducts architectural spikes to validate ideas.' },
-      { name: 'subagent-driven-development', category: 'Software Dev', description: 'Coordinates multiple subagents for development.' },
-      { name: 'writing-plans', category: 'Software Dev', description: 'Generates structured implementation plans.' },
-      { name: 'requesting-code-review', category: 'Software Dev', description: 'Automates the code review process.' },
-      { name: 'python-debugpy', category: 'Software Dev', description: 'Uses debugpy for Python debugging.' },
-      { name: 'node-inspect-debugger', category: 'Software Dev', description: 'Uses node inspect for Node.js debugging.' },
+      <!-- MCP -->
+      <h2 class="section-header">MCP</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="card-icon">🔌</div>
+          <div class="card-title">MCP 原生客户端 (native-mcp)</div>
+          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">MCP</span>
+          <p class="card-desc" style="margin-top: 0.5rem;">连接 MCP 服务器，注册工具（stdio/HTTP 协议）。</p>
+        </div>
+      </div>
 
-      { name: 'arxiv', category: 'Research', description: 'Searches and summarizes arXiv papers.' },
-      { name: 'blogwatcher', category: 'Research', description: 'Monitors specified blogs for updates.' },
-      { name: 'llm-wiki', category: 'Research', description: 'Retrieves information from LLM-related wikis.' },
-      { name: 'polymarket', category: 'Research', description: 'Analyzes market data from Polymarket.' },
+      <!-- Media -->
+      <h2 class="section-header">Media</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="card-icon">📺</div>
+          <div class="card-title">YouTube 内容 (youtube-content)</div>
+          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Media</span>
+          <p class="card-desc" style="margin-top: 0.5rem;">将 YouTube 字幕转换为摘要、推文、博客。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🖼️</div>
+          <div class="card-title">GIF 搜索 (gif-search)</div>
+          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Media</span>
+          <p class="card-desc" style="margin-top: 0.5rem;">通过 Tenor API 搜索和下载 GIF。</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🎵</div>
+          <div class="card-title">Spotify 控制 (spotify)</div>
+          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Media</span>
+          <p class="card-desc" style="margin-top: 0.5rem;">播放、搜索、排队和管理播放列表。</p>
+        </div>
+      </div>
 
-      { name: 'ascii-art', category: 'Creative', description: 'Generates complex ASCII art.' },
-      { name: 'excalidraw', category: 'Creative', description: 'Creates diagrams using Excalidraw.' },
-      { name: 'architecture-diagram', category: 'Creative', description: 'Generates system architecture diagrams.' },
-      { name: 'pixel-art', category: 'Creative', description: 'Generates retro-style pixel art.' },
-      { name: 'sketch', category: 'Creative', description: 'Creates rough sketches for visual concepts.' },
-      { name: 'claude-design', category: 'Creative', description: 'Generates design concepts using Claude.' },
+      <!-- Social -->
+      <h2 class="section-header">Social</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="card-icon">🐦</div>
+          <div class="card-title">X/Twitter (xurl)</div>
+          <span class="badge" style="background: rgba(56, 189, 248, 0.1); color: var(--accent);">Social</span>
+          <p class="card-desc" style="margin-top: 0.5rem;">通过 xurl CLI 发帖、搜索、私信。</p>
+        </div>
+      </div>
 
-      { name: 'jupyter-live-kernel', category: 'Data Science', description: 'Runs live Jupyter kernels for data analysis.' },
-
-      { name: 'codebase-inspection', category: 'GitHub', description: 'Inspects large codebases for structure and context.' },
-      { name: 'github-auth', category: 'GitHub', description: 'Handles GitHub authentication and workflows.' },
-      { name: 'github-code-review', category: 'GitHub', description: 'Automates code review on GitHub.' },
-      { name: 'github-issues', category: 'GitHub', description: 'Manages and tracks GitHub issues.' },
-      { name: 'github-pr-workflow', category: 'GitHub', description: 'Automates PR workflows and reviews.' },
-      { name: 'github-repo-management', category: 'GitHub', description: 'Manages repositories and organization settings.' },
-
-      { name: 'native-mcp', category: 'MCP', description: 'Core implementation of Model Context Protocol.' },
-
-      { name: 'minecraft-modpack-server', category: 'Gaming', description: 'Sets up and manages Minecraft modpack servers.' },
-      { name: 'pokemon-player', category: 'Gaming', description: 'Plays Pokémon games via agentic interface.' },
-
-      { name: 'youtube-content', category: 'Media', description: 'Analyzes and summarizes YouTube content.' },
-      { name: 'gif-search', category: 'Media', description: 'Searches for high-quality GIFs.' },
-      { name: 'spotify', category: 'Media', description: 'Plays and manages Spotify playlists.' },
-
-      { name: 'xurl', category: 'Social', description: 'Processes and extracts metadata from URLs.' },
-      { name: 'group-chat-agent-trigger', category: 'Social', description: 'Triggers agent actions from group chats.' },
-
-      { name: 'himalaya', category: 'Email', description: 'Processes and manages email communication.' },
-
-      { name: 'google-workspace', category: 'Productivity', description: 'Integrates with Google Workspace tools.' },
-      { name: 'notion', category: 'Productivity', description: 'Integrates with Notion databases and pages.' },
-      { name: 'obsidian', category: 'Productivity', description: 'Integrates with Obsidian vaults.' },
-      { name: 'nano-pdf', category: 'Productivity', description: 'Processes and manages PDF documents.' },
-      { name: 'maps', category: 'Productivity', description: 'Integrates with Google Maps functionality.' },
-      { name: 'airtable', category: 'Productivity', description: 'Integrates with Airtable bases.' },
-      { name: 'linear', category: 'Productivity', description: 'Integrates with Linear project management.' }
-    ];
-
-    function renderSkills(filteredSkills) {
-      const container = document.getElementById('skills-container');
-      container.innerHTML = '';
-      filteredSkills.forEach(skill => {
-        const card = document.createElement('div');
-        card.className = 'card';
-        card.innerHTML = `
-          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
-            <h3 style="margin-bottom: 0;">${skill.name}</h3>
-            <span style="background: var(--accent-glow); color: var(--accent); padding: 2px 8px; border-radius: var(--radius-sm); font-size: 0.75rem; font-weight: 600; border: 1px solid var(--accent);">
-              ${skill.category}
-            </span>
-          </div>
-          <p>${skill.description}</p>
-        `;
-        container.appendChild(card);
-      });
-    }
-
-    function filterSkills() {
-      const query = document.getElementById('skill-search').value.toLowerCase();
-      const filtered = skills.filter(skill => 
-        skill.name.toLowerCase().includes(query) || 
-        skill.category.toLowerCase().includes(query) ||
-        skill.description.toLowerCase().includes(query)
-      );
-      renderSkills(filtered);
-    }
-
-    // Initial render
-    renderSkills(skills);
-  </script>
+      <footer class="footer">
+        <p>Powered by Hermes Agent · © 2026 · www.zhangjunxiang.asia</p>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>
