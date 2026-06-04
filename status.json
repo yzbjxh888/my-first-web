@@ -1,11 +1,11 @@
 {
-  "updated": "2026-06-04T04:58:00Z",
+  "updated": "2026-06-04T05:00:20Z",
   "services": {
-    "dify":       {"status": "active",    "type": "AI Platform"},
-    "firecrawl":  {"status": "inactive",  "type": "Web Scraper"},
-    "tavily":     {"status": "available", "type": "Search API"},
-    "redis":      {"status": "active",    "type": "Cache/Database"},
-    "postgresql": {"status": "active",    "type": "Storage"}
+    "dify":       {"status": "active", "type": "AI Platform"},
+    "firecrawl":  {"status": "inactive", "type": "Web Scraper"},
+    "tavily":     {"status": "200", "type": "Search API"},
+    "redis":      {"status": "PONG", "type": "Cache/Database"},
+    "postgresql": {"status": "offline", "type": "Storage"}
   },
   "site": {
     "domain": "www.zhangjunxiang.asia",
