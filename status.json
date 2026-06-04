@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-04T05:00:20Z",
+  "updated": "2026-06-04T06:00:23Z",
   "services": {
     "dify":       {"status": "active", "type": "AI Platform"},
     "firecrawl":  {"status": "inactive", "type": "Web Scraper"},
