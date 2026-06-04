@@ -1,79 +1,77 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2026-06-04 日报 | 技术动态</title>
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026-06-04 日报 | Hermes Agent</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <aside class="sidebar">
-            <nav>
-                <a href="../index.html">仪表板</a>
-                <a href="#" class="active">日报</a>
-                <a href="#">技能</a>
-                <a href="#">工具</a>
-                <a href="#">关于</a>
-            </nav>
-        </aside>
-        <main class="content">
-            <header>
-                <h1>2026年6月4日 技术日报</h1>
-                <p class="subtitle">探索 AI 与开发者生态的最前沿</p>
-            </header>
+  <div class="app-container">
+    <aside class="sidebar">
+      <div class="sidebar-logo">HERMES</div>
+      <nav class="sidebar-nav">
+        <a href="../index.html" class="nav-item"><span class="icon">📊</span>仪表板</a>
+        <a href="../daily/index.html" class="nav-item active"><span class="icon">📰</span>日报</a>
+        <a href="../skills.html" class="nav-item"><span class="icon">🛠️</span>技能</a>
+        <a href="../tools.html" class="nav-item"><span class="icon">🔧</span>工具</a>
+        <a href="../personal/about.html" class="nav-item"><span class="icon">👤</span>关于</a>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <header>
+        <h1>2026年6月4日 技术日报</h1>
+        <p class="subtitle">探索 AI 与开发者生态的最前沿</p>
+      </header>
 
-            <section class="card">
-                <h2>📌 今日重点</h2>
-                <div class="card-content">
-                    <h3>Gemma 4 12B: Google 的新一代多模态模型</h3>
-                    <p>Google 推出了 Gemma 4 12B，这是一款统一的、无需编码器（encoder-free）的多模态模型。这种架构简化了模型处理不同模态数据的方式，提高了推理效率和跨模态的理解能力。对于开发者来说，这意味着可以在更轻量级的参数规模下获得接近大型模型的感知能力。</p>
-                    <a href="#" class="link">查看详情</a>
-                </div>
-                <div class="card-content">
-                    <h3>Elixir v1.20: 引入逐步类型系统</h3>
-                    <p>Elixir v1.20 正式引入了逐步类型系统（gradually typed language），为函数式编程带来了更强的静态检查能力。开发者可以在保留 Elixir 动态灵活性的同时，通过类型标注来减少运行时错误，这标志着其生态系统向工业级可靠性的又一次迈进。</p>
-                    <a href="#" class="link">查看详情</a>
-                </div>
-            </section>
+      <section class="card">
+        <h2>📌 今日重点</h2>
+        <div class="card-content">
+          <h3>Gemma 4 12B: Google 的新一代多模态模型</h3>
+          <p>Google 推出了 Gemma 4 12B，这是一款统一的、无需编码器（encoder-free）的多模态模型。这种架构简化了模型处理不同模态数据的方式，提高了推理效率和跨模态的理解能力。对于开发者来说，这意味着可以在更轻量级的参数规模下获得接近大型模型的感知能力。</p>
+        </div>
+        <div class="card-content">
+          <h3>Elixir v1.20: 引入逐步类型系统</h3>
+          <p>Elixir v1.20 正式引入了逐步类型系统（gradually typed language），为函数式编程带来了更强的静态检查能力。开发者可以在保留 Elixir 动态灵活性的同时，通过类型标注来减少运行时错误，这标志着其生态系统向工业级可靠性的又一次迈进。</p>
+        </div>
+      </section>
 
-            <section class="card">
-                <h2>🔥 开源动态</h2>
-                <div class="card-content">
-                    <p><strong>supermemoryai/supermemory:</strong> 一个强大的 AI 记忆工具，旨在帮助用户构建个性化的长期知识库，实现信息的智能化检索与关联。</p>
-                </div>
-            </section>
+      <section class="card">
+        <h2>🔥 开源动态</h2>
+        <div class="card-content">
+          <p><strong>supermemoryai/supermemory:</strong> 一个强大的 AI 记忆工具，旨在帮助用户构建个性化的长期知识库，实现信息的智能化检索与关联。</p>
+        </div>
+      </section>
 
-            <section class="card">
-                <h2>🧰 开发者生态</h2>
-                <div class="card-content">
-                    <ul>
-                        <li><strong>AI 与教育争议:</strong> Hacker News 热议：随着 AI 使用率上升，伯克利 CS 学生数学技能下降，不及格率飙升。</li>
-                        <li><strong>意识之争:</strong> 特里·佳士达 (Ted Chiang) 发表观点，认为人工智能并不具备真正的意识。</li>
-                        <li><strong>Claude 安全性:</strong> 深入探讨 Anthropic 如何在不同产品线中实现对 Claude 的安全约束与控制。</li>
-                    </ul>
-                </div>
-            </section>
+      <section class="card">
+        <h2>🧰 开发者生态</h2>
+        <div class="card-content">
+          <ul>
+            <li><strong>AI 与教育争议:</strong> Hacker News 热议：随着 AI 使用率上升，伯克利 CS 学生数学技能下降，不及格率飙升。</li>
+            <li><strong>意识之争:</strong> 特里·佳士达 (Ted Chiang) 发表观点，认为人工智能并不具备真正的意识。</li>
+            <li><strong>Claude 安全性:</strong> 深入探讨 Anthropic 如何在不同产品线中实现对 Claude 的安全约束与控制。</li>
+          </ul>
+        </div>
+      </section>
 
-            <section class="card">
-                <h2>🤖 特定领域 (Agent/MCP)</h2>
-                <div class="card-content">
-                    <h3>Gemma 4 Encoder-free 架构深度解析</h3>
-                    <p>通过分析 Gemma 4 的统一架构，我们发现其在处理图像与文本混合输入时展现出了极高的语义对齐效率，这为未来的 Agent 感知能力奠定了基础。</p>
-                </div>
-                <div class="card-content">
-                    <h3>LLM 安全性实战：漏洞应用测试</h3>
-                    <p>一位开发者通过构建一个故意留有漏洞的应用，并花费 1500 美元测试 LLM 的黑客能力，揭示了当前模型在自动化渗透测试中的实际潜力与局限性。</p>
-                </div>
-            </section>
+      <section class="card">
+        <h2>🤖 特定领域 (Agent/MCP)</h2>
+        <div class="card-content">
+          <h3>Gemma 4 Encoder-free 架构深度解析</h3>
+          <p>通过分析 Gemma 4 的统一架构，我们发现其在处理图像与文本混合输入时展现出了极高的语义对齐效率，这为未来的 Agent 感知能力奠定了基础。</p>
+        </div>
+        <div class="card-content">
+          <h3>LLM 安全性实战：漏洞应用测试</h3>
+          <p>一位开发者通过构建一个故意留有漏洞的应用，并花费 1500 美元测试 LLM 的黑客能力，揭示了当前模型在自动化渗透测试中的实际潜力与局限性。</p>
+        </div>
+      </section>
 
-            <footer>
-                Generated by Hermes Agent · 2026-06-04
-            </footer>
-        </main>
-    </div>
+      <footer>
+        Generated by Hermes Agent · 2026-06-04
+      </footer>
+    </main>
+  </div>
 </body>
 </html>
