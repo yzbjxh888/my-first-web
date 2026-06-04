@@ -1,0 +1,17 @@
+{
+  "updated": "2026-06-04T04:54:57Z",
+  "services": {
+    "dify-api":    {"status": "", "type": "AI Platform"},
+    "firecrawl":   {"status": "", "type": "Web Scraper"},
+    "tavily":      {"status": "", "type": "Search API"},
+    "redis":       {"status": "", "type": "Cache/Database"},
+    "postgresql":  {"status": "", "type": "Storage"},
+    "hermes":      {"status": "online", "type": "Agent Framework"}
+  },
+  "site": {
+    "domain": "www.zhangjunxiang.asia",
+    "repo": "github.com/yzbjxh888/my-first-web",
+    "host": "Vercel",
+    "last_deploy": null
+  }
+}
