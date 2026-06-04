@@ -1,26 +1,26 @@
 {
-  "updated": "2026-06-04T14:00:00Z",
+  "updated": "2026-06-04T07:00:19Z",
   "services": [
-    {"name": "langchain-backend",     "icon": "🧠", "status": "active",    "type": "Agent Framework"},
-    {"name": "langgraph",              "icon": "🔗", "status": "active",    "type": "Agent Framework"},
-    {"name": "langflow",               "icon": "🌊", "status": "inactive",  "type": "Agent Framework"},
-    {"name": "n8n",                    "icon": "⚡", "status": "active",    "type": "Workflow"},
-    {"name": "openclaw-gateway",       "icon": "🚪", "status": "active",    "type": "Gateway"},
-    {"name": "assistant-ui",           "icon": "💬", "status": "active",    "type": "Frontend"},
-    {"name": "hermes-web",             "icon": "🤖", "status": "active",    "type": "Agent"},
-    {"name": "hermes-dashboard",       "icon": "📊", "status": "active",    "type": "Dashboard"},
-    {"name": "redis",                  "icon": "🗄️", "status": "active",    "type": "Cache/Database"},
-    {"name": "postgresql",             "icon": "🐘", "status": "active",    "type": "Database"},
-    {"name": "dify-api",               "icon": "⚙️", "status": "active",    "type": "AI Platform"},
-    {"name": "dify-worker",            "icon": "🔧", "status": "active",    "type": "AI Platform"},
-    {"name": "dify-web",               "icon": "🌐", "status": "active",    "type": "AI Platform"},
-    {"name": "docker",                 "icon": "🐳", "status": "active",    "type": "Container"},
-    {"name": "portainer",              "icon": "📦", "status": "active",    "type": "Management"}
+    {"name": "langchain-backend", "icon": "🧠", "status": "active", "type": "Agent Framework"},
+    {"name": "langgraph",         "icon": "🔗", "status": "active",         "type": "Agent Framework"},
+    {"name": "langflow",          "icon": "🌊", "status": "inactive",          "type": "Agent Framework"},
+    {"name": "n8n",               "icon": "⚡", "status": "active",               "type": "Workflow"},
+    {"name": "openclaw-gateway",  "icon": "🚪", "status": "active",  "type": "Gateway"},
+    {"name": "assistant-ui",      "icon": "💬", "status": "active",      "type": "Frontend"},
+    {"name": "hermes-web",        "icon": "🤖", "status": "inactive",        "type": "Agent"},
+    {"name": "hermes-dashboard",  "icon": "📊", "status": "active",  "type": "Dashboard"},
+    {"name": "redis",             "icon": "🗄️", "status": "active",             "type": "Cache/Database"},
+    {"name": "postgresql",        "icon": "🐘", "status": "active",        "type": "Database"},
+    {"name": "dify-api",          "icon": "⚙️", "status": "active",          "type": "AI Platform"},
+    {"name": "dify-worker",       "icon": "🔧", "status": "active",       "type": "AI Platform"},
+    {"name": "dify-web",          "icon": "🌐", "status": "active",          "type": "AI Platform"},
+    {"name": "docker",            "icon": "🐳", "status": "active",            "type": "Container"},
+    {"name": "portainer",         "icon": "📦", "status": "active",         "type": "Management"}
   ],
   "site": {
     "domain": "www.zhangjunxiang.asia",
     "repo": "github.com/yzbjxh888/my-first-web",
     "host": "Vercel",
-    "last_deploy": "2026-06-04T14:00:00Z"
+    "last_deploy": "2026-06-04T07:00:19Z"
   }
 }
