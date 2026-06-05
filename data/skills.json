@@ -1096,5 +1096,35 @@
     "summary": "SysML 建模：sysml1.6.md + 后端状态管理器，提示词每次会话仅加载一次",
     "detail": "SysML（系统建模语言）的自动化建模流水线。通过后端状态管理器维护模型状态，将 SysML 规范转化为可执行的系统架构模型。",
     "related": []
+  },
+  {
+    "id": "audiocraft-audio-gene",
+    "name_cn": "audiocraft-audio-gene",
+    "name_en": "audiocraft-audio-gene",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能",
+    "detail": "自动同步添加的 Hermes Agent 技能。",
+    "related": []
+  },
+  {
+    "id": "segment-anything-model",
+    "name_cn": "segment-anything-model",
+    "name_en": "segment-anything-model",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能",
+    "detail": "自动同步添加的 Hermes Agent 技能。",
+    "related": []
+  },
+  {
+    "id": "serving-llms-vllm",
+    "name_cn": "serving-llms-vllm",
+    "name_en": "serving-llms-vllm",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能",
+    "detail": "自动同步添加的 Hermes Agent 技能。",
+    "related": []
   }
 ]
