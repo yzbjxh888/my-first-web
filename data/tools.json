@@ -168,5 +168,85 @@
     "summary": "团队协作与沟通平台。",
     "detail": "Slack 是企业级协作的首选。AI 可以集成到 Slack 工作流中，自动总结频道讨论、提醒任务并触发后续动作。",
     "status": "connected"
+  },
+  {
+    "id": "codegraph_callees",
+    "name_cn": "CodeGraph 调用链",
+    "name_en": "CodeGraph Callees",
+    "icon": "🔗",
+    "category": "code",
+    "summary": "列出函数或方法的所有下游调用关系。",
+    "detail": "输入任意函数、方法或类的名称，快速罗列它调用了哪些符号。支持指定项目路径和限制返回数量。",
+    "status": "connected"
+  },
+  {
+    "id": "codegraph_callers",
+    "name_cn": "CodeGraph 调用者",
+    "name_en": "CodeGraph Callers",
+    "icon": "🔙",
+    "category": "code",
+    "summary": "查询一个符号被哪些代码调用。",
+    "detail": "输入函数或方法名称，找到所有调用它的上下文。变更前的必查步骤，避免遗漏影响点。",
+    "status": "connected"
+  },
+  {
+    "id": "codegraph_explore",
+    "name_cn": "CodeGraph 上下文探索",
+    "name_en": "CodeGraph Explore",
+    "icon": "🔎",
+    "category": "code",
+    "summary": "自然语言查询代码结构，返回完整源码。",
+    "detail": "核心入口工具。输入问题或符号名称，一次性返回多文件的源码和上下文。看懂代码、定位 bug、理解架构的首选。",
+    "status": "connected"
+  },
+  {
+    "id": "codegraph_files",
+    "name_cn": "CodeGraph 文件树",
+    "name_en": "CodeGraph Files",
+    "icon": "📂",
+    "category": "code",
+    "summary": "按目录、类别或类型浏览项目文件树。",
+    "detail": "替代 ls/grep 的项目文件布局查看器。支持过滤路径、Glob 匹配以及按语言分组输出。",
+    "status": "connected"
+  },
+  {
+    "id": "codegraph_impact",
+    "name_cn": "CodeGraph 影响分析",
+    "name_en": "CodeGraph Impact",
+    "icon": "💥",
+    "category": "code",
+    "summary": "修改某个符号前预览波及范围。",
+    "detail": "输入待修改的符号名称，自动追踪其下游依赖链，高亮所有受影响的位置。重构前的安全网。",
+    "status": "connected"
+  },
+  {
+    "id": "codegraph_node",
+    "name_cn": "CodeGraph 符号详情",
+    "name_en": "CodeGraph Node",
+    "icon": "📌",
+    "category": "code",
+    "summary": "查看单个符号的完整定义和签名。",
+    "detail": "获取任意符号的位置、签名、调用链和完整源码。支持文件+行号精确定位重载函数。",
+    "status": "connected"
+  },
+  {
+    "id": "codegraph_search",
+    "name_cn": "CodeGraph 符号搜索",
+    "name_en": "CodeGraph Search",
+    "icon": "🔍",
+    "category": "code",
+    "summary": "按名称快速模糊搜索代码符号。",
+    "detail": "输入符号名或部分名，立即定位所有匹配项及所在文件。支持按函数、类、接口等类型过滤。",
+    "status": "connected"
+  },
+  {
+    "id": "codegraph_status",
+    "name_cn": "CodeGraph 索引状态",
+    "name_en": "CodeGraph Status",
+    "icon": "❤️",
+    "category": "code",
+    "summary": "检查 CodeGraph 索引健康度。",
+    "detail": "返回已索引的文件数、节点数和关系数。用于诊断索引是否完整或需要重建。",
+    "status": "connected"
   }
 ]
