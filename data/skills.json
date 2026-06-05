@@ -1156,5 +1156,25 @@
     "summary": "Hermes Agent 技能",
     "detail": "自动同步添加的 Hermes Agent 技能。",
     "related": []
+  },
+  {
+    "id": "analyzing-external-",
+    "name_cn": "analyzing-external-",
+    "name_en": "analyzing-external-",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能",
+    "detail": "自动同步添加的 Hermes Agent 技能。",
+    "related": []
+  },
+  {
+    "id": "auto-hypothesis-tes",
+    "name_cn": "auto-hypothesis-tes",
+    "name_en": "auto-hypothesis-tes",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能",
+    "detail": "自动同步添加的 Hermes Agent 技能。",
+    "related": []
   }
 ]
