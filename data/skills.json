@@ -1126,5 +1126,35 @@
     "summary": "Hermes Agent 技能",
     "detail": "自动同步添加的 Hermes Agent 技能。",
     "related": []
+  },
+  {
+    "id": "codegraph",
+    "name_cn": "codegraph",
+    "name_en": "codegraph",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "CodeGraph 代码图谱管理：索引、查询、维护与仓库集成评估",
+    "detail": "CodeGraph 是基于 tree-sitter 的代码智能工具，能索引代码库、建立调用图并提供 MCP 接口供 AI 助手查询。 ``` 可执行文件: /home/zhang/.codegraph/versions/v0.9.9/bin/codegraph",
+    "related": []
+  },
+  {
+    "id": "codegraph-integrate",
+    "name_cn": "codegraph-integrate",
+    "name_en": "codegraph-integrate",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能",
+    "detail": "自动同步添加的 Hermes Agent 技能。",
+    "related": []
+  },
+  {
+    "id": "hermes-system-integ",
+    "name_cn": "hermes-system-integ",
+    "name_en": "hermes-system-integ",
+    "icon": "🔌",
+    "category": "Other",
+    "summary": "Hermes Agent 技能",
+    "detail": "自动同步添加的 Hermes Agent 技能。",
+    "related": []
   }
 ]
