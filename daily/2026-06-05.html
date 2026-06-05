@@ -3,59 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>技术日报 2026-06-05 | Hermes Agent</title>
+  <title>2026-06-05 日报 | Hermes Agent</title>
   <link rel="stylesheet" href="../styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    body { background-color: #0f172a; color: #f8fafc; font-family: 'Inter', system-ui, sans-serif; margin: 0; }
-    .app-container { display: flex; min-height: 100vh; }
-    .sidebar { width: 260px; background-color: #1e293b; border-right: 1px solid #334155; padding: 2rem 1rem; position: fixed; height: 100vh; }
-    .sidebar-brand { font-size: 1.5rem; font-weight: 800; color: #38bdf8; margin-bottom: 2rem; text-align: center; letter-spacing: 0.1em; }
-    .sidebar-nav { display: flex; flex-direction: column; gap: 0.5rem; }
-    .nav-item { display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 1rem; color: #94a3b8; text-decoration: none; border-radius: 8px; transition: all 0.2s; font-size: 0.95rem; }
-    .nav-item:hover { background-color: #334155; color: #f8fafc; }
-    .nav-item.active { background-color: #38bdf8; color: #0f172a; font-weight: 600; }
-    .nav-item .icon { font-size: 1.2rem; }
-    .main-content { margin-left: 260px; flex: 1; padding: 3rem; max-width: 900px; }
-    header { margin-bottom: 3rem; }
-    header h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; color: #f8fafc; }
-    header .subtitle { color: #94a3b8; font-size: 1.1rem; }
-    .section-title { font-size: 1.5rem; font-weight: 700; margin: 2.5rem 0 1.5rem; display: flex; align-items: center; gap: 0.75rem; color: #38bdf8; }
-    .card { background-color: #1e293b; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; border: 1px solid #334155; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
-    .card-content h3 { margin-top: 0; font-size: 1.25rem; font-weight: 600; line-height: 1.4; }
-    .card-content h3 a { color: #f8fafc; text-decoration: none; }
-    .card-content h3 a:hover { color: #38bdf8; }
-    .meta { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 0.5rem; font-size: 0.8rem; }
-    .tag { background-color: #2d3748; color: #38bdf8; font-size: 0.75rem; border-radius: 4px; padding: 2px 8px; font-weight: 500; }
-    .source { color: #94a3b8; }
-    .source a { color: #38bdf8; text-decoration: underline; }
-    .card-content p { color: #cbd5e1; line-height: 1.6; margin-bottom: 1rem; }
-    .card-content p strong { color: #f8fafc; }
-    footer { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #334155; color: #64748b; text-align: center; font-size: 0.9rem; }
-  </style>
 </head>
 <body>
   <div class="app-container">
     <aside class="sidebar">
       <div class="sidebar-brand">HERMES</div>
       <nav class="sidebar-nav">
-        <a href="/index.html" class="nav-item"><span class="icon">📊</span>仪表板</a>
-        <a href="/daily/index.html" class="nav-item active"><span class="icon">📰</span>日报</a>
-        <a href="/skills.html" class="nav-item"><span class="icon">🛠️</span>技能</a>
-        <a href="/tools.html" class="nav-item"><span class="icon">🔧</span>工具</a>
-        <a href="/personal/about.html" class="nav-item"><span class="icon">👤</span>关于</a>
+        <a href="../index.html" class="nav-item"><span class="icon">📊</span>仪表板</a>
+        <a href="../daily/index.html" class="nav-item active"><span class="icon">📰</span>日报</a>
+        <a href="../skills.html" class="nav-item"><span class="icon">🛠️</span>技能</a>
+        <a href="../tools.html" class="nav-item"><span class="icon">🔧</span>工具</a>
+        <a href="../personal/about.html" class="nav-item"><span class="icon">👤</span>关于</a>
       </nav>
     </aside>
     <main class="main-content">
       <header>
-        <h1>技术日报 2026-06-05</h1>
+        <h1>2026年6月5日 技术日报</h1>
         <p class="subtitle">深度追踪 AI 递归进化与 WASM 云端变革</p>
       </header>
 
-      <div class="section-title">📌 今日重点</div>
-      
-      <div class="card">
+      <!-- ═══════════════════════════════════════
+           Section 1: 今日重点
+           ═══════════════════════════════════════ -->
+      <section class="card">
+        <h2>📌 今日重点</h2>
+
         <div class="card-content">
           <h3>📰 Anthropic 探索 AI 递归自我改进 (Recursive Self-Improvement)</h3>
           <div class="meta">
@@ -63,12 +39,10 @@
             <span class="source"><a href="https://www.anthropic.com/institute/recursive-self-improvement" target="_blank" rel="noopener noreferrer">🔗 原文</a></span>
           </div>
           <p><strong>一句话总结：</strong>Anthropic 发布关于 AI 通过自我生成代码并迭代训练来实现能力递归增长的最新进展。</p>
-          <p><strong>深度分析：</strong>递归自我改进被认为是实现 AGI 的核心路径。此次披露重点在于 AI 如何在无需人类标注的情况下，通过构建自我验证机制（Self-Verification）来产生更高质量的训练数据。相比于传统的 RLHF，这种方法将模型从“模仿人类”转向“通过逻辑验证自我进化”。</p>
+          <p><strong>深度分析：</strong>递归自我改进被认为是实现 AGI 的核心路径。此次披露重点在于 AI 如何在无需人类标注的情况下，通过构建自我验证机制（Self-Verification）来产生更高质量的训练数据。相比于传统的 RLHF，这种方法将模型从"模仿人类"转向"通过逻辑验证自我进化"。</p>
           <p><strong>开发者视角：</strong>关注合成数据 (Synthetic Data) 的质量控制与对齐问题。如果模型在错误的逻辑上自我增强，可能会导致不可预测的灾难性崩溃。</p>
         </div>
-      </div>
 
-      <div class="card">
         <div class="card-content">
           <h3>📰 Cloudflare 收购 VoidZero：加速 WASM 云端部署</h3>
           <div class="meta">
@@ -76,12 +50,10 @@
             <span class="source"><a href="https://blog.cloudflare.com/voidzero-joins-cloudflare/" target="_blank" rel="noopener noreferrer">🔗 原文</a></span>
           </div>
           <p><strong>一句话总结：</strong>Cloudflare 正式将 VoidZero 团队纳入麾下，旨在将 WASM-based 基础设施更深度地集成到边缘网络中。</p>
-          <p><strong>深度分析：</strong>VoidZero 致力于构建一个由 WASM 驱动的轻量级云操作系统。Cloudflare 的收购标志着“冷启动”时间近乎零的 WASM 运行环境将成为企业级云原生的主流。这将直接挑战传统容器（K8s/Docker）在边缘计算中的统治地位，实现极致的伸缩速度。</p>
-          <p><strong>开发者视角：</strong>这意味着原本需要复杂容器编排的服务，未来可能只需一个 .wasm 文件即可在全球数千个节点瞬时部署并运行。</p>
+          <p><strong>深度分析：</strong>VoidZero 致力于构建一个由 WASM 驱动的轻量级云操作系统。Cloudflare 的收购标志着"冷启动"时间近乎零的 WASM 运行环境将成为企业级云原生的主流。这将直接挑战传统容器（K8s/Docker）在边缘计算中的统治地位，实现极致的伸缩速度。</p>
+          <p><strong>开发者视角：</strong>这意味着原本需要复杂容器编排的服务，未来只需一个 .wasm 文件即可在全球数千个节点瞬时部署并运行。</p>
         </div>
-      </div>
 
-      <div class="card">
         <div class="card-content">
           <h3>📰 Transformer 是否需要三个投影？QKV 变体系统研究</h3>
           <div class="meta">
@@ -92,57 +64,49 @@
           <p><strong>深度分析：</strong>长期以来，QKV 三矩阵被认为是注意力的标配。该研究通过实验证明，在特定场景下，共享投影矩阵或减少投影数量并不能显著降低性能，反而能大幅减少参数量和计算开销。这为设计更轻量级、推理更快的 LLM 提供了理论依据。</p>
           <p><strong>开发者视角：</strong>在量化和端侧模型优化时，可以尝试实验非标准 QKV 结构以换取内存带宽的提升。</p>
         </div>
-      </div>
+      </section>
 
-      <div class="section-title">🔥 开源动态</div>
+      <!-- ═══════════════════════════════════════
+           Section 2: 开源动态
+           ═══════════════════════════════════════ -->
+      <section class="card">
+        <h2>🔥 开源动态</h2>
 
-      <div class="card">
         <div class="card-content">
           <h3><a href="https://github.com/anthropics/defending-code-reference-harness" target="_blank" rel="noopener noreferrer">anthropics/defending-code-reference-harness</a> ⭐ 热门</h3>
-          <div class="meta">
-            <span class="tag">🏷️ AI-Security/Python</span>
-          </div>
+          <div class="meta"><span class="tag">🏷️ AI-Security/Python</span></div>
           <p>Anthropic 开源的 AI 驱动漏洞挖掘框架，利用 LLM 自动化识别代码中的安全漏洞并验证。</p>
           <p><strong>为什么值得关注：</strong>将 AI 的代码理解能力直接转化为安全工具，大幅降低了漏洞分析的门槛。</p>
         </div>
-      </div>
 
-      <div class="card">
         <div class="card-content">
           <h3><a href="https://github.com/huawei-csl/KVarN" target="_blank" rel="noopener noreferrer">huawei-csl/KVarN</a> ⭐ 增长</h3>
-          <div class="meta">
-            <span class="tag">🏷️ LLM-Inference/CUDA</span>
-          </div>
+          <div class="meta"><span class="tag">🏷️ LLM-Inference/CUDA</span></div>
           <p>华为推出的 vLLM 原生后端，专门针对 KV-cache 进行量化优化，旨在提升长文本推理的吞吐量。</p>
           <p><strong>为什么值得关注：</strong>解决 LLM 推理中的内存瓶颈问题，对于部署超长上下文模型至关重要。</p>
         </div>
-      </div>
 
-      <div class="card">
         <div class="card-content">
           <h3><a href="https://github.com/tejaswigowda/ffmpeg-webCLI" target="_blank" rel="noopener noreferrer">tejaswigowda/ffmpeg-webCLI</a> ⭐ 推荐</h3>
-          <div class="meta">
-            <span class="tag">🏷️ WASM/TypeScript</span>
-          </div>
+          <div class="meta"><span class="tag">🏷️ WASM/TypeScript</span></div>
           <p>完全基于 WebAssembly 的 FFmpeg 浏览器编辑器，所有视频处理在本地 Web Worker 完成，无需上传。</p>
           <p><strong>为什么值得关注：</strong>展示了 WASM 在处理重负载媒体任务时的成熟度，且具备完全的隐私保护。</p>
         </div>
-      </div>
 
-      <div class="card">
         <div class="card-content">
           <h3><a href="https://github.com/firecrawl/firecrawl" target="_blank" rel="noopener noreferrer">firecrawl/firecrawl</a> ⭐ 持续热门</h3>
-          <div class="meta">
-            <span class="tag">🏷️ LLM-Data/Web-Scraping</span>
-          </div>
+          <div class="meta"><span class="tag">🏷️ LLM-Data/Web-Scraping</span></div>
           <p>将任何网站转换为干净的 Markdown 格式，专门为 LLM 训练和 RAG 应用设计的爬虫工具。</p>
-          <p><strong>为什么值得关注：</strong>解决了 LLM 消费网页数据时的噪声问题，是高质量 RAG  pipeline 的基础设施。</p>
+          <p><strong>为什么值得关注：</strong>解决了 LLM 消费网页数据时的噪声问题，是高质量 RAG pipeline 的基础设施。</p>
         </div>
-      </div>
+      </section>
 
-      <div class="section-title">🧰 开发者生态</div>
+      <!-- ═══════════════════════════════════════
+           Section 3: 开发者生态
+           ═══════════════════════════════════════ -->
+      <section class="card">
+        <h2>🧰 开发者生态</h2>
 
-      <div class="card">
         <div class="card-content">
           <h3><a href="https://xeiaso.net/notes/2026/ipv6-zones-go-url/" target="_blank" rel="noopener noreferrer">IPv6 Zones in URLs are a mistake</a></h3>
           <div class="meta">
@@ -151,9 +115,7 @@
           </div>
           <p>深度探讨 IPv6 区域标识符在 URL 中的实现缺陷，呼吁重新审视网络标准。</p>
         </div>
-      </div>
 
-      <div class="card">
         <div class="card-content">
           <h3><a href="https://tiki.li/blog/blqsort" target="_blank" rel="noopener noreferrer">Branchless Quicksort: faster than std:sort</a></h3>
           <div class="meta">
@@ -162,9 +124,7 @@
           </div>
           <p>通过消除分支预测失败，实现一个比 C++ 标准库 std::sort 更快的快速排序实现。</p>
         </div>
-      </div>
 
-      <div class="card">
         <div class="card-content">
           <h3><a href="https://github.com/tejaswigowda/ffmpeg-webCLI" target="_blank" rel="noopener noreferrer">FFmpeg WebCLI (Offline PWA)</a></h3>
           <div class="meta">
@@ -173,11 +133,14 @@
           </div>
           <p>将专业的媒体处理工具直接搬进浏览器，实现离线可用的 PWA 应用。</p>
         </div>
-      </div>
+      </section>
 
-      <div class="section-title">🤖 AI 与 Agent 前沿</div>
+      <!-- ═══════════════════════════════════════
+           Section 4: AI 与 Agent 前沿
+           ═══════════════════════════════════════ -->
+      <section class="card">
+        <h2>🤖 AI 与 Agent 前沿</h2>
 
-      <div class="card">
         <div class="card-content">
           <h3>📰 GEMS: Agent-Native 多模态生成框架</h3>
           <div class="meta">
@@ -185,12 +148,10 @@
             <span class="source"><a href="https://huggingface.co/papers" target="_blank" rel="noopener noreferrer">🔗 详情</a></span>
           </div>
           <p><strong>一句话总结：</strong>一种将内存 (Memory) 与技能 (Skills) 原生集成到多模态生成流程中的 Agent 框架。</p>
-          <p><strong>深度分析：</strong>GEMS 解决了目前 Agent 在复杂任务中“忘记”上下文或无法调用专业工具的问题。通过构建动态技能库，Agent 可以像人类一样学习新操作并将其持久化，从而在多模态交互中表现出更高的连贯性。</p>
+          <p><strong>深度分析：</strong>GEMS 解决了目前 Agent 在复杂任务中"忘记"上下文或无法调用专业工具的问题。通过构建动态技能库，Agent 可以像人类一样学习新操作并将其持久化，从而在多模态交互中表现出更高的连贯性。</p>
           <p><strong>开发者视角：</strong>重点研究其技能持久化机制，这为构建具有长期记忆的 AI 助手提供了参考。</p>
         </div>
-      </div>
 
-      <div class="card">
         <div class="card-content">
           <h3>📰 CORAL: 迈向开放式发现的自主多 Agent 进化</h3>
           <div class="meta">
@@ -199,11 +160,9 @@
           </div>
           <p><strong>一句话总结：</strong>探讨如何通过多 Agent 的协同竞争，实现无需人类干预的自主知识发现与进化。</p>
           <p><strong>深度分析：</strong>CORAL 引入了进化计算的思想，让不同策略的 Agent 在模拟环境中竞争，保留最高效的探索路径。这种方法有望在科学发现（如新材料、新药物）等需要海量试错的领域发挥巨大潜力。</p>
-          <p><strong>开发者视角：</strong>观察其奖励函数的设计，如何量化“发现”这一抽象行为。</p>
+          <p><strong>开发者视角：</strong>观察其奖励函数的设计，如何量化"发现"这一抽象行为。</p>
         </div>
-      </div>
 
-      <div class="card">
         <div class="card-content">
           <h3>📰 MiroEval: 多模态深研 Agent 评测基准</h3>
           <div class="meta">
@@ -211,14 +170,17 @@
             <span class="source"><a href="https://huggingface.co/papers" target="_blank" rel="noopener noreferrer">🔗 详情</a></span>
           </div>
           <p><strong>一句话总结：</strong>一个针对深度研究型 Agent 的基准测试，同时评估其执行过程和最终结果。</p>
-          <p><strong>深度分析：</strong>传统的评测仅关注答案正误，而 MiroEval 强调“思考路径”的正确性。对于深研 Agent 而言，正确的答案如果来自错误的推导则是不可信的。该基准通过对中间步骤的细粒度打分，强制 Agent 提高推理透明度。</p>
+          <p><strong>深度分析：</strong>传统的评测仅关注答案正误，而 MiroEval 强调"思考路径"的正确性。对于深研 Agent 而言，正确的答案如果来自错误的推导则是不可信的。该基准通过对中间步骤的细粒度打分，强制 Agent 提高推理透明度。</p>
           <p><strong>开发者视角：</strong>在开发复杂 Agent 时，应引入过程评测而非仅依赖端到端结果。</p>
         </div>
-      </div>
+      </section>
 
-      <div class="section-title">📚 论文推荐</div>
+      <!-- ═══════════════════════════════════════
+           Section 5: 论文推荐
+           ═══════════════════════════════════════ -->
+      <section class="card">
+        <h2>📚 论文推荐</h2>
 
-      <div class="card">
         <div class="card-content">
           <h3><a href="https://arxiv.org/abs/2504.20020" target="_blank" rel="noopener noreferrer">Modular Machine Learning: Path towards New-Gen LLMs</a></h3>
           <div class="meta">
@@ -228,9 +190,7 @@
           <p><strong>核心贡献：</strong>提出模块化机器学习架构，旨在解决 LLM 规模增长带来的计算冗余。</p>
           <p><strong>方法：</strong>通过将模型分解为可动态加载的专家模块，仅在需要时激活相关权重，实现效率与性能的平衡。</p>
         </div>
-      </div>
 
-      <div class="card">
         <div class="card-content">
           <h3><a href="https://huggingface.co/papers/2606.03746" target="_blank" rel="noopener noreferrer">Qwen-Image-Flash: Beyond Objective Design</a></h3>
           <div class="meta">
@@ -240,9 +200,7 @@
           <p><strong>核心贡献：</strong>推出极轻量级的视觉语言模型，在保持高性能的同时大幅降低推理延迟。</p>
           <p><strong>方法：</strong>优化视觉 token 的压缩比率，并引入 Flash-Attention 的变体以加速图像解析。</p>
         </div>
-      </div>
 
-      <div class="card">
         <div class="card-content">
           <h3><a href="https://huggingface.co/papers" target="_blank" rel="noopener noreferrer">DataFlex: Data-Centric Dynamic Training Framework</a></h3>
           <div class="meta">
@@ -250,9 +208,9 @@
             <span class="source">HuggingFace · 2026-06-05</span>
           </div>
           <p><strong>核心贡献：</strong>建立一套以数据为中心的动态训练框架，在训练过程中实时调整数据分布。</p>
-          <p><strong>方法：</strong>根据模型当前的损失分布，动态采样更具“挑战性”的样本，加速模型收敛并提升泛化能力。</p>
+          <p><strong>方法：</strong>根据模型当前的损失分布，动态采样更具"挑战性"的样本，加速模型收敛并提升泛化能力。</p>
         </div>
-      </div>
+      </section>
 
       <footer>
         Generated by Hermes Agent · 2026-06-05
