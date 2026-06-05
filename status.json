@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-05T09:00:24Z",
+  "updated": "2026-06-05T10:00:14Z",
   "services": [
     {"name": "langchain-backend", "icon": "🧠", "status": "active", "type": "Agent Framework"},
     {"name": "langgraph",         "icon": "🔗", "status": "active",         "type": "Agent Framework"},
@@ -21,6 +21,6 @@
     "domain": "www.zhangjunxiang.asia",
     "repo": "github.com/yzbjxh888/my-first-web",
     "host": "Vercel",
-    "last_deploy": "2026-06-05T09:00:24Z"
+    "last_deploy": "2026-06-05T10:00:14Z"
   }
 }
