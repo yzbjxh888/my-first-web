@@ -201,6 +201,54 @@ body {
   color: var(--text-muted);
 }
 
+/* Markdown-rendered detail tables and code */
+.detail-markdown h3 {
+  font-size: 1rem;
+  color: var(--accent);
+  margin: 1.2rem 0 0.5rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--border);
+}
+.detail-markdown h4 {
+  font-size: 0.9rem;
+  color: var(--text-main);
+  margin: 0.8rem 0 0.3rem;
+}
+.detail-markdown table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  margin: 0.5rem 0 1rem;
+}
+.detail-markdown th {
+  background: rgba(255,255,255,0.05);
+  color: var(--accent);
+  padding: 0.4rem 0.6rem;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid var(--border);
+}
+.detail-markdown td {
+  padding: 0.35rem 0.6rem;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  vertical-align: top;
+}
+.detail-markdown code {
+  background: rgba(255,255,255,0.08);
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+  font-family: 'JetBrains Mono', 'Cascadia Code', monospace;
+  font-size: 0.85em;
+  color: #f472b6;
+}
+.detail-markdown ul {
+  margin: 0.3rem 0;
+  padding-left: 1.2rem;
+}
+.detail-markdown li {
+  margin: 0.2rem 0;
+}
+
 .related-skills {
   margin-top: 1rem;
   display: flex;

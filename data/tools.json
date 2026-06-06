@@ -271,30 +271,30 @@
   },
   {
     "id": "codegraph-mcp",
-    "name_cn": "CodeGraph 代码图谱",
+    "name_cn": "CodeGraph 代码图谱分析",
     "name_en": "CodeGraph MCP",
     "icon": "🔍",
     "category": "MCP",
     "summary": "代码仓库深度分析工具：符号搜索、调用链追踪、变更影响分析。",
-    "detail": "8 个工具：`codegraph_search` 符号搜索，`codegraph_callers` 查询调用者，`codegraph_callees` 查询被调用函数，`codegraph_impact` 分析变更影响范围，`codegraph_node` 获取符号详情，`codegraph_explore` 探索代码库结构，`codegraph_status` 索引健康检查，`codegraph_files` 索引文件树。使用方式：在 Hermes 对话中提及相关问题即可自动调用。"
+    "detail": "## 🛠️ 全部工具（8个）\n\n| 工具 | 说明 |\n|------|------|\n| `codegraph_explore` | 主入口——探索代码库结构、理解目录组织 |\n| `codegraph_search` | 按名称快速搜索符号（函数/类/变量） |\n| `codegraph_callers` | 查询谁调用了指定函数——理解调用链 |\n| `codegraph_callees` | 查询指定函数调用了谁——展开调用链路 |\n| `codegraph_impact` | 分析修改某个符号会影响哪些代码 |\n| `codegraph_node` | 获取单个符号的完整定义和内部信息 |\n| `codegraph_status` | 索引健康检查（文件数/节点数） |\n| `codegraph_files` | 列出已索引的文件树（含语言+符号数） |\n\n## 📖 使用示例\n\n- **探索代码库**：在对话中说「帮我看看这个仓库的项目结构」\n- **查找调用链**：说「找出哪些地方调用了 `train_model()`」\n- **变更影响分析**：在修改前说「如果我改 `database.py` 中的 `connect()` 会影响哪些模块」\n- **代码审查**：打开 PR 后说「列出这个 PR 影响的函数和文件」\n\n## ⚙️ 配置\n\nHermes 默认已启用此 MCP 服务器。在 `~/.hermes/config.yaml` 中通过 `codegraph serve --mcp` 配置。"
   },
   {
     "id": "dbeast-mcp",
-    "name_cn": "DBEasi 数据库",
+    "name_cn": "DBEasi 数据库工具",
     "name_en": "DBEasi MCP",
     "icon": "🗃️",
     "category": "MCP",
     "summary": "PostgreSQL 数据库管理：连接、查询、Schema 探索、数据迁移。",
-    "detail": "21 个工具：连接管理（connect/disconnect）、SQL 查询（execute_query/query）、Schema 查看（list_tables/describe_table）、数据导入/导出等。使用方式：说「查询数据库中的用户表」即可。"
+    "detail": "## 🛠️ 全部工具（21个）\n\n| 工具 | 说明 |\n|------|------|\n| `connect` / `disconnect` | 连接/断开 PostgreSQL 数据库 |\n| `execute_sql` | 执行任意 SQL 查询 |\n| `list_databases` / `list_tables` | 列出数据库和表 |\n| `describe_table` | 查看表 Schema（字段名、类型、约束） |\n| `search_tables` | 按表名搜索 |\n| `explain_query` | 分析查询执行计划 |\n| `import_csv` / `export_csv` | CSV 数据导入/导出 |\n| `list_views` / `list_indexes` | 列出视图和索引 |\n| `get_table_stats` | 表统计信息（行数、大小） |\n| `run_transaction` | 执行事务（BEGIN…COMMIT） |\n| `kill_query` | 终止运行中的查询 |\n| `get_server_info` | 服务器版本、运行时状态 |\n| `set_config` / `get_config` | 读写数据库配置参数 |\n| `create_user` / `list_users` | 用户管理 |\n| `grant_permissions` | 授权管理 |\n\n## 📖 使用示例\n\n- **直连查询**：说「连上 PostgreSQL 查看 orders 表的最新 10 条记录」\n- **数据迁移**：说「把这个 CSV 导入到 users 表中」\n- **性能诊断**：说「分析一下 orders 表的慢查询」\n- **Schema 探索**：说「列出所有表的字段和关系图」\n\n## ⚙️ 配置\n\n需要在 `~/.hermes/config.yaml` 或环境变量中配置 `DB_HOST`、`DB_PORT`、`DB_USER`、`DB_PASSWORD` 等连接参数。"
   },
   {
     "id": "duckdb-mcp",
-    "name_cn": "DuckDB 数据引擎",
+    "name_cn": "DuckDB 数据分析引擎",
     "name_en": "DuckDB MCP",
     "icon": "🐤",
     "category": "MCP",
     "summary": "DuckDB/MotherDuck 嵌入式 OLAP 数据库：高性能数据分析查询。",
-    "detail": "4 个工具：`execute_query` 执行 SQL 查询，`list_databases` 列出数据库，`list_tables` 列出表。使用方式：说「分析这份 CSV 数据」触发 DuckDB 分析。"
+    "detail": "## 🛠️ 全部工具（4个）\n\n| 工具 | 说明 |\n|------|------|\n| `execute_query` | 执行 DuckDB SQL 查询，支持 CSV/Parquet/JSON 直接读取 |\n| `list_databases` | 列出可用数据库 |\n| `list_tables` | 列出当前数据库中的表 |\n| `describe_table` | 查看表结构 |\n\n## 📖 使用示例\n\n- **即席分析**：说「分析这个 CSV 文件，按月份统计销售额」——Hermes 会自动加载 CSV 到 DuckDB 并执行分析查询\n- **数据聚合**：说「把这三个 Parquet 文件按时间分区做 join 查询」\n- **格式转换**：说「把这个 JSON 数据转成 Parquet 格式」\n\n## ⚙️ 配置\n\nDuckDB 使用无服务器架构，多数情况无需配置。如需连接 MotherDuck（云端），配置 `motherduck_token`。"
   },
   {
     "id": "docker-mcp",
@@ -303,16 +303,16 @@
     "icon": "🐳",
     "category": "MCP",
     "summary": "Docker 容器全生命周期管理：列出、启动、停止、日志查看。",
-    "detail": "5 个工具：`list_containers` 列出容器（含停止的），`container_logs` 查看日志，`exec_command` 在容器内执行命令。使用方式：说「帮我看看有哪些运行中的容器」或「查看 Nginx 的日志」。"
+    "detail": "## 🛠️ 全部工具（5个）\n\n| 工具 | 说明 |\n|------|------|\n| `list_containers` | 列出所有容器（含已停止的，all=True 查看全部） |\n| `list_images` | 列出本地镜像 |\n| `container_logs` | 查看容器日志（支持 tail 行数、时间范围过滤） |\n| `exec_command` | 在运行中的容器内执行命令 |\n| `stop_container` | 停止指定容器 |\n\n## 📖 使用示例\n\n- **查看容器**：说「看看现在哪些容器在运行」\n- **查日志**：说「查看 PostgreSQL 容器最近的 50 行日志」\n- **运维操作**：说「重启 nginx 容器」或「进入 postgres 容器执行 `psql -U user`」\n- **镜像管理**：说「列出本地有哪些镜像，按大小排序」\n\n## ⚙️ 配置\n\n需要 Hermes 运行环境中 Docker Socket 可用（通常是 `/var/run/docker.sock`）。在 WSL 中需确保 Docker Desktop 已启动并启用了 WSL 集成。"
   },
   {
     "id": "github-mcp",
-    "name_cn": "GitHub API",
+    "name_cn": "GitHub 全功能接口",
     "name_en": "GitHub MCP",
     "icon": "🐙",
     "category": "MCP",
     "summary": "GitHub 全功能接口：搜索仓库、代码、Issue、PR、管理文件。",
-    "detail": "8 个工具：`github_search_repositories` 搜索仓库，`github_search_code` 搜索代码，`github_search_issues_and_prs` 搜索 Issue 和 PR。使用方式：说「在 GitHub 上搜索某某仓库」或「查看这个 Issue」。"
+    "detail": "## 🛠️ 全部工具（8个）\n\n| 工具 | 说明 |\n|------|------|\n| `search_repositories` | 按语言/星数/主题搜索仓库 |\n| `search_code` | 在代码中搜索关键字和模式 |\n| `search_issues_and_prs` | 搜索 Issue 和 Pull Request |\n| `search_users` | 搜索用户 |\n| `get_repository` | 获取仓库详情（星数、分支、许可） |\n| `get_file_contents` | 获取仓库中文件内容 |\n| `create_or_update_file` | 创建或更新仓库文件（自动 commit） |\n| `push_files` | 批量推送文件变更 |\n\n## 📖 使用示例\n\n- **搜索代码**：说「搜一下 GitHub 上开源的终端 UI 框架」\n- **读取文件**：说「查看这个仓库的 `README.md` 内容」\n- **直接编辑**：说「修改 `docs/index.html` 的标题为我喜欢的风格」\n- **提交代码**：说「把这几段代码提交到 `feature/auto-sync` 分支」\n\n## ⚙️ 配置\n\n需要 GitHub Token（`GITHUB_TOKEN` 环境变量）。Token 需有 `repo` 和 `workflow` 权限才能操作私有仓库和触发 Action。"
   },
   {
     "id": "playwright-mcp",
@@ -321,7 +321,7 @@
     "icon": "🎭",
     "category": "MCP",
     "summary": "浏览器自动化：页面导航、点击、截图、表单填写、控制台监控。",
-    "detail": "65 个工具：页面导航（browser_navigate/browser_back/browser_forward），元素交互（browser_click/browser_type/browser_snapshot），截图（browser_take_screenshot），JS 执行（browser_evaluate_javascript/console_observer）。使用方式：Hermes 会自动调用这些工具进行网页端 QA 测试。"
+    "detail": "## 🛠️ 全部工具（65个）\n\n### 页面导航类\n| 工具 | 说明 |\n|------|------|\n| `browser_navigate` | 导航到指定 URL |\n| `browser_go_back` / `browser_go_forward` | 前进/后退 |\n| `browser_refresh` | 刷新页面 |\n| `browser_set_viewport` | 设置视口尺寸（手机/桌面模拟） |\n\n### 元素交互类\n| 工具 | 说明 |\n|------|------|\n| `browser_click` / `browser_dblclick` | 单击/双击 |\n| `browser_type` / `browser_fill` | 输入文本/填充表单 |\n| `browser_hover` / `browser_focus` | 悬停/聚焦 |\n| `browser_drag_and_drop` | 拖拽操作 |\n| `browser_select_option` | 选择下拉框选项 |\n| `browser_check` / `browser_uncheck` | 勾选/取消勾选 |\n| `browser_upload_file` | 上传文件 |\n| `browser_download_file` | 下载文件 |\n\n### 页面分析类\n| 工具 | 说明 |\n|------|------|\n| `browser_take_screenshot` | 截图（全页/区域） |\n| `browser_get_html` / `browser_get_text` | 获取 HTML/纯文本 |\n| `browser_evaluate_javascript` | 执行 JS 并获取返回值 |\n| `browser_get_network_logs` | 查看网络请求 |\n| `browser_get_console_messages` | 查看控制台日志 |\n| `browser_get_cookies` | 查看 Cookies |\n\n### 多页面管理\n| 工具 | 说明 |\n|------|------|\n| `browser_new_page` / `browser_close_page` | 新建/关闭页签 |\n| `browser_switch_page` | 切换页签 |\n| `browser_list_pages` | 列出所有页签 |\n\n## 📖 使用示例\n\n- **自动化测试**：说「打开登录页面，输入用户名密码，截图确认」\n- **数据抓取**：说「打开这个页面，提取所有文章标题和链接」\n- **交互验证**：说「模拟用户点击『加入购物车』，检查控制台是否有报错」\n- **表单填写**：说「帮我填这张表单——姓名张三、邮箱 test@test.com」\n\n## ⚙️ 配置\n\nHermes 已预装 Playwright MCP。不需要额外配置，但第一次使用会自动下载 Chromium 浏览器（约 150MB）。"
   },
   {
     "id": "chrome-devtools-mcp",
@@ -330,15 +330,15 @@
     "icon": "🔧",
     "category": "MCP",
     "summary": "Chrome DevTools Protocol 调试：网络监控、DOM 检查、性能分析。",
-    "detail": "29 个工具：`click` 点击元素，`close_page` 关闭页面，`drag` 拖拽交互，网络请求拦截、DOM 断点、CSS 修改等。使用方式：用于高级网页调试和自动化测试。"
+    "detail": "## 🛠️ 全部工具（29个）\n\n| 工具 | 说明 |\n|------|------|\n| `click` | 点击 DOM 元素 |\n| `type` | 在元素中输入文本 |\n| `take_screenshot` | 页面截图 |\n| `get_element` / `get_elements` | 获取单个/多个 DOM 元素 |\n| `get_attributes` | 获取元素属性 |\n| `set_attributes` | 设置元素属性 |\n| `evaluate_javascript` | 执行 JS 代码 |\n| `new_page` / `close_page` | 新建/关闭页面 |\n| `list_pages` | 列出当前页面 |\n| `refresh_page` | 刷新页面 |\n| `perform_drag` | 拖拽操作 |\n| `navigate` | 导航到 URL |\n| `get_html` / `get_text` | 获取 HTML/文本 |\n| `capture_screenshot` | 截图（与 take_screenshot 类似） |\n| `get_network_requests` | 查看网络请求 |\n| `set_breakpoint` / `remove_breakpoint` | 设置/移除断点 |\n| `resume_script` / `step_over` / `step_into` | 调试（继续/跳过/进入） |\n| `get_call_stack` / `get_scope_variables` | 查看调用栈和变量 |\n| `get_console_messages` | 查看控制台输出 |\n| `audit_accessibility` | 无障碍审计 |\n| `audit_performance` | 性能审计 |\n\n## 📖 使用示例\n\n- **网络监控**：说「打开页面，列出所有 API 请求的耗时」\n- **DOM 调试**：说「找到页面中所有隐藏的 input 字段」\n- **性能分析**：说「审计这个页面的性能瓶颈」\n- **JS 注入测试**：说「在页面中执行这段 JS 测试代码」\n\n## ⚙️ 配置\n\n需要 Chrome/Chromium 浏览器在远程调试模式（`--remote-debugging-port=9222`）下运行。Hermes 会自动连接到 `http://localhost:9222/json/version`。"
   },
   {
     "id": "cortex-mcp",
-    "name_cn": "Cortex 知识库",
+    "name_cn": "Cortex 知识引擎",
     "name_en": "Cortex MCP",
     "icon": "🧠",
     "category": "MCP",
     "summary": "Cortex 知识引擎：语义搜索、上下文简报、知识对象管理。",
-    "detail": "26 个工具：`cortex_search` 混合关键词+语义搜索，`cortex_context` 获取简报摘要。使用方式：说「搜索关于某某的知识」即可查询 Cortex 知识库。"
+    "detail": "## 🛠️ 全部工具（26个）\n\n| 工具 | 说明 |\n|------|------|\n| `cortex_search` | 混合搜索（关键词+语义嵌入，支持过滤器） |\n| `cortex_context` | 获取简报摘要（单条/批量的浓缩摘要） |\n| `cortex_get_context` | 获取知识对象的完整上下文 |\n| `cortex_list_sources` | 列出所有知识来源 |\n| `cortex_create_object` / `cortex_update_object` | 创建/更新知识对象 |\n| `cortex_delete_object` | 删除知识对象 |\n| `cortex_list_objects` | 列出知识对象（支持分页和排序） |\n| `cortex_get_object` | 获取单个知识对象详情 |\n| `cortex_batch_operation` | 批量操作（创建/更新/删除） |\n| `cortex_get_statistics` | 知识库统计 |\n| `cortex_set_thresholds` / `cortex_get_thresholds` | 配置检索阈值 |\n| `cortex_health_check` | 健康检查 |\n| `cortex_list_connections` | 列出已连接的数据源 |\n| `cortex_create_update_sync` / `cortex_delete_sync` | 管理同步任务 |\n| `cortex_start_sync` / `cortex_stop_sync` / `cortex_get_sync_status` | 控制同步 |\n| `cortex_list_dashboards` / `cortex_get_dashboard` | 仪表盘管理 |\n| `cortex_list_live_notifications` | 实时通知 |\n| `cortex_export_note_as` | 导出笔记为指定格式 |\n| `cortex_create_note` | 创建笔记 |\n\n## 📖 使用示例\n\n- **语义搜索**：说「搜索关于『Transformer 注意力机制』的知识」——会同时匹配关键词和语义\n- **知识管理**：说「把这段 Markdown 笔记保存到 Cortex 中」\n- **定时同步**：说「设置每 15 分钟自动同步这个 RSS 源」\n- **仪表盘**：说「看一下知识库的统计仪表盘」\n\n## ⚙️ 配置\n\nCortex MCP 服务默认在 `http://127.0.0.1:1314/mcp` 运行。需先启动 Cortex 服务：`systemctl --user start cortex`。"
   }
 ]
