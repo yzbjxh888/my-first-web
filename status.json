@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-06T06:09:33Z",
+  "updated": "2026-06-06T14:17:02Z",
   "services": [
     {
       "name": "langchain-backend",
@@ -92,33 +92,33 @@
       "type": "Management"
     },
     {
-      "name": "hermes-gateway\n",
+      "name": "hermes-gateway",
       "icon": "⚙️",
-      "status": "inactive",
+      "status": "active",
       "type": "Service"
     },
     {
-      "name": "dify-plugin-daemon\n",
+      "name": "dify-plugin-daemon",
       "icon": "⚙️",
-      "status": "inactive",
+      "status": "active",
       "type": "Service"
     },
     {
-      "name": "privoxy-bridge\n",
+      "name": "privoxy-bridge",
       "icon": "⚙️",
-      "status": "inactive",
+      "status": "active",
       "type": "Service"
     },
     {
-      "name": "ai-abbacus-cortex-dashboard\n",
+      "name": "ai-abbacus-cortex-dashboard",
       "icon": "⚙️",
-      "status": "inactive",
+      "status": "active",
       "type": "Service"
     },
     {
-      "name": "ai-abbacus-cortex-mcp\n",
+      "name": "ai-abbacus-cortex-mcp",
       "icon": "⚙️",
-      "status": "inactive",
+      "status": "active",
       "type": "Service"
     }
   ],
