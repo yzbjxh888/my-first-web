@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-06T03:05:43Z",
+  "updated": "2026-06-06T03:12:47Z",
   "services": [
     {
       "name": "langchain-backend",
@@ -16,7 +16,7 @@
     {
       "name": "langflow",
       "icon": "🌊",
-      "status": "active",
+      "status": "inactive",
       "type": "Agent Framework"
     },
     {
@@ -96,6 +96,6 @@
     "domain": "www.zhangjunxiang.asia",
     "repo": "github.com/yzbjxh888/my-first-web",
     "host": "Vercel",
-    "last_deploy": "2026-06-06T03:05:43Z"
+    "last_deploy": "2026-06-06T03:12:47Z"
   }
 }
