@@ -140,7 +140,6 @@
                     grid.appendChild(card);
                 });
 
-                section.appendChild(grid);
                 container.appendChild(section);
             });
         }
@@ -153,25 +152,27 @@
             document.getElementById('modal-title').textContent = skill.name_cn || skill.name_en || skill.id;
             document.getElementById('modal-subtitle').textContent = skill.name_en || skill.id;
 
-            // Build content: detail + related skills
+            // Render detail as Markdown (single parse, matching tools.html)
             const contentDiv = document.getElementById('modal-content');
-            let html = skill.detail ? marked.parse(skill.detail) : '<p>暂无详细说明。</p>';
+            contentDiv.innerHTML = skill.detail ? marked.parse(skill.detail) : '<p>暂无详细说明。</p>';
 
+            // Append related skills as plain HTML, not markdown
             if (skill.related && skill.related.length > 0) {
-                const relatedList = skill.related
+                const relatedItems = skill.related
                     .filter(id => id !== skill.id)
                     .map(id => {
                         const rel = allSkills.find(s => s.id === id);
-                        return rel ? `- [${rel.name_cn || rel.id}](#)` : '';
+                        return rel ? `<li><a href="#" onclick="event.preventDefault(); closeDetailModal(); setTimeout(() => openSkillModal('${rel.id}'), 100)">${rel.name_cn || rel.id}</a></li>` : '';
                     })
                     .filter(Boolean)
-                    .join('\n');
-                if (relatedList) {
-                    html += `\n\n### 🔗 相关技能\n\n${relatedList}`;
+                    .join('');
+                if (relatedItems) {
+                    const relatedSection = document.createElement('div');
+                    relatedSection.className = 'related-section';
+                    relatedSection.innerHTML = `<h3 style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid #334155;">🔗 相关技能</h3><ul style="padding-left:1.2rem;">${relatedItems}</ul>`;
+                    contentDiv.appendChild(relatedSection);
                 }
             }
-
-            contentDiv.innerHTML = marked.parse(html);
 
             // Generate TOC from headings
             const nav = document.getElementById('modal-nav');
