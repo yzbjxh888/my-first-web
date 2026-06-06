@@ -894,7 +894,7 @@
     "name_en": "serving-llms-vllm",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能",
+    "summary": "vLLM 推理服务：高性能 LLM 部署、量化模型推理与 OpenAI 兼容 API。",
     "detail": "自动同步添加的 Hermes Agent 技能。",
     "related": [],
     "from_auto_sync": true
@@ -905,8 +905,8 @@
     "name_en": "codegraph-integrate",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能",
-    "detail": "自动同步添加的 Hermes Agent 技能。",
+    "summary": "CodeGraph 集成：在 Hermes 中对接 CodeGraph MCP 进行代码仓库分析。",
+    "detail": "使用方法：在 hermes 对话中直接说「分析这个仓库的代码结构」即可触发 CodeGraph 工具。支持搜索符号、查找调用链、分析变更影响范围。",
     "related": [],
     "from_auto_sync": true
   },
@@ -916,7 +916,7 @@
     "name_en": "hermes-system-integ",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能",
+    "summary": "Hermes 系统集成：系统服务管理、配置文件监控和环境集成。",
     "detail": "自动同步添加的 Hermes Agent 技能。",
     "related": [],
     "from_auto_sync": true
@@ -927,7 +927,7 @@
     "name_en": "analyzing-external-",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能",
+    "summary": "外部数据分析：接入并分析第三方数据源。",
     "detail": "自动同步添加的 Hermes Agent 技能。",
     "related": [],
     "from_auto_sync": true
@@ -938,7 +938,7 @@
     "name_en": "auto-hypothesis-tes",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能",
+    "summary": "自动假设检验：LLM 驱动的假设生成与验证工作流。",
     "detail": "自动同步添加的 Hermes Agent 技能。",
     "related": [],
     "from_auto_sync": true
@@ -960,8 +960,8 @@
     "name_en": "hermes-proxy-provid",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能",
-    "detail": "自动同步添加的 Hermes Agent 技能。",
+    "summary": "自定义 API 代理配置：通过 SOCKS 为 Hermes 添加自定义模型提供方。",
+    "detail": "使用方法：编辑 `~/.hermes/config.yaml` 的 `custom_providers:` 部分，配置 SOCKS 代理和 API endpoint。支持 OpenRouter、Anthropic、Google Gemini 等提供方。配置后运行 `hermes` 即可自动加载。",
     "related": [],
     "from_auto_sync": true
   },
@@ -971,7 +971,7 @@
     "name_en": "baoyu-article-illus",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能",
+    "summary": "宝愈文章插图：为文章自动生成风格一致的知识插图。",
     "detail": "自动同步添加的 Hermes Agent 技能。",
     "related": [],
     "from_auto_sync": true
@@ -982,7 +982,7 @@
     "name_en": "ideation",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能",
+    "summary": "创意构想引擎：通过创造性约束生成项目创意和设计方案。",
     "detail": "自动同步添加的 Hermes Agent 技能。",
     "related": [],
     "from_auto_sync": true
@@ -993,7 +993,7 @@
     "name_en": "songwriting-and-ai-",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能",
+    "summary": "歌曲创作与 AI 音乐：创作技巧与 Suno AI 音乐提示词。",
     "detail": "自动同步添加的 Hermes Agent 技能。",
     "related": [],
     "from_auto_sync": true
@@ -1004,7 +1004,7 @@
     "name_en": "my-first-web-manage",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能",
+    "summary": "个人网站管理：Git → GitHub → Vercel 自动部署与内容同步。",
     "detail": "自动同步添加的 Hermes Agent 技能。",
     "related": [],
     "from_auto_sync": true
@@ -1015,8 +1015,8 @@
     "name_en": "system-service-debu",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能",
-    "detail": "自动同步添加的 Hermes Agent 技能。",
+    "summary": "Systemd 服务调试：统一框架管理和调试 systemd --user 服务。",
+    "detail": "使用方法：通过 `dev status` 查看所有服务状态，`dev start/stop/restart <服务名>` 控制服务。服务定义在 `~/.config/systemd/user/` 下。",
     "related": [],
     "from_auto_sync": true
   },
@@ -1026,8 +1026,8 @@
     "name_en": "minecraft-modpack-s",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能",
-    "detail": "自动同步添加的 Hermes Agent 技能。",
+    "summary": "Minecraft 整合包服务器：搭建 CurseForge/Modrinth 模组服务器。",
+    "detail": "使用方法：1. 下载整合包（CurseForge/Modrinth）2. 运行 `dev start minecraft-server` 3. 在 Minecraft 客户端中连接服务器。",
     "related": [],
     "from_auto_sync": true
   },
@@ -1037,7 +1037,7 @@
     "name_en": "group-chat-agent-tr",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能",
+    "summary": "群聊智能体触发：快速查出群聊中的角色和消息内容。",
     "detail": "自动同步添加的 Hermes Agent 技能。",
     "related": [],
     "from_auto_sync": true
@@ -1048,7 +1048,7 @@
     "name_en": "audiocraft-audio-ge",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能",
+    "summary": "AudioCraft 音频生成：MusicGen 文本转音乐、AudioGen 文本转音效。",
     "detail": "自动同步添加的 Hermes Agent 技能。",
     "related": [],
     "from_auto_sync": true
@@ -1059,7 +1059,7 @@
     "name_en": "evaluating-llms-har",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能",
+    "summary": "LLM 评估框架：使用 lm-eval-harness 在 MMU、GSM8K 等基准测试模型。",
     "detail": "自动同步添加的 Hermes Agent 技能。",
     "related": [],
     "from_auto_sync": true
@@ -1070,7 +1070,7 @@
     "name_en": "segment-anything-mo",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能",
+    "summary": "SAM 图像分割：通过点、框、遮罩进行零样本图像分割。",
     "detail": "自动同步添加的 Hermes Agent 技能。",
     "related": [],
     "from_auto_sync": true
@@ -1081,7 +1081,7 @@
     "name_en": "teams-meeting-pipel",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能",
+    "summary": "Teams 会议摘要：通过 Hermes CLI 管理 Teams 会议摘要管线。",
     "detail": "自动同步添加的 Hermes Agent 技能。",
     "related": [],
     "from_auto_sync": true
@@ -1092,7 +1092,7 @@
     "name_en": "research-paper-writ",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能",
+    "summary": "研究论文写作：学术研究、论文发现、文献综述工作流。",
     "detail": "自动同步添加的 Hermes Agent 技能。",
     "related": [],
     "from_auto_sync": true
@@ -1103,7 +1103,7 @@
     "name_en": "debugging-hermes-tu",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能",
+    "summary": "Hermes TUI 调试：使用 Python、Gateway、Ink UI 调试斜杠命令。",
     "detail": "自动同步添加的 Hermes Agent 技能。",
     "related": [],
     "from_auto_sync": true
@@ -1114,8 +1114,8 @@
     "name_en": "hermes-agent-skill-",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能",
-    "detail": "自动同步添加的 Hermes Agent 技能。",
+    "summary": "Hermes 智能体核心配置：管理提示词、模型、工具提供方和网关设置。",
+    "detail": "使用方法：在终端运行 `hermes` 启动对话模式。使用 `/model <模型名>` 切换模型，`/provider <提供商>` 切换提供方。通过 `~/.hermes/config.yaml` 配置默认模型、工具和网关。支持 CLI、TUI、Web UI 三种交互方式，也可通过 Telegram/Discord 集成使用。",
     "related": [],
     "from_auto_sync": true
   },
@@ -1125,7 +1125,7 @@
     "name_en": "hermes-s6-container",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能",
+    "summary": "s6-overlay 容器监督：管理 s6 监督树中的服务生命周期和依赖。",
     "detail": "自动同步添加的 Hermes Agent 技能。",
     "related": [],
     "from_auto_sync": true
@@ -1136,7 +1136,7 @@
     "name_en": "subagent-driven-dev",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能",
+    "summary": "子代理驱动开发：通过 delegate_task 子代理执行两阶段审核。",
     "detail": "自动同步添加的 Hermes Agent 技能。",
     "related": [],
     "from_auto_sync": true
@@ -1147,7 +1147,7 @@
     "name_en": "sysml-backend-pipel",
     "icon": "🔌",
     "category": "Other",
-    "summary": "Hermes Agent 技能",
+    "summary": "SysML 建模：使用 sysml1.6.md + Backend 状态管理器进行系统建模。",
     "detail": "自动同步添加的 Hermes Agent 技能。",
     "related": [],
     "from_auto_sync": true

@@ -268,5 +268,77 @@
     "summary": "MCP 工具 - ────────────────",
     "detail": "通过 Model Context Protocol 集成的外部工具服务。",
     "status": "connected"
+  },
+  {
+    "id": "codegraph-mcp",
+    "name_cn": "CodeGraph 代码图谱",
+    "name_en": "CodeGraph MCP",
+    "icon": "🔍",
+    "category": "MCP",
+    "summary": "代码仓库深度分析工具：符号搜索、调用链追踪、变更影响分析。",
+    "detail": "8 个工具：`codegraph_search` 符号搜索，`codegraph_callers` 查询调用者，`codegraph_callees` 查询被调用函数，`codegraph_impact` 分析变更影响范围，`codegraph_node` 获取符号详情，`codegraph_explore` 探索代码库结构，`codegraph_status` 索引健康检查，`codegraph_files` 索引文件树。使用方式：在 Hermes 对话中提及相关问题即可自动调用。"
+  },
+  {
+    "id": "dbeast-mcp",
+    "name_cn": "DBEasi 数据库",
+    "name_en": "DBEasi MCP",
+    "icon": "🗃️",
+    "category": "MCP",
+    "summary": "PostgreSQL 数据库管理：连接、查询、Schema 探索、数据迁移。",
+    "detail": "21 个工具：连接管理（connect/disconnect）、SQL 查询（execute_query/query）、Schema 查看（list_tables/describe_table）、数据导入/导出等。使用方式：说「查询数据库中的用户表」即可。"
+  },
+  {
+    "id": "duckdb-mcp",
+    "name_cn": "DuckDB 数据引擎",
+    "name_en": "DuckDB MCP",
+    "icon": "🐤",
+    "category": "MCP",
+    "summary": "DuckDB/MotherDuck 嵌入式 OLAP 数据库：高性能数据分析查询。",
+    "detail": "4 个工具：`execute_query` 执行 SQL 查询，`list_databases` 列出数据库，`list_tables` 列出表。使用方式：说「分析这份 CSV 数据」触发 DuckDB 分析。"
+  },
+  {
+    "id": "docker-mcp",
+    "name_cn": "Docker 容器管理",
+    "name_en": "Docker MCP",
+    "icon": "🐳",
+    "category": "MCP",
+    "summary": "Docker 容器全生命周期管理：列出、启动、停止、日志查看。",
+    "detail": "5 个工具：`list_containers` 列出容器（含停止的），`container_logs` 查看日志，`exec_command` 在容器内执行命令。使用方式：说「帮我看看有哪些运行中的容器」或「查看 Nginx 的日志」。"
+  },
+  {
+    "id": "github-mcp",
+    "name_cn": "GitHub API",
+    "name_en": "GitHub MCP",
+    "icon": "🐙",
+    "category": "MCP",
+    "summary": "GitHub 全功能接口：搜索仓库、代码、Issue、PR、管理文件。",
+    "detail": "8 个工具：`github_search_repositories` 搜索仓库，`github_search_code` 搜索代码，`github_search_issues_and_prs` 搜索 Issue 和 PR。使用方式：说「在 GitHub 上搜索某某仓库」或「查看这个 Issue」。"
+  },
+  {
+    "id": "playwright-mcp",
+    "name_cn": "Playwright 浏览器自动化",
+    "name_en": "Playwright MCP",
+    "icon": "🎭",
+    "category": "MCP",
+    "summary": "浏览器自动化：页面导航、点击、截图、表单填写、控制台监控。",
+    "detail": "65 个工具：页面导航（browser_navigate/browser_back/browser_forward），元素交互（browser_click/browser_type/browser_snapshot），截图（browser_take_screenshot），JS 执行（browser_evaluate_javascript/console_observer）。使用方式：Hermes 会自动调用这些工具进行网页端 QA 测试。"
+  },
+  {
+    "id": "chrome-devtools-mcp",
+    "name_cn": "Chrome DevTools 协议",
+    "name_en": "Chrome DevTools MCP",
+    "icon": "🔧",
+    "category": "MCP",
+    "summary": "Chrome DevTools Protocol 调试：网络监控、DOM 检查、性能分析。",
+    "detail": "29 个工具：`click` 点击元素，`close_page` 关闭页面，`drag` 拖拽交互，网络请求拦截、DOM 断点、CSS 修改等。使用方式：用于高级网页调试和自动化测试。"
+  },
+  {
+    "id": "cortex-mcp",
+    "name_cn": "Cortex 知识库",
+    "name_en": "Cortex MCP",
+    "icon": "🧠",
+    "category": "MCP",
+    "summary": "Cortex 知识引擎：语义搜索、上下文简报、知识对象管理。",
+    "detail": "26 个工具：`cortex_search` 混合关键词+语义搜索，`cortex_context` 获取简报摘要。使用方式：说「搜索关于某某的知识」即可查询 Cortex 知识库。"
   }
 ]
