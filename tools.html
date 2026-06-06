@@ -27,7 +27,6 @@
             <div class="controls">
                 <div id="filter-tabs" class="filter-tabs">
                     <div class="filter-tab active" data-category="all">全部</div>
-                    <!-- Categories will be loaded here -->
                 </div>
             </div>
 
@@ -41,6 +40,23 @@
         </main>
     </div>
 
+    <!-- ============ Detail Modal ============ -->
+    <div id="detail-modal" class="modal-overlay">
+        <div class="modal-wrapper">
+            <button class="modal-close-btn" onclick="closeDetailModal()">✕</button>
+            <div class="modal-layout">
+                <nav class="modal-nav" id="modal-nav"></nav>
+                <div class="modal-body" id="modal-body">
+                    <div id="modal-title-area">
+                        <h2 id="modal-title"></h2>
+                        <p class="modal-subtitle" id="modal-subtitle"></p>
+                    </div>
+                    <div id="modal-content" class="modal-content"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
         let allTools = [];
         let currentCategory = 'all';
@@ -49,8 +65,7 @@
             try {
                 const response = await fetch('data/tools.json');
                 allTools = await response.json();
-                
-                // Get status from status.json
+
                 let statuses = {};
                 try {
                     const statusRes = await fetch('status.json');
@@ -109,34 +124,84 @@
                 card.className = 'card';
                 card.innerHTML = `
                     <div class="card-header">
-                        <span class="card-icon">${tool.icon}</span>
+                        <span class="card-icon">${tool.icon || '🔌'}</span>
                         <div style="display: flex; flex-direction: column;">
-                            <span class="card-title">${tool.name_cn}</span>
-                            <span style="font-size: 0.75rem; opacity: 0.7;">${tool.name_en}</span>
+                            <span class="card-title">${tool.name_cn || tool.name_en || tool.id}</span>
+                            <span style="font-size: 0.75rem; opacity: 0.7;">${tool.name_en || ''}</span>
                         </div>
                         <div style="margin-left: auto; display: flex; align-items: center; gap: 0.4rem;">
                             <div class="status-dot ${dotClass}"></div>
                             <span style="font-size: 0.7rem; opacity: 0.8;">${statusText}</span>
                         </div>
                     </div>
-                    <div class="card-subtitle">${tool.category}</div>
-                    <div class="card-summary">${tool.summary}</div>
-                    <div class="card-detail">
-                        <div class="detail-content">
-                            <div class="detail-markdown">${marked.parse(tool.detail)}</div>
-                        </div>
-                    </div>
+                    <div class="card-subtitle">${tool.category || ''}</div>
+                    <div class="card-summary">${tool.summary || tool.summary || ''}</div>
+                    <button class="detail-btn" onclick="event.stopPropagation(); openDetailModal('${tool.id.replace(/'/g, "\\'")}')">
+                        📖 查看详情
+                    </button>
                 `;
-                card.onclick = () => {
-                    const isExpanded = card.classList.contains('expanded');
-                    document.querySelectorAll('.card.expanded').forEach(c => c.classList.remove('expanded'));
-                    if (!isExpanded) card.classList.add('expanded');
-                };
                 grid.appendChild(card);
             });
 
             container.appendChild(grid);
         }
+
+        function openDetailModal(toolId) {
+            const tool = allTools.find(t => t.id === toolId);
+            if (!tool) return;
+
+            const overlay = document.getElementById('detail-modal');
+            document.getElementById('modal-title').textContent = tool.name_cn || tool.name_en || tool.id;
+            document.getElementById('modal-subtitle').textContent = tool.name_en || tool.id;
+
+            // Render detail as Markdown
+            const contentDiv = document.getElementById('modal-content');
+            contentDiv.innerHTML = tool.detail ? marked.parse(tool.detail) : '<p>暂无详细说明。</p>';
+
+            // Generate TOC from headings
+            const nav = document.getElementById('modal-nav');
+            nav.innerHTML = '';
+            const headings = contentDiv.querySelectorAll('h2, h3, h4');
+            headings.forEach((h, i) => {
+                const id = 'section-' + i;
+                h.id = id;
+                const a = document.createElement('a');
+                a.className = h.tagName === 'H2' ? 'h2' : 'h3';
+                a.textContent = h.textContent;
+                a.href = '#' + id;
+                a.onclick = (e) => {
+                    e.preventDefault();
+                    document.getElementById('modal-body').scrollTo({
+                        top: h.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                };
+                nav.appendChild(a);
+            });
+
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeDetailModal() {
+            const overlay = document.getElementById('detail-modal');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Close on overlay click (outside wrapper)
+        document.getElementById('detail-modal').onclick = (e) => {
+            if (e.target === e.currentTarget) {
+                closeDetailModal();
+            }
+        };
+
+        // Close on Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && document.getElementById('detail-modal').classList.contains('active')) {
+                closeDetailModal();
+            }
+        });
 
         loadTools();
     </script>

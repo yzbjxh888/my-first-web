@@ -28,18 +28,34 @@
                 <input type="text" id="search-bar" class="search-bar" placeholder="搜索技能名称或描述...">
                 <div id="filter-tabs" class="filter-tabs">
                     <div class="filter-tab active" data-category="all">全部</div>
-                    <!-- Categories will be loaded here -->
                 </div>
             </div>
 
             <div id="skills-container">
-                <!-- Skills will be loaded here -->
+                <!-- Skills are loaded here -->
             </div>
 
             <footer>
                 &copy; 2026 Hermes Agent. Built by Zhang Junxiang.
             </footer>
         </main>
+    </div>
+
+    <!-- ============ Detail Modal ============ -->
+    <div id="detail-modal" class="modal-overlay">
+        <div class="modal-wrapper">
+            <button class="modal-close-btn" onclick="closeDetailModal()">✕</button>
+            <div class="modal-layout">
+                <nav class="modal-nav" id="modal-nav"></nav>
+                <div class="modal-body" id="modal-body">
+                    <div id="modal-title-area">
+                        <h2 id="modal-title"></h2>
+                        <p class="modal-subtitle" id="modal-subtitle"></p>
+                    </div>
+                    <div id="modal-content" class="modal-content"></div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script>
@@ -51,8 +67,7 @@
             try {
                 const response = await fetch('data/skills.json');
                 allSkills = await response.json();
-                
-                // Generate category tabs
+
                 const categories = ['all', ...new Set(allSkills.map(s => s.category))];
                 const filterTabs = document.getElementById('filter-tabs');
                 filterTabs.innerHTML = '';
@@ -82,9 +97,9 @@
 
             const filtered = allSkills.filter(skill => {
                 const matchesCategory = currentCategory === 'all' || skill.category === currentCategory;
-                const matchesSearch = skill.name_cn.toLowerCase().includes(searchQuery.toLowerCase()) || 
-                                    skill.summary.toLowerCase().includes(searchQuery.toLowerCase());
-                return matchesCategory && matchesSearch;
+                const matchName = (skill.name_cn || skill.id).toLowerCase().includes(searchQuery.toLowerCase());
+                const matchSummary = (skill.summary || '').toLowerCase().includes(searchQuery.toLowerCase());
+                return matchesCategory && (searchQuery === '' || matchName || matchSummary);
             });
 
             if (filtered.length === 0) {
@@ -92,10 +107,10 @@
                 return;
             }
 
-            // Group by category for rendering
             const grouped = filtered.reduce((acc, skill) => {
-                if (!acc[skill.category]) acc[skill.category] = [];
-                acc[skill.category].push(skill);
+                const cat = skill.category || '其他';
+                if (!acc[cat]) acc[cat] = [];
+                acc[cat].push(skill);
                 return acc;
             }, {});
 
@@ -103,48 +118,25 @@
                 const section = document.createElement('div');
                 section.className = 'category-section';
                 section.innerHTML = `<h2 class="category-header">${category}</h2>`;
-                
+
                 const grid = document.createElement('div');
                 grid.className = 'grid';
 
                 skills.forEach(skill => {
                     const card = document.createElement('div');
                     card.className = 'card';
+                    const safeId = skill.id.replace(/'/g, "\\'");
                     card.innerHTML = `
                         <div class="card-header">
-                            <span class="card-icon">${skill.icon}</span>
-                            <span class="card-title">${skill.name_cn} <span style="font-size:0.8rem; font-weight:normal; opacity:0.7">(${skill.name_en})</span></span>
+                            <span class="card-icon">${skill.icon || '⚙️'}</span>
+                            <span class="card-title">${skill.name_cn || skill.name_en || skill.id}</span>
                         </div>
-                        <div class="card-subtitle">${skill.category}</div>
-                        <div class="card-summary">${skill.summary}</div>
-                        <div class="badge">${skill.category}</div>
-                        <div class="card-detail">
-                            <div class="detail-content">
-                                <div class="detail-markdown">${marked.parse(skill.detail)}</div>
-                                ${skill.related.length > 0 ? `
-                                    <div class="related-skills">
-                                        <span style="font-size:0.8rem; opacity:0.6">相关技能:</span>
-                                        ${skill.related.map(id => {
-                                            const rel = allSkills.find(s => s.id === id);
-                                            return rel ? `<a href="#" class="related-link" onclick="event.preventDefault(); scrollToSkill('${id}')">${rel.name_cn}</a>` : '';
-                                        }).join('')}
-                                    </div>
-                                ` : ''}
-                            </div>
-                        </div>
+                        <div class="card-subtitle">${skill.name_en || skill.id}</div>
+                        <div class="card-summary">${skill.summary || ''}</div>
+                        <button class="detail-btn" onclick="event.stopPropagation(); openSkillModal('${safeId}')">
+                            📖 查看详情
+                        </button>
                     `;
-                    card.onclick = (e) => {
-                        // Prevent toggle if clicking a related link
-                        if (e.target.classList.contains('related-link')) return;
-                        
-                        const isExpanded = card.classList.contains('expanded');
-                        // Collapse all others
-                        document.querySelectorAll('.card.expanded').forEach(c => c.classList.remove('expanded'));
-                        
-                        if (!isExpanded) {
-                            card.classList.add('expanded');
-                        }
-                    };
                     grid.appendChild(card);
                 });
 
@@ -153,18 +145,76 @@
             });
         }
 
-        function scrollToSkill(id) {
-            // Find the skill card in the DOM and click it
-            const cards = document.querySelectorAll('.card');
-            for (const card of cards) {
-                if (card.querySelector('.card-title').textContent.includes(id) || 
-                    card.querySelector('.card-title').textContent.includes(allSkills.find(s => s.id === id)?.name_cn)) {
-                    card.click();
-                    card.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    break;
+        function openSkillModal(skillId) {
+            const skill = allSkills.find(s => s.id === skillId);
+            if (!skill) return;
+
+            const overlay = document.getElementById('detail-modal');
+            document.getElementById('modal-title').textContent = skill.name_cn || skill.name_en || skill.id;
+            document.getElementById('modal-subtitle').textContent = skill.name_en || skill.id;
+
+            // Build content: detail + related skills
+            const contentDiv = document.getElementById('modal-content');
+            let html = skill.detail ? marked.parse(skill.detail) : '<p>暂无详细说明。</p>';
+
+            if (skill.related && skill.related.length > 0) {
+                const relatedList = skill.related
+                    .filter(id => id !== skill.id)
+                    .map(id => {
+                        const rel = allSkills.find(s => s.id === id);
+                        return rel ? `- [${rel.name_cn || rel.id}](#)` : '';
+                    })
+                    .filter(Boolean)
+                    .join('\n');
+                if (relatedList) {
+                    html += `\n\n### 🔗 相关技能\n\n${relatedList}`;
                 }
             }
+
+            contentDiv.innerHTML = marked.parse(html);
+
+            // Generate TOC from headings
+            const nav = document.getElementById('modal-nav');
+            nav.innerHTML = '';
+            const headings = contentDiv.querySelectorAll('h2, h3, h4');
+            headings.forEach((h, i) => {
+                const id = 'section-' + i;
+                h.id = id;
+                const a = document.createElement('a');
+                a.className = h.tagName === 'H2' ? 'h2' : 'h3';
+                a.textContent = h.textContent;
+                a.href = '#' + id;
+                a.onclick = (e) => {
+                    e.preventDefault();
+                    document.getElementById('modal-body').scrollTo({
+                        top: h.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                };
+                nav.appendChild(a);
+            });
+
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
         }
+
+        function closeDetailModal() {
+            const overlay = document.getElementById('detail-modal');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        document.getElementById('detail-modal').onclick = (e) => {
+            if (e.target === e.currentTarget) {
+                closeDetailModal();
+            }
+        };
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && document.getElementById('detail-modal').classList.contains('active')) {
+                closeDetailModal();
+            }
+        });
 
         document.getElementById('search-bar').oninput = (e) => {
             searchQuery = e.target.value;
