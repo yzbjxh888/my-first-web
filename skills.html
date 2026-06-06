@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hermes Agent | 技能目录</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
     <div class="app-container">
@@ -119,7 +120,7 @@
                         <div class="badge">${skill.category}</div>
                         <div class="card-detail">
                             <div class="detail-content">
-                                <p>${skill.detail}</p>
+                                <div class="detail-markdown">${marked.parse(skill.detail)}</div>
                                 ${skill.related.length > 0 ? `
                                     <div class="related-skills">
                                         <span style="font-size:0.8rem; opacity:0.6">相关技能:</span>
