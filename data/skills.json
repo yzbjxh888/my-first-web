@@ -6,10 +6,7 @@
     "icon": "📋",
     "category": "DevOps",
     "summary": "自动化任务看板与工作流编排工具。",
-    "detail": "看板编排器用于管理复杂的代理任务流。它可以自动创建任务卡片、分配优先级并跟踪任务状态。通过这种方式，用户可以直观地看到 Hermes Agent 的工作进度，并进行人工干预或调整。",
-    "related": [
-      "kanban-worker"
-    ]
+    "detail": "看板编排器用于管理复杂的代理任务流。它可以自动创建任务卡片、分配优先级并跟踪任务状态。通过这种方式，用户可以直观地看到 Hermes Agent 的工作进度，并进行人工干预或调整。"
   },
   {
     "id": "kanban-worker",
@@ -18,10 +15,7 @@
     "icon": "⚙️",
     "category": "DevOps",
     "summary": "执行看板任务的具体工作单元。",
-    "detail": "看板执行器是后台运行的任务处理器，负责从看板中领取任务并执行。它与编排器配合，确保每个任务都能按计划被完成。它是实现自动化流程的核心组件。",
-    "related": [
-      "kanban-orchestrator"
-    ]
+    "detail": "看板执行器是后台运行的任务处理器，负责从看板中领取任务并执行。它与编排器配合，确保每个任务都能按计划被完成。它是实现自动化流程的核心组件。"
   },
   {
     "id": "webhook-subscriptions",
@@ -30,8 +24,7 @@
     "icon": "🔔",
     "category": "DevOps",
     "summary": "监听并处理外部事件推送。",
-    "detail": "通过 Webhook 订阅，Hermes 可以实时响应来自 GitHub、Stripe 或其他服务的事件。当指定的事件发生时，系统会自动触发相应的自动化工作流，实现真正的实时交互。",
-    "related": []
+    "detail": "通过 Webhook 订阅，Hermes 可以实时响应来自 GitHub、Stripe 或其他服务的事件。当指定的事件发生时，系统会自动触发相应的自动化工作流，实现真正的实时交互。"
   },
   {
     "id": "search-api-setup-cn",
@@ -40,224 +33,178 @@
     "icon": "🌐",
     "category": "DevOps",
     "summary": "快速配置与集成搜索 API。",
-    "detail": "该技能简化了搜索 API（如 Tavily, Brave Search）的集成过程。它会自动处理 API 密钥管理、请求格式化和响应解析，让开发者能够快速构建具备搜索能力的 AI 应用。",
-    "related": []
+    "detail": "该技能简化了搜索 API（如 Tavily, Brave Search）的集成过程。它会自动处理 API 密钥管理、请求格式化和响应解析，让开发者能够快速构建具备搜索能力的 AI 应用。"
   },
   {
     "id": "test-driven-development",
     "name_cn": "测试驱动开发",
     "name_en": "test-driven-development",
     "icon": "🧪",
-    "category": "Software Dev",
+    "category": "代码开发",
     "summary": "通过编写测试来驱动代码实现。",
-    "detail": "在编写功能代码之前先编写测试用例，确保代码符合预期需求。这种方法有助于提高代码质量，减少回归错误，并促使设计出更具模块化的代码结构。",
-    "related": [
-      "writing-plans"
-    ]
+    "detail": "在编写功能代码之前先编写测试用例，确保代码符合预期需求。这种方法有助于提高代码质量，减少回归错误，并促使设计出更具模块化的代码结构。"
   },
   {
     "id": "plan",
     "name_cn": "规划制定",
     "name_en": "plan",
     "icon": "📝",
-    "category": "Software Dev",
+    "category": "代码开发",
     "summary": "将复杂问题拆解为可执行步骤。",
-    "detail": "该技能的核心是将用户的高级指令转化为详细的、分步骤的任务列表。它考虑了依赖关系、潜在风险和资源需求，为后续的执行阶段提供清晰的路线图。",
-    "related": [
-      "writing-plans",
-      "spike"
-    ]
+    "detail": "该技能的核心是将用户的高级指令转化为详细的、分步骤的任务列表。它考虑了依赖关系、潜在风险和资源需求，为后续的执行阶段提供清晰的路线图。"
   },
   {
     "id": "spike",
     "name_cn": "技术调研 (Spike)",
     "name_en": "spike",
     "icon": "🚀",
-    "category": "Software Dev",
+    "category": "代码开发",
     "summary": "通过快速原型验证技术可行性。",
-    "detail": "在正式开发前，通过编写最小化的原型代码来探索新技术或解决未知技术难题。Spike 的目的是获取知识和降低不确定性，而不是编写生产级别的代码。",
-    "related": [
-      "plan"
-    ]
+    "detail": "在正式开发前，通过编写最小化的原型代码来探索新技术或解决未知技术难题。Spike 的目的是获取知识和降低不确定性，而不是编写生产级别的代码。"
   },
   {
     "id": "writing-plans",
     "name_cn": "编写计划书",
     "name_en": "writing-plans",
     "icon": "📄",
-    "category": "Software Dev",
+    "category": "代码开发",
     "summary": "生成结构化的开发文档和计划。",
-    "detail": "将抽象的想法转化为结构化的文档，包括目标、技术选型、架构设计和里程碑。高质量的计划书是成功交付复杂软件项目的基石。",
-    "related": [
-      "plan",
-      "test-driven-development"
-    ]
+    "detail": "将抽象的想法转化为结构化的文档，包括目标、技术选型、架构设计和里程碑。高质量的计划书是成功交付复杂软件项目的基石。"
   },
   {
     "id": "requesting-code-review",
     "name_cn": "请求代码审查",
     "name_en": "requesting-code-review",
     "icon": "👀",
-    "category": "Software Dev",
+    "category": "代码开发",
     "summary": "自动发起代码质量评估请求。",
-    "detail": "当开发任务完成时，该技能会自动整理变更内容，并向指定的审查者（或 AI 审查者）发起请求。它确保代码在合并前经过了严格的检查，符合项目规范。",
-    "related": [
-      "github-code-review"
-    ]
+    "detail": "当开发任务完成时，该技能会自动整理变更内容，并向指定的审查者（或 AI 审查者）发起请求。它确保代码在合并前经过了严格的检查，符合项目规范。"
   },
   {
     "id": "python-debugpy",
     "name_cn": "Python 调试器集成",
     "name_en": "python-debugpy",
     "icon": "🐍",
+    "category": "代码开发",
     "summary": "利用 debugpy 进行深度的 Python 代码调试。",
-    "detail": "该技能允许 Hermes 直接挂载到运行中的 Python 进程中，设置断点、查看变量值并单步执行代码。它是定位 Python 逻辑错误和运行时异常的最强力工具。",
-    "category": "Software Dev",
-    "related": [
-      "system-service-debugging"
-    ]
+    "detail": "该技能允许 Hermes 直接挂载到运行中的 Python 进程中，设置断点、查看变量值并单步执行代码。它是定位 Python 逻辑错误和运行时异常的最强力工具。"
   },
   {
     "id": "node-inspect-debugger",
     "name_cn": "Node.js 调试器集成",
     "name_en": "node-inspect-debugger",
     "icon": "🟢",
-    "category": "Software Dev",
+    "category": "代码开发",
     "summary": "针对 Node.js 环境的交互式调试。",
-    "detail": "利用 Node.js 内置的 inspect 协议，实现对 JavaScript 后端代码的实时调试。可以监控异步调用栈、内存泄漏以及复杂的事件循环行为。",
-    "related": []
+    "detail": "利用 Node.js 内置的 inspect 协议，实现对 JavaScript 后端代码的实时调试。可以监控异步调用栈、内存泄漏以及复杂的事件循环行为。"
   },
   {
     "id": "arxiv",
     "name_cn": "ArXiv 论文检索",
     "name_en": "arxiv",
     "icon": "📚",
-    "category": "Research",
+    "category": "学术研究",
     "summary": "搜索和获取最新的学术论文。",
-    "detail": "直接访问 ArXiv 数据库，根据关键词、作者或领域检索最新的预印本论文。它可以帮助研究人员快速追踪 AI 和科学领域的最新进展。",
-    "related": []
+    "detail": "直接访问 ArXiv 数据库，根据关键词、作者或领域检索最新的预印本论文。它可以帮助研究人员快速追踪 AI 和科学领域的最新进展。"
   },
   {
     "id": "blogwatcher",
     "name_cn": "博客追踪器",
     "name_en": "blogwatcher",
     "icon": "📰",
-    "category": "Research",
+    "category": "学术研究",
     "summary": "监控并摘要技术博客更新。",
-    "detail": "该工具持续监控指定的 RSS 订阅源或博客网站。当有新文章发布时，它会自动抓取内容并生成简明扼要的摘要，让用户不再错过重要信息。",
-    "related": []
+    "detail": "该工具持续监控指定的 RSS 订阅源或博客网站。当有新文章发布时，它会自动抓取内容并生成简明扼要的摘要，让用户不再错过重要信息。"
   },
   {
     "id": "llm-wiki",
     "name_cn": "LLM 维基百科",
     "name_en": "llm-wiki",
     "icon": "📖",
-    "category": "Research",
+    "category": "学术研究",
     "summary": "基于 LLM 生成的知识库检索。",
-    "detail": "利用大规模语言模型构建的结构化知识库，提供关于各种概念的深入解释。它结合了维基百科的严谨和 AI 的解释能力，适合快速学习新领域。",
-    "related": []
+    "detail": "利用大规模语言模型构建的结构化知识库，提供关于各种概念的深入解释。它结合了维基百科的严谨和 AI 的解释能力，适合快速学习新领域。"
   },
   {
     "id": "polymarket",
     "name_cn": "Polymarket 预测市场分析",
     "name_en": "polymarket",
     "icon": "📈",
-    "category": "Research",
+    "category": "学术研究",
     "summary": "分析预测市场的数据与情绪。",
-    "detail": "通过接入 Polymarket API，实时获取预测市场上的赔率、交易量和事件概率。这为分析社会热点、政治趋势和经济预期提供了极具参考价值的数据支持。",
-    "related": []
+    "detail": "通过接入 Polymarket API，实时获取预测市场上的赔率、交易量和事件概率。这为分析社会热点、政治趋势和经济预期提供了极具参考价值的数据支持。"
   },
   {
     "id": "ascii-art",
     "name_cn": "ASCII 艺术生成",
     "name_en": "ascii-art",
     "icon": "🎨",
-    "category": "Creative",
+    "category": "创意",
     "summary": "将图像或文字转换为 ASCII 字符画。",
-    "detail": "利用字符组合在终端或纯文本文件中创造出视觉效果。它既可以作为一种复古的艺术形式，也可以用于在控制台中展示有趣的视觉元素。",
-    "related": [
-      "pixel-art"
-    ]
+    "detail": "利用字符组合在终端或纯文本文件中创造出视觉效果。它既可以作为一种复古的艺术形式，也可以用于在控制台中展示有趣的视觉元素。"
   },
   {
     "id": "excalidraw",
     "name_cn": "Excalidraw 手绘风格绘图",
     "name_en": "excalidraw",
     "icon": "✏️",
-    "category": "Creative",
+    "category": "创意",
     "summary": "生成具有手绘感的流程图和原型图。",
-    "detail": "通过集成 Excalidraw，可以快速生成看起来像是在白板上随手画出来的图表。这种风格非常适合在演示、文档或讨论中使用，因为它显得自然且不失专业。",
-    "related": [
-      "architecture-diagram"
-    ]
+    "detail": "通过集成 Excalidraw，可以快速生成看起来像是在白板上随手画出来的图表。这种风格非常适合在演示、文档或讨论中使用，因为它显得自然且不失专业。"
   },
   {
     "id": "architecture-diagram",
     "name_cn": "架构图绘制",
     "name_en": "architecture-diagram",
     "icon": "🏗️",
-    "category": "Creative",
+    "category": "创意",
     "summary": "设计专业的软件架构示意图。",
-    "detail": "将复杂的系统组成、组件关系和数据流向转化为清晰的架构图。它可以帮助团队成员理解系统的整体设计，是技术沟通的重要工具。",
-    "related": [
-      "excalidraw"
-    ]
+    "detail": "将复杂的系统组成、组件关系和数据流向转化为清晰的架构图。它可以帮助团队成员理解系统的整体设计，是技术沟通的重要工具。"
   },
   {
     "id": "pixel-art",
     "name_cn": "像素艺术生成",
     "name_en": "pixel-art",
     "icon": "👾",
-    "category": "Creative",
+    "category": "创意",
     "summary": "创作复古风格的像素图像。",
-    "detail": "使用像素化的绘图技术，创造出具有 8-bit 或 16-bit 游戏风格的艺术品。适合用于游戏开发、图标设计或作为一种独特的视觉风格。",
-    "related": [
-      "ascii-art"
-    ]
+    "detail": "使用像素化的绘图技术，创造出具有 8-bit 或 16-bit 游戏风格的艺术品。适合用于游戏开发、图标设计或作为一种独特的视觉风格。"
   },
   {
     "id": "sketch",
     "name_cn": "速写生成",
     "name_en": "sketch",
     "icon": "🖌️",
-    "category": "Creative",
+    "category": "创意",
     "summary": "快速生成概念性的视觉草图。",
-    "detail": "旨在通过简单的笔触捕捉想法的核心。它不是精细的成品，而是用于快速原型设计和头脑风暴，帮助用户从视觉上验证概念。",
-    "related": [
-      "claude-design"
-    ]
+    "detail": "旨在通过简单的笔触捕捉想法的核心。它不是精细的成品，而是用于快速原型设计和头脑风暴，帮助用户从视觉上验证概念。"
   },
   {
     "id": "claude-design",
     "name_cn": "Claude 设计辅助",
     "name_en": "claude-design",
     "icon": "✨",
-    "category": "Creative",
+    "category": "创意",
     "summary": "利用 Claude 进行界面与视觉设计。",
-    "detail": "通过与 Claude 协作，将文本描述转化为精美的 UI 设计方案或配色方案。它能理解设计原则，并提供具有审美价值的视觉建议。",
-    "related": [
-      "sketch"
-    ]
+    "detail": "通过与 Claude 协作，将文本描述转化为精美的 UI 设计方案或配色方案。它能理解设计原则，并提供具有审美价值的视觉建议。"
   },
   {
     "id": "manim-video",
     "name_cn": "Manim 数学动画生成",
     "name_en": "manim-video",
     "icon": "🎬",
-    "category": "Creative",
+    "category": "创意",
     "summary": "使用 Manim 引擎制作数学演示视频。",
-    "detail": "通过编写 Python 代码，利用 Manim 库生成极其精确且精美的数学动画。这对于解释复杂的数学概念或科学原理非常有效，常用于高质量的科普视频。",
-    "related": []
+    "detail": "通过编写 Python 代码，利用 Manim 库生成极其精确且精美的数学动画。这对于解释复杂的数学概念或科学原理非常有效，常用于高质量的科普视频。"
   },
   {
     "id": "jupyter-live-kernel",
     "name_cn": "Jupyter 实时内核",
     "name_en": "jupyter-live-kernel",
     "icon": "📓",
-    "category": "Data Science",
+    "category": "数据分析",
     "summary": "在交互式环境中执行实时数据分析。",
-    "detail": "提供一个活生生的 Jupyter 内核，允许用户实时编写、运行 Python 代码并立即查看数据可视化结果。它是探索性数据分析 (EDA) 的完美环境。",
-    "related": []
+    "detail": "提供一个活生生的 Jupyter 内核，允许用户实时编写、运行 Python 代码并立即查看数据可视化结果。它是探索性数据分析 (EDA) 的完美环境。"
   },
   {
     "id": "codebase-inspection",
@@ -266,10 +213,7 @@
     "icon": "🕵️",
     "category": "GitHub",
     "summary": "深入理解现有代码库的结构与逻辑。",
-    "detail": "通过自动分析整个代码库的文件树、函数定义、调用链和依赖关系，快速给出项目的整体概览。这对于快速上手新项目或进行重构至关重要。",
-    "related": [
-      "github-auth"
-    ]
+    "detail": "通过自动分析整个代码库的文件树、函数定义、调用链和依赖关系，快速给出项目的整体概览。这对于快速上手新项目或进行重构至关重要。"
   },
   {
     "id": "github-auth",
@@ -278,10 +222,7 @@
     "icon": "🔑",
     "category": "GitHub",
     "summary": "安全地管理 GitHub 访问凭据。",
-    "detail": "处理 OAuth 或 Personal Access Tokens 的安全存储与使用。它确保了 Hermes 在执行 GitHub 相关操作时，既能获得必要的权限，又能保证账号安全。",
-    "related": [
-      "github-repo-management"
-    ]
+    "detail": "处理 OAuth 或 Personal Access Tokens 的安全存储与使用。它确保了 Hermes 在执行 GitHub 相关操作时，既能获得必要的权限，又能保证账号安全。"
   },
   {
     "id": "github-code-review",
@@ -290,10 +231,7 @@
     "icon": "🔍",
     "category": "GitHub",
     "summary": "自动在 GitHub PR 中进行代码评估。",
-    "detail": "集成到 GitHub Workflow 中，自动对提交的代码进行静态分析、风格检查和逻辑漏洞识别。它为人类审查员提供了预先过滤后的高质量反馈。",
-    "related": [
-      "requesting-code-review"
-    ]
+    "detail": "集成到 GitHub Workflow 中，自动对提交的代码进行静态分析、风格检查和逻辑漏洞识别。它为人类审查员提供了预先过滤后的高质量反馈。"
   },
   {
     "id": "github-issues",
@@ -302,10 +240,7 @@
     "icon": "❗",
     "category": "GitHub",
     "summary": "自动化处理 GitHub 问题单。",
-    "detail": "可以自动创建、读取、更新或关闭 GitHub Issues。它能通过分析 Issue 内容，自动分配标签、指派负责人，甚至根据描述自动回复。",
-    "related": [
-      "github-pr-workflow"
-    ]
+    "detail": "可以自动创建、读取、更新或关闭 GitHub Issues。它能通过分析 Issue 内容，自动分配标签、指派负责人，甚至根据描述自动回复。"
   },
   {
     "id": "github-pr-workflow",
@@ -314,10 +249,7 @@
     "icon": "🔄",
     "category": "GitHub",
     "summary": "自动化 Pull Request 的生命周期。",
-    "detail": "管理从创建 PR 到合并 PR 的全过程，包括自动运行 CI、检查冲突、添加评论以及最后的合并操作。它确保了团队协作的流程标准化。",
-    "related": [
-      "github-issues"
-    ]
+    "detail": "管理从创建 PR 到合并 PR 的全过程，包括自动运行 CI、检查冲突、添加评论以及最后的合并操作。它确保了团队协作的流程标准化。"
   },
   {
     "id": "github-repo-management",
@@ -326,10 +258,7 @@
     "icon": "📂",
     "category": "GitHub",
     "summary": "执行仓库级别的管理任务。",
-    "detail": "包括创建新仓库、配置分支保护规则、管理团队成员权限以及设置 Webhooks。它让自动化运维人员能够大规模管理成百上千个 GitHub 仓库。",
-    "related": [
-      "github-auth"
-    ]
+    "detail": "包括创建新仓库、配置分支保护规则、管理团队成员权限以及设置 Webhooks。它让自动化运维人员能够大规模管理成百上千个 GitHub 仓库。"
   },
   {
     "id": "native-mcp",
@@ -338,150 +267,124 @@
     "icon": "🔌",
     "category": "MCP",
     "summary": "直接使用 Model Context Protocol 标准。",
-    "detail": "这是 Hermes 的核心能力，通过原生支持 MCP 协议，它可以无缝连接任何遵循该标准的外部工具和数据源。这使得系统具有极强的可扩展性。",
-    "related": []
+    "detail": "这是 Hermes 的核心能力，通过原生支持 MCP 协议，它可以无缝连接任何遵循该标准的外部工具和数据源。这使得系统具有极强的可扩展性。"
   },
   {
     "id": "pokemon-player",
     "name_cn": "宝可梦玩家代理",
     "name_en": "pokemon-player",
     "icon": "🐭",
-    "category": "Gaming",
+    "category": "游戏",
     "summary": "在游戏环境中执行宝可梦任务。",
-    "detail": "通过模拟玩家操作，在特定的宝可梦游戏环境中进行收集、战斗和训练。这可以作为研究 AI 在复杂游戏环境中决策能力的实验平台。",
-    "related": []
+    "detail": "通过模拟玩家操作，在特定的宝可梦游戏环境中进行收集、战斗和训练。这可以作为研究 AI 在复杂游戏环境中决策能力的实验平台。"
   },
   {
     "id": "youtube-content",
     "name_cn": "YouTube 内容分析",
     "name_en": "youtube-content",
     "icon": "📺",
-    "category": "Media",
+    "category": "媒体",
     "summary": "获取并总结 YouTube 视频内容。",
-    "detail": "提取视频的字幕、元数据，并利用 LLM 生成视频内容的详细摘要或问答。这大大提高了用户观看长视频或搜索特定视频信息的效率。",
-    "related": []
+    "detail": "提取视频的字幕、元数据，并利用 LLM 生成视频内容的详细摘要或问答。这大大提高了用户观看长视频或搜索特定视频信息的效率。"
   },
   {
     "id": "gif-search",
     "name_cn": "GIF 搜索",
     "name_en": "gif-search",
     "icon": "🎞️",
-    "category": "Media",
+    "category": "媒体",
     "summary": "快速查找并插入动态表情。",
-    "detail": "通过集成 Giphy 或 Tenor，允许用户通过关键词快速搜索并获取相关的 GIF 动图。非常适合用于社交应用或增强聊天体验。",
-    "related": []
+    "detail": "通过集成 Giphy 或 Tenor，允许用户通过关键词快速搜索并获取相关的 GIF 动图。非常适合用于社交应用或增强聊天体验。"
   },
   {
     "id": "spotify",
     "name_cn": "Spotify 音乐控制",
     "name_en": "spotify",
     "icon": "🎵",
-    "category": "Media",
+    "category": "媒体",
     "summary": "控制 Spotify 播放器与歌单管理。",
-    "detail": "可以通过指令控制正在播放的音乐、搜索歌曲、创建歌单或根据当前心情推荐音乐。实现了语音或文本驱动的音乐体验。",
-    "related": []
+    "detail": "可以通过指令控制正在播放的音乐、搜索歌曲、创建歌单或根据当前心情推荐音乐。实现了语音或文本驱动的音乐体验。"
   },
   {
     "id": "xurl",
     "name_cn": "X URL 提取",
     "name_en": "xurl",
     "icon": "🔗",
-    "category": "Social",
+    "category": "社交",
     "summary": "从文本中提取并解析 X (Twitter) 链接。",
-    "detail": "当用户输入包含 X 链接的内容时，该工具可以自动提取链接并抓取相关的推文内容、用户资料或互动数据，以便进行进一步的分析或总结。",
-    "related": []
+    "detail": "当用户输入包含 X 链接的内容时，该工具可以自动提取链接并抓取相关的推文内容、用户资料或互动数据，以便进行进一步的分析或总结。"
   },
   {
     "id": "himalaya",
     "name_cn": "Himalaya 邮件助手",
     "name_en": "himalaya",
     "icon": "📧",
-    "category": "Email",
+    "category": "通讯",
     "summary": "自动撰写、回复和管理邮件。",
-    "detail": "集成邮件服务后，可以实现根据邮件内容自动草拟回复、对收件箱进行分类整理以及根据优先级进行提醒。极大地解放了用户的邮件处理压力。",
-    "related": []
+    "detail": "集成邮件服务后，可以实现根据邮件内容自动草拟回复、对收件箱进行分类整理以及根据优先级进行提醒。极大地解放了用户的邮件处理压力。"
   },
   {
     "id": "google-workspace",
     "name_cn": "Google Workspace 集成",
     "name_en": "google-workspace",
     "icon": "📂",
-    "category": "Productivity",
+    "category": "效率工具",
     "summary": "自动化管理文档、日历和邮件。",
-    "detail": "通过集成 Google Docs, Sheets, Calendar 和 Gmail，实现跨应用的自动化工作流。例如，根据会议日程自动创建会议文档，或者从邮件中提取任务并加入日历。",
-    "related": [
-      "notion",
-      "airtable"
-    ]
+    "detail": "通过集成 Google Docs, Sheets, Calendar 和 Gmail，实现跨应用的自动化工作流。例如，根据会议日程自动创建会议文档，或者从邮件中提取任务并加入日历。"
   },
   {
     "id": "notion",
     "name_cn": "Notion 集成",
     "name_en": "notion",
     "icon": "📝",
-    "category": "Productivity",
+    "category": "效率工具",
     "summary": "自动化 Notion 页面与数据库操作。",
-    "detail": "可以自动在 Notion 中创建页面、更新数据库条目、读取文档内容。它是构建个人知识管理系统或团队协作平台的核心组件。",
-    "related": [
-      "google-workspace",
-      "obsidian"
-    ]
+    "detail": "可以自动在 Notion 中创建页面、更新数据库条目、读取文档内容。它是构建个人知识管理系统或团队协作平台的核心组件。"
   },
   {
     "id": "obsidian",
     "name_cn": "Obsidian 笔记管理",
     "name_en": "obsidian",
     "icon": "🧠",
-    "category": "Productivity",
+    "category": "效率工具",
     "summary": "自动化管理本地 Obsidian 笔记库。",
-    "detail": "通过操作本地 Markdown 文件，实现对 Obsidian 笔记的自动创建、内容追加、标签管理和链接构建。让 AI 成为你第二大脑的协作者。",
-    "related": [
-      "notion"
-    ]
+    "detail": "通过操作本地 Markdown 文件，实现对 Obsidian 笔记的自动创建、内容追加、标签管理和链接构建。让 AI 成为你第二大脑的协作者。"
   },
   {
     "id": "nano-pdf",
     "name_cn": "Nano PDF 处理",
     "name_en": "nano-pdf",
     "icon": "📄",
-    "category": "Productivity",
+    "category": "效率工具",
     "summary": "快速读取与解析 PDF 文档。",
-    "detail": "专注于轻量级的 PDF 内容提取，能够快速解析文档中的文本和表格信息，并将其转化为机器可读的格式，供 LLM 进行后续处理。",
-    "related": []
+    "detail": "专注于轻量级的 PDF 内容提取，能够快速解析文档中的文本和表格信息，并将其转化为机器可读的格式，供 LLM 进行后续处理。"
   },
   {
     "id": "maps",
     "name_cn": "地图服务集成",
     "name_en": "maps",
     "icon": "📍",
-    "category": "Productivity",
+    "category": "效率工具",
     "summary": "地理位置检索与路线规划。",
-    "detail": "集成地图 API，实现地点搜索、距离计算、路线规划以及地理位置信息的提取。可用于构建旅行助手或基于位置的服务应用。",
-    "related": []
+    "detail": "集成地图 API，实现地点搜索、距离计算、路线规划以及地理位置信息的提取。可用于构建旅行助手或基于位置的服务应用。"
   },
   {
     "id": "airtable",
     "name_cn": "Airtable 集成",
     "name_en": "airtable",
     "icon": "📊",
-    "category": "Productivity",
+    "category": "效率工具",
     "summary": "自动化管理 Airtable 数据库。",
-    "detail": "可以自动在 Airtable 中创建记录、更新现有行、执行复杂的查询操作。非常适合作为 AI 应用的结构化数据后端。",
-    "related": [
-      "google-workspace"
-    ]
+    "detail": "可以自动在 Airtable 中创建记录、更新现有行、执行复杂的查询操作。非常适合作为 AI 应用的结构化数据后端。"
   },
   {
     "id": "linear",
     "name_cn": "Linear 集成",
     "name_en": "linear",
     "icon": "⚡",
-    "category": "Productivity",
+    "category": "效率工具",
     "summary": "自动化任务与项目管理。",
-    "detail": "通过集成 Linear，可以自动创建 Issue、更新任务状态、同步团队进度。它为追求高效的开发团队提供了强大的自动化协作能力。",
-    "related": [
-      "notion"
-    ]
+    "detail": "通过集成 Linear，可以自动创建 Issue、更新任务状态、同步团队进度。它为追求高效的开发团队提供了强大的自动化协作能力。"
   },
   {
     "id": "test-auto-sync",
@@ -490,666 +393,546 @@
     "icon": "🧪",
     "category": "DevOps",
     "summary": "验证自动同步机制的测试技能",
-    "detail": "由自动同步测试添加，用于验证 sync 脚本能否自动发现并写入",
-    "related": []
+    "detail": "由自动同步测试添加，用于验证 sync 脚本能否自动发现并写入"
   },
   {
     "id": "apikey-image-gen",
     "name_cn": "apikey-image-gen",
     "name_en": "apikey-image-gen",
     "icon": "🔌",
-    "category": "Other",
+    "category": "创意",
     "summary": "通过 Hermes Web UI 使用选定的模型配置生成或编辑图片",
-    "detail": "支持多种图像生成模型，包括 Flux、DALL-E 等。可以根据用户需求选择不同的图像风格和参数，并通过 Hermes Web UI 实时预览和编辑生成的图片。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "支持多种图像生成模型，包括 Flux、DALL-E 等。可以根据用户需求选择不同的图像风格和参数，并通过 Hermes Web UI 实时预览和编辑生成的图片。"
   },
   {
     "id": "dogfood",
     "name_cn": "dogfood",
     "name_en": "dogfood",
     "icon": "🔌",
-    "category": "Other",
+    "category": "质量保障",
     "summary": "对 Web 应用进行探索性质量检测，发现并报告 Bug",
-    "detail": "通过系统化的测试流程，对 Web 应用进行全面质量评估。包括功能测试、UI 一致性检查、边界条件测试，并生成详细的测试报告和 Bug 证据。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "通过系统化的测试流程，对 Web 应用进行全面质量评估。包括功能测试、UI 一致性检查、边界条件测试，并生成详细的测试报告和 Bug 证据。"
   },
   {
     "id": "grok-image-to-video",
     "name_cn": "grok-image-to-video",
     "name_en": "grok-image-to-video",
     "icon": "🔌",
-    "category": "Other",
+    "category": "创意",
     "summary": "使用 xAI Grok 模型将本地图片动画化为短视频",
-    "detail": "通过 Hermes Web UI 连接 xAI Grok 的图生视频能力，将静态图片转化为动态视频。支持自定义动画风格和时长。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "通过 Hermes Web UI 连接 xAI Grok 的图生视频能力，将静态图片转化为动态视频。支持自定义动画风格和时长。"
   },
   {
     "id": "hyperframes",
     "name_cn": "hyperframes",
     "name_en": "hyperframes",
     "icon": "🔌",
-    "category": "Other",
+    "category": "创意",
     "summary": "使用 HTML、CSS 和 JavaScript 在 Hermes 中创建 AI 视频",
-    "detail": "HyperFrames 是一种基于 Web 技术的 AI 视频创作框架。通过组合 HTML/CSS/JS 组件，可以生成结构化的 AI 动画和视频内容。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "HyperFrames 是一种基于 Web 技术的 AI 视频创作框架。通过组合 HTML/CSS/JS 组件，可以生成结构化的 AI 动画和视频内容。"
   },
   {
     "id": "llm-backend-architecture",
     "name_cn": "llm-backend-architectu…",
     "name_en": "llm-backend-architecture",
     "icon": "🔌",
-    "category": "software-development",
+    "category": "代码开发",
     "summary": "运行复杂、长上下文提示词（143KB+）的模式，避免 LLM 幻觉",
-    "detail": "通过外部后端状态管理器，将超长上下文分解为可管理的片段。每个会话只需加载一次系统提示词，后续交互通过后端状态增量更新。",
-    "related": []
+    "detail": "通过外部后端状态管理器，将超长上下文分解为可管理的片段。每个会话只需加载一次系统提示词，后续交互通过后端状态增量更新。"
   },
   {
     "id": "markdown-viewer",
     "name_cn": "markdown-viewer",
     "name_en": "markdown-viewer",
     "icon": "🔌",
-    "category": "Other",
+    "category": "创意",
     "summary": "创建丰富的图表、数据可视化、技术架构视图和可编辑文档",
-    "detail": "基于 Markdown 的富媒体查看器，支持嵌入流程图、序列图、数据表格和交互式可视化组件，适合技术文档和演示场景。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "基于 Markdown 的富媒体查看器，支持嵌入流程图、序列图、数据表格和交互式可视化组件，适合技术文档和演示场景。"
   },
   {
     "id": "remotion",
     "name_cn": "remotion",
     "name_en": "remotion",
     "icon": "🔌",
-    "category": "Other",
+    "category": "创意",
     "summary": "使用 Remotion 和 React 创建可编辑的 AI 视频项目，支持预览和渲染",
-    "detail": "Remotion 是一个用 React 编写视频的框架。通过组合 React 组件、动画和音频，可以程序化地生成高质量视频内容。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "Remotion 是一个用 React 编写视频的框架。通过组合 React 组件、动画和音频，可以程序化地生成高质量视频内容。"
   },
   {
     "id": "yuanbao",
     "name_cn": "yuanbao",
     "name_en": "yuanbao",
     "icon": "🔌",
-    "category": "Other",
+    "category": "社交",
     "summary": "Yuanbao (元宝) groups: @mention users, query info/members.",
-    "detail": "元宝（Yuanbao）群聊集成：支持 @ 提及群成员、查询群信息和成员列表。可用于群内的自动化消息处理和互动。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "元宝（Yuanbao）群聊集成：支持 @ 提及群成员、查询群信息和成员列表。可用于群内的自动化消息处理和互动。"
   },
   {
     "id": "claude-code",
     "name_cn": "claude-code",
     "name_en": "claude-code",
     "icon": "🔌",
-    "category": "Other",
+    "category": "代码开发",
     "summary": "将编码任务委托给 Claude Code CLI（功能开发、PR）",
-    "detail": "通过 Hermes 编排，将复杂的编码任务分配给 Claude Code CLI 执行。Claude Code 在独立环境中进行代码开发、测试和 PR 提交。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "通过 Hermes 编排，将复杂的编码任务分配给 Claude Code CLI 执行。Claude Code 在独立环境中进行代码开发、测试和 PR 提交。"
   },
   {
     "id": "codex",
     "name_cn": "codex",
     "name_en": "codex",
     "icon": "🔌",
-    "category": "Other",
+    "category": "代码开发",
     "summary": "将编码任务委托给 OpenAI Codex CLI（功能开发、PR）",
-    "detail": "通过 Hermes 编排，将编码任务分配给 OpenAI Codex CLI 执行。Codex 在隔离环境中完成代码编写、调试和版本控制。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "通过 Hermes 编排，将编码任务分配给 OpenAI Codex CLI 执行。Codex 在隔离环境中完成代码编写、调试和版本控制。"
   },
   {
     "id": "kanban-codex-lane",
     "name_cn": "kanban-codex-lane",
     "name_en": "kanban-codex-lane",
     "icon": "🔌",
-    "category": "Other",
+    "category": "DevOps",
     "summary": "当 Hermes 看板工作器需要将 Codex CLI 作为隔离执行器运行时使用",
-    "detail": "看板系统中 Codex CLI 的专用通道。看板工作器可以将实现任务分配给 Codex CLI 作为隔离执行环境，实现并行开发和任务追踪。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "看板系统中 Codex CLI 的专用通道。看板工作器可以将实现任务分配给 Codex CLI 作为隔离执行环境，实现并行开发和任务追踪。"
   },
   {
     "id": "openclaw-bridge",
     "name_cn": "openclaw-bridge",
     "name_en": "openclaw-bridge",
     "icon": "🔌",
-    "category": "Other",
+    "category": "配置管理",
     "summary": "Bridge Hermes with OpenClaw's multi-agent orchestration system — #任务 (full pipeline via AO) and #专家 (single expert dispatch)",
-    "detail": "通过 #任务（完整流水线）模式连接 Hermes 和 OpenClaw，实现跨系统的多代理协作。包括任务分配、状态同步和结果汇总。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "通过 #任务（完整流水线）模式连接 Hermes 和 OpenClaw，实现跨系统的多代理协作。包括任务分配、状态同步和结果汇总。"
   },
   {
     "id": "opencode",
     "name_cn": "opencode",
     "name_en": "opencode",
     "icon": "🔌",
-    "category": "Other",
+    "category": "代码开发",
     "summary": "将编码任务委托给 OpenCode CLI（功能开发、PR 审查）",
-    "detail": "通过 Hermes 编排，将编码任务分配给 OpenCode CLI 执行。OpenCode 支持代码生成、审查和自动化测试。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "通过 Hermes 编排，将编码任务分配给 OpenCode CLI 执行。OpenCode 支持代码生成、审查和自动化测试。"
   },
   {
     "id": "daily-report-gen",
     "name_cn": "daily-report-gen",
     "name_en": "daily-report-gen",
     "icon": "🔌",
-    "category": "Other",
+    "category": "DevOps",
     "summary": "每日生成中文技术日报：含原文链接、深度分析、丰富内容",
-    "detail": "自动化日报生成系统。每4小时通过 cron 触发数据采集，爬取 GitHub Trending、Hacker News、Lobste.rs、HuggingFace Papers、ArXiv 等技术源。生成结构化的中文技术日报，每条内容均附带原文链接。涵盖：今日重点（深度分析）、开源动态（含 Star 数）、开发者生态、AI与Agent前沿、论文推荐五大板块。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "自动化日报生成系统。每4小时通过 cron 触发数据采集，爬取 GitHub Trending、Hacker News、Lobste.rs、HuggingFace Papers、ArXiv 等技术源。生成结构化的中文技术日报，每条内容均附带原文链接。涵盖：今日重点（深度分析）、开源动态（含 Star 数）、开发者生态、AI与Agent前沿、论文推荐五大板块。"
   },
   {
     "id": "ascii-video",
     "name_cn": "ascii-video",
     "name_en": "ascii-video",
     "icon": "🔌",
-    "category": "Other",
+    "category": "创意",
     "summary": "将视频或音频转换为彩色 ASCII MP4/GIF 动画",
-    "detail": "基于 FFmpeg 和字符渲染引擎，将普通视频转换成由彩色字符组成的 ASCII 风格动画，支持 MP4 和 GIF 输出格式。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "基于 FFmpeg 和字符渲染引擎，将普通视频转换成由彩色字符组成的 ASCII 风格动画，支持 MP4 和 GIF 输出格式。"
   },
   {
     "id": "baoyu-comic",
     "name_cn": "baoyu-comic",
     "name_en": "baoyu-comic",
     "icon": "🔌",
-    "category": "Other",
+    "category": "创意",
     "summary": "Knowledge comics (知识漫画): educational, biography, tutorial.",
-    "detail": "将复杂知识转化为易于理解的漫画形式。支持教育科普、人物传记和操作教程等场景，通过分镜和对话帮助读者轻松掌握知识点。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "将复杂知识转化为易于理解的漫画形式。支持教育科普、人物传记和操作教程等场景，通过分镜和对话帮助读者轻松掌握知识点。"
   },
   {
     "id": "baoyu-infographic",
     "name_cn": "baoyu-infographic",
     "name_en": "baoyu-infographic",
     "icon": "🔌",
-    "category": "Other",
+    "category": "创意",
     "summary": "Infographics: 21 layouts x 21 styles (信息图, 可视化).",
-    "detail": "数据可视化信息图生成器。支持 21 种布局模板与 21 种视觉样式的自由组合，适合制作统计数据、流程说明和对比分析等场景。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "数据可视化信息图生成器。支持 21 种布局模板与 21 种视觉样式的自由组合，适合制作统计数据、流程说明和对比分析等场景。"
   },
   {
     "id": "comfyui",
     "name_cn": "comfyui",
     "name_en": "comfyui",
     "icon": "🔌",
-    "category": "Other",
+    "category": "创意",
     "summary": "使用 ComfyUI 生成图像、视频和音频 — 安装、启动、管理节点和工作流",
-    "detail": "ComfyUI 是一个基于节点工作流的 AI 生成界面。支持 Stable Diffusion 等模型的图像/视频/音频生成，通过可视化节点编辑器构建复杂的生成流水线。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "ComfyUI 是一个基于节点工作流的 AI 生成界面。支持 Stable Diffusion 等模型的图像/视频/音频生成，通过可视化节点编辑器构建复杂的生成流水线。"
   },
   {
     "id": "design-md",
     "name_cn": "design-md",
     "name_en": "design-md",
     "icon": "🔌",
-    "category": "Other",
+    "category": "创意",
     "summary": "编写、验证和导出 Google 的 DESIGN.md 令牌规范文件",
-    "detail": "遵循 Google 的 DESIGN.md 规范，帮助设计和验证 UI 设计系统中的令牌（Token）定义，包括颜色、间距、字体等设计变量。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "遵循 Google 的 DESIGN.md 规范，帮助设计和验证 UI 设计系统中的令牌（Token）定义，包括颜色、间距、字体等设计变量。"
   },
   {
     "id": "humanizer",
     "name_cn": "humanizer",
     "name_en": "humanizer",
     "icon": "🔌",
-    "category": "Other",
+    "category": "创意",
     "summary": "人性化文本：去除 AI 写作痕迹，加入真实语感",
-    "detail": "检测并消除 AI 生成文本中的常见模式（套话、重复结构、过度正式），添加真实人类写作中的语气变化和口语化表达，让文本更自然。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "检测并消除 AI 生成文本中的常见模式（套话、重复结构、过度正式），添加真实人类写作中的语气变化和口语化表达，让文本更自然。"
   },
   {
     "id": "p5js",
     "name_cn": "p5js",
     "name_en": "p5js",
     "icon": "🔌",
-    "category": "Other",
+    "category": "创意",
     "summary": "p5.js 创作：生成艺术、着色器、交互式 3D 可视化",
-    "detail": "使用 p5.js 创作交互式视觉作品。支持生成艺术、WebGL 着色器、交互式 3D 场景和数据可视化，适合创意编程和艺术展示。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "使用 p5.js 创作交互式视觉作品。支持生成艺术、WebGL 着色器、交互式 3D 场景和数据可视化，适合创意编程和艺术展示。"
   },
   {
     "id": "popular-web-designs",
     "name_cn": "popular-web-designs",
     "name_en": "popular-web-designs",
     "icon": "🔌",
-    "category": "Other",
+    "category": "创意",
     "summary": "54 个真实设计系统（Stripe、Linear、Vercel 等）的 HTML/CSS 实现",
-    "detail": "收集了 54 个知名科技公司的设计系统，包括 Stripe、Linear、Vercel、Notion 等。每个设计系统都包含完整的 HTML/CSS 实现，可直接参考和使用。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "收集了 54 个知名科技公司的设计系统，包括 Stripe、Linear、Vercel、Notion 等。每个设计系统都包含完整的 HTML/CSS 实现，可直接参考和使用。"
   },
   {
     "id": "pretext",
     "name_cn": "pretext",
     "name_en": "pretext",
     "icon": "🔌",
-    "category": "Other",
+    "category": "创意",
     "summary": "使用 @chenglou/pretext 构建创意浏览器演示 — 无需 DOM 的文本布局引擎",
-    "detail": "Pretext 是一个创新的文本布局引擎，无需传统 DOM 即可生成复杂的文本排版效果。适合创意编程、动态文本展示和实验性 Web 项目。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "Pretext 是一个创新的文本布局引擎，无需传统 DOM 即可生成复杂的文本排版效果。适合创意编程、动态文本展示和实验性 Web 项目。"
   },
   {
     "id": "touchdesigner-mcp",
     "name_cn": "touchdesigner-mcp",
     "name_en": "touchdesigner-mcp",
     "icon": "🔌",
-    "category": "Other",
+    "category": "创意",
     "summary": "通过 twozero MCP 控制运行中的 TouchDesigner 实例",
-    "detail": "使用 twozero MCP 协议与 TouchDesigner 交互编程，可以动态创建操作符、设置参数、控制播放和实时视觉生成。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "使用 twozero MCP 协议与 TouchDesigner 交互编程，可以动态创建操作符、设置参数、控制播放和实时视觉生成。"
   },
   {
     "id": "heartmula",
     "name_cn": "heartmula",
     "name_en": "heartmula",
     "icon": "🔌",
-    "category": "Other",
+    "category": "创意",
     "summary": "HeartMuLa：类似 Suno 的歌词+标签音乐生成系统",
-    "detail": "开源的 AI 音乐生成引擎，支持通过歌词和风格标签生成完整歌曲。类似 Suno 的功能，但在本地运行，提供更多的创作控制权。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "开源的 AI 音乐生成引擎，支持通过歌词和风格标签生成完整歌曲。类似 Suno 的功能，但在本地运行，提供更多的创作控制权。"
   },
   {
     "id": "songsee",
     "name_cn": "songsee",
     "name_en": "songsee",
     "icon": "🔌",
-    "category": "Other",
+    "category": "创意",
     "summary": "通过命令行分析音频频谱图（梅尔频谱、色度图、MFCC）",
-    "detail": "音频特征提取工具，可以生成梅尔频谱图（Mel Spectrogram）、色度特征（Chroma）和 MFCC 等音频特征的可视化，适合音乐信息检索和音频分析。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "音频特征提取工具，可以生成梅尔频谱图（Mel Spectrogram）、色度特征（Chroma）和 MFCC 等音频特征的可视化，适合音乐信息检索和音频分析。"
   },
   {
     "id": "dspy",
     "name_cn": "dspy",
     "name_en": "dspy",
     "icon": "🔌",
-    "category": "Other",
+    "category": "AI 研究",
     "summary": "DSPy：声明式语言模型编程框架，自动优化提示词和 RAG 流水线",
-    "detail": "DSPy 通过声明式编程范式简化 LLM 应用开发。自动优化提示词、检索增强生成（RAG）流水线和工具调用链，无需手动编写复杂的提示词模板。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "DSPy 通过声明式编程范式简化 LLM 应用开发。自动优化提示词、检索增强生成（RAG）流水线和工具调用链，无需手动编写复杂的提示词模板。"
   },
   {
     "id": "huggingface-hub",
     "name_cn": "huggingface-hub",
     "name_en": "huggingface-hub",
     "icon": "🔌",
-    "category": "Other",
+    "category": "AI 资源",
     "summary": "使用 HuggingFace hf CLI 搜索、下载、上传模型和数据集",
-    "detail": "HuggingFace Hub 的完整 CLI 工具指南。支持模型浏览、下载、上传和管理，涵盖 Transformers、Diffusers 和 Datasets 等核心库。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "HuggingFace Hub 的完整 CLI 工具指南。支持模型浏览、下载、上传和管理，涵盖 Transformers、Diffusers 和 Datasets 等核心库。"
   },
   {
     "id": "llama-cpp",
     "name_cn": "llama-cpp",
     "name_en": "llama-cpp",
     "icon": "🔌",
-    "category": "Other",
+    "category": "推理部署",
     "summary": "llama.cpp 本地 GGUF 推理 + HuggingFace Hub 模型发现",
-    "detail": "本地 LLM 推理引擎，支持 GGUF 格式的量化模型。集成 HuggingFace Hub 进行模型发现和下载，适合在消费级硬件上运行开源模型。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "本地 LLM 推理引擎，支持 GGUF 格式的量化模型。集成 HuggingFace Hub 进行模型发现和下载，适合在消费级硬件上运行开源模型。"
   },
   {
     "id": "moa-free-tier",
     "name_cn": "moa-free-tier",
     "name_en": "moa-free-tier",
     "icon": "🔌",
-    "category": "Other",
+    "category": "AI 研究",
     "summary": "使用 OpenRouter 免费模型运行混合代理（MoA）流水线",
-    "detail": "混合代理（Mixture of Agents）流水线：通过动态组合多个 OpenRouter 免费模型，在零成本下获得超越单一模型的推理质量。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "混合代理（Mixture of Agents）流水线：通过动态组合多个 OpenRouter 免费模型，在零成本下获得超越单一模型的推理质量。"
   },
   {
     "id": "obliteratus",
     "name_cn": "obliteratus",
     "name_en": "obliteratus",
     "icon": "🔌",
-    "category": "Other",
+    "category": "AI 研究",
     "summary": "OBLITERATUS：通过差异均值法去除 LLM 的拒绝回答行为",
-    "detail": "通过 diff-in-means 技术分析模型内部表征，定位并移除 LLM 中的拒绝回答机制。适用于安全研究和模型行为分析。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "通过 diff-in-means 技术分析模型内部表征，定位并移除 LLM 中的拒绝回答机制。适用于安全研究和模型行为分析。"
   },
   {
     "id": "weights-and-biases",
     "name_cn": "weights-and-biases",
     "name_en": "weights-and-biases",
     "icon": "🔌",
-    "category": "Other",
+    "category": "AI 研究",
     "summary": "W&B：记录 ML 实验、超参数搜索、模型注册和仪表板",
-    "detail": "Weights & Biases 平台集成。支持实验跟踪、超参数调优（Sweeps）、模型版本管理（Model Registry）和可视化仪表板，适合 MLOps 实践。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "Weights & Biases 平台集成。支持实验跟踪、超参数调优（Sweeps）、模型版本管理（Model Registry）和可视化仪表板，适合 MLOps 实践。"
   },
   {
     "id": "ocr-and-documents",
     "name_cn": "ocr-and-documents",
     "name_en": "ocr-and-documents",
     "icon": "🔌",
-    "category": "Other",
+    "category": "办公协作",
     "summary": "从 PDF/扫描件中提取文字（pymupdf、marker-pdf）",
-    "detail": "文档文字提取工具，支持 PDF 和扫描图像。使用 PyMuPDF 和 marker-pdf 引擎进行 OCR 识别和版面分析，输出结构化文本内容。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "文档文字提取工具，支持 PDF 和扫描图像。使用 PyMuPDF 和 marker-pdf 引擎进行 OCR 识别和版面分析，输出结构化文本内容。"
   },
   {
     "id": "powerpoint",
     "name_cn": "powerpoint",
     "name_en": "powerpoint",
     "icon": "🔌",
-    "category": "Other",
+    "category": "办公协作",
     "summary": "创建、读取、编辑 PPTX 演示文稿、幻灯片、备注和模板",
-    "detail": "全面的 PowerPoint 自动化工具。支持从头创建演示文稿、编辑现有文件、管理幻灯片布局、添加备注和应用模板。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "全面的 PowerPoint 自动化工具。支持从头创建演示文稿、编辑现有文件、管理幻灯片布局、添加备注和应用模板。"
   },
   {
     "id": "godmode",
     "name_cn": "godmode",
     "name_en": "godmode",
     "icon": "🔌",
-    "category": "Other",
+    "category": "AI 研究",
     "summary": "LLM 越狱技术：Parseltongue、GODMODE、ULTRAPLINIAN",
-    "detail": "用于安全研究目的的 LLM 越狱方法集合。通过提示词工程技术绕过模型的安全限制，仅供授权的安全研究人员使用。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "用于安全研究目的的 LLM 越狱方法集合。通过提示词工程技术绕过模型的安全限制，仅供授权的安全研究人员使用。"
   },
   {
     "id": "openhue",
     "name_cn": "openhue",
     "name_en": "openhue",
     "icon": "🔌",
-    "category": "Other",
+    "category": "物联网",
     "summary": "通过 OpenHue CLI 控制 Philips Hue 灯具、场景和房间",
-    "detail": "智能家居灯光控制工具。支持 Philips Hue 品牌的灯具控制，包括开关、亮度调节、颜色切换、场景管理和房间分组控制。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "智能家居灯光控制工具。支持 Philips Hue 品牌的灯具控制，包括开关、亮度调节、颜色切换、场景管理和房间分组控制。"
   },
   {
     "id": "serving-llms-vllm",
     "name_cn": "serving-llms-vllm",
     "name_en": "serving-llms-vllm",
     "icon": "🔌",
-    "category": "Other",
+    "category": "推理部署",
     "summary": "vLLM 推理服务：高性能 LLM 部署、量化模型推理与 OpenAI 兼容 API。",
-    "detail": "自动同步添加的 Hermes Agent 技能。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "## 🛠️ 能力说明\n\nvLLM 是一个高性能大模型推理引擎，支持 PagedAttention、连续批处理、量化模型（AWQ/GPTQ）和多 GPU 张量并行。通过此技能，你可以在对话中直接部署和管理 LLM 推理服务。\n\n## 📖 使用示例\n\n- **启动服务**：说「用 vLLM 启动 Qwen2.5-7B，监听 8000 端口」\n- **模型部署**：说「部署 CodeQwen1.5-7B，使用 AWQ 量化」\n- **性能调优**：说「查看当前推理服务的吞吐量和延迟」\n- **多 GPU**：说「用 2 张 GPU 张量并行部署 70B 模型」\n\n## ⚙️ 配置\n\n需要安装 vLLM（`pip install vllm`），GPU 显存建议至少 16GB（7B 模型）或 80GB（70B 模型）。"
   },
   {
     "id": "codegraph-integrate",
     "name_cn": "codegraph-integrate",
     "name_en": "codegraph-integrate",
     "icon": "🔌",
-    "category": "Other",
+    "category": "代码开发",
     "summary": "CodeGraph 集成：在 Hermes 中对接 CodeGraph MCP 进行代码仓库分析。",
-    "detail": "使用方法：在 hermes 对话中直接说「分析这个仓库的代码结构」即可触发 CodeGraph 工具。支持搜索符号、查找调用链、分析变更影响范围。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "使用方法：在 hermes 对话中直接说「分析这个仓库的代码结构」即可触发 CodeGraph 工具。支持搜索符号、查找调用链、分析变更影响范围。"
   },
   {
     "id": "hermes-system-integ",
     "name_cn": "hermes-system-integ",
     "name_en": "hermes-system-integ",
     "icon": "🔌",
-    "category": "Other",
+    "category": "配置管理",
     "summary": "Hermes 系统集成：系统服务管理、配置文件监控和环境集成。",
-    "detail": "自动同步添加的 Hermes Agent 技能。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "## 🛠️ 能力说明\n\nHermes 系统集成负责管理 systemd --user 服务树，包括服务发现、健康检查、日志查看和生命周期管理。\n\n## 📖 使用示例\n\n- **状态查看**：说「查看所有开发服务的状态」或「dev status」\n- **服务控制**：说「启动 langflow 服务」或「重启 hermes-webui」\n- **日志诊断**：说「查看 hermes-gateway 的近 50 行日志」\n- **开机自启**：说「设置 dify-api 开机自启」\n\n## ⚙️ 配置\n\n所有服务定义在 `~/.config/systemd/user/` 下。使用 `systemctl --user daemon-reload` 重载配置。"
   },
   {
     "id": "analyzing-external-",
     "name_cn": "analyzing-external-",
     "name_en": "analyzing-external-",
     "icon": "🔌",
-    "category": "Other",
+    "category": "数据分析",
     "summary": "外部数据分析：接入并分析第三方数据源。",
-    "detail": "自动同步添加的 Hermes Agent 技能。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "## 🛠️ 能力说明\n\n外部数据分析技能用于接入和分析第三方 API、开放数据集和实时数据流，包括金融市场数据、天气、地理位置、公共交通等信息源。\n\n## 📖 使用示例\n\n- **金融数据**：说「查询 AAPL 的当前股价和历史走势」\n- **地理位置**：说「查询北京市的实时天气」\n- **公共交通**：说「查一下从北京到上海的高铁时刻表」\n- **人口数据**：说「查询上海市 2024 年的常住人口数据」\n\n## ⚙️ 配置\n\n默认使用免费 API。部分数据源需要 API Key，配置在 `~/.hermes/config.yaml` 的 `data_sources` 下。"
   },
   {
     "id": "auto-hypothesis-tes",
     "name_cn": "auto-hypothesis-tes",
     "name_en": "auto-hypothesis-tes",
     "icon": "🔌",
-    "category": "Other",
+    "category": "AI 研究",
     "summary": "自动假设检验：LLM 驱动的假设生成与验证工作流。",
-    "detail": "自动同步添加的 Hermes Agent 技能。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "## 🛠️ 能力说明\n\n自动假设检验允许你提出一个猜想，Hermes 会自动设计实验、收集数据、执行统计分析并给出结论——适合 A/B 测试、用户行为分析、指标波动归因等场景。\n\n## 📖 使用示例\n\n- **A/B 测试**：说「检验新的登录页是否显著提高了转化率」\n- **指标归因**：说「分析昨天 DAU 下降 5% 的原因」\n- **相关性分析**：说「检查用户活跃度与付费金额之间是否有显著相关性」\n- **假设驱动**：说「我的假设是周末用户留存率更高，帮我验证」\n\n## ⚙️ 配置\n\n需要 pandas、scipy、statsmodels 等 Python 统计包。数据来自 CSV 文件、数据库或实时 API。"
   },
   {
     "id": "hermes-agent",
-    "name_cn": "",
+    "name_cn": "hermes-agent",
     "name_en": "hermes-agent",
     "icon": "🔌",
-    "category": "Other",
+    "category": "配置管理",
     "summary": "Configure, extend, or contribute to Hermes Agent.",
-    "detail": "Hermes Agent is an open-source AI agent framework by Nous Research that runs in your terminal, messaging platforms, and IDEs. It belongs to the same category as Claude Code (Anthropic), Codex (OpenAI), and OpenClaw — autonomous coding and task-execution agents that use tool calling to interact with your system. Hermes works with any LLM provider (OpenRouter, Anthropic, OpenAI, DeepSeek, local models, and 15+ others) and runs on Linux, macOS, and WSL. What makes Hermes different: - **Self-improving through skills** — Hermes learns from experience by saving reusable procedures as skills. When it solves a complex problem, discovers a workflow, or gets corrected, it can persist that knowledge as a skill document that loads into future sessions. Skills accumulate over time, making the agent better at your specific tasks and environment.",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "Hermes Agent is an open-source AI agent framework by Nous Research that runs in your terminal, messaging platforms, and IDEs. It belongs to the same category as Claude Code (Anthropic), Codex (OpenAI), and OpenClaw — autonomous coding and task-execution agents that use tool calling to interact with your system. Hermes works with any LLM provider (OpenRouter, Anthropic, OpenAI, DeepSeek, local models, and 15+ others) and runs on Linux, macOS, and WSL. What makes Hermes different: - **Self-improving through skills** — Hermes learns from experience by saving reusable procedures as skills. When it solves a complex problem, discovers a workflow, or gets corrected, it can persist that knowledge as a skill document that loads into future sessions. Skills accumulate over time, making the agent better at your specific tasks and environment."
   },
   {
     "id": "hermes-proxy-provid",
-    "name_cn": "",
+    "name_cn": "hermes-proxy-provid",
     "name_en": "hermes-proxy-provid",
     "icon": "🔌",
-    "category": "Other",
+    "category": "配置管理",
     "summary": "自定义 API 代理配置：通过 SOCKS 为 Hermes 添加自定义模型提供方。",
-    "detail": "使用方法：编辑 `~/.hermes/config.yaml` 的 `custom_providers:` 部分，配置 SOCKS 代理和 API endpoint。支持 OpenRouter、Anthropic、Google Gemini 等提供方。配置后运行 `hermes` 即可自动加载。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "使用方法：编辑 `~/.hermes/config.yaml` 的 `custom_providers:` 部分，配置 SOCKS 代理和 API endpoint。支持 OpenRouter、Anthropic、Google Gemini 等提供方。配置后运行 `hermes` 即可自动加载。"
   },
   {
     "id": "baoyu-article-illus",
-    "name_cn": "",
+    "name_cn": "baoyu-article-illus",
     "name_en": "baoyu-article-illus",
     "icon": "🔌",
-    "category": "Other",
+    "category": "创意",
     "summary": "宝愈文章插图：为文章自动生成风格一致的知识插图。",
-    "detail": "自动同步添加的 Hermes Agent 技能。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "## 🛠️ 能力说明\n\n宝愈文章插图技能自动为文章生成与内容匹配的插图，支持多种风格（水彩、线稿、浮世绘、像素风等）和版式（单图、组图、信息图）。\n\n## 📖 使用示例\n\n- **文章配图**：说「为这篇关于 Transformer 的文章配一张架构示意图」\n- **风格指定**：说「用浮世绘风格为这篇游记配图」\n- **批量生成**：说「为这个系列的三篇文章各生成一张封面图」\n- **图文排版**：说「生成一张信息图，展示文章的核心数据」\n\n## ⚙️ 配置\n\n无需额外配置。Hermes 自动选择合适的图像生成模型（DALL·E / Stable Diffusion）完成生成。"
   },
   {
     "id": "ideation",
-    "name_cn": "",
+    "name_cn": "ideation",
     "name_en": "ideation",
     "icon": "🔌",
-    "category": "Other",
+    "category": "创意",
     "summary": "创意构想引擎：通过创造性约束生成项目创意和设计方案。",
-    "detail": "自动同步添加的 Hermes Agent 技能。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "## 🛠️ 能力说明\n\n创意构想引擎通过一组创造性约束（时间、资源、技术栈、用户画像）激发项目创意，帮助你快速跳出思维定式。\n\n## 📖 使用示例\n\n- **产品创意**：说「用 Rust + TUI 做一个终端音乐播放器，给我 5 个创意方案」\n- **项目命名**：说「为这个 AI 代码审查工具起 10 个名字」\n- **功能构思**：说「给我的 Markdown 笔记 App 设计 3 个 AI 功能」\n- **技术方案**：说「用 Serverless + WebSocket 设计一个实时协作文档编辑器」\n\n## ⚙️ 配置\n\n无需额外配置。通过 `hermes skills use ideation` 随时调用。"
   },
   {
     "id": "songwriting-and-ai-",
-    "name_cn": "",
+    "name_cn": "songwriting-and-ai-",
     "name_en": "songwriting-and-ai-",
     "icon": "🔌",
-    "category": "Other",
+    "category": "创意",
     "summary": "歌曲创作与 AI 音乐：创作技巧与 Suno AI 音乐提示词。",
-    "detail": "自动同步添加的 Hermes Agent 技能。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "## 🛠️ 能力说明\n\nAI 歌曲创作技能结合了歌词创作理论与 Suno AI 音乐生成，帮你从零开始创作一首完整的歌曲——从歌词、曲式到 AI 生成。\n\n## 📖 使用示例\n\n- **完整创作**：说「帮我写一首关于程序员加班的民谣歌曲」\n- **歌词优化**：说「优化这首歌词的押韵和段落结构」\n- **曲风指定**：说「用 City Pop 风格写一首夏天的歌」\n- **AI 生成**：说「生成这首歌词对应的 Suno AI 提示词」\n\n## ⚙️ 配置\n\n歌词创作免费。如需生成音频，需要 Suno AI 账号或 API 订阅。"
   },
   {
     "id": "my-first-web-manage",
-    "name_cn": "",
+    "name_cn": "my-first-web-manage",
     "name_en": "my-first-web-manage",
     "icon": "🔌",
-    "category": "Other",
+    "category": "DevOps",
     "summary": "个人网站管理：Git → GitHub → Vercel 自动部署与内容同步。",
-    "detail": "自动同步添加的 Hermes Agent 技能。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "## 🛠️ 能力说明\n\n个人网站管理技能自动完成本地编辑 → Git 提交 → GitHub 推送 → Vercel 部署的全流程，同时监控网站状态和自动化管线。\n\n## 📖 使用示例\n\n- **发布更新**：说「把新的技能数据同步到网站」或「重新部署」\n- **内容管理**：说「在技能目录中添加一个「数据分析」类别」\n- **状态检查**：说「检查网站部署状态」\n- **更新内容**：说「更新关于页面的自我介绍」\n\n## ⚙️ 配置\n\n需要 GitHub Token（`GITHUB_TOKEN`）和 Vercel Token（`VERCEL_TOKEN`）。项目仓库：`github.com/yzbjxh888/my-first-web`。"
   },
   {
     "id": "system-service-debu",
-    "name_cn": "",
+    "name_cn": "system-service-debu",
     "name_en": "system-service-debu",
     "icon": "🔌",
-    "category": "Other",
+    "category": "DevOps",
     "summary": "Systemd 服务调试：统一框架管理和调试 systemd --user 服务。",
-    "detail": "使用方法：通过 `dev status` 查看所有服务状态，`dev start/stop/restart <服务名>` 控制服务。服务定义在 `~/.config/systemd/user/` 下。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "使用方法：通过 `dev status` 查看所有服务状态，`dev start/stop/restart <服务名>` 控制服务。服务定义在 `~/.config/systemd/user/` 下。"
   },
   {
     "id": "minecraft-modpack-s",
-    "name_cn": "",
+    "name_cn": "minecraft-modpack-s",
     "name_en": "minecraft-modpack-s",
     "icon": "🔌",
-    "category": "Other",
+    "category": "游戏",
     "summary": "Minecraft 整合包服务器：搭建 CurseForge/Modrinth 模组服务器。",
-    "detail": "使用方法：1. 下载整合包（CurseForge/Modrinth）2. 运行 `dev start minecraft-server` 3. 在 Minecraft 客户端中连接服务器。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "使用方法：1. 下载整合包（CurseForge/Modrinth）2. 运行 `dev start minecraft-server` 3. 在 Minecraft 客户端中连接服务器。"
   },
   {
     "id": "group-chat-agent-tr",
-    "name_cn": "",
+    "name_cn": "group-chat-agent-tr",
     "name_en": "group-chat-agent-tr",
     "icon": "🔌",
-    "category": "Other",
+    "category": "社交",
     "summary": "群聊智能体触发：快速查出群聊中的角色和消息内容。",
-    "detail": "自动同步添加的 Hermes Agent 技能。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "## 🛠️ 能力说明\n\n群聊智能体触发技能让机器人能在群聊中被快速唤醒，通过 @agent 提及或关键词触发，自动分析群消息上下文并响应。\n\n## 📖 使用示例\n\n- **@提及**：在群聊中发「@agent 今天的日报出来了没」\n- **关键词触发**：在群里说「摘要一下近 20 条消息」\n- **定时播报**：说「每天早上 9 点在群里播报今天的待办事项」\n- **问答**：说「@agent 这个项目的 API Key 在哪里配置」\n\n## ⚙️ 配置\n\n需要 Telegram Bot Token 或 Discord Bot Token，并配置 Webhook 或长轮询模式。在 `~/.hermes/config.yaml` 的 `agents` 段配置。"
   },
   {
     "id": "audiocraft-audio-ge",
-    "name_cn": "",
+    "name_cn": "audiocraft-audio-ge",
     "name_en": "audiocraft-audio-ge",
     "icon": "🔌",
-    "category": "Other",
+    "category": "创意",
     "summary": "AudioCraft 音频生成：MusicGen 文本转音乐、AudioGen 文本转音效。",
-    "detail": "自动同步添加的 Hermes Agent 技能。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "## 🛠️ 能力说明\n\nAudioCraft 音频生成（Meta 开源）包含 MusicGen（文本转音乐）和 AudioGen（文本转音效）。可根据描述生成短音频片段，适合游戏音效、背景音乐和声音设计。\n\n## 📖 使用示例\n\n- **生成音乐**：说「生成一段 10 秒的 Lo-fi 背景音乐，BPM 80」\n- **音效设计**：说「生成一段雨声+雷声的环境音效」\n- **游戏音效**：说「生成一个宝剑出鞘的音效」\n- **自定义**：说「以这段旋律为参考，生成摇滚版本」\n\n## ⚙️ 配置\n\n需要安装 `audiocraft`（`pip install audiocraft`）。MusicGen 建议 6GB+ 显存。可在 CPU 上运行但较慢。"
   },
   {
     "id": "evaluating-llms-har",
-    "name_cn": "",
+    "name_cn": "evaluating-llms-har",
     "name_en": "evaluating-llms-har",
     "icon": "🔌",
-    "category": "Other",
+    "category": "AI 研究",
     "summary": "LLM 评估框架：使用 lm-eval-harness 在 MMU、GSM8K 等基准测试模型。",
-    "detail": "自动同步添加的 Hermes Agent 技能。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "## 🛠️ 能力说明\n\nLLM 评估框架（lm-eval-harness）提供标准化基准测试，支持 MMLU、GSM8K、HumanEval、BBH 等主流评测集，用于对比模型性能、验证微调效果和识别退化。\n\n## 📖 使用示例\n\n- **基准测试**：说「在 MMLU 上评测 Qwen2.5-7B」\n- **对比分析**：说「对比 Llama-3 和 Qwen2.5 在 GSM8K 上的表现」\n- **量化评估**：说「检查 AWQ 量化后模型的精度损失」\n- **自定义数据集**：说「用我提供的测试集评测模型回答质量」\n\n## ⚙️ 配置\n\n安装 `lm_eval`（`pip install lm-eval`）。评测集自动下载。支持通过环境变量 `OPENAI_API_KEY` 等配置 API 模型评测。"
   },
   {
     "id": "segment-anything-mo",
-    "name_cn": "",
+    "name_cn": "segment-anything-mo",
     "name_en": "segment-anything-mo",
     "icon": "🔌",
-    "category": "Other",
+    "category": "AI 研究",
     "summary": "SAM 图像分割：通过点、框、遮罩进行零样本图像分割。",
-    "detail": "自动同步添加的 Hermes Agent 技能。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "## 🛠️ 能力说明\n\nSegment Anything Model（SAM, Meta 开源）是零样本图像分割模型，支持通过点、框、文本描述等方式分割图像中的任意对象。\n\n## 📖 使用示例\n\n- **点击分割**：说「分割这张照片中的人物」——会自动在人物上放置提示点\n- **框选分割**：说「用框选择图像中的汽车，分割出来」\n- **全图分割**：说「分割这张图片中的所有物体」\n- **背景移除**：说「移除这张图片的背景」\n\n## ⚙️ 配置\n\n需要安装 `segment-anything`（`pip install segment-anything`）并下载 SAM 模型权重（~2.4GB）。建议 8GB+ 显存。"
   },
   {
     "id": "teams-meeting-pipel",
-    "name_cn": "",
+    "name_cn": "teams-meeting-pipel",
     "name_en": "teams-meeting-pipel",
     "icon": "🔌",
-    "category": "Other",
+    "category": "办公协作",
     "summary": "Teams 会议摘要：通过 Hermes CLI 管理 Teams 会议摘要管线。",
-    "detail": "自动同步添加的 Hermes Agent 技能。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "## 🛠️ 能力说明\n\nTeams 会议摘要管线自动拉取 Microsoft Teams 会议转录，生成结构化摘要（要点、决策、待办事项），支持定时运行和手动触发。\n\n## 📖 使用示例\n\n- **会议摘要**：说「总结今天下午的项目评审会议」\n- **定时任务**：说「每天下班前自动汇总当天的会议记录」\n- **查询历史**：说「搜索上个月关于架构评审的会议要点」\n- **待办提取**：说「列出今天所有会议中分配给我的待办事项」\n\n## ⚙️ 配置\n\n需要 Microsoft Graph API 权限（`TEAMS_CLIENT_ID` / `TEAMS_CLIENT_SECRET`）。通过 OAuth 2.0 授权访问 Teams 日历和转录。"
   },
   {
     "id": "research-paper-writ",
-    "name_cn": "",
+    "name_cn": "research-paper-writ",
     "name_en": "research-paper-writ",
     "icon": "🔌",
-    "category": "Other",
+    "category": "学术研究",
     "summary": "研究论文写作：学术研究、论文发现、文献综述工作流。",
-    "detail": "自动同步添加的 Hermes Agent 技能。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "## 🛠️ 能力说明\n\n研究论文写作技能覆盖从选题、文献综述、实验设计到论文撰写的全流程，集成 arXiv 检索、LaTeX 模板和学术写作规范。\n\n## 📖 使用示例\n\n- **文献综述**：说「搜索关于 LLM 推理加速的最新论文」\n- **论文大纲**：说「帮我写一篇关于 MCP 协议在 Agent 系统中应用的论文大纲」\n- **摘要撰写**：说「写一段 200 字的论文摘要」\n- **参考文献**：说「生成 APA 格式的参考文献列表」\n\n## ⚙️ 配置\n\narXiv API 免费。如需 LaTeX 编译，需要本地安装 `pdflatex` 或 `xelatex`。"
   },
   {
     "id": "debugging-hermes-tu",
-    "name_cn": "",
+    "name_cn": "debugging-hermes-tu",
     "name_en": "debugging-hermes-tu",
     "icon": "🔌",
-    "category": "Other",
+    "category": "配置管理",
     "summary": "Hermes TUI 调试：使用 Python、Gateway、Ink UI 调试斜杠命令。",
-    "detail": "自动同步添加的 Hermes Agent 技能。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "## 🛠️ 能力说明\n\nHermes TUI 调试技能用于诊断和修复 Hermes Agent 终端界面（TUI）中的斜杠命令问题，涉及 Python 后端、Gateway 代理和 Ink UI 渲染层。\n\n## 📖 使用示例\n\n- **命令调试**：说「排查 `/model` 命令为什么不生效」\n- **UI 问题**：说「修复 TUI 中技能列表的显示错位」\n- **日志分析**：说「查看 hermes-gateway 的调试日志，找出连接断开的原因」\n- **插件问题**：说「测试刚开发的技能插件在 TUI 中的加载情况」\n\n## ⚙️ 配置\n\n通过 `hermes --tui --dev` 以开发模式启动 TUI（从 TS 源码热加载，无需打包）。日志文件在 `~/.hermes/logs/` 下。"
   },
   {
     "id": "hermes-agent-skill-",
-    "name_cn": "",
+    "name_cn": "hermes-agent-skill-",
     "name_en": "hermes-agent-skill-",
     "icon": "🔌",
-    "category": "Other",
+    "category": "配置管理",
     "summary": "Hermes 智能体核心配置：管理提示词、模型、工具提供方和网关设置。",
-    "detail": "使用方法：在终端运行 `hermes` 启动对话模式。使用 `/model <模型名>` 切换模型，`/provider <提供商>` 切换提供方。通过 `~/.hermes/config.yaml` 配置默认模型、工具和网关。支持 CLI、TUI、Web UI 三种交互方式，也可通过 Telegram/Discord 集成使用。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "使用方法：在终端运行 `hermes` 启动对话模式。使用 `/model <模型名>` 切换模型，`/provider <提供商>` 切换提供方。通过 `~/.hermes/config.yaml` 配置默认模型、工具和网关。支持 CLI、TUI、Web UI 三种交互方式，也可通过 Telegram/Discord 集成使用。"
   },
   {
     "id": "hermes-s6-container",
-    "name_cn": "",
+    "name_cn": "hermes-s6-container",
     "name_en": "hermes-s6-container",
     "icon": "🔌",
-    "category": "Other",
+    "category": "配置管理",
     "summary": "s6-overlay 容器监督：管理 s6 监督树中的服务生命周期和依赖。",
-    "detail": "自动同步添加的 Hermes Agent 技能。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "## 🛠️ 能力说明\n\ns6-overlay 容器监督系统管理 Docker 容器内多个服务的生命周期、依赖关系和自动重启策略，确保容器内所有进程正确启动和关闭。\n\n## 📖 使用示例\n\n- **服务编排**：说「配置 Hermes Gateway 在容器启动时先于 Web UI 启动」\n- **健康检查**：说「检查 s6 监督树中所有服务的健康状态」\n- **日志查看**：说「查看 s6 初始化阶段的日志」\n- **自定义服务**：说「在 s6 监督树中添加一个日志轮转服务」\n\n## ⚙️ 配置\n\n`/package/admin/s6-overlay/` 下的 `s6-rc` 服务定义文件。Hermes Docker 镜像已预装 s6-overlay。"
   },
   {
     "id": "subagent-driven-dev",
-    "name_cn": "",
+    "name_cn": "subagent-driven-dev",
     "name_en": "subagent-driven-dev",
     "icon": "🔌",
-    "category": "Other",
+    "category": "代码开发",
     "summary": "子代理驱动开发：通过 delegate_task 子代理执行两阶段审核。",
-    "detail": "自动同步添加的 Hermes Agent 技能。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "## 🛠️ 能力说明\n\n子代理驱动开发通过 `delegate_task` 将复杂任务分配给多个子代理并行执行，每个子代理独立运行并返回结果，最后主代理整合输出。\n\n## 📖 使用示例\n\n- **并行研究**：说「同时搜索 arXiv 上的三篇最新论文并对比它们的核心贡献」\n- **代码审查**：说「把 20 个文件的代码审查分给 4 个子代理并行执行」\n- **批量测试**：说「在三个不同的 Python 版本上并行运行测试套件」\n- **多源调研**：说「同时搜索 GitHub、ArXiv 和 Google 获取 Hermes Agent 的最新动态」\n\n## ⚙️ 配置\n\n无需额外配置。通过 `delegate_task` 函数在技能中调用，支持 `goal`、`context`、`toolsets` 参数。并行数上限由 `max_concurrent_children` 控制。"
   },
   {
     "id": "sysml-backend-pipel",
-    "name_cn": "",
+    "name_cn": "sysml-backend-pipel",
     "name_en": "sysml-backend-pipel",
     "icon": "🔌",
-    "category": "Other",
+    "category": "代码开发",
     "summary": "SysML 建模：使用 sysml1.6.md + Backend 状态管理器进行系统建模。",
-    "detail": "自动同步添加的 Hermes Agent 技能。",
-    "related": [],
-    "from_auto_sync": true
+    "detail": "## 🛠️ 能力说明\n\nSysML 后端管线使用 SysML v1.6 建模语言进行系统架构建模，结合 Backend 状态管理器进行结构化系统的需求分析、行为建模和架构设计。\n\n## 📖 使用示例\n\n- **系统建模**：说「用 SysML 为一个在线书店系统建模」\n- **需求分析**：说「将用户故事转化为 SysML 需求图」\n- **行为建模**：说「为订单处理流程绘制 SysML 活动图」\n- **架构设计**：说「生成系统的模块图和接口定义」\n\n## ⚙️ 配置\n\n无需额外配置。Hermes 加载 `sysml1.6.md` 知识文件定义 SysML 语法，通过 Backend 状态管理器追踪建模进度。"
   }
 ]

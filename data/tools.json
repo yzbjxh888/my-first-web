@@ -176,7 +176,7 @@
     "icon": "🔗",
     "category": "code",
     "summary": "列出指定函数调用的所有下游函数。",
-    "detail": "**使用方式：** 说「列出 `train_model()` 调用了哪些函数」——可以递归展开调用链路，支持跨文件和匿名函数场景。",
+    "detail": "## 🛠️ 能力说明\n\n查询指定函数的调用方（哪些代码调用了此函数）。帮助理解函数被使用的上下文，适合重构前的依赖分析。\n\n## 📖 使用示例\n\n- **查调用者**：说「查一下 `processOrder` 函数被哪些地方调用了」\n- **重构分析**：说「找出 `handleError` 的所有调用方，评估改造成本」\n\n## ⚙️ 配置\n\n需要 CodeGraph MCP 服务运行中并配置了项目索引。通过 `hermes mcp list` 确认服务状态。",
     "status": "connected"
   },
   {
@@ -186,7 +186,7 @@
     "icon": "🔙",
     "category": "code",
     "summary": "查询指定符号被哪些代码调用。修改前的安全网。",
-    "detail": "**使用方式：** 说「找出哪些地方调用了 `connect()`」——重构前必查，避免遗漏影响点。适合重命名、删除或修改函数签名前的安全检查。",
+    "detail": "## 🛠️ 能力说明\n\n查询指定函数调用了哪些其他函数。帮助理解函数的内部分支和依赖关系，适合代码审计和逻辑分析。\n\n## 📖 使用示例\n\n- **查被调用**：说「`validateUser` 函数内部调用了哪些函数」\n- **依赖链**：说「画出 `main()` 到所有叶子函数的调用链路」\n\n## ⚙️ 配置\n\n需要 CodeGraph MCP 服务运行中并配置了项目索引。通过 `hermes mcp list` 确认服务状态。",
     "status": "connected"
   },
   {
@@ -196,7 +196,7 @@
     "icon": "🔎",
     "category": "code",
     "summary": "自然语言探索代码仓库：理解目录结构和模块组织。",
-    "detail": "**使用方式：** 说「帮我看看这个仓库的项目结构」——主入口工具，适合首次接触项目时快速理解代码组织方式。",
+    "detail": "## 🛠️ 能力说明\n\n探索代码仓库中的命名空间、模块和包结构，概览项目代码的宏观组织方式。\n\n## 📖 使用示例\n\n- **项目概览**：说「浏览一下这个项目的包结构」\n- **模块探索**：说「看看 `src/services` 目录下有哪些模块」\n\n## ⚙️ 配置\n\n需要 CodeGraph MCP 服务运行中。确保项目已通过 CodeGraph CLI 索引。",
     "status": "connected"
   },
   {
@@ -206,7 +206,7 @@
     "icon": "📂",
     "category": "code",
     "summary": "按目录浏览项目文件树，支持语言过滤和符号计数。",
-    "detail": "**使用方式：** 说「列出所有 Python 文件」或「看看 utils 目录下有哪些文件」——替代 `ls`/`tree`，直接从索引中读取。",
+    "detail": "## 🛠️ 能力说明\n\n以树形结构展示代码仓库的文件和目录，支持按文件类型、修改时间和大小筛选。\n\n## 📖 使用示例\n\n- **文件树**：说「显示项目根目录的文件树」\n- **类型筛选**：说「只显示 Python 文件」\n- **新文件**：说「显示最近一周修改过的文件」\n\n## ⚙️ 配置\n\n需要 CodeGraph MCP 服务运行中并配置了项目索引。",
     "status": "connected"
   },
   {
@@ -216,7 +216,7 @@
     "icon": "💥",
     "category": "code",
     "summary": "分析修改某符号后会波及哪些代码。重构前的安全网。",
-    "detail": "**使用方式：** 说「如果我改 `database.ts` 中的 `connect()` 会影响哪些地方」——递归追踪所有下游依赖并高亮风险区域。重构前必查。",
+    "detail": "## 🛠️ 能力说明\n\n分析代码变更的影响范围——修改一个函数或文件会影响到哪些其他代码，适合评估重构或修改的风险。\n\n## 📖 使用示例\n\n- **影响分析**：说「修改 `UserService.login()` 会影响哪些地方」\n- **变更评估**：说「重命名 `auth.py` 中的 `AuthManager` 类的影响范围」\n\n## ⚙️ 配置\n\n需要 CodeGraph MCP 服务运行中并配置了项目索引。通过 `hermes mcp list` 确认服务状态。",
     "status": "connected"
   },
   {
@@ -226,7 +226,7 @@
     "icon": "📌",
     "category": "code",
     "summary": "获取单个符号的完整定义：位置、签名、源码。",
-    "detail": "**使用方式：** 说「看看 `calculate_price` 的定义」——支持精确到行号和文件定位，适合查看具体实现细节。",
+    "detail": "## 🛠️ 能力说明\n\n获取代码中特定符号（函数、类、变量、接口）的详细定义信息，包括位置、类型签名、文档注释和引用计数。\n\n## 📖 使用示例\n\n- **查看定义**：说「查看 `ConfigParser` 类的详细定义」\n- **函数签名**：说「查看 `processData` 的参数和返回值类型」\n\n## ⚙️ 配置\n\n需要 CodeGraph MCP 服务运行中并配置了项目索引。项目需要先通过 `codegraph init` 建立符号索引。",
     "status": "connected"
   },
   {
@@ -236,7 +236,7 @@
     "icon": "🔍",
     "category": "code",
     "summary": "按名称快速模糊搜索代码符号。",
-    "detail": "**使用方式：** 说「搜索 `validate` 相关的所有函数和类」——支持部分名称匹配，按类型（函数/类/变量）和文件过滤。",
+    "detail": "## 🛠️ 能力说明\n\n在代码仓库中搜索特定符号（函数、类、变量、类型），支持模糊匹配和正则表达式。\n\n## 📖 使用示例\n\n- **符号搜索**：说「搜索所有名为 `handle*` 的函数」\n- **类搜索**：说「找到所有实现了 `Observer` 接口的类」\n- **变量搜索**：说「搜索全局配置变量 `MAX_RETRY` 的定义位置」\n\n## ⚙️ 配置\n\n需要 CodeGraph MCP 服务运行中并配置了项目索引。使用 `codegraph search` 或自然语言查询。",
     "status": "connected"
   },
   {
@@ -246,27 +246,7 @@
     "icon": "❤️",
     "category": "code",
     "summary": "检查 CodeGraph 索引健康度。",
-    "detail": "**使用方式：** 说「CodeGraph 索引状态如何」——返回已索引的文件数、节点数和关系数，用于诊断索引是否完整或需要重建。",
-    "status": "connected"
-  },
-  {
-    "id": "Name",
-    "name_cn": "Name",
-    "name_en": "Name",
-    "icon": "🔌",
-    "category": "mcp",
-    "summary": "MCP 工具 - Name",
-    "detail": "通过 Model Context Protocol 集成的外部工具服务。",
-    "status": "connected"
-  },
-  {
-    "id": "────────────────",
-    "name_cn": "────────────────",
-    "name_en": "────────────────",
-    "icon": "🔌",
-    "category": "mcp",
-    "summary": "MCP 工具 - ────────────────",
-    "detail": "通过 Model Context Protocol 集成的外部工具服务。",
+    "detail": "## 🛠️ 能力说明\n\n检查 CodeGraph 索引服务的运行状态，包括索引进度、索引范围、内存使用和已索引的符号数量。\n\n## 📖 使用示例\n\n- **状态检查**：说「检查 CodeGraph 索引的状态」\n- **索引进度**：说「当前的索引进度是多少」\n- **服务诊断**：说「CodeGraph 服务是否正常运行」\n\n## ⚙️ 配置\n\n无需额外配置。CodeGraph MCP 服务应已在后台运行。通过 `hermes mcp list` 查看服务是否就绪。",
     "status": "connected"
   },
   {
