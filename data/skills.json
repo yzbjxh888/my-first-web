@@ -501,7 +501,8 @@
     "category": "Other",
     "summary": "通过 Hermes Web UI 使用选定的模型配置生成或编辑图片",
     "detail": "支持多种图像生成模型，包括 Flux、DALL-E 等。可以根据用户需求选择不同的图像风格和参数，并通过 Hermes Web UI 实时预览和编辑生成的图片。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "dogfood",
@@ -511,7 +512,8 @@
     "category": "Other",
     "summary": "对 Web 应用进行探索性质量检测，发现并报告 Bug",
     "detail": "通过系统化的测试流程，对 Web 应用进行全面质量评估。包括功能测试、UI 一致性检查、边界条件测试，并生成详细的测试报告和 Bug 证据。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "grok-image-to-video",
@@ -521,7 +523,8 @@
     "category": "Other",
     "summary": "使用 xAI Grok 模型将本地图片动画化为短视频",
     "detail": "通过 Hermes Web UI 连接 xAI Grok 的图生视频能力，将静态图片转化为动态视频。支持自定义动画风格和时长。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "hyperframes",
@@ -531,7 +534,8 @@
     "category": "Other",
     "summary": "使用 HTML、CSS 和 JavaScript 在 Hermes 中创建 AI 视频",
     "detail": "HyperFrames 是一种基于 Web 技术的 AI 视频创作框架。通过组合 HTML/CSS/JS 组件，可以生成结构化的 AI 动画和视频内容。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "llm-backend-architecture",
@@ -551,7 +555,8 @@
     "category": "Other",
     "summary": "创建丰富的图表、数据可视化、技术架构视图和可编辑文档",
     "detail": "基于 Markdown 的富媒体查看器，支持嵌入流程图、序列图、数据表格和交互式可视化组件，适合技术文档和演示场景。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "remotion",
@@ -561,7 +566,8 @@
     "category": "Other",
     "summary": "使用 Remotion 和 React 创建可编辑的 AI 视频项目，支持预览和渲染",
     "detail": "Remotion 是一个用 React 编写视频的框架。通过组合 React 组件、动画和音频，可以程序化地生成高质量视频内容。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "yuanbao",
@@ -571,7 +577,8 @@
     "category": "Other",
     "summary": "Yuanbao (元宝) groups: @mention users, query info/members.",
     "detail": "元宝（Yuanbao）群聊集成：支持 @ 提及群成员、查询群信息和成员列表。可用于群内的自动化消息处理和互动。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "claude-code",
@@ -581,7 +588,8 @@
     "category": "Other",
     "summary": "将编码任务委托给 Claude Code CLI（功能开发、PR）",
     "detail": "通过 Hermes 编排，将复杂的编码任务分配给 Claude Code CLI 执行。Claude Code 在独立环境中进行代码开发、测试和 PR 提交。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "codex",
@@ -591,17 +599,8 @@
     "category": "Other",
     "summary": "将编码任务委托给 OpenAI Codex CLI（功能开发、PR）",
     "detail": "通过 Hermes 编排，将编码任务分配给 OpenAI Codex CLI 执行。Codex 在隔离环境中完成代码编写、调试和版本控制。",
-    "related": []
-  },
-  {
-    "id": "hermes-proxy-provider",
-    "name_cn": "hermes-proxy-provider",
-    "name_en": "hermes-proxy-provider",
-    "icon": "🔌",
-    "category": "Other",
-    "summary": "通过 SOCKS5/HTTP 代理（v2rayN等）配置 Hermes 使用自定义 API 提供商",
-    "detail": "为 Hermes 配置自定义 API 提供商，通过 SOCKS5 或 HTTP 代理绕过网络限制。支持 v2rayN、Clash 等代理工具，兼容 OpenAI 兼容的 API 端点。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "kanban-codex-lane",
@@ -611,7 +610,8 @@
     "category": "Other",
     "summary": "当 Hermes 看板工作器需要将 Codex CLI 作为隔离执行器运行时使用",
     "detail": "看板系统中 Codex CLI 的专用通道。看板工作器可以将实现任务分配给 Codex CLI 作为隔离执行环境，实现并行开发和任务追踪。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "openclaw-bridge",
@@ -621,7 +621,8 @@
     "category": "Other",
     "summary": "Bridge Hermes with OpenClaw's multi-agent orchestration system — #任务 (full pipeline via AO) and #专家 (single expert dispatch)",
     "detail": "通过 #任务（完整流水线）模式连接 Hermes 和 OpenClaw，实现跨系统的多代理协作。包括任务分配、状态同步和结果汇总。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "opencode",
@@ -631,7 +632,8 @@
     "category": "Other",
     "summary": "将编码任务委托给 OpenCode CLI（功能开发、PR 审查）",
     "detail": "通过 Hermes 编排，将编码任务分配给 OpenCode CLI 执行。OpenCode 支持代码生成、审查和自动化测试。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "daily-report-gen",
@@ -641,7 +643,8 @@
     "category": "Other",
     "summary": "每日生成中文技术日报：含原文链接、深度分析、丰富内容",
     "detail": "自动化日报生成系统。每4小时通过 cron 触发数据采集，爬取 GitHub Trending、Hacker News、Lobste.rs、HuggingFace Papers、ArXiv 等技术源。生成结构化的中文技术日报，每条内容均附带原文链接。涵盖：今日重点（深度分析）、开源动态（含 Star 数）、开发者生态、AI与Agent前沿、论文推荐五大板块。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "ascii-video",
@@ -651,17 +654,8 @@
     "category": "Other",
     "summary": "将视频或音频转换为彩色 ASCII MP4/GIF 动画",
     "detail": "基于 FFmpeg 和字符渲染引擎，将普通视频转换成由彩色字符组成的 ASCII 风格动画，支持 MP4 和 GIF 输出格式。",
-    "related": []
-  },
-  {
-    "id": "baoyu-article-illustrator",
-    "name_cn": "baoyu-article-illustra…",
-    "name_en": "baoyu-article-illustrator",
-    "icon": "🔌",
-    "category": "Other",
-    "summary": "文章配图生成：类型 × 风格 × 调色板一致性",
-    "detail": "为技术文章自动生成匹配的插图和封面图。支持多种视觉风格和调色板，确保配图与文章主题和品牌风格保持一致。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "baoyu-comic",
@@ -671,7 +665,8 @@
     "category": "Other",
     "summary": "Knowledge comics (知识漫画): educational, biography, tutorial.",
     "detail": "将复杂知识转化为易于理解的漫画形式。支持教育科普、人物传记和操作教程等场景，通过分镜和对话帮助读者轻松掌握知识点。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "baoyu-infographic",
@@ -681,7 +676,8 @@
     "category": "Other",
     "summary": "Infographics: 21 layouts x 21 styles (信息图, 可视化).",
     "detail": "数据可视化信息图生成器。支持 21 种布局模板与 21 种视觉样式的自由组合，适合制作统计数据、流程说明和对比分析等场景。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "comfyui",
@@ -691,7 +687,8 @@
     "category": "Other",
     "summary": "使用 ComfyUI 生成图像、视频和音频 — 安装、启动、管理节点和工作流",
     "detail": "ComfyUI 是一个基于节点工作流的 AI 生成界面。支持 Stable Diffusion 等模型的图像/视频/音频生成，通过可视化节点编辑器构建复杂的生成流水线。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "design-md",
@@ -701,7 +698,8 @@
     "category": "Other",
     "summary": "编写、验证和导出 Google 的 DESIGN.md 令牌规范文件",
     "detail": "遵循 Google 的 DESIGN.md 规范，帮助设计和验证 UI 设计系统中的令牌（Token）定义，包括颜色、间距、字体等设计变量。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "humanizer",
@@ -711,17 +709,8 @@
     "category": "Other",
     "summary": "人性化文本：去除 AI 写作痕迹，加入真实语感",
     "detail": "检测并消除 AI 生成文本中的常见模式（套话、重复结构、过度正式），添加真实人类写作中的语气变化和口语化表达，让文本更自然。",
-    "related": []
-  },
-  {
-    "id": "creative-ideation",
-    "name_cn": "ideation",
-    "name_en": "ideation",
-    "icon": "🔌",
-    "category": "Other",
-    "summary": "通过创意约束条件生成项目创意",
-    "detail": "基于设定的约束条件（预算、时间、技术栈、目标用户），通过结构化思考生成创新的项目概念和产品创意，适合头脑风暴和项目启动阶段。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "p5js",
@@ -731,7 +720,8 @@
     "category": "Other",
     "summary": "p5.js 创作：生成艺术、着色器、交互式 3D 可视化",
     "detail": "使用 p5.js 创作交互式视觉作品。支持生成艺术、WebGL 着色器、交互式 3D 场景和数据可视化，适合创意编程和艺术展示。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "popular-web-designs",
@@ -741,7 +731,8 @@
     "category": "Other",
     "summary": "54 个真实设计系统（Stripe、Linear、Vercel 等）的 HTML/CSS 实现",
     "detail": "收集了 54 个知名科技公司的设计系统，包括 Stripe、Linear、Vercel、Notion 等。每个设计系统都包含完整的 HTML/CSS 实现，可直接参考和使用。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "pretext",
@@ -751,17 +742,8 @@
     "category": "Other",
     "summary": "使用 @chenglou/pretext 构建创意浏览器演示 — 无需 DOM 的文本布局引擎",
     "detail": "Pretext 是一个创新的文本布局引擎，无需传统 DOM 即可生成复杂的文本排版效果。适合创意编程、动态文本展示和实验性 Web 项目。",
-    "related": []
-  },
-  {
-    "id": "songwriting-and-ai-music",
-    "name_cn": "songwriting-and-ai-mus…",
-    "name_en": "songwriting-and-ai-music",
-    "icon": "🔌",
-    "category": "Other",
-    "summary": "歌曲创作技巧和 Suno AI 音乐提示词生成",
-    "detail": "结合传统歌曲创作理论和 AI 音乐生成工具（Suno），帮助用户创作歌词、旋律和完整歌曲。包括结构设计、押韵技巧和提示词优化。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "touchdesigner-mcp",
@@ -771,47 +753,8 @@
     "category": "Other",
     "summary": "通过 twozero MCP 控制运行中的 TouchDesigner 实例",
     "detail": "使用 twozero MCP 协议与 TouchDesigner 交互编程，可以动态创建操作符、设置参数、控制播放和实时视觉生成。",
-    "related": []
-  },
-  {
-    "id": "my-first-web-management",
-    "name_cn": "my-first-web-management",
-    "name_en": "my-first-web-management",
-    "icon": "🌐",
-    "category": "Other",
-    "summary": "网站全生命周期管理：CRUD 技能/工具/服务 + 自动同步 + Vercel 部署",
-    "detail": "个人网站的全面管理手册。涵盖内容更新、技能/工具数据 CRUD、服务状态监控、Vercel 部署和自动同步。支持统一侧边栏导航（📊仪表板 📰日报 🛠️技能 🔧工具 👤关于）、中文描述、绝对路径链接，确保本地 WSL 和 Vercel 部署双环境正常访问。",
-    "related": []
-  },
-  {
-    "id": "system-service-debugging",
-    "name_cn": "system-service-debuggi…",
-    "name_en": "system-service-debugging",
-    "icon": "🔌",
-    "category": "Other",
-    "summary": "在 WSL 上管理和调试 systemd 用户服务的统一框架",
-    "detail": "涵盖 systemd 用户服务的全生命周期：启动/停止、启用/禁用、日志检查、故障诊断和自动恢复。支持 WSL 环境下的 .service 文件管理。",
-    "related": []
-  },
-  {
-    "id": "minecraft-modpack-server",
-    "name_cn": "minecraft-modpack-serv…",
-    "name_en": "minecraft-modpack-server",
-    "icon": "🔌",
-    "category": "Other",
-    "summary": "托管带有模组的 Minecraft 服务器（CurseForge、Modrinth）",
-    "detail": "自动化 Minecraft 模组服务器的部署和管理。支持 CurseForge 和 Modrinth 模组包格式，包括服务器安装、模组配置、性能优化和玩家管理。",
-    "related": []
-  },
-  {
-    "id": "group-chat-agent-trigger",
-    "name_cn": "group-chat-agent-trigg…",
-    "name_en": "group-chat-agent-trigger",
-    "icon": "🔌",
-    "category": "Other",
-    "summary": "用户发群聊地址，我就能快速查出群聊中的角色和消息内容",
-    "detail": "在群聊环境中作为 AI 助手，可以自动识别群成员、读取消息历史、分析讨论主题，并通过 @ 提及方式响应用户请求。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "heartmula",
@@ -821,7 +764,8 @@
     "category": "Other",
     "summary": "HeartMuLa：类似 Suno 的歌词+标签音乐生成系统",
     "detail": "开源的 AI 音乐生成引擎，支持通过歌词和风格标签生成完整歌曲。类似 Suno 的功能，但在本地运行，提供更多的创作控制权。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "songsee",
@@ -831,7 +775,8 @@
     "category": "Other",
     "summary": "通过命令行分析音频频谱图（梅尔频谱、色度图、MFCC）",
     "detail": "音频特征提取工具，可以生成梅尔频谱图（Mel Spectrogram）、色度特征（Chroma）和 MFCC 等音频特征的可视化，适合音乐信息检索和音频分析。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "dspy",
@@ -841,17 +786,8 @@
     "category": "Other",
     "summary": "DSPy：声明式语言模型编程框架，自动优化提示词和 RAG 流水线",
     "detail": "DSPy 通过声明式编程范式简化 LLM 应用开发。自动优化提示词、检索增强生成（RAG）流水线和工具调用链，无需手动编写复杂的提示词模板。",
-    "related": []
-  },
-  {
-    "id": "evaluating-llms-harness",
-    "name_cn": "evaluating-llms-harness",
-    "name_en": "evaluating-llms-harness",
-    "icon": "🔌",
-    "category": "Other",
-    "summary": "Hermes Agent 技能。",
-    "detail": "这是一个 Hermes Agent 技能，自动同步添加。详细说明待补充。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "huggingface-hub",
@@ -861,7 +797,8 @@
     "category": "Other",
     "summary": "使用 HuggingFace hf CLI 搜索、下载、上传模型和数据集",
     "detail": "HuggingFace Hub 的完整 CLI 工具指南。支持模型浏览、下载、上传和管理，涵盖 Transformers、Diffusers 和 Datasets 等核心库。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "llama-cpp",
@@ -871,7 +808,8 @@
     "category": "Other",
     "summary": "llama.cpp 本地 GGUF 推理 + HuggingFace Hub 模型发现",
     "detail": "本地 LLM 推理引擎，支持 GGUF 格式的量化模型。集成 HuggingFace Hub 进行模型发现和下载，适合在消费级硬件上运行开源模型。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "moa-free-tier",
@@ -881,7 +819,8 @@
     "category": "Other",
     "summary": "使用 OpenRouter 免费模型运行混合代理（MoA）流水线",
     "detail": "混合代理（Mixture of Agents）流水线：通过动态组合多个 OpenRouter 免费模型，在零成本下获得超越单一模型的推理质量。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "obliteratus",
@@ -891,17 +830,8 @@
     "category": "Other",
     "summary": "OBLITERATUS：通过差异均值法去除 LLM 的拒绝回答行为",
     "detail": "通过 diff-in-means 技术分析模型内部表征，定位并移除 LLM 中的拒绝回答机制。适用于安全研究和模型行为分析。",
-    "related": []
-  },
-  {
-    "id": "vllm",
-    "name_cn": "serving-llms-vllm",
-    "name_en": "serving-llms-vllm",
-    "icon": "🔌",
-    "category": "Other",
-    "summary": "vLLM：高吞吐量 LLM 服务，兼容 OpenAI API，支持量化",
-    "detail": "vLLM 是一个高性能 LLM 推理引擎，通过 PagedAttention 等技术实现高吞吐量。提供 OpenAI 兼容的 API 接口，支持 GPTQ/AWQ 等量化格式。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "weights-and-biases",
@@ -911,7 +841,8 @@
     "category": "Other",
     "summary": "W&B：记录 ML 实验、超参数搜索、模型注册和仪表板",
     "detail": "Weights & Biases 平台集成。支持实验跟踪、超参数调优（Sweeps）、模型版本管理（Model Registry）和可视化仪表板，适合 MLOps 实践。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "ocr-and-documents",
@@ -921,7 +852,8 @@
     "category": "Other",
     "summary": "从 PDF/扫描件中提取文字（pymupdf、marker-pdf）",
     "detail": "文档文字提取工具，支持 PDF 和扫描图像。使用 PyMuPDF 和 marker-pdf 引擎进行 OCR 识别和版面分析，输出结构化文本内容。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "powerpoint",
@@ -931,17 +863,8 @@
     "category": "Other",
     "summary": "创建、读取、编辑 PPTX 演示文稿、幻灯片、备注和模板",
     "detail": "全面的 PowerPoint 自动化工具。支持从头创建演示文稿、编辑现有文件、管理幻灯片布局、添加备注和应用模板。",
-    "related": []
-  },
-  {
-    "id": "teams-meeting-pipeline",
-    "name_cn": "teams-meeting-pipeline",
-    "name_en": "teams-meeting-pipeline",
-    "icon": "🔌",
-    "category": "Other",
-    "summary": "通过 Hermes CLI 操作 Teams 会议摘要流水线",
-    "detail": "自动化会议记录和摘要系统。从 Microsoft Teams 会议中提取转录文本，生成结构化摘要、行动项和关键决策点。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "godmode",
@@ -951,17 +874,8 @@
     "category": "Other",
     "summary": "LLM 越狱技术：Parseltongue、GODMODE、ULTRAPLINIAN",
     "detail": "用于安全研究目的的 LLM 越狱方法集合。通过提示词工程技术绕过模型的安全限制，仅供授权的安全研究人员使用。",
-    "related": []
-  },
-  {
-    "id": "research-paper-writing",
-    "name_cn": "research-paper-writing",
-    "name_en": "research-paper-writing",
-    "icon": "🔌",
-    "category": "Other",
-    "summary": "为 NeurIPS/ICML/ICLR 撰写机器学习论文：从设计到投稿",
-    "detail": "完整的学术论文撰写工作流。涵盖选题方向、实验设计、数据可视化、论文结构组织和投稿流程，帮助研究者高效完成高质量论文。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "openhue",
@@ -971,77 +885,8 @@
     "category": "Other",
     "summary": "通过 OpenHue CLI 控制 Philips Hue 灯具、场景和房间",
     "detail": "智能家居灯光控制工具。支持 Philips Hue 品牌的灯具控制，包括开关、亮度调节、颜色切换、场景管理和房间分组控制。",
-    "related": []
-  },
-  {
-    "id": "debugging-hermes-tui-commands",
-    "name_cn": "debugging-hermes-tui-c…",
-    "name_en": "debugging-hermes-tui-commands",
-    "icon": "🔌",
-    "category": "Other",
-    "summary": "调试 Hermes TUI 斜杠命令：Python、网关、Ink UI",
-    "detail": "Hermes Terminal UI 的调试指南。涵盖斜杠命令的 Python 后端调试、网关通信日志分析和前端 Ink UI 组件排查。",
-    "related": []
-  },
-  {
-    "id": "hermes-agent-skill-authoring",
-    "name_cn": "hermes-agent-skill-aut…",
-    "name_en": "hermes-agent-skill-authoring",
-    "icon": "🔌",
-    "category": "Other",
-    "summary": "在仓库内编写 SKILL.md：前端元数据、验证器、文档结构",
-    "detail": "Hermes Agent 技能的开发指南。包括 YAML 前端元数据编写、技能验证规则、引用文件管理和文档结构最佳实践。",
-    "related": []
-  },
-  {
-    "id": "hermes-s6-container-supervision",
-    "name_cn": "hermes-s6-container-su…",
-    "name_en": "hermes-s6-container-supervision",
-    "icon": "🔌",
-    "category": "Other",
-    "summary": "修改、调试或扩展 Hermes Agent 容器内的 s6-overlay 监督树",
-    "detail": "s6-overlay 是 Hermes Agent Docker 容器的进程监督系统。本技能涵盖服务定义、日志轮转、重启策略和自定义初始化脚本的编写。",
-    "related": []
-  },
-  {
-    "id": "subagent-driven-development",
-    "name_cn": "subagent-driven-develo…",
-    "name_en": "subagent-driven-development",
-    "icon": "🔌",
-    "category": "Other",
-    "summary": "通过 delegate_task 子代理执行开发计划（两阶段审查）",
-    "detail": "利用 Hermes 的子代理系统实现大规模开发任务。第一阶段由子代理执行编码，第二阶段进行代码审查和质量控制，模仿真实开发团队流程。",
-    "related": []
-  },
-  {
-    "id": "sysml-backend-pipeline",
-    "name_cn": "sysml-backend-pipeline",
-    "name_en": "sysml-backend-pipeline",
-    "icon": "🔌",
-    "category": "Other",
-    "summary": "SysML 建模：sysml1.6.md + 后端状态管理器，提示词每次会话仅加载一次",
-    "detail": "SysML（系统建模语言）的自动化建模流水线。通过后端状态管理器维护模型状态，将 SysML 规范转化为可执行的系统架构模型。",
-    "related": []
-  },
-  {
-    "id": "audiocraft-audio-gene",
-    "name_cn": "audiocraft-audio-gene",
-    "name_en": "audiocraft-audio-gene",
-    "icon": "🔌",
-    "category": "Other",
-    "summary": "Hermes Agent 技能",
-    "detail": "自动同步添加的 Hermes Agent 技能。",
-    "related": []
-  },
-  {
-    "id": "segment-anything-model",
-    "name_cn": "segment-anything-model",
-    "name_en": "segment-anything-model",
-    "icon": "🔌",
-    "category": "Other",
-    "summary": "Hermes Agent 技能",
-    "detail": "自动同步添加的 Hermes Agent 技能。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "serving-llms-vllm",
@@ -1051,7 +896,8 @@
     "category": "Other",
     "summary": "Hermes Agent 技能",
     "detail": "自动同步添加的 Hermes Agent 技能。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "codegraph-integrate",
@@ -1061,7 +907,8 @@
     "category": "Other",
     "summary": "Hermes Agent 技能",
     "detail": "自动同步添加的 Hermes Agent 技能。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "hermes-system-integ",
@@ -1071,7 +918,8 @@
     "category": "Other",
     "summary": "Hermes Agent 技能",
     "detail": "自动同步添加的 Hermes Agent 技能。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "analyzing-external-",
@@ -1081,7 +929,8 @@
     "category": "Other",
     "summary": "Hermes Agent 技能",
     "detail": "自动同步添加的 Hermes Agent 技能。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   },
   {
     "id": "auto-hypothesis-tes",
@@ -1091,6 +940,7 @@
     "category": "Other",
     "summary": "Hermes Agent 技能",
     "detail": "自动同步添加的 Hermes Agent 技能。",
-    "related": []
+    "related": [],
+    "from_auto_sync": true
   }
 ]
