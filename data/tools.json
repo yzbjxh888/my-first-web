@@ -248,5 +248,25 @@
     "summary": "检查 CodeGraph 索引健康度。",
     "detail": "返回已索引的文件数、节点数和关系数。用于诊断索引是否完整或需要重建。",
     "status": "connected"
+  },
+  {
+    "id": "Name",
+    "name_cn": "Name",
+    "name_en": "Name",
+    "icon": "🔌",
+    "category": "mcp",
+    "summary": "MCP 工具 - Name",
+    "detail": "通过 Model Context Protocol 集成的外部工具服务。",
+    "status": "connected"
+  },
+  {
+    "id": "────────────────",
+    "name_cn": "────────────────",
+    "name_en": "────────────────",
+    "icon": "🔌",
+    "category": "mcp",
+    "summary": "MCP 工具 - ────────────────",
+    "detail": "通过 Model Context Protocol 集成的外部工具服务。",
+    "status": "connected"
   }
 ]

@@ -1,95 +1,163 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>关于 | Hermes Agent</title>
-  <link rel="stylesheet" href="../styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-    .about-grid .full-width { grid-column: 1 / -1; }
-    .contact-list {
-      list-style: none;
-      padding: 0;
-    }
-    .contact-list li {
-      padding: 0.5rem 0;
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    .contact-list li:last-child { border-bottom: none; }
-    .contact-list a { color: var(--accent); }
-    @media (max-width: 768px) {
-      .about-grid { grid-template-columns: 1fr; }
-    }
-  </style>
-</head>
-<body>
-  <div class="app-container">
-    <aside class="sidebar">
-  <div class="sidebar-brand">HERMES</div>
-  <nav class="sidebar-nav">
-    <a href="../index.html" class="nav-item"><span class="icon">📊</span>仪表板</a>
-    <a href="../daily/index.html" class="nav-item"><span class="icon">📰</span>日报</a>
-    <a href="../skills.html" class="nav-item"><span class="icon">🛠️</span>技能</a>
-    <a href="../tools.html" class="nav-item"><span class="icon">🔧</span>工具</a>
-    <a href="about.html" class="nav-item active"><span class="icon">👤</span>关于</a>
-  </nav>
-</aside>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>关于 | Hermes Agent</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+      .about-grid .full-width {
+        grid-column: 1 / -1;
+      }
+      .contact-list {
+        list-style: none;
+        padding: 0;
+      }
+      .contact-list li {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid var(--border);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .contact-list li:last-child {
+        border-bottom: none;
+      }
+      .contact-list a {
+        color: var(--accent);
+      }
+      @media (max-width: 768px) {
+        .about-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app-container">
+      <aside class="sidebar">
+        <div class="sidebar-brand">HERMES</div>
+        <nav class="sidebar-nav">
+          <a href="../index.html" class="nav-item"
+            ><span class="icon">📊</span>仪表板</a
+          >
+          <a href="../daily/index.html" class="nav-item"
+            ><span class="icon">📰</span>日报</a
+          >
+          <a href="../skills.html" class="nav-item"
+            ><span class="icon">🛠️</span>技能</a
+          >
+          <a href="../tools.html" class="nav-item"
+            ><span class="icon">🔧</span>工具</a
+          >
+          <a href="about.html" class="nav-item active"
+            ><span class="icon">👤</span>关于</a
+          >
+        </nav>
+      </aside>
 
-    <main class="main-content">
-      <h1 class="gradient-text">👤 关于</h1>
-      <p style="color: var(--text-secondary); margin-bottom: 2rem;">关于这个网站、它的主人，以及背后的 Hermes Agent</p>
+      <main class="main-content">
+        <h1 class="gradient-text">👤 关于</h1>
+        <p style="color: var(--text-secondary); margin-bottom: 2rem">
+          关于这个网站、它的主人，以及背后的 Hermes Agent
+        </p>
 
-      <div class="about-grid">
-        <div class="card full-width">
-          <div class="card-title" style="font-size: 1.1rem;">🧑 网站主人</div>
-          <p style="color: var(--text-secondary); margin-top: 0.5rem; line-height: 1.8;">
-            <strong style="color: var(--text-primary);">张俊翔 (Zhang Junxiang)</strong>，全栈开发者与 AI 基础设施工程师。<br><br>
-            专注于构建 <strong style="color: var(--accent);">Agentic DevOps</strong> 系统——将大语言模型与传统工程工具深度整合，实现从代码编写、服务部署到内容生成的全面自动化。<br><br>
-            技术栈覆盖前后端、数据库、AI/ML 全链路。日常开发环境为 WSL + VS Code，GitHub 托管代码，Vercel 部署前端。
+        <div class="about-grid">
+          <div class="card full-width">
+            <div class="card-title" style="font-size: 1.1rem">🧑 网站主人</div>
+            <p
+              style="
+                color: var(--text-secondary);
+                margin-top: 0.5rem;
+                line-height: 1.8;
+              "
+            >
+              <strong style="color: var(--text-primary)"
+                >张俊祥 (Zhang Junxiang)</strong
+              >，AI爱好者。<br /><br />
+              专注于构建
+              <strong style="color: var(--accent)">Agentic DevOps</strong>
+              系统——将大语言模型与传统工程工具深度整合，实现从代码编写、服务部署到内容生成的全面自动化。<br /><br />
+              技术栈覆盖前后端、数据库、AI/ML 全链路。日常开发环境为 WSL + VS
+              Code，GitHub 托管代码，Vercel 部署前端。
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-title" style="font-size: 1.1rem">
+              🤖 Hermes Agent
+            </div>
+            <p
+              style="
+                color: var(--text-secondary);
+                margin-top: 0.5rem;
+                line-height: 1.8;
+              "
+            >
+              一个开源 AI 编程助手，具备 50+ 可加载技能、原生 MCP
+              客户端、多平台消息适配、定时任务调度、Webhook 订阅等强大能力。<br /><br />
+              Hermes 不仅是代码助手，更是一个完整的 Agentic 操作系统：管理
+              systemd 服务、操作数据库、爬取网页、生成内容、监控系统状态……
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-title" style="font-size: 1.1rem">⚙️ 技术栈</div>
+            <p
+              style="
+                color: var(--text-secondary);
+                margin-top: 0.5rem;
+                line-height: 1.8;
+              "
+            >
+              Python · TypeScript · PostgreSQL · Redis · Docker · Vercel ·
+              GitHub Actions · Dify · LangChain · Firecrawl · Tavily · Obsidian
+              · systemd
+            </p>
+          </div>
+
+          <div class="card full-width">
+            <div class="card-title" style="font-size: 1.1rem">📬 联系方式</div>
+            <ul class="contact-list">
+              <li>
+                🐙 GitHub:
+                <a href="https://github.com/yzbjxh888" target="_blank"
+                  >@yzbjxh888</a
+                >
+              </li>
+              <li>
+                📧 邮箱:
+                <a href="mailto:yzbjxh888@gmail.com">yzbjxh888@gmail.com</a>
+              </li>
+              <li>
+                🌐 网站:
+                <a href="https://www.zhangjunxiang.asia" target="_blank"
+                  >www.zhangjunxiang.asia</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <footer>
+          <p>
+            Powered by Hermes Agent · © 2026 ·
+            <a href="https://www.zhangjunxiang.asia">www.zhangjunxiang.asia</a>
           </p>
-        </div>
-
-        <div class="card">
-          <div class="card-title" style="font-size: 1.1rem;">🤖 Hermes Agent</div>
-          <p style="color: var(--text-secondary); margin-top: 0.5rem; line-height: 1.8;">
-            一个开源 AI 编程助手，具备 50+ 可加载技能、原生 MCP 客户端、多平台消息适配、定时任务调度、Webhook 订阅等强大能力。<br><br>
-            Hermes 不仅是代码助手，更是一个完整的 Agentic 操作系统：管理 systemd 服务、操作数据库、爬取网页、生成内容、监控系统状态……
-          </p>
-        </div>
-
-        <div class="card">
-          <div class="card-title" style="font-size: 1.1rem;">⚙️ 技术栈</div>
-          <p style="color: var(--text-secondary); margin-top: 0.5rem; line-height: 1.8;">
-            Python · TypeScript · PostgreSQL · Redis · Docker · Vercel · GitHub Actions · Dify · LangChain · Firecrawl · Tavily ·  Obsidian · systemd
-          </p>
-        </div>
-
-        <div class="card full-width">
-          <div class="card-title" style="font-size: 1.1rem;">📬 联系方式</div>
-          <ul class="contact-list">
-            <li>🐙 GitHub: <a href="https://github.com/yzbjxh888" target="_blank">@yzbjxh888</a></li>
-            <li>📧 邮箱: <a href="mailto:yzbjxh888@gmail.com">yzbjxh888@gmail.com</a></li>
-            <li>🌐 网站: <a href="https://www.zhangjunxiang.asia" target="_blank">www.zhangjunxiang.asia</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <footer>
-        <p>Powered by Hermes Agent · © 2026 · <a href="https://www.zhangjunxiang.asia">www.zhangjunxiang.asia</a></p>
-      </footer>
-    </main>
-  </div>
-</body>
+        </footer>
+      </main>
+    </div>
+  </body>
 </html>
