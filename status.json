@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-06T05:55:44Z",
+  "updated": "2026-06-06T06:09:33Z",
   "services": [
     {
       "name": "langchain-backend",
@@ -16,7 +16,7 @@
     {
       "name": "langflow",
       "icon": "🌊",
-      "status": "active",
+      "status": "inactive",
       "type": "Agent Framework"
     },
     {
@@ -90,12 +90,42 @@
       "icon": "📦",
       "status": "active",
       "type": "Management"
+    },
+    {
+      "name": "hermes-gateway\n",
+      "icon": "⚙️",
+      "status": "inactive",
+      "type": "Service"
+    },
+    {
+      "name": "dify-plugin-daemon\n",
+      "icon": "⚙️",
+      "status": "inactive",
+      "type": "Service"
+    },
+    {
+      "name": "privoxy-bridge\n",
+      "icon": "⚙️",
+      "status": "inactive",
+      "type": "Service"
+    },
+    {
+      "name": "ai-abbacus-cortex-dashboard\n",
+      "icon": "⚙️",
+      "status": "inactive",
+      "type": "Service"
+    },
+    {
+      "name": "ai-abbacus-cortex-mcp\n",
+      "icon": "⚙️",
+      "status": "inactive",
+      "type": "Service"
     }
   ],
   "site": {
     "domain": "www.zhangjunxiang.asia",
     "repo": "github.com/yzbjxh888/my-first-web",
     "host": "Vercel",
-    "last_deploy": "2026-06-06T05:55:44Z"
+    "last_deploy": "2026-06-06T06:09:33Z"
   }
 }
