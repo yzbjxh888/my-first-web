@@ -107,41 +107,29 @@
                 return;
             }
 
-            const grouped = filtered.reduce((acc, skill) => {
-                const cat = skill.category || '其他';
-                if (!acc[cat]) acc[cat] = [];
-                acc[cat].push(skill);
-                return acc;
-            }, {});
+            // Flat grid — same as tools.html, no category section headers
+            const grid = document.createElement('div');
+            grid.className = 'grid';
 
-            Object.entries(grouped).forEach(([category, skills]) => {
-                const section = document.createElement('div');
-                section.className = 'category-section';
-                section.innerHTML = `<h2 class="category-header">${category}</h2>`;
-
-                const grid = document.createElement('div');
-                grid.className = 'grid';
-
-                skills.forEach(skill => {
-                    const card = document.createElement('div');
-                    card.className = 'card';
-                    const safeId = skill.id.replace(/'/g, "\\'");
-                    card.innerHTML = `
-                        <div class="card-header">
-                            <span class="card-icon">${skill.icon || '⚙️'}</span>
-                            <span class="card-title">${skill.name_cn || skill.name_en || skill.id}</span>
-                        </div>
-                        <div class="card-subtitle">${skill.name_en || skill.id}</div>
-                        <div class="card-summary">${skill.summary || ''}</div>
-                        <button class="detail-btn" onclick="event.stopPropagation(); openSkillModal('${safeId}')">
-                            📖 查看详情
-                        </button>
-                    `;
-                    grid.appendChild(card);
-                });
-
-                container.appendChild(section);
+            filtered.forEach(skill => {
+                const card = document.createElement('div');
+                card.className = 'card';
+                const safeId = skill.id.replace(/'/g, "\\'");
+                card.innerHTML = `
+                    <div class="card-header">
+                        <span class="card-icon">${skill.icon || '⚙️'}</span>
+                        <span class="card-title">${skill.name_cn || skill.name_en || skill.id}</span>
+                    </div>
+                    <div class="card-subtitle">${skill.name_en || skill.id} · ${skill.category || ''}</div>
+                    <div class="card-summary">${skill.summary || ''}</div>
+                    <button class="detail-btn" onclick="event.stopPropagation(); openSkillModal('${safeId}')">
+                        📖 查看详情
+                    </button>
+                `;
+                grid.appendChild(card);
             });
+
+            container.appendChild(grid);
         }
 
         function openSkillModal(skillId) {
