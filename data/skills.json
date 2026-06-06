@@ -24,18 +24,6 @@
     ]
   },
   {
-    "id": "system-service-debugging",
-    "name_cn": "系统服务调试",
-    "name_en": "system-service-debugging",
-    "icon": "🔍",
-    "category": "DevOps",
-    "summary": "诊断和修复系统级服务的工具。",
-    "detail": "该技能用于检查系统日志、进程状态和网络连接，以找出服务无法启动或运行异常的原因。它能够自动识别常见的系统错误并提供修复建议，极大提高了运维效率。",
-    "related": [
-      "python-debugpy"
-    ]
-  },
-  {
     "id": "webhook-subscriptions",
     "name_cn": "Webhook 订阅",
     "name_en": "webhook-subscriptions",
@@ -88,18 +76,6 @@
     "category": "Software Dev",
     "summary": "通过快速原型验证技术可行性。",
     "detail": "在正式开发前，通过编写最小化的原型代码来探索新技术或解决未知技术难题。Spike 的目的是获取知识和降低不确定性，而不是编写生产级别的代码。",
-    "related": [
-      "plan"
-    ]
-  },
-  {
-    "id": "subagent-driven-development",
-    "name_cn": "子代理驱动开发",
-    "name_en": "subagent-driven-development",
-    "icon": "🤖",
-    "category": "Software Dev",
-    "summary": "利用多个专门化代理协作开发。",
-    "detail": "这种模式通过将大型开发任务分配给多个具有不同专业技能的子代理（如测试专家、代码审查专家）来完成。这种协作方式模仿了真实的开发团队，提高了任务处理的深度和广度。",
     "related": [
       "plan"
     ]
@@ -366,16 +342,6 @@
     "related": []
   },
   {
-    "id": "minecraft-modpack-server",
-    "name_cn": "Minecraft 模组服务器",
-    "name_en": "minecraft-modpack-server",
-    "icon": "🧱",
-    "category": "Gaming",
-    "summary": "部署和管理带有模组的 Minecraft 服务器。",
-    "detail": "自动化处理 Minecraft 服务器的安装、模组包（Modpack）的配置以及服务器运行状态的监控。让玩家可以轻松搭建自己的多人游戏世界。",
-    "related": []
-  },
-  {
     "id": "pokemon-player",
     "name_cn": "宝可梦玩家代理",
     "name_en": "pokemon-player",
@@ -423,16 +389,6 @@
     "category": "Social",
     "summary": "从文本中提取并解析 X (Twitter) 链接。",
     "detail": "当用户输入包含 X 链接的内容时，该工具可以自动提取链接并抓取相关的推文内容、用户资料或互动数据，以便进行进一步的分析或总结。",
-    "related": []
-  },
-  {
-    "id": "group-chat-agent-trigger",
-    "name_cn": "群聊代理触发器",
-    "name_en": "group-chat-agent-trigger",
-    "icon": "💬",
-    "category": "Social",
-    "summary": "在群聊中通过指令唤醒代理。",
-    "detail": "监听群聊中的特定关键词或指令，从而触发 Hermes Agent 的响应。这使得 AI 可以作为一个“数字成员”参与到多人的实时讨论中。",
     "related": []
   },
   {
@@ -635,16 +591,6 @@
     "category": "Other",
     "summary": "将编码任务委托给 OpenAI Codex CLI（功能开发、PR）",
     "detail": "通过 Hermes 编排，将编码任务分配给 OpenAI Codex CLI 执行。Codex 在隔离环境中完成代码编写、调试和版本控制。",
-    "related": []
-  },
-  {
-    "id": "hermes-agent",
-    "name_cn": "hermes-agent",
-    "name_en": "hermes-agent",
-    "icon": "🔌",
-    "category": "Other",
-    "summary": "配置、扩展或为 Hermes Agent 项目做贡献",
-    "detail": "Hermes Agent 的核心配置和开发指南。涵盖技能编写、工具集成、模型配置、插件开发和系统架构。文档：https://hermes-agent.nousresearch.com/docs",
     "related": []
   },
   {
@@ -888,16 +834,6 @@
     "related": []
   },
   {
-    "id": "audiocraft",
-    "name_cn": "audiocraft-audio-gener…",
-    "name_en": "audiocraft-audio-generation",
-    "icon": "🔌",
-    "category": "Other",
-    "summary": "AudioCraft：MusicGen 文生音乐、AudioGen 文生声音",
-    "detail": "Meta 的 AudioCraft 框架集成。支持 MusicGen（文字生成音乐）和 AudioGen（文字生成音效），能够生成高质量音频内容。",
-    "related": []
-  },
-  {
     "id": "dspy",
     "name_cn": "dspy",
     "name_en": "dspy",
@@ -955,16 +891,6 @@
     "category": "Other",
     "summary": "OBLITERATUS：通过差异均值法去除 LLM 的拒绝回答行为",
     "detail": "通过 diff-in-means 技术分析模型内部表征，定位并移除 LLM 中的拒绝回答机制。适用于安全研究和模型行为分析。",
-    "related": []
-  },
-  {
-    "id": "segment-anything",
-    "name_cn": "segment-anything-model",
-    "name_en": "segment-anything-model",
-    "icon": "🔌",
-    "category": "Other",
-    "summary": "SAM：零样本图像分割，支持点、框、掩码提示",
-    "detail": "Meta 的 Segment Anything Model (SAM)，无需额外训练即可分割任意图像中的物体。支持点提示、边界框提示和掩码提示等多种交互方式。",
     "related": []
   },
   {
@@ -1125,16 +1051,6 @@
     "category": "Other",
     "summary": "Hermes Agent 技能",
     "detail": "自动同步添加的 Hermes Agent 技能。",
-    "related": []
-  },
-  {
-    "id": "codegraph",
-    "name_cn": "codegraph",
-    "name_en": "codegraph",
-    "icon": "🔌",
-    "category": "Other",
-    "summary": "CodeGraph 代码图谱管理：索引、查询、维护与仓库集成评估",
-    "detail": "CodeGraph 是基于 tree-sitter 的代码智能工具，能索引代码库、建立调用图并提供 MCP 接口供 AI 助手查询。 ``` 可执行文件: /home/zhang/.codegraph/versions/v0.9.9/bin/codegraph",
     "related": []
   },
   {
