@@ -1,0 +1,345 @@
+{
+  "date": "2026-06-07",
+  "github_trending": [
+    {
+      "url": "https://github.com/trending",
+      "title": "Trending repositories on GitHub today",
+      "description": "Trending · mvanhorn / last30days-skill · CopilotKit / CopilotKit · MemPalace / mempalace · danielmiessler / Personal_AI_Infrastructure · openai / plugins."
+    },
+    {
+      "url": "https://trendshift.io/",
+      "title": "Trendshift: Live trending GitHub repositories — daily momentum ...",
+      "description": "Live trending repositories caught as they rise, not after they peak. An alternative to GitHub Trending. DailyWeeklyMonthlyYearly. Today(UTC). All languages"
+    },
+    {
+      "url": "https://md8-habibullah.github.io/top-github-repos-list/",
+      "title": "200+ Ultimate Open-Source Repositories: The Developer's Curated ...",
+      "description": "The ultimate curated collection of 200+ high-impact open-source repositories for Web Dev, DevOps, AI, and Security. Updated for 2026. A curated, categorized, ..."
+    },
+    {
+      "url": "https://github.com/explore",
+      "title": "Explore GitHub",
+      "description": "Explore is your guide to finding your next project, catching up with what's trending, and connecting with the GitHub community."
+    },
+    {
+      "url": "https://medium.com/lets-code-future/these-open-source-github-projects-are-changing-how-developers-build-software-in-2026-b0af1b5c2430",
+      "title": "These Open-Source GitHub Projects Are Changing How Developers ...",
+      "description": "Most trending open-source projects fall into five categories: AI agents; Local AI; Workflow automation; Developer productivity; Self-hosted ..."
+    },
+    {
+      "url": "https://www.kaggle.com/datasets/elvisbui/top-github-repositories-2026",
+      "title": "Top GitHub Repositories 2026 - Kaggle",
+      "description": "Top GitHub Repositories (April 2026). A curated dataset of 627 of the most popular GitHub repositories as of April 2026, covering the ..."
+    },
+    {
+      "url": "https://blog.bytebytego.com/p/top-ai-github-repositories-in-2026",
+      "title": "Top AI GitHub Repositories in 2026 - ByteByteGo Newsletter",
+      "description": "OpenClaw is the breakout star of 2026 and arguably the fastest-growing open-source project in GitHub history. Created by PSPDFKit founder ..."
+    },
+    {
+      "url": "https://www.reddit.com/r/coolgithubprojects/comments/1ratm3o/best_github_awesome_lists_in_2026_mega_thread_add/",
+      "title": "Best GitHub Awesome Lists in 2026 [Mega Thread - add yours]",
+      "description": "GitHub \"awesome lists\" are curated collections of the best tools, libraries, and resources on a specific topic, maintained by the community."
+    },
+    {
+      "url": "https://www.glukhov.org/developer-tools/comparisons/most-popular-go-projects-on-github/",
+      "title": "Top 19 Trending Go Projects on GitHub - January 2026 - Rost Glukhov",
+      "description": "Discover the hottest Go projects on GitHub this month, ranked by stars gained. From AI coding agents to Docker management, self-hosted apps to LLM gateways ..."
+    },
+    {
+      "url": "https://www.hostinger.com/tutorials/most-popular-github-repos",
+      "title": "15 Most Popular GitHub Repos for Developers in 2026 - Hostinger",
+      "description": "Check out the 15 most popular GitHub repos: 1. freeCodeCamp/freeCodeCamp 2. EbookFoundation/free-programming-books, and more."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=nro10fQVEM0",
+      "title": "11 Top AI GitHub Repos You Need in 2026 - YouTube",
+      "description": "GitHub hit 4.3 million AI repositories in 2025 — a 178% jump. But most developers are missing the best free, open-source AI repos exploding ..."
+    },
+    {
+      "url": "https://trendshift.io/",
+      "title": "Trendshift: Live trending GitHub repositories — daily momentum ...",
+      "description": "Live trending repositories caught as they rise, not after they peak. An alternative to GitHub Trending. DailyWeeklyMonthlyYearly. Today(UTC). All languages"
+    }
+  ],
+  "hacker_news": [
+    {
+      "title": "I design with Claude more than Figma now",
+      "url": "https://blog.janestreet.com/i-design-with-claude-code-more-than-figma-now-index/",
+      "score": 49,
+      "by": "MrBuddyCasino"
+    },
+    {
+      "title": "The 29th International Obfuscated C Code Contest (IOCCC) 2025 Winners",
+      "url": "https://www.ioccc.org/2025/",
+      "score": 26,
+      "by": "matt_d"
+    },
+    {
+      "title": "Valve P2P networking broken for more than 2 months",
+      "url": "https://github.com/ValveSoftware/GameNetworkingSockets/issues/398",
+      "score": 105,
+      "by": "babuskov"
+    },
+    {
+      "title": "Field of clones: How horse replicas came to dominate polo",
+      "url": "https://knowablemagazine.org/content/article/technology/2026/cloned-polo-horses",
+      "score": 63,
+      "by": "gscott"
+    },
+    {
+      "title": "Tokenomics: Quantifying Where Tokens Are Used in Agentic Software Engineering",
+      "url": "https://arxiv.org/abs/2601.14470",
+      "score": 78,
+      "by": "Anon84"
+    },
+    {
+      "title": "Harness engineering: Leveraging Codex in an agent-first world",
+      "url": "https://openai.com/index/harness-engineering/",
+      "score": 165,
+      "by": "pramodbiligiri"
+    },
+    {
+      "title": "Ntsc-rs – open-source video emulation of analog TV and VHS artifacts",
+      "url": "https://ntsc.rs/",
+      "score": 318,
+      "by": "gregsadetsky"
+    },
+    {
+      "title": "Public Domain Image Archive",
+      "url": "https://pdimagearchive.org/",
+      "score": 86,
+      "by": "davidbarker"
+    },
+    {
+      "title": "Symbolica 2.0: Programmable Symbols for Python and Rust",
+      "url": "https://symbolica.io/posts/symbolica_2_0_release/",
+      "score": 53,
+      "by": "mmastrac"
+    },
+    {
+      "title": "Human-Like Neural Nets by Catapulting",
+      "url": "https://gwern.net/llm-catapult",
+      "score": 19,
+      "by": "telotortium"
+    },
+    {
+      "title": "My Software North Star",
+      "url": "https://kristoff.it/blog/north-star/",
+      "score": 18,
+      "by": "kristoff_it"
+    },
+    {
+      "title": "How Liminalism Became the Defining Aesthetic of Our Time",
+      "url": "https://hyperallergic.com/how-liminalism-became-the-defining-aesthetic-of-our-time/",
+      "score": 38,
+      "by": "zeech"
+    },
+    {
+      "title": "Show HN: Oproxy – inspect and modify network traffic from the browser",
+      "url": "https://github.com/sauravrao637/oproxy",
+      "score": 33,
+      "by": "sauravrao637"
+    },
+    {
+      "title": "Biohub releases a world model of protein biology",
+      "url": "https://biohub.org/news/world-model-of-protein-biology/",
+      "score": 38,
+      "by": "gmays"
+    },
+    {
+      "title": "Introducing Boron Buckyballs: Theory that B80 cages can’t be made is disproved",
+      "url": "https://cen.acs.org/materials/nanomaterials/buckyballs-boron-buckminster-fullerene-nanomaterials/104/web/2026/06",
+      "score": 71,
+      "by": "crescit_eundo"
+    }
+  ],
+  "ai_news": [
+    {
+      "url": "https://blog.mean.ceo/latest-ai-breakthroughs-news-june-2026/",
+      "title": "Latest AI breakthroughs News | June, 2026 (STARTUP ...",
+      "description": "According to TechTarget's 2026 AI and machine learning trends report, multimodal systems are becoming central to mainstream AI use because ..."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ke-Q_hZlWm8",
+      "title": "AI Future Takes Center Stage at Bloomberg Tech",
+      "description": "Sameer Samat, Android Ecosystem president, discusses android's AI buildout and integration of artificial intelligence across all aspects of ..."
+    },
+    {
+      "url": "https://www.instagram.com/popular/ai-machine-learning-breakthroughs-march-6-13-2026/",
+      "title": "Ai Machine Learning Breakthroughs March 6 13 2026",
+      "description": "Watch short videos about ai machine learning breakthroughs march 6 13 2026 from people around the world. Machine Learning Breakthrough, Machine Learning, ..."
+    },
+    {
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1rsrji4/morgan_stanley_warns_an_ai_breakthrough_is_coming/",
+      "title": "Morgan Stanley warns an AI breakthrough Is coming ...",
+      "description": "Morgan Stanley warns an AI breakthrough Is coming in 2026. Artificial Intelligence is creating a mass data surveillance state."
+    },
+    {
+      "url": "https://www.gesda.global/ai-in-2026-breakthrough-to-coordination/",
+      "title": "✨ AI in 2026: From Breakthrough to Coordination",
+      "description": "Artificial intelligence is moving from research into daily use faster than institutions can coordinate responses."
+    },
+    {
+      "url": "https://www.switas.com/articles/the-future-of-ai-7-breakthrough-trends-redefining-2026",
+      "title": "The Future of AI: 7 Breakthrough Trends Redefining 2026",
+      "description": "Here is a deep dive into the 7 critical AI breakthroughs this month. 1. The Era of Agentic AI and Autonomous Workflows. Recent showcases, such ..."
+    },
+    {
+      "url": "https://www.nvidia.com/gtc/",
+      "title": "Explore the Best of GTC 2026",
+      "description": "NVIDIA GTC 2026 brought together global AI leaders to explore breakthroughs in agentic AI, inference, and physical AI. Watch sessions on demand and stay ..."
+    },
+    {
+      "url": "https://www.linkedin.com/pulse/ai-news-highlights-from-4th-june-2026-ai-insiders-news-qifve",
+      "title": "AI News Highlights from 4th of June, 2026",
+      "description": "DeepSeek's first-ever round is on track to close near $7.4 billion. Bloomberg put the AI ROI question in front of an institutional audience."
+    },
+    {
+      "url": "https://hai.stanford.edu/news/stanford-ai-experts-predict-what-will-happen-in-2026",
+      "title": "Stanford AI Experts Predict What Will Happen in 2026",
+      "description": "After years of fast expansion and billion-dollar bets, 2026 may mark the moment artificial intelligence confronts its actual utility."
+    },
+    {
+      "url": "https://www.energy.gov/undersecretaryforscience/genesis-mission/genesis-mission",
+      "title": "The Genesis Mission",
+      "description": "Artificial Intelligence · United States and Japan Announce Historic $1 Billion Partnership Under President Trump's Genesis Mission. June 4, 2026. Artificial ..."
+    }
+  ],
+  "developer_tools": [
+    {
+      "url": "https://medium.com/@writertripathi/top-12-developer-tools-you-should-be-using-in-2026-e39503b81bf9",
+      "title": "Top 12 Developer Tools you SHOULD be using in 2026 - Medium",
+      "description": "UI/Web Development · 1. ShadCN + Tailwind CSS · 2. Tanstack Query and Tanstack Router · 3. Framer Motion · 4. Playwright."
+    },
+    {
+      "url": "https://www.landbase.com/blog/fastest-growing-open-source-dev-tools",
+      "title": "12 Fastest Growing Open Source Dev Tools Companies and Startups",
+      "description": "Discover the 12 fastest-growing open source developer tools companies in 2024-2025, including AI code editors, backend platforms, ..."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=dqBpHTGZU1Q",
+      "title": "Top Web Development Tools of 2026 - YouTube",
+      "description": "... frameworks and databases! ⛌ Try Wix Studio: https ... Best AI Coding Tools for Developers in 2026 (Don't Choose Wrong)."
+    },
+    {
+      "url": "https://levelup.gitconnected.com/10-hidden-modern-open-source-developer-tools-for-2026-48f779babc74",
+      "title": "10 Hidden Modern Open-Source Developer Tools for 2026",
+      "description": "10 Hidden Modern Open-Source Developer Tools for 2026 · 1. Media Bunny · 2. Mago ⚡ · 3. Composio · 4. Cap · 5. Logdy · 6. Continue · 7. Wave ..."
+    },
+    {
+      "url": "https://dev.to/thebitforge/top-5-emerging-developer-tools-to-watch-in-2026-12pl",
+      "title": "Top 5 Emerging Developer Tools to Watch in 2026 - DEV Community",
+      "description": "Top 5 Emerging Developer Tools to Watch in 2026 · 1. Temporal Cloud 2.0: Workflow Orchestration That Finally Makes Sense · 2. Pkl: A Configuration ..."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/alexxubyte_systemdesign-coding-interviewtips-activity-7414714231758962688-IMRX",
+      "title": "Top Dev Tools for 2026: Code Editors, Version Control & More",
+      "description": "Examples are Visual Code, IntelliJ IDEA, PyCharm, Cursor, Eclipse, etc. 2 - Version Control Systems: Track code changes over time and enable ..."
+    },
+    {
+      "url": "https://www.digisoftsolution.com/blog/top-web-development-tools",
+      "title": "Top Web Development Tools in 2026 - Digisoft Solution",
+      "description": "Upgrade your web development in 2026 with top tools, AI assistants, frameworks, and CI/CD solutions for faster, secure, and scalable apps."
+    },
+    {
+      "url": "https://www.weweb.io/blog/web-build-tools-no-code-to-ai",
+      "title": "Top 10 Web Build Tools in 2026: From No-Code to AI - WeWeb",
+      "description": "Discover the best web build tools for 2026: from classic code to no-code and AI. Compare features, backend freedom, and use cases to pick ..."
+    }
+  ],
+  "arxiv_papers": [
+    {
+      "url": "https://arxiv.org/list/stat.ML/recent",
+      "title": "Machine Learning - arXiv",
+      "description": "Comments: Published as a conference paper at ICML 2026. Subjects: Machine Learning (stat.ML); Machine Learning (cs.LG); Econometrics (econ.EM); Computation ( ..."
+    },
+    {
+      "url": "https://arxiv.org/list/cs.LG/current",
+      "title": "Machine Learning Jun 2026 - arXiv",
+      "description": "Authors and titles for June 2026 ... Title: BAGEN: Are LLM Agents Budget-Aware? ... Title: How Much Orthogonalization Does Muon Need? Hua Huang. Subjects: Machine ..."
+    },
+    {
+      "url": "https://arxiv.org/list/stat.ML/current",
+      "title": "Machine Learning Jun 2026 - stat.ML - arXiv",
+      "description": "Authors and titles for June 2026 ... Title: Is Zero-Shot Super-Resolution Possible in Operator Learning? Unique Subedi, Ambuj Tewari. Subjects: Machine Learning ( ..."
+    },
+    {
+      "url": "https://arxiv.org/list/cs.LG/recent",
+      "title": "Machine Learning - arXiv",
+      "description": "Machine Learning. Authors and titles for recent submissions. Fri, 5 Jun 2026 · Thu, 4 Jun 2026 · Wed, 3 Jun 2026 · Tue, 2 Jun 2026 · Mon, 1 Jun 2026."
+    },
+    {
+      "url": "https://arxiv.org/list/cs.AI/current",
+      "title": "Artificial Intelligence Jun 2026 - arXiv",
+      "description": "... Machine / SPACER paper and the Context paper. Subjects: Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Databases (cs.DB); Information ..."
+    },
+    {
+      "url": "https://arxiv.org/list/cs.AI/recent",
+      "title": "Artificial Intelligence - arXiv",
+      "description": "Fri, 5 Jun 2026 (showing first 50 of 280 entries ) ... Title: Where does Absolute Position come from in decoder-only Transformers? Valeria Ruscio, Umberto Nanni, ..."
+    },
+    {
+      "url": "https://arxiv.org/list/cs.CV/current",
+      "title": "Computer Vision and Pattern Recognition Jun 2026 - arXiv",
+      "description": "Comments: Accepted at ICML 2026. Subjects: Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs.LG); Machine Learning (stat.ML). [18] arXiv ..."
+    },
+    {
+      "url": "https://arxiv.org/list/cs.CR/recent",
+      "title": "Cryptography and Security - arXiv",
+      "description": "Thu, 4 Jun 2026 (showing first 7 of 45 entries ) · Preserving Data Privacy in Learning Causal Structure with Fully Homomorphic Encryption · A-Live: Passive ..."
+    },
+    {
+      "url": "https://arxiv.org/list/stat.ML/new",
+      "title": "Machine Learning - stat.ML - arXiv",
+      "description": "Machine Learning. New submissions; Cross-lists; Replacements. See recent articles. Showing new listings for Friday, 5 June 2026. Total of 76 entries. Showing up ..."
+    },
+    {
+      "url": "https://arxiv.org/list/cs.CV/recent",
+      "title": "Computer Vision and Pattern Recognition - arXiv",
+      "description": "Fri, 5 Jun 2026 (showing first 50 of 124 entries ) · PAR3D: A Unified 3D-MLLM with Part-Aware Representation for Scene Understanding · Complexity-Balanced ..."
+    }
+  ],
+  "huggingface_papers": [
+    {
+      "url": "https://huggingface.co/papers/trending",
+      "title": "Trending Papers - Hugging Face",
+      "description": "YOLO26 addresses real-time vision challenges through a unified model family with NMS-free inference, improved training strategies, and multi-task capabilities ..."
+    },
+    {
+      "url": "https://huggingface.co/papers",
+      "title": "Daily Papers - Hugging Face",
+      "description": "Get trending papers in your email inbox once a day! Get trending papers in your email inbox! Subscribe. Daily Papers. by AK and the research community."
+    },
+    {
+      "url": "https://huggingface.co/papers/date/2026-06-01",
+      "title": "Daily Papers - Hugging Face",
+      "description": "Get trending papers in your email inbox! Subscribe. Daily Papers. by ... hyc2026. 31 · Task-Focused Memorization for Multimodal Agents."
+    },
+    {
+      "url": "https://huggingface.co/papers/month/2026-06",
+      "title": "Daily Papers - Hugging Face",
+      "description": "Get trending papers in your email inbox once a day! Get trending papers in your email inbox! Subscribe. Daily Papers. by AK and the research community."
+    },
+    {
+      "url": "https://huggingface.co/papers?q=model%20leaderboards",
+      "title": "Daily Papers - Hugging Face",
+      "description": "The 3B model achieves state of the art performance, scoring NDCG@5 91.0 on ViDoRe V1 and 63.5 on ViDoRe V2, placing first on both leaderboards as of June 27, ..."
+    },
+    {
+      "url": "https://huggingface.co/papers?q=descriptive%20emotion%20analysis",
+      "title": "Daily Papers - Hugging Face",
+      "description": "Building on this trajectory, MER2026 continues to follow these research trends and contains four tracks: MER-Cross shifts the focus from individual to ..."
+    },
+    {
+      "url": "https://huggingface.co/papers?q=financial%20report%20interpretation",
+      "title": "Daily Papers - Hugging Face",
+      "description": "We utilize varied datasets comprising fundamental financial, market, and news data from January 2022 to June ... FinMMEval 2026 addresses ..."
+    },
+    {
+      "url": "https://huggingface.co/papers?q=LLM-as-a-judge%20protocol",
+      "title": "Daily Papers - Hugging Face",
+      "description": "This paper presents an eight-week observational comparison of 68 single-file HTML generations collected across 17 public experiments in the \"HTML AI Battle\" ..."
+    }
+  ]
+}
