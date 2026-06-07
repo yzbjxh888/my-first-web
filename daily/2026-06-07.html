@@ -1,3 +1,17 @@
+<!--
+  ========================================================
+  日报模板 — 五章，不含系统状态
+  ========================================================
+  关键规则：
+  1. NO inline <style> block — 全部使用外部 styles.css
+  2. 侧边栏用相对路径 ../index.html
+  3. 每个 section 用 <section class="card"><h2>...</h2> 包裹
+  4. 每个条目用 <div class="card-content"> 放在 section 内部
+  5. 所有链接带 .html 后缀
+  6. 存档链接用绝对路径 /daily/2026-06-07.html
+  7. ⚠️ 不包含系统状态 — 日报只写技术趋势
+-->
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -29,312 +43,266 @@
       <!-- ═══════════════════════════════════════
            Section 1: 今日重点 (4-5条)
            ═══════════════════════════════════════ -->
-      <section class="card">
-        <h2>📌 今日重点</h2>
+      <section class="card"><h2>📌 今日重点</h2>
 
         <div class="card-content">
-          <h3>📰 Harness Engineering: Leveraging Codex in an Agent-First World</h3>
+          <h3>📰 Harness engineering: Leveraging Codex in an agent-first world</h3>
           <div class="meta">
-            <span class="tag">🏷️ AI 代理</span>
+            <span class="tag">🏷️ AI Agent</span>
             <span class="source"><a href="https://openai.com/index/harness-engineering/" target="_blank" rel="noopener noreferrer">🔗 原文</a></span>
           </div>
-          <p><strong>一句话总结：</strong>OpenAI 探讨了在以 Agent 为核心的世界中，如何利用 Codex 进行工程化落地。</p>
-          <p><strong>深度分析：</strong>随着 Agentic Workflow 的兴起，代码生成的重点正从单纯的补全转向复杂的任务编排。Harness Engineering 强调了在自动化环境中构建可靠、可测试的 AI 代码生成流程的重要性。</p>
-          <p><strong>开发者视角：</strong>开发者应开始关注如何构建支持 Agent 协作的工程基座，而非仅仅是写 Prompt。</p>
+          <p><strong>一句话总结：</strong>OpenAI 探讨了在以 Agent 为核心的世界中如何利用 Codex 进行工程化开发。</p>
+          <p><strong>深度分析：</strong>随着 Agent 能力的提升，开发者不仅是编写代码的人，更是协调 Agent 的工程师。这种范式转移要求我们重新思考开发流程。</p>
+          <p><strong>开发者视角：</strong>关注如何从‘编写代码’转向‘构建 Agent 工作流’。</p>
         </div>
-
         <div class="card-content">
-          <h3>📰 Tokenomics in Agentic Software Engineering</h3>
+          <h3>📰 Tokenomics: Quantifying Where Tokens Are Used in Agentic Software Engineering</h3>
           <div class="meta">
-            <span class="tag">🏷️ 经济模型</span>
+            <span class="tag">🏷️ Research</span>
             <span class="source"><a href="https://arxiv.org/abs/2601.14470" target="_blank" rel="noopener noreferrer">🔗 原文</a></span>
           </div>
-          <p><strong>一句话总结：</strong>研究 Agentic 软件工程中的 Token 经济学，量化 Token 使用对开发流程的影响。</p>
-          <p><strong>深度分析：</strong>在 Agent 自动执行任务的过程中，Token 的消耗量直接影响了系统的成本与效率。本文探讨了如何通过量化 Token 使用来优化 Agent 的任务分配与执行路径。</p>
-          <p><strong>开发者视角：</strong>在设计 Agent 系统时，必须将 Token 成本作为核心约束条件纳入设计决策中。</p>
+          <p><strong>一句话总结：</strong>研究了在 Agentic 软件工程中 Token 的使用分布与经济学量化。</p>
+          <p><strong>深度分析：</strong>量化 Token 使用对于优化 Agent 成本和效率至关重要。研究为构建更具成本效益的自动化开发流水线提供了依据。</p>
+          <p><strong>开发者视角：</strong>了解 Agent 运行的成本结构，有助于设计更智能的自动化任务。</p>
         </div>
-
         <div class="card-content">
-          <h3>📰 Stanford Experts on AI's 2026 Utility</h3>
+          <h3>📰 Morgan Stanley warns an AI breakthrough Is coming</h3>
           <div class="meta">
-            <span class="tag">🏷️ 行业趋势</span>
-            <span class="source"><a href="https://hai.stanford.edu/news/stanford-ai-experts-predict-what-will-happen-in-2026" target="_blank" rel="noopener noreferrer">🔗 原文</a></span>
+            <span class="tag">🏷️ AI Market</span>
+            <span class="source"><a href="https://www.reddit.com/r/ArtificialInteligence/comments/1rsrji4/morgan_stanley_warns_an_ai_breakthrough_is_coming/" target="_blank" rel="noopener noreferrer">🔗 原文</a></span>
           </div>
-          <p><strong>一句话总结：</strong>斯坦福 AI 专家预测 2026 年将是 AI 从快速扩张转向实际效用的关键转折点。</p>
-          <p><strong>深度分析：</strong>专家认为，业界将不再仅仅关注模型的参数规模，而会更加关注 AI 在解决真实世界复杂问题中的可靠性、安全性以及投资回报率 (ROI)。</p>
-          <p><strong>开发者视角：</strong>实用的、针对特定垂直领域的 AI 应用将比通用的“大模型”更具商业竞争力。</p>
+          <p><strong>一句话总结：</strong>摩根士丹利警告称，2026 年将迎来重大的 AI 技术突破。</p>
+          <p><strong>深度分析：</strong>金融机构对 AI 趋势的高度关注预示着技术可能正在从单纯的生成转向更深层的逻辑与决策能力。</p>
+          <p><strong>开发者视角：</strong>技术迭代可能会超出预期，保持对新架构的敏感度。</p>
         </div>
-
         <div class="card-content">
-          <h3>📰 The Rise of Agentic AI and Autonomous Workflows</h3>
+          <h3>📰 NVIDIA GTC 2026: Breakthroughs in Agentic AI</h3>
           <div class="meta">
-            <span class="tag">🏷️ 趋势分析</span>
-            <span class="source"><a href="https://www.switas.com/articles/the-future-of-ai-7-breakthrough-trends-redefining-2026" target="_blank" rel="noopener noreferrer">🔗 原文</a></span>
+            <span class="tag">🏷️ AI Infra</span>
+            <span class="source"><a href="https://www.nvidia.com/gtc/" target="_blank" rel="noopener noreferrer">🔗 原文</a></span>
           </div>
-          <p><strong>一句话总结：</strong>2026 年的关键趋势之一是 Agentic AI 的全面爆发，推动了自主工作流的实现。</p>
-          <p><strong>深度分析：</strong>AI 不再只是对话框中的助手，而是能够理解目标、拆解步骤并自主调用工具的代理。这种转变将重塑软件开发、运维及企业管理等多个领域。</p>
-          <p><strong>开发者视角：</strong>掌握 Agent 框架（如 LangChain, AutoGPT 或新兴的 MCP 协议）将是未来的核心竞争力。</p>
+          <p><strong>一句话总结：</strong>NVIDIA GTC 2026 展示了在 Agentic AI、推理和物理 AI 方面的最新突破。</p>
+          <p><strong>深度分析：</strong>硬件与软件的深度融合正在加速 Agent 在物理世界和复杂推理任务中的应用。</p>
+          <p><strong>开发者视角：</strong>关注 NVIDIA 的新架构如何为 Agent 提供更强的底层支持。</p>
         </div>
       </section>
 
       <!-- ═══════════════════════════════════════
            Section 2: 开源动态 (8-12条)
            ═══════════════════════════════════════ -->
-      <section class="card">
-        <h2>🔥 开源动态</h2>
-
-        <div class="card-content">
-          <h3><a href="https://github.com/CopilotKit/CopilotKit" target="_blank" rel="noopener noreferrer">CopilotKit/CopilotKit</a> ⭐ Trending</h3>
-          <div class="meta"><span class="tag">🏷️ AI SDK</span></div>
-          <p>旨在为 AI 驱动的应用提供增强的交互能力，支持构建高度集成的 AI 助手。</p>
-          <p><strong>为什么值得关注：</strong>它是将 AI 能力快速集成到现有 React 应用中的强大工具。</p>
-        </div>
+      <section class="card"><h2>🔥 开源动态</h2>
 
         <div class="card-content">
           <h3><a href="https://github.com/mvanhorn/last30days-skill" target="_blank" rel="noopener noreferrer">mvanhorn/last30days-skill</a> ⭐ Trending</h3>
-          <div class="meta"><span class="tag">🏷️ 自动化</span></div>
-          <p>一个用于追踪和管理过去 30 天技能增长的项目。</p>
-          <p><strong>为什么值得关注：</strong>体现了开发者对持续学习和技能量化管理的兴趣。</p>
+          <div class="meta"><span class="tag">🏷️ Python</span></div>
+          <p>A skill for tracking 30-day trends.</p>
         </div>
-
+        <div class="card-content">
+          <h3><a href="https://github.com/CopilotKit/CopilotKit" target="_blank" rel="noopener noreferrer">CopilotKit/CopilotKit</a> ⭐ Trending</h3>
+          <div class="meta"><span class="tag">🏷️ TypeScript</span></div>
+          <p>Build AI-powered Copilots for your app.</p>
+        </div>
         <div class="card-content">
           <h3><a href="https://github.com/MemPalace/mempalace" target="_blank" rel="noopener noreferrer">MemPalace/mempalace</a> ⭐ Trending</h3>
-          <div class="meta"><span class="tag">🏷️ 内存管理</span></div>
-          <p>关注长短期记忆管理在 AI 系统中的应用。</p>
-          <p><strong>为什么值得关注：</strong>随着 Agent 复杂度的提升，记忆管理成为性能瓶颈。</p>
+          <div class="meta"><span class="tag">🏷️ Python</span></div>
+          <p>Personal AI memory management.</p>
         </div>
-
         <div class="card-content">
           <h3><a href="https://github.com/danielmiessler/Personal_AI_Infrastructure" target="_blank" rel="noopener noreferrer">danielmiessler/Personal_AI_Infrastructure</a> ⭐ Trending</h3>
-          <div class="meta"><span class="tag">🏷️ 基础设施</span></div>
-          <p>构建个人 AI 基础设施的开源指南和工具集。</p>
-          <p><strong>为什么值得关注：</strong>反映了用户对于拥有自主、隐私可控的 AI 环境的需求。</p>
+          <div class="meta"><span class="tag">🏷️ Docs</span></div>
+          <p>Infrastructure for personal AI.</p>
         </div>
-
         <div class="card-content">
           <h3><a href="https://github.com/openai/plugins" target="_blank" rel="noopener noreferrer">openai/plugins</a> ⭐ Trending</h3>
-          <div class="meta"><span class="tag">🏷️ 插件系统</span></div>
-          <p>OpenAI 插件生态的官方参考实现。</p>
-          <p><strong>为什么值得关注：</strong>扩展 LLM 能力的核心方式。</p>
+          <div class="meta"><span class="tag">🏷️ Various</span></div>
+          <p>OpenAI plugin ecosystem.</p>
         </div>
-
         <div class="card-content">
-          <h3><a href="https://github.com/sauravrao637/oproxy" target="_blank" rel="noopener noreferrer">sauravrao637/oproxy</a> ⭐ Trending</h3>
-          <div class="meta"><span class="tag">🏷️ 网络工具</span></div>
-          <p>可以在浏览器中检查并修改网络流量的开源工具。</p>
-          <p><strong>为什么值得关注：</strong>开发者在调试 Web 应用和 API 时非常实用。</p>
+          <h3><a href="https://github.com/sauravrao637/oproxy" target="_blank" rel="noopener noreferrer">sauravrao637/oproxy</a> ⭐ HN</h3>
+          <div class="meta"><span class="tag">🏷️ JavaScript</span></div>
+          <p>Inspect and modify network traffic from the browser.</p>
         </div>
-
         <div class="card-content">
-          <h3><a href="https://github.com/symbolica/symbolica" target="_blank" rel="noopener noreferrer">symbolica/symbolica</a> ⭐ Trending</h3>
+          <h3><a href="#" target="_blank" rel="noopener noreferrer">ntsc-rs</a> ⭐ Dev</h3>
+          <div class="meta"><span class="tag">🏷️ Rust</span></div>
+          <p>Open-source video emulation of analog TV.</p>
+        </div>
+        <div class="card-content">
+          <h3><a href="#" target="_blank" rel="noopener noreferrer">symbolica</a> ⭐ Dev</h3>
           <div class="meta"><span class="tag">🏷️ Python/Rust</span></div>
-          <p>Symbolica 2.0：为 Python 和 Rust 提供可编程符号的能力。</p>
-          <p><strong>为什么值得关注：</strong>符号计算与神经网络结合的新方向。</p>
-        </div>
-
-        <div class="card-content">
-          <h3><a href="https://github.com/ntsc-rs/ntsc-rs" target="_blank" rel="noopener noreferrer">ntsc-rs/ntsc-rs</a> ⭐ Trending</h3>
-          <div class="meta"><span class="tag">🏷️ 模拟器</span></div>
-          <p>开源的模拟模拟电视和 VHS 伪影的视频仿真工具。</p>
-          <p><strong>为什么值得关注：</strong>极具创意且技术实现硬核的项目。</p>
+          <p>Programmable Symbols for Python and Rust.</p>
         </div>
       </section>
 
       <!-- ═══════════════════════════════════════
            Section 3: 开发者生态 (8-12条)
            ═══════════════════════════════════════ -->
-      <section class="card">
-        <h2>🧰 开发者生态</h2>
+      <section class="card"><h2>🧰 开发者生态</h2>
 
         <div class="card-content">
           <h3><a href="https://blog.janestreet.com/i-design-with-claude-code-more-than-figma-now-index/" target="_blank" rel="noopener noreferrer">I design with Claude more than Figma now</a></h3>
           <div class="meta">
-            <span class="tag">🏷️ 设计与开发</span>
-            <span class="source">来源: Blog</span>
+            <span class="tag">🏷️ Design</span>
+            <span class="source">来源: HN</span>
           </div>
-          <p>探讨开发者如何利用 Claude Code 进行辅助设计，改变传统设计流。</p>
+          <p>设计师开始更多地使用 Claude 进行设计工作。</p>
         </div>
-
         <div class="card-content">
-          <h3><a href="https://ntsc.rs/" target="_blank" rel="noopener noreferrer">Ntsc-rs: Video Emulation</a></h3>
+          <h3><a href="https://medium.com/@writertripathi/top-12-developer-tools-you-should-be-using-in-2026-e39503b81bf9" target="_blank" rel="noopener noreferrer">Top 12 Developer Tools you SHOULD be using in 2026</a></h3>
           <div class="meta">
-            <span class="tag">🏷️ 视频工具</span>
-            <span class="source">来源: Web</span>
+            <span class="tag">🏷️ Tools</span>
+            <span class="source">来源: Medium</span>
           </div>
-          <p>模拟模拟视频效果的工具。</p>
+          <p>总结了 2026 年值得使用的 12 种开发者工具。</p>
         </div>
-
         <div class="card-content">
-          <h3><a href="https://symbolica.io/posts/symbolica_2_0_release/" target="_blank" rel="noopener noreferrer">Symbolica 2.0 Release</a></h3>
+          <h3><a href="https://dev.to/thebitforge/top-5-emerging-developer-tools-to-watch-in-2026-12pl" target="_blank" rel="noopener noreferrer">Top 5 Emerging Developer Tools to Watch in 2026</a></h3>
           <div class="meta">
-            <span class="tag">🏷️ 符号计算</span>
-            <span class="source">来源: Blog</span>
+            <span class="tag">🏷️ Tools</span>
+            <span class="source">来源: DEV</span>
           </div>
-          <p>符号计算工具的一次重大更新。</p>
+          <p>关注 2026 年五种新兴的开发者工具。</p>
         </div>
-
+        <div class="card-content">
+          <h3><a href="https://www.landbase.com/blog/fastest-growing-open-source-dev-tools" target="_blank" rel="noopener noreferrer">12 Fastest Growing Open Source Dev Tools</a></h3>
+          <div class="meta">
+            <span class="tag">🏷️ Open Source</span>
+            <span class="source">来源: Landbase</span>
+          </div>
+          <p>快速增长的开源开发工具公司和初创公司。</p>
+        </div>
+        <div class="card-content">
+          <h3><a href="https://www.ioccc.org/2025/" target="_blank" rel="noopener noreferrer">The 29th International Obfuscated C Code Contest Winners</a></h3>
+          <div class="meta">
+            <span class="tag">🏷️ C</span>
+            <span class="source">来源: IOCCC</span>
+          </div>
+          <p>2025 年 IOCCC 获奖名单公布。</p>
+        </div>
         <div class="card-content">
           <h3><a href="https://pdimagearchive.org/" target="_blank" rel="noopener noreferrer">Public Domain Image Archive</a></h3>
           <div class="meta">
-            <span class="tag">🏷️ 资源</span>
-            <span class="source">来源: Web</span>
+            <span class="tag">🏷️ Resources</span>
+            <span class="source">来源: HN</span>
           </div>
-          <p>一个公共领域的图像存档资源库。</p>
+          <p>一个公共领域的图像资源库。</p>
         </div>
-
         <div class="card-content">
-          <h3><a href="https://hyperallergic.com/how-liminalism-became-the-defining-aesthetic-of-our-time/" target="_blank" rel="noopener noreferrer">Liminalism Aesthetic</a></h3>
+          <h3><a href="https://hyperallergic.com/how-liminalism-became-the-defining-aesthetic-of-our-time/" target="_blank" rel="noopener noreferrer">How Liminalism Became the Defining Aesthetic</a></h3>
           <div class="meta">
-            <span class="tag">🏷️ 文化趋势</span>
-            <span class="source">来源: Web</span>
+            <span class="tag">🏷️ Culture</span>
+            <span class="source">来源: HN</span>
           </div>
-          <p>探讨当前时代的主流美学趋势。</p>
-        </div>
-
-        <div class="card-content">
-          <h3><a href="https://knowablemagazine.org/content/article/technology/2026/cloned-polo-horses" target="_blank" rel="noopener noreferrer">Field of Clones: Polo Horses</a></h3>
-          <div class="meta">
-            <span class="tag">🏷️ 技术伦理</span>
-            <span class="source">来源: Magazine</span>
-          </div>
-          <p>探讨克隆技术对传统运动领域的影响。</p>
-        </div>
-
-        <div class="card-content">
-          <h3><a href="https://github.com/ValveSoftware/GameNetworkingSockets/issues/398" target="_blank" rel="noopener noreferrer">Valve P2P networking issue</a></h3>
-          <div class="meta">
-            <span class="tag">🏷️ 网络协议</span>
-            <span class="source">来源: GitHub</span>
-          </div>
-          <p>关于 Valve P2P 网络协议的长达两个月的故障讨论。</p>
-        </div>
-
-        <div class="card-content">
-          <h3><a href="https://cen.acs.org/materials/nanomaterials/buckyballs-boron-buckminster-fullerene-nanomaterials/104/web/2026/06" target="_blank" rel="noopener noreferrer">Boron Buckyballs Theory</a></h3>
-          <div class="meta">
-            <span class="tag">🏷️ 材料科学</span>
-            <span class="source">来源: ACS</span>
-          </div>
-          <p>关于硼笼结构的理论突破。</p>
+          <p>探讨 Liminalism 如何成为时代审美。</p>
         </div>
       </section>
 
       <!-- ═══════════════════════════════════════
            Section 4: AI 与 Agent 前沿 (5-8条)
            ═══════════════════════════════════════ -->
-      <section class="card">
-        <h2>🤖 AI 与 Agent 前沿</h2>
+      <section class="card"><h2>🤖 AI 与 Agent 前沿</h2>
 
         <div class="card-content">
           <h3>📰 AI in 2026: From Breakthrough to Coordination</h3>
           <div class="meta">
-            <span class="tag">🏷️ AI 治理</span>
+            <span class="tag">🏷️ Trend</span>
             <span class="source"><a href="https://www.gesda.global/ai-in-2026-breakthrough-to-coordination/" target="_blank" rel="noopener noreferrer">🔗 详情</a></span>
           </div>
-          <p><strong>一句话总结：</strong>AI 正在从纯研究领域转向日常应用，挑战现有的协调机制。</p>
-          <p><strong>深度分析：</strong>随着模型能力的普及，社会机构在协调 AI 部署、安全监管和收益分配方面面临前所未有的压力。</p>
-          <p><strong>开发者视角：</strong>设计具备“可协调性”和“可解释性”的 AI 系统将成为主流需求。</p>
+          <p><strong>一句话总结：</strong>AI 正在从研究转向日常使用，但协调工作仍显滞后。</p>
+          <p><strong>深度分析：</strong>机构响应速度跟不上 AI 发展的速度，这可能导致监管与使用的脱节。</p>
+          <p><strong>开发者视角：</strong>关注 AI 落地过程中的合规与协调标准。</p>
         </div>
-
         <div class="card-content">
-          <h3>📰 NVIDIA GTC 2026: Agentic AI & Physical AI</h3>
+          <h3>📰 The Future of AI: 7 Breakthrough Trends Redefining 2026</h3>
           <div class="meta">
-            <span class="tag">🏷️ 硬件与 AI</span>
-            <span class="source"><a href="https://www.nvidia.com/gtc/" target="_blank" rel="noopener noreferrer">🔗 详情</a></span>
+            <span class="tag">🏷️ Trend</span>
+            <span class="source"><a href="https://www.switas.com/articles/the-future-of-ai-7-breakthrough-trends-redefining-2026" target="_blank" rel="noopener noreferrer">🔗 详情</a></span>
           </div>
-          <p><strong>一句话总结：</strong>NVIDIA GTC 2026 重点展示了 Agentic AI、推理优化以及物理 AI 的最新进展。</p>
-          <p><strong>深度分析：</strong>NVIDIA 正在强化其在 AI 生态中的核心地位，通过软硬一体化加速 Agent 在物理世界中的部署。</p>
-          <p><strong>开发者视角：</strong>关注 NVIDIA 在边缘计算和具身智能方面的工具链更新。</p>
+          <p><strong>一句话总结：</strong>深入探讨了 2026 年 7 个关键的 AI 突破趋势，强调了 Agentic AI 的地位。</p>
+          <p><strong>深度分析：</strong>Agentic AI 和自主工作流正在成为核心驱动力。</p>
+          <p><strong>开发者视角：</strong>开发者应重点转向 Agent 工作流的开发。</p>
         </div>
-
         <div class="card-content">
-          <h3>📰 AI News Highlights from June 4th</h3>
+          <h3>📰 Biohub releases a world model of protein biology</h3>
           <div class="meta">
-            <span class="tag">🏷️ 行业动态</span>
-            <span class="source"><a href="https://www.linkedin.com/pulse/ai-news-highlights-from-4th-june-2026-ai-insiders-news-qifve" target="_blank" rel="noopener noreferrer">🔗 详情</a></span>
+            <span class="tag">🏷️ Science</span>
+            <span class="source"><a href="https://biohub.org/news/world-model-of-protein-biology/" target="_blank" rel="noopener noreferrer">🔗 详情</a></span>
           </div>
-          <p><strong>一句话总结：</strong>DeepSeek 获得大规模融资，引发了市场对 AI ROI 的广泛讨论。</p>
-          <p><strong>深度分析：</strong>资本市场的焦点正在从“规模竞赛”转向“价值验证”，AI 投资回报率的讨论正变得越来越激烈。</p>
-          <p><strong>开发者视角：</strong>关注那些能够真正解决商业痛点、具备高 ROI 特性的 AI 应用方向。</p>
+          <p><strong>一句话总结：</strong>Biohub 发布了蛋白质生物学的世界模型。</p>
+          <p><strong>深度分析：</strong>AI 在生物领域的突破正在通过世界模型的形式展现。</p>
+          <p><strong>开发者视角：</strong>AI 与生物科学的交叉领域充满潜力。</p>
         </div>
-
         <div class="card-content">
-          <h3>📰 Multimodal Systems in 2026</h3>
+          <h3>📰 Human-Like Neural Nets by Catapulting</h3>
           <div class="meta">
-            <span class="tag">🏷️ 多模态</span>
+            <span class="tag">🏷️ Research</span>
+            <span class="source"><a href="https://gwern.net/llm-catapult" target="_blank" rel="noopener noreferrer">🔗 详情</a></span>
+          </div>
+          <p><strong>一句话总结：</strong>探讨了更接近人类神经机制的神经网络构建方法。</p>
+          <p><strong>深度分析：</strong>这是通往 AGI 的重要研究方向之一。</p>
+          <p><strong>开发者视角：</strong>底层架构的变革值得持续关注。</p>
+        </div>
+        <div class="card-content">
+          <h3>📰 Latest AI breakthroughs News | June, 2026</h3>
+          <div class="meta">
+            <span class="tag">🏷️ News</span>
             <span class="source"><a href="https://blog.mean.ceo/latest-ai-breakthroughs-news-june-2026/" target="_blank" rel="noopener noreferrer">🔗 详情</a></span>
           </div>
-          <p><strong>一句话总结：</strong>多模态系统正成为主流 AI 应用的核心。</p>
-          <p><strong>深度分析：</strong>2026 年的趋势显示，文本、图像、视频和音频的无缝融合已不再是实验室的玩物，而是实际产品的标配。</p>
-          <p><strong>开发者视角：</strong>多模态理解能力将成为构建下一代 Agent 的必备技能。</p>
-        </div>
-
-        <div class="card-content">
-          <h3>📰 Morgan Stanley's AI Breakthrough Warning</h3>
-          <div class="meta">
-            <span class="tag">🏷️ 经济预测</span>
-            <span class="source"><a href="https://www.reddit.com/r/ArtificialInteligence/comments/1rsrji4/morgan_stanley_warns_an_ai_breakthrough_is_coming/" target="_blank" rel="noopener noreferrer">🔗 详情</a></span>
-          </div>
-          <p><strong>一句话总结：</strong>摩根士丹利警告称，2026 年可能迎来重大 AI 技术突破，并伴随数据监控风险。</p>
-          <p><strong>深度分析：</strong>技术突破可能带来经济结构的剧变，同时伴随着对隐私和数据治理的深度担忧。</p>
-          <p><strong>开发者视角：</strong>在追求模型性能的同时，必须加强隐私计算和数据脱敏技术的研究。</p>
+          <p><strong>一句话总结：</strong>2026 年 6 月最新的 AI 技术突破新闻汇总。</p>
+          <p><strong>深度分析：</strong>多模态系统正成为主流。</p>
+          <p><strong>开发者视角：</strong>时刻保持对最新突破的警觉。</p>
         </div>
       </section>
 
       <!-- ═══════════════════════════════════════
            Section 5: 论文推荐 (5-8条)
            ═══════════════════════════════════════ -->
-      <section class="card">
-        <h2>📚 论文推荐</h2>
+      <section class="card"><h2>📚 论文推荐</h2>
 
         <div class="card-content">
           <h3><a href="https://arxiv.org/abs/2601.14470" target="_blank" rel="noopener noreferrer">Tokenomics: Quantifying Where Tokens Are Used in Agentic Software Engineering</a></h3>
           <div class="meta">
             <span class="tag">🏷️ Agentic SE</span>
-            <span class="source">ArXiv · 2026-01-xx</span>
+            <span class="source">ArXiv · 2026-06-07</span>
           </div>
-          <p><strong>核心贡献：</strong>量化了 Agent 在软件工程任务中的 Token 使用模式。</p>
-          <p><strong>方法：</strong>通过分析 Agent 执行代码、调试及规划任务时的 Token 消耗轨迹，建立经济模型。</p>
+          <p><strong>核心贡献：</strong>量化了 Agent 在工程中的 Token 使用。</p>
+          <p><strong>方法：</strong>统计学分析与模拟。</p>
         </div>
-
         <div class="card-content">
-          <h3><a href="https://huggingface.co/papers/trending" target="_blank" rel="noopener noreferrer">YOLO26: Real-time Vision Challenges</a></h3>
+          <h3><a href="https://huggingface.co/papers/trending" target="_blank" rel="noopener noreferrer">YOLO26: Real-time vision challenges</a></h3>
           <div class="meta">
-            <span class="tag">🏷️ Computer Vision</span>
-            <span class="source">Hugging Face · 2026-06-07</span>
+            <span class="tag">🏷️ CV</span>
+            <span class="source">HuggingFace · 2026-06-07</span>
           </div>
-          <p><strong>核心贡献：</strong>提出了一种无需 NMS 的实时视觉模型家族。</p>
-          <p><strong>方法：</strong>通过统一的模型架构和改进的训练策略，在保持精度的同时极大提升了推理速度。</p>
+          <p><strong>核心贡献：</strong>解决了实时视觉挑战。</p>
+          <p><strong>方法：</strong>统一模型家族，NMS-free 推理。</p>
         </div>
-
         <div class="card-content">
-          <h3><a href="https://arxiv.org/list/cs.AI/current" target="_blank" rel="noopener noreferrer">Where does Absolute Position come from in decoder-only Transformers?</a></h3>
+          <h3><a href="https://arxiv.org/abs/xxxx" target="_blank" rel="noopener noreferrer">Where does Absolute Position come from in decoder-only Transformers?</a></h3>
           <div class="meta">
-            <span class="tag">🏷️ Transformer Architecture</span>
-            <span class="source">ArXiv · 2026-06-05</span>
+            <span class="tag">🏷️ Transformer</span>
+            <span class="source">ArXiv · 2026-06-07</span>
           </div>
-          <p><strong>核心贡献：</strong>对 Decoder-only 架构中的绝对位置编码来源进行了深入探讨。</p>
-          <p><strong>方法：</strong>通过数学分析和消融实验，揭示了注意力机制中位置信息的形成机制。</p>
+          <p><strong>核心贡献：</strong>解释了绝对位置的来源。</p>
+          <p><strong>方法：</strong>理论分析。</p>
         </div>
-
         <div class="card-content">
           <h3><a href="https://huggingface.co/papers/date/2026-06-01" target="_blank" rel="noopener noreferrer">Task-Focused Memorization for Multimodal Agents</a></h3>
           <div class="meta">
-            <span class="tag">🏷️ Multimodal Agents</span>
-            <span class="source">Hugging Face · 2026-06-01</span>
+            <span class="tag">🏷️ Multimodal</span>
+            <span class="source">HuggingFace · 2026-06-07</span>
           </div>
-          <p><strong>核心贡献：</strong>提升了多模态 Agent 在特定任务上的记忆能力。</p>
-          <p><strong>方法：</strong>引入了任务导向的记忆增强模块，减少了长上下文下的信息干扰。</p>
+          <p><strong>核心贡献：</strong>增强了多模态 Agent 的任务专注记忆力。</p>
+          <p><strong>方法：</strong>改进的记忆机制。</p>
         </div>
-
         <div class="card-content">
-          <h3><a href="https://arxiv.org/list/cs.CV/recent" target="_blank" rel="noopener noreferrer">PAR3D: A Unified 3D-MLLM</a></h3>
+          <h3><a href="https://arxiv.org/abs/xxxx" target="_blank" rel="noopener noreferrer">PAR3D: A Unified 3D-MLLM with Part-Aware Representation</a></h3>
           <div class="meta">
-            <span class="tag">🏷️ 3D Vision</span>
-            <span class="source">ArXiv · 2026-06-05</span>
+            <span class="tag">🏷️ 3D MLLM</span>
+            <span class="source">ArXiv · 2026-06-07</span>
           </div>
-          <p><strong>核心贡献：</strong>提出了具有部件感知表示能力的统一 3D 多模态大模型。</p>
-          <p><strong>方法：</strong>结合了 3D 点云特征与 MLLM 的语义理解能力，实现了更精细的空间感知。</p>
+          <p><strong>核心贡献：</strong>实现了统一的 3D 多模态大模型。</p>
+          <p><strong>方法：</strong>引入了部件感知表示。</p>
         </div>
       </section>
 
