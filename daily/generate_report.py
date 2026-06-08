@@ -1,336 +1,276 @@
 import json
+import datetime
 import os
-from datetime import datetime
+import re
+import sys
 
 # Configuration
-DATA_FILE = '/home/zhang/my-first-web/data/daily-source-2026-06-07.json'
-TEMPLATE_FILE = '/home/zhang/my-first-web/daily/report-template.html'
-OUTPUT_DIR = '/home/zhang/my-first-web/daily'
-INDEX_FILE = '/home/zhang/my-first-web/daily/index.html'
-REPORT_DATE = "2026-06-07"  # The date the content refers to (yesterday's date in the context of generation)
-REPORT_DATE_CN = "2026年6月7日"
+BASE_DIR = "/home/zhang/my-first-web"
+DATA_DIR = os.path.join(BASE_DIR, "data")
+DAILY_DIR = os.path.join(BASE_DIR, "daily")
+TEMPLATE_PATH = os.path.join(DAILY_DIR, "report-template.html")
+INDEX_PATH = os.path.join(DAILY_DIR, "index.html")
 
-def load_data():
-    with open(DATA_FILE, 'r', encoding='utf-8') as f:
+def get_date_from_filename(filename):
+    match = re.search(r'(\d{4}-\d{2}-\d{2})', filename)
+    return match.group(1) if match else None
+
+def load_data(report_date):
+    filename = f"daily-source-{report_date}.json"
+    path = os.path.join(DATA_DIR, filename)
+    if not os.path.exists(path):
+        # Fallback: if the specific date is not found, find the most recent one
+        files = sorted([f for f in os.listdir(DATA_DIR) if f.startswith("daily-source-") and f.endswith(".json")], reverse=True)
+        if files:
+            path = os.path.join(DATA_DIR, files[0])
+            print(f"Warning: Specific data for {report_date} not found. Using {os.path.basename(path)}.")
+        else:
+            raise FileNotFoundError(f"No data files found in {DATA_DIR}")
+    
+    with open(path, 'r', encoding='utf-8') as f:
         return json.load(f)
 
-def load_template():
-    with open(TEMPLATE_FILE, 'r', encoding='utf-8') as f:
-        return f.read()
+def parse_github_repos(text):
+    pattern = r'([a-zA-Z0-9._-]+/[a-zA-Z0-9._-]+)'
+    matches = re.findall(pattern, text)
+    return [m for m in matches if '/' in m]
 
-def generate_today_focus(sources):
-    """Section 1: 今日重点 (4-5 条, 深度分析)"""
-    # Heuristic: Try to find high impact news from ai_news or specific queries
-    items = []
-    # 1. AI breakthroughs
-    for s in sources.get('ai_news', []):
-        if len(items) < 2:
-            items.append({
-                'title': s['title'],
-                'url': s['url'],
-                'tag': 'AI 突破',
-                'summary': s['description'],
-                'analysis': '这是 2026 年 AI 发展的重要里程碑，展示了模型在处理复杂任务时的增强能力。',
-                'developer_view': '开发者应关注其 API 的集成方式和推理成本的变化。'
-            })
+def generate_report(report_date):
+    print(f"Generating report for {report_date}...")
+    data = load_data(report_date)
     
-    # 2. From hacker news (high score)
-    for s in sources.get('hacker_news', []):
-        if len(items) < 5 and s.get('score', 0) > 100:
-            items.append({
-                'title': s['title'],
-                'url': s['url'],
-                'tag': '开发者社区',
-                'summary': '社区热议的技术话题或开源工具。',
-                'analysis': '该话题反映了当前开发者对底层架构或工作流优化的极高关注度。',
-                'developer_view': '建议深入研究讨论中的实现细节，寻找优化灵感。'
-            })
-            
-    # Fallback/Fill to 4-5
-    while len(items) < 4:
-        items.append({
-            'title': '技术趋势观察',
-            'url': '#',
-            'tag': '综合',
-            'summary': '持续关注行业动态，保持技术敏锐度。',
-            'analysis': '行业正在向更智能、更自动化的方向演进。',
-            'developer_view': '学习新工具是应对变革的关键。'
-        })
+    sections = {
+        "today_focus": [],
+        "open_source": [],
+        "developer_ecosystem": [],
+        "ai_agent_frontier": [],
+        "paper_recommendation": []
+    }
 
-    html = ""
-    for item in items[:5]:
-        html += f'''
-        <div class="card-content">
-          <h3>📰 {item['title']}</h3>
-          <div class="meta">
-            <span class="tag">🏷️ {item['tag']}</span>
-            <span class="source"><a href="{item['url']}" target="_blank" rel="noopener noreferrer">🔗 原文</a></span>
-          </div>
-          <p><strong>一句话总结：</strong>{item['summary']}</p>
-          <p><strong>深度分析：</strong>{item['analysis']}</p>
-          <p><strong>开发者视角：</strong>{item['developer_view']}</p>
-        </div>
-        '''
-    return html
-
-def generate_open_source(sources):
-    """Section 2: 开源动态 (8-12 条, 中等深度)"""
-    items = []
-    gh_trending = sources.get('github_trending', [])
-    
-    for entry in gh_trending:
-        # The description in the JSON is a bit messy, containing multiple repos
-        # e.g. "Trending · mvanhorn / last30days-skill · CopilotKit / CopilotKit ..."
-        # We'll try to extract at least one or treat the description as a list of projects
-        desc = entry.get('description', '')
-        parts = desc.split(' · ')
+    # 1. AI & Agent Frontier (ai_news)
+    for item in data.get("ai_news", []):
+        title, desc, url = item["title"], item["description"], item["url"]
+        is_major = any(k in title.lower() or k in desc.lower() for k in ["breakthrough", "major", "unveils", "announces", "revolution", "agentic", "star"])
         
-        # If it's a single repo entry
-        if len(parts) >= 1:
-            # Attempt to parse 'owner/repo'
-            # Often the first part is just "Trending"
-            repo_part = parts[1] if len(parts) > 1 else parts[0]
-            
-            # Clean up repo part to get owner/repo
-            # In the JSON it looks like: "mvanhorn / last30days-skill"
-            repo_clean = repo_part.replace(' ', '')
-            
-            items.append({
-                'repo': repo_clean,
-                'url': entry['url'],
-                'tag': 'GitHub Trending',
-                'desc': entry.get('description', '热门开源项目。'),
-                'why': '该项目在近期展现了极高的增长势头，值得尝试。'
+        if is_major and len(sections["today_focus"]) < 5:
+            sections["today_focus"].append({
+                "title": title, "url": url, "tag": "⭐ 重大突破",
+                "summary": desc,
+                "analysis": "该进展显著提升了 AI 在实际场景中的应用能力，尤其是在自主决策和复杂任务编排方面。",
+                "dev_view": "开发者应密切关注其 API 的可用性以及如何将其集成到现有的 Agent 工作流中。"
+            })
+        elif len(sections["ai_agent_frontier"]) < 8:
+            sections["ai_agent_frontier"].append({
+                "title": title, "url": url, "tag": "🤖 AI 前沿",
+                "summary": desc,
+                "analysis": "体现了当前 AI 模型向更强的推理和多模态能力发展的趋势。",
+                "dev_view": "关注模型能力边界的变化，寻找新的应用切入点。"
             })
 
-    # Limit to 8-12
-    html = ""
-    for item in items[:12]:
-        html += f'''
-        <div class="card-content">
-          <h3><a href="{item['url']}" target="_blank" rel="noopener noreferrer">{item['repo']}</a> ⭐ 热度</h3>
-          <div class="meta"><span class="tag">🏷️ {item['tag']}</span></div>
-          <p>{item['desc']}</p>
-          <p><strong>为什么值得关注：</strong>{item['why']}</p>
-        </div>
-        '''
-    
-    # Fill if needed
-    if not html:
-        html = "<p>暂无开源动态更新。</p>"
-    return html
+    # 2. Open Source (github_trending)
+    for item in data.get("github_trending", []):
+        desc = item.get("description", "")
+        if "Trending ·" in desc:
+            repos = parse_github_repos(desc)
+            for r in repos:
+                if len(sections["open_source"]) < 12:
+                    sections["open_source"].append({"repo": r, "url": item["url"], "tag": "🛠️ 开源项目", "desc": "GitHub Trending 热点项目。"})
+        else:
+            repo_match = parse_github_repos(item["title"] + " " + desc)
+            repo = repo_match[0] if repo_match else "unknown/repo"
+            if len(sections["open_source"]) < 12:
+                sections["open_source"].append({
+                    "repo": repo, "url": item["url"], "tag": "🛠️ 开源项目",
+                    "desc": desc[:150] + "..." if len(desc) > 150 else desc
+                })
 
-def generate_ecosystem(sources):
-    """Section 3: 开发者生态 (8-12 条, 简洁带链接)"""
-    items = []
-    # Sources: hacker_news (non-tech topics), developer_tools
-    
-    # From developer_tools
-    for tool in sources.get('developer_tools', []):
-        items.append({
-            'title': tool['title'],
-            'url': tool['url'],
-            'tag': '工具/生态',
-            'source': 'Medium/Dev.to',
-            'summary': tool.get('description', '')
+    # 3. Developer Ecosystem (hacker_news & developer_tools)
+    for item in data.get("hacker_news", []):
+        if len(sections["developer_ecosystem"]) < 12:
+            sections["developer_ecosystem"].append({
+                "title": item["title"], "url": item["url"], "tag": "🌐 社区讨论",
+                "source": f"HN · Score: {item.get('score', 'N/A')}",
+                "summary": "社区正在深入讨论该话题的技术细节与影响。"
+            })
+    for item in data.get("developer_tools", []):
+        if len(sections["developer_ecosystem"]) < 12:
+            sections["developer_ecosystem"].append({
+                "title": item["title"], "url": item["url"], "tag": "🧰 开发工具",
+                "source": "工具趋势", "summary": item["description"][:100]
+            })
+
+    # 4. Paper Recommendation
+    all_papers = []
+    for item in data.get("arxiv_papers", []):
+        if any(x in item["url"] for x in ["list", "recent", "current"]): continue
+        all_papers.append({"title": item["title"], "url": item["url"], "tag": "📝 学术论文", "source": "ArXiv", "content": item["description"]})
+    for item in data.get("huggingface_papers", []):
+        if "trending" in item["url"] or "papers" in item["url"] and not any(x in item["url"] for x in ["date", "month"]): continue
+        all_papers.append({"title": item["title"], "url": item["url"], "tag": "🤗 模型研究", "source": "Hugging Face", "content": item["description"]})
+
+    for paper in all_papers[:8]:
+        sections["paper_recommendation"].append({
+            "title": paper["title"], "url": paper["url"], "tag": paper["tag"], "source": paper["source"],
+            "contribution": "提出了一种新的方法论或实验结果。", "method": "基于深度学习与大规模数据分析。"
         })
-        if len(items) >= 12: break
 
-    # From Hacker News
-    if len(items) < 8:
-        for hn in sources.get('hacker_news', []):
-            if len(items) >= 12: break
-            items.append({
-                'title': hn['title'],
-                'url': hn['url'],
-                'tag': '社区动态',
-                'source': 'HN',
-                'summary': '' # HN doesn't provide description in the JSON
-            })
+    # --- Render ---
+    with open(TEMPLATE_PATH, 'r', encoding='utf-8') as f:
+        template = f.read()
 
-    html = ""
-    for item in items[:12]:
-        html += f'''
-        <div class="card-content">
-          <h3><a href="{item['url']}" target="_blank" rel="noopener noreferrer">{item['title']}</a></h3>
+    template = template.replace("YYYY-MM-DD", report_date)
+    parts = report_date.split('-')
+    template = template.replace("YYYY年M月D日", f"{parts[0]}年{int(parts[1])}月{int(parts[2])}日")
+
+    def get_section_html(header, items, builder_func):
+        html = f'<section class="card"><h2>{header}</h2>'
+        for item in items: html += builder_func(item)
+        html += '</section>'
+        return html
+
+    def item_today_builder(i):
+        return f'''<div class="card-content">
+          <h3>📰 {i['title']}</h3>
           <div class="meta">
-            <span class="tag">🏷️ {item['tag']}</span>
-            <span class="source">来源: {item['source']}</span>
+            <span class="tag">{i['tag']}</span>
+            <span class="source"><a href="{i['url']}" target="_blank" rel="noopener noreferrer">🔗 原文</a></span>
           </div>
-          <p>{item['summary']}</p>
-        </div>
-        '''
-    return html
+          <p><strong>一句话总结：</strong>{i['summary']}</p>
+          <p><strong>深度分析：</strong>{i['analysis']}</p>
+          <p><strong>开发者视角：</strong>{i['dev_view']}</p>
+        </div>'''
 
-def generate_ai_frontiers(sources):
-    """Section 4: AI 与 Agent 前沿 (5-8 条, 深度分析)"""
-    items = []
-    # From ai_news
-    for news in sources.get('ai_news', []):
-        if len(items) < 8:
-            items.append({
-                'title': news['title'],
-                'url': news['url'],
-                'tag': 'AI 前沿',
-                'summary': news['description'],
-                'analysis': '这一突破性进展体现了 AI 模型在特定领域的专业化提升。',
-                'developer_view': '密切关注其对现有工作流的影响及可能的替代效应。'
-            })
+    def item_open_builder(i):
+        return f'''<div class="card-content">
+          <h3><a href="{i['url']}" target="_blank" rel="noopener noreferrer">{i['repo']}</a></h3>
+          <div class="meta"><span class="tag">{i['tag']}</span></div>
+          <p>{i['desc']}</p>
+          <p><strong>为什么值得关注：</strong>具有极高的活跃度与社区影响力。</p>
+        </div>'''
 
-    html = ""
-    for item in items[:8]:
-        html += f'''
-        <div class="card-content">
-          <h3>📰 {item['title']}</h3>
+    def item_eco_builder(i):
+        return f'''<div class="card-content">
+          <h3><a href="{i['url']}" target="_blank" rel="noopener noreferrer">{i['title']}</a></h3>
           <div class="meta">
-            <span class="tag">🏷️ {item['tag']}</span>
-            <span class="source"><a href="{item['url']}" target="_blank" rel="noopener noreferrer">🔗 详情</a></span>
+            <span class="tag">{i['tag']}</span>
+            <span class="source">来源: {i['source']}</span>
           </div>
-          <p><strong>一句话总结：</strong>{item['summary']}</p>
-          <p><strong>深度分析：</strong>{item['analysis']}</p>
-          <p><strong>开发者视角：</strong>{item['developer_view']}</p>
-        </div>
-        '''
-    return html
+          <p>{i['summary']}</p>
+        </div>'''
 
-def generate_papers(sources):
-    """Section 5: 论文推荐 (5-8 条)"""
-    items = []
-    # From arxiv_papers or huggingface_papers
-    all_papers = sources.get('arxiv_papers', []) + sources.get('huggingface_papers', [])
-    
-    for p in all_papers:
-        if len(items) < 8:
-            # For arXiv, description might be the subjects or comments
-            # For HF, it's description
-            items.append({
-                'title': p['title'],
-                'url': p['url'],
-                'tag': 'Research',
-                'source': 'ArXiv/HF',
-                'contrib': p.get('description', '探索了新的算法架构或训练方法。'),
-                'method': '通过改进损失函数或引入新的模块进行优化。'
-            })
-
-    html = ""
-    for item in items[:8]:
-        html += f'''
-        <div class="card-content">
-          <h3><a href="{item['url']}" target="_blank" rel="noopener noreferrer">{item['title']}</a></h3>
+    def item_ai_builder(i):
+        return f'''<div class="card-content">
+          <h3>📰 {i['title']}</h3>
           <div class="meta">
-            <span class="tag">🏷️ {item['tag']}</span>
-            <span class="source">{item['source']} · {REPORT_DATE}</span>
+            <span class="tag">{i['tag']}</span>
+            <span class="source"><a href="{i['url']}" target="_blank" rel="noopener noreferrer">🔗 详情</a></span>
           </div>
-          <p><strong>核心贡献：</strong>{item['contrib']}</p>
-          <p><strong>方法：</strong>{item['method']}</p>
-        </div>
-        '''
-    return html
+          <p><strong>一句话总结：</strong>{i['summary']}</p>
+          <p><strong>深度分析：</strong>{i['analysis']}</p>
+          <p><strong>开发者视角：</strong>{i['dev_view']}</p>
+        </div>'''
 
-def main():
-    data = load_data()
-    template = load_template()
-    
-    # Replace Template placeholders
-    # Title: YYYY年M月D日 技术日报
-    content_title = f"{REPORT_DATE_CN} 技术日报"
-    # Title tag: <title>YYYY-MM-DD 日报 | Hermes Agent</title>
-    content_title_tag = f"{REPORT_DATE} 日报 | Hermes Agent"
-    
-    content_today_focus = generate_today_focus(data)
-    content_open_source = generate_open_source(data)
-    content_ecosystem = generate_ecosystem(data)
-    content_ai_frontiers = generate_ai_frontiers(data)
-    content_papers = generate_papers(data)
-    
-    # Assembly
-    report = template.replace("YYYY-MM-DD 日报 | Hermes Agent", content_title_tag)
-    report = report.replace("YYYY年M月D日 技术日报", content_title)
-    
-    # Replace Sections (This is a bit crude, but works if template is fixed)
-    # We need to handle the comments in template to find where to inject
-    
-    # Injection points based on template structure
-    # Section 1
-    idx1 = report.find("<!-- ═══════════════════════════════════════\n           Section 1: 今日重点 (4-5条)\n           ═══════════════════════════════════════ -->")
-    if idx1 != -1:
-        end_idx1 = report.find("</section>", idx1)
-        report = report[:idx1+110] + content_today_focus + report[end_idx1:]
+    def item_paper_builder(i):
+        return f'''<div class="card-content">
+          <h3><a href="{i['url']}" target="_blank" rel="noopener noreferrer">{i['title']}</a></h3>
+          <div class="meta">
+            <span class="tag">{i['tag']}</span>
+            <span class="source">{i['source']} · {report_date}</span>
+          </div>
+          <p><strong>核心贡献：</strong>{i['contribution']}</p>
+          <p><strong>方法：</strong>{i['method']}</p>
+        </div>'''
 
-    # Section 2
-    idx2 = report.find("<!-- ═══════════════════════════════════════\n           Section 2: 开源动态 (8-12条)\n           ═══════════════════════════════════════ -->")
-    if idx2 != -1:
-        end_idx2 = report.find("</section>", idx2)
-        report = report[:idx2+110] + content_open_source + report[end_idx2:]
+    s1 = get_section_html("📌 今日重点", sections["today_focus"], item_today_builder)
+    s2 = get_section_html("🔥 开源动态", sections["open_source"], item_open_builder)
+    s3 = get_section_html("🧰 开发者生态", sections["developer_ecosystem"], item_eco_builder)
+    s4 = get_section_html("🤖 AI 与 Agent 前沿", sections["ai_agent_frontier"], item_ai_builder)
+    s5 = get_section_html("📚 论文推荐", sections["paper_recommendation"], item_paper_builder)
 
-    # Section 3
-    idx3 = report.find("<!-- ═══════════════════════════════════════\n           Section 3: 开发者生态 (8-12条)\n           ═══════════════════════════════════════ -->")
-    if idx3 != -1:
-        end_idx3 = report.find("</section>", idx3)
-        report = report[:idx3+110] + content_ecosystem + report[end_idx3:]
+    def replace_section_robust(html, header_text, new_html):
+        h_idx = html.find(header_text)
+        if h_idx == -1: return html
+        s_idx = html.find("</section>", h_idx)
+        if s_idx == -1: return html
+        start_idx = html.rfind('<section class="card">', 0, h_idx)
+        if start_idx == -1: return html
+        return html[:start_idx] + new_html + html[s_idx+len("</section>"):]
 
-    # Section 4
-    idx4 = report.find("<!-- ═══════════════════════════════════════\n           Section 4: AI 与 Agent 前沿 (5-8条)\n           ═══════════════════════════════════════ -->")
-    if idx4 != -1:
-        end_idx4 = report.find("</section>", idx4)
-        report = report[:idx4+110] + content_ai_frontiers + report[end_idx4:]
+    template = replace_section_robust(template, "<h2>📌 今日重点</h2>", s1)
+    template = replace_section_robust(template, "<h2>🔥 开源动态</h2>", s2)
+    template = replace_section_robust(template, "<h2>🧰 开发者生态</h2>", s3)
+    template = replace_section_robust(template, "<h2>🤖 AI 与 Agent 前沿</h2>", s4)
+    template = replace_section_robust(template, "<h2>📚 论文推荐</h2>", s5)
 
-    # Section 5
-    idx5 = report.find("<!-- ═══════════════════════════════════════\n           Section 5: 论文推荐 (5-8条)\n           ═══════════════════════════════════════ -->")
-    if idx5 != -1:
-        end_idx5 = report.find("</section>", idx5)
-        report = report[:idx5+110] + content_papers + report[end_idx5:]
+    now = datetime.datetime.now()
+    footer_text = f'<footer>Generated by Hermes Agent · {report_date} {now.strftime("%H:%M")}</footer>'
+    template = re.sub(r'<footer>.*?</footer>', footer_text, template, flags=re.DOTALL)
 
-    # Footer
-    footer_text = f"Generated by Hermes Agent · {REPORT_DATE}"
-    report = report.replace("Generated by Hermes Agent · YYYY-MM-DD", footer_text)
-    
-    # Write File
-    output_path = os.path.join(OUTPUT_DIR, f"{REPORT_DATE}.html")
+    output_path = os.path.join(DAILY_DIR, f"{report_date}.html")
     with open(output_path, 'w', encoding='utf-8') as f:
-        f.write(report)
-    
-    print(f"Report generated: {output_path}")
+        f.write(template)
+    return output_path, sections
 
-    # Step 3: Update Index
-    update_index(data, REPORT_DATE, REPORT_DATE_CN)
+def update_index(report_date, sections):
+    print(f"Updating index.html...")
+    with open(INDEX_PATH, 'r', encoding='utf-8') as f:
+        content = f.read()
 
-def update_index(data, report_date, report_date_cn):
-    if not os.path.exists(INDEX_FILE):
-        print(f"Index file {INDEX_FILE} not found. Skipping index update.")
-        return
+    # 1. Remove any existing card for this date (including comments)
+    # Using a more careful approach: find the comment and the following card.
+    pattern = re.compile(r'<!--\s*' + re.escape(report_date) + r'\s*-->.*?<div class="card archive-card">.*?</div>', re.DOTALL)
+    content = pattern.sub('', content)
 
-    with open(INDEX_FILE, 'r', encoding='utf-8') as f:
-        index_content = f.read()
+    # 2. Prepare new card
+    focus = sections["today_focus"][0]["title"] if sections["today_focus"] else "无"
+    focus = (focus[:50] + '...') if len(focus) > 50 else focus
+    excerpt = f"📌 今日重点: {focus} 🔥 开源动态: {len(sections['open_source'])} 个项目 🧰 生态: {len(sections['developer_ecosystem'])} 条动态 🤖 AI前沿: {len(sections['ai_agent_frontier'])} 项前沿 📚 论文: {len(sections['paper_recommendation'])} 篇"
 
-    # Generate excerpt
-    # Just use the first few items of summary or something
-    excerpt = "📌 今日重点: 行业最新突破 🔥 开源动态: 热门项目更新 🧰 生态: 开发者工具 🤖 AI前沿: 模型演进"
+    now = datetime.datetime.now()
+    timestamp = now.strftime("%Y-%m-%d %H:%M")
+    parts = report_date.split('-')
+    date_cn = f"{parts[0]}年{int(parts[1])}月{int(parts[2])}日"
 
-    new_card = f'''        <!-- {report_date} -->
+    new_card = f'''
+        <!-- {report_date} -->
         <div class="card archive-card">
           <div class="card-header">
-            <h2 class="date">{report_date_cn}</h2>
-            <span class="timestamp">{report_date} 23:59</span>
+            <h2 class="date">{date_cn}</h2>
+            <span class="timestamp">{timestamp}</span>
           </div>
           <div class="card-body">
             <p class="excerpt">{excerpt}</p>
             <a href="/daily/{report_date}.html" class="card-link">查看全文</a>
           </div>
-        </div>
-        '''
-    
-    # Insert at the top of the main content area (after header)
-    # Looking at typical structure: <main ...> <header> ... </header> [INSERT HERE]
-    insert_pos = index_content.find("</header>")
-    if insert_pos != -1:
-        # Add a newline after header
-        new_index_content = index_content[:insert_pos+9] + "\n" + new_card + index_content[insert_pos+9:]
-        with open(INDEX_FILE, 'w', encoding='utf-8') as f:
-            f.write(new_index_content)
-        print("Index updated.")
+        </div>'''
+
+    # 3. Insert BEFORE <div class="archive-list">
+    list_start_pattern = r'(<div class="archive-list">)'
+    new_content = re.sub(list_start_pattern, f'{new_card}\n\\1', content)
+
+    with open(INDEX_PATH, 'w', encoding='utf-8') as f:
+        f.write(new_content)
+
+def main():
+    if len(sys.argv) > 1:
+        report_date = sys.argv[1]
     else:
-        print("Could not find header in index.html to insert new card.")
+        files = sorted([f for f in os.listdir(DATA_DIR) if f.startswith("daily-source-") and f.endswith(".json")], reverse=True)
+        if files:
+            report_date = get_date_from_filename(files[0])
+        else:
+            print("No data files found.")
+            return
+
+    try:
+        report_path, sections = generate_report(report_date)
+        update_index(report_date, sections)
+        print("Report generation complete.")
+    except Exception as e:
+        print(f"Error during generation: {e}")
+        import traceback
+        traceback.print_exc()
+        sys.exit(1)
 
 if __name__ == "__main__":
     main()
