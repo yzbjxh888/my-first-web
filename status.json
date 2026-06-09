@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-07T06:29:23Z",
+  "updated": "2026-06-09T02:24:18Z",
   "services": [
     {
       "name": "langchain-backend",
@@ -112,13 +112,133 @@
     {
       "name": "ai-abbacus-cortex-dashboard",
       "icon": "⚙️",
-      "status": "active",
+      "status": "inactive",
       "type": "Service"
     },
     {
       "name": "ai-abbacus-cortex-mcp",
       "icon": "⚙️",
+      "status": "inactive",
+      "type": "Service"
+    },
+    {
+      "name": "langchain-backend",
+      "icon": "⚙️",
       "status": "active",
+      "type": "Service"
+    },
+    {
+      "name": "langgraph",
+      "icon": "⚙️",
+      "status": "active",
+      "type": "Service"
+    },
+    {
+      "name": "langflow",
+      "icon": "⚙️",
+      "status": "inactive",
+      "type": "Service"
+    },
+    {
+      "name": "n8n",
+      "icon": "⚙️",
+      "status": "active",
+      "type": "Service"
+    },
+    {
+      "name": "openclaw-gateway",
+      "icon": "⚙️",
+      "status": "active",
+      "type": "Service"
+    },
+    {
+      "name": "assistant-ui",
+      "icon": "⚙️",
+      "status": "active",
+      "type": "Service"
+    },
+    {
+      "name": "hermes-webui",
+      "icon": "⚙️",
+      "status": "active",
+      "type": "Service"
+    },
+    {
+      "name": "hermes-dashboard",
+      "icon": "⚙️",
+      "status": "active",
+      "type": "Service"
+    },
+    {
+      "name": "hermes-gateway",
+      "icon": "⚙️",
+      "status": "active",
+      "type": "Service"
+    },
+    {
+      "name": "redis",
+      "icon": "⚙️",
+      "status": "active",
+      "type": "Service"
+    },
+    {
+      "name": "postgresql",
+      "icon": "⚙️",
+      "status": "active",
+      "type": "Service"
+    },
+    {
+      "name": "dify-api",
+      "icon": "⚙️",
+      "status": "active",
+      "type": "Service"
+    },
+    {
+      "name": "dify-worker",
+      "icon": "⚙️",
+      "status": "active",
+      "type": "Service"
+    },
+    {
+      "name": "dify-web",
+      "icon": "⚙️",
+      "status": "active",
+      "type": "Service"
+    },
+    {
+      "name": "dify-plugin-daemon",
+      "icon": "⚙️",
+      "status": "active",
+      "type": "Service"
+    },
+    {
+      "name": "docker",
+      "icon": "⚙️",
+      "status": "active",
+      "type": "Service"
+    },
+    {
+      "name": "portainer",
+      "icon": "⚙️",
+      "status": "active",
+      "type": "Service"
+    },
+    {
+      "name": "privoxy-bridge",
+      "icon": "⚙️",
+      "status": "active",
+      "type": "Service"
+    },
+    {
+      "name": "ai-abbacus-cortex-dashboard",
+      "icon": "⚙️",
+      "status": "inactive",
+      "type": "Service"
+    },
+    {
+      "name": "ai-abbacus-cortex-mcp",
+      "icon": "⚙️",
+      "status": "inactive",
       "type": "Service"
     }
   ],
@@ -126,6 +246,6 @@
     "domain": "www.zhangjunxiang.asia",
     "repo": "github.com/yzbjxh888/my-first-web",
     "host": "Vercel",
-    "last_deploy": "2026-06-07T06:29:23Z"
+    "last_deploy": "2026-06-09T02:24:18Z"
   }
 }
