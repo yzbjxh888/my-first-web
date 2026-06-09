@@ -66,92 +66,92 @@
     {
       "title": "Apple reveals new AI architecture built around Google Gemini models",
       "url": "https://www.macrumors.com/2026/06/08/apple-reveals-new-ai-architecture/",
-      "score": 355,
+      "score": 532,
       "by": "unclefuzzy"
+    },
+    {
+      "title": "Old'aVista – The most powerful guide to the old Internet",
+      "url": "https://oldavista.com/",
+      "score": 74,
+      "by": "abnercoimbre"
     },
     {
       "title": "Siri AI",
       "url": "https://www.apple.com/apple-intelligence/",
-      "score": 423,
-      "by": "0xedb"
-    },
-    {
-      "title": "Hermes Agent – Open-source AI agent with persistent memory",
-      "url": "https://hermes-agent.org/",
-      "score": 32,
-      "by": "SeriousM"
-    },
-    {
-      "title": "Show HN: Performative-UI – A react component library of design tropes",
-      "url": "https://vorpus.github.io/performativeUI/",
-      "score": 799,
-      "by": "lizhang"
-    },
-    {
-      "title": "MiMo-v2.5-Pro-UltraSpeed: 1T model with 1000 tokens per second",
-      "url": "https://mimo.xiaomi.com/blog/mimo-tilert-1000tps",
-      "score": 503,
-      "by": "gainsurier"
-    },
-    {
-      "title": "Looking Forward to Postgres 19: Query Hints",
-      "url": "https://www.pgedge.com/blog/looking-forward-to-postgres-19-query-hints",
-      "score": 65,
-      "by": "jjgreen"
-    },
-    {
-      "title": "Anti-social: It's fads, not friends, which now dominate social media feeds",
-      "url": "https://www.bbc.com/worklife/article/20260520-how-social-media-ceased-to-be-social",
-      "score": 556,
-      "by": "1vuio0pswjnm7"
-    },
-    {
-      "title": "EU-banned pesticides found in rice, tea and spices",
-      "url": "https://www.foodwatch.org/en/eu-banned-pesticides-found-in-rice-tea-and-spices",
-      "score": 247,
-      "by": "john-titor"
-    },
-    {
-      "title": "Apple Core AI Framework",
-      "url": "https://developer.apple.com/documentation/coreai/",
-      "score": 204,
-      "by": "hmokiguess"
-    },
-    {
-      "title": "Show HN: Gitdot – a better GitHub. Open-source, written in Rust",
-      "url": "https://gitdot.io/",
-      "score": 157,
-      "by": "baepaul"
-    },
-    {
-      "title": "We Think the SpaceX IPO Is Overvalued",
-      "url": "https://www.morningstar.com/stocks/why-we-think-spacex-ipo-is-overvalued?content_id=20768396545",
-      "score": 38,
+      "score": 535,
       "by": "0xedb"
     },
     {
       "title": "xAI is looking more like a datacentre REIT than a frontier lab",
       "url": "https://martinalderson.com/posts/xais-new-rental-business/",
-      "score": 406,
+      "score": 523,
       "by": "martinald"
     },
     {
-      "title": "Why are cells small?",
-      "url": "https://burrito.bio/essays/what-limits-a-cells-size",
-      "score": 108,
-      "by": "mailyk"
+      "title": "Show HN: Performative-UI – A react component library of design tropes",
+      "url": "https://vorpus.github.io/performativeUI/",
+      "score": 915,
+      "by": "lizhang"
     },
     {
-      "title": "Surveillance is not safety: A statement on the UK's latest threat to privacy [pdf]",
-      "url": "https://signal.org/blog/pdfs/2026-06-08-uk-surveillance-is-not-safety.pdf",
-      "score": 433,
-      "by": "g0xA52A2A"
+      "title": "Porting the ThinkPad X61 to Coreboot",
+      "url": "https://blog.aheymans.xyz/post/thinkpad_x61/",
+      "score": 31,
+      "by": "walterbell"
     },
     {
-      "title": "FrontierCode",
-      "url": "https://cognition.ai/blog/frontier-code",
-      "score": 103,
-      "by": "streamer45"
+      "title": "EU-banned pesticides found in rice, tea and spices",
+      "url": "https://www.foodwatch.org/en/eu-banned-pesticides-found-in-rice-tea-and-spices",
+      "score": 358,
+      "by": "john-titor"
+    },
+    {
+      "title": "MiMo-v2.5-Pro-UltraSpeed: 1T model with 1000 tokens per second",
+      "url": "https://mimo.xiaomi.com/blog/mimo-tilert-1000tps",
+      "score": 546,
+      "by": "gainsurier"
+    },
+    {
+      "title": "Apple Core AI Framework",
+      "url": "https://developer.apple.com/documentation/coreai/",
+      "score": 267,
+      "by": "hmokiguess"
+    },
+    {
+      "title": "Looking Forward to Postgres 19: Query Hints",
+      "url": "https://www.pgedge.com/blog/looking-forward-to-postgres-19-query-hints",
+      "score": 130,
+      "by": "jjgreen"
+    },
+    {
+      "title": "Job: Head of Stonehenge",
+      "url": "https://www.english-heritage.org.uk/about/our-people/careers-with-us/job-search/default-job-page/?jobRef=16449",
+      "score": 138,
+      "by": "mooreds"
+    },
+    {
+      "title": "Show HN: Gitdot – a better GitHub. Open-source, written in Rust",
+      "url": "https://gitdot.io/",
+      "score": 220,
+      "by": "baepaul"
+    },
+    {
+      "title": "Passing DBs through continuations",
+      "url": "https://remy.wang/blog/cps.html",
+      "score": 42,
+      "by": "remywang"
+    },
+    {
+      "title": "GoGoGrandparent (YC S16) is hiring Back end Engineers",
+      "url": "https://www.ycombinator.com/companies/gogograndparent/jobs/2vbzAw8-backend-engineer",
+      "score": 1,
+      "by": "davidchl"
+    },
+    {
+      "title": "OpenCV 5 Is Here: The Biggest Leap in Years for Computer Vision",
+      "url": "https://opencv.org/opencv-5/",
+      "score": 26,
+      "by": "ternaus"
     }
   ],
   "ai_news": [
