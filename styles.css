@@ -550,6 +550,70 @@ color: inherit;
 /* ──────────────────────────────────────
    Daily Report specific styles
    ────────────────────────────────────── */
+
+/* Entry header: stars + title + tag on one row */
+.entry-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
+}
+
+.entry-header .stars {
+  flex-shrink: 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  color: #fbbf24;
+  min-width: 4.5em;
+  text-align: right;
+}
+
+.entry-header h3 {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.entry-header h3 a {
+  color: #e2e8f0;
+  text-decoration: none;
+}
+
+.entry-header h3 a:hover {
+  color: #38bdf8;
+}
+
+.entry-header .tag {
+  flex-shrink: 0;
+  background: #2d3748;
+  color: #38bdf8;
+  font-size: 0.7rem;
+  padding: 1px 6px;
+  border-radius: 3px;
+  white-space: nowrap;
+  margin-left: auto;
+}
+
+/* Summary line below entry header */
+.entry-summary {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* Card-content separator between entries */
+.card-content + .card-content {
+  border-top: 1px solid var(--border);
+  padding-top: 0.75rem;
+  margin-top: 0.75rem;
+}
+
 .meta {
   display: flex;
   gap: 0.5rem;
