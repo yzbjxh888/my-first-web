@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-10T12:22:43Z",
+  "updated": "2026-06-10T14:52:28Z",
   "services": [
     {
       "name": "langchain-backend",
@@ -126,6 +126,6 @@
     "domain": "www.zhangjunxiang.asia",
     "repo": "github.com/yzbjxh888/my-first-web",
     "host": "Vercel",
-    "last_deploy": "2026-06-10T12:22:43Z"
+    "last_deploy": "2026-06-10T14:52:28Z"
   }
 }
