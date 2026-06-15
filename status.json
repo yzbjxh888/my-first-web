@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-15T06:06:09Z",
+  "updated": "2026-06-15T13:55:22Z",
   "services": [
     {
       "name": "langchain-backend",
@@ -94,7 +94,7 @@
     {
       "name": "hermes-gateway",
       "icon": "⚙️",
-      "status": "active",
+      "status": "inactive",
       "type": "Service"
     },
     {
@@ -126,6 +126,6 @@
     "domain": "www.zhangjunxiang.asia",
     "repo": "github.com/yzbjxh888/my-first-web",
     "host": "Vercel",
-    "last_deploy": "2026-06-15T06:06:09Z"
+    "last_deploy": "2026-06-15T13:55:22Z"
   }
 }
