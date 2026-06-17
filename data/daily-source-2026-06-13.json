@@ -1,0 +1,345 @@
+{
+  "date": "2026-06-13",
+  "github_trending": [
+    {
+      "url": "https://github.com/trending",
+      "title": "Trending repositories on GitHub today",
+      "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects."
+    },
+    {
+      "url": "https://medium.com/lets-code-future/these-open-source-github-projects-are-changing-how-developers-build-software-in-2026-b0af1b5c2430",
+      "title": "These Open-Source GitHub Projects Are Changing How Developers ...",
+      "description": "Discover the hottest open-source GitHub projects developers are using in 2026, from AI agents and local LLMs to automation and developer ..."
+    },
+    {
+      "url": "https://www.kaggle.com/datasets/elvisbui/top-github-repositories-2026",
+      "title": "Top GitHub Repositories 2026 - Kaggle",
+      "description": "627 of the most-starred GitHub repositories as of April 2026. Covers top repos overall plus top repos by language (Python, JavaScript, ..."
+    },
+    {
+      "url": "https://github.com/explore",
+      "title": "Explore GitHub",
+      "description": "Explore is your guide to finding your next project, catching up with what's trending, and connecting with the GitHub community."
+    },
+    {
+      "url": "https://md8-habibullah.github.io/top-github-repos-list/",
+      "title": "200+ Ultimate Open-Source Repositories: The Developer's Curated ...",
+      "description": "The ultimate curated collection of 200+ high-impact open-source repositories for Web Dev, DevOps, AI, and Security. Updated for 2026. A curated, categorized, ..."
+    },
+    {
+      "url": "https://github.blog/open-source/maintainers/this-years-most-influential-open-source-projects/",
+      "title": "This year's most influential open source projects - The GitHub Blog",
+      "description": "From Appwrite to Zulip, Universe 2025's Open Source Zone was stacked with standout projects showing just how far open source can go."
+    },
+    {
+      "url": "https://github.com/topics/open-source-project",
+      "title": "open-source-project · GitHub Topics",
+      "description": "This open source repository contains collection of games build on basic tech stacks in web development. Use your creativity and build your own game."
+    },
+    {
+      "url": "https://www.reddit.com/r/github/comments/1e25yiw/lets_see_your_most_popular_open_source_projects/",
+      "title": "Let's see your most popular Open Source projects! : r/github - Reddit",
+      "description": "Let's see your most popular Open Source projects! · paypal Go SDK (664 stars) https://github.com/netlify/PayPal-Go-SDK · Wit AI Go SDK (152 stars) ..."
+    },
+    {
+      "url": "https://trendshift.io/",
+      "title": "Trendshift: Live trending GitHub repositories — daily momentum ...",
+      "description": "Live trending repositories caught as they rise, not after they peak. An alternative to GitHub Trending."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=FAzQa4C0AYk",
+      "title": "Top 33 GitHub Projects of January 2026 (Monthly Review #4)",
+      "description": "#ai #opensource #github ...more. Github Awesome. 58.1K ... GitHub Trending Weekly #35: bigset, MisoTTS, butterbase, image ..."
+    },
+    {
+      "url": "https://github.com/topics/open-source-project",
+      "title": "open-source-project · GitHub Topics",
+      "description": "This open source repository contains collection of games build on basic tech stacks in web development. Use your creativity and build your own game."
+    },
+    {
+      "url": "https://github.blog/open-source/maintainers/this-years-most-influential-open-source-projects/",
+      "title": "This year's most influential open source projects - The GitHub Blog",
+      "description": "From Appwrite to Zulip, Universe 2025's Open Source Zone was stacked with standout projects showing just how far open source can go."
+    }
+  ],
+  "hacker_news": [
+    {
+      "title": "Statement on US government directive to suspend access to Fable 5 and Mythos 5",
+      "url": "https://www.anthropic.com/news/fable-mythos-access",
+      "score": 1513,
+      "by": "Dylan1312"
+    },
+    {
+      "title": "Open source AI must win",
+      "url": "https://opensourceaimustwin.com/?share=v2",
+      "score": 478,
+      "by": "vednig"
+    },
+    {
+      "title": "EWlectric motors with no rare earths",
+      "url": "https://www.renaultgroup.com/en/magazine/energy-and-powertrains/all-about-electric-motors-with-no-rare-earths/",
+      "score": 314,
+      "by": "bestouff"
+    },
+    {
+      "title": "CRISPR tech selectively shreds cancer cells, including \"undruggable\" cancers",
+      "url": "https://innovativegenomics.org/news/crispr-technique-selectively-shreds-cancer-cells/",
+      "score": 754,
+      "by": "gmays"
+    },
+    {
+      "title": "Show HN: Putt.day a daily mini golf game",
+      "url": "https://putt.day/",
+      "score": 113,
+      "by": "ellg"
+    },
+    {
+      "title": "Twenty One Zero-Days in FFmpeg",
+      "url": "https://depthfirst.com/research/21-zero-days-in-ffmpeg",
+      "score": 146,
+      "by": "redbell"
+    },
+    {
+      "title": "Swift at Apple: Migrating the TrueType hinting interpreter",
+      "url": "https://www.swift.org/blog/migrating-truetype-hinting-to-swift/",
+      "score": 175,
+      "by": "DASD"
+    },
+    {
+      "title": "How to setup a local coding agent on macOS",
+      "url": "https://ikyle.me/blog/2026/how-to-setup-a-local-coding-agent-on-macos",
+      "score": 310,
+      "by": "kkm"
+    },
+    {
+      "title": "Why a Computer Science Degree Still Opens Hidden Doors",
+      "url": "https://spectrum.ieee.org/computer-science-degree-isnt-dead",
+      "score": 29,
+      "by": "jnord"
+    },
+    {
+      "title": "Malware developers added nuclear and biological weapons text to to their spyware",
+      "url": "https://twitter.com/jsrailton/status/2064661778978533571",
+      "score": 347,
+      "by": "marc__1"
+    },
+    {
+      "title": "The Future of wasi-gfx and wasi:webgpu",
+      "url": "https://wasi-gfx.dev/blog/posts/future-of-wasi-gfx/",
+      "score": 7,
+      "by": "mendyberger"
+    },
+    {
+      "title": "H.R. 6028 would fundamentally change the U.S. Copyright Office",
+      "url": "https://www.eff.org/deeplinks/2026/06/congress-just-rushed-through-disastrous-copyright-office-overhaul",
+      "score": 177,
+      "by": "Cider9986"
+    },
+    {
+      "title": "Pirates, a naval warfare game inspired by Sid Meier's Pirates",
+      "url": "https://piwodlaiwo.github.io/pirates/",
+      "score": 224,
+      "by": "iweczek"
+    },
+    {
+      "title": "Tectonic: A modernized, complete, self-contained TeX/LaTeX engine",
+      "url": "https://tectonic-typesetting.github.io/en-US/",
+      "score": 28,
+      "by": "maxloh"
+    },
+    {
+      "title": "/architect: Reduce Fable tokens by 80%, Fable orchestrates/reviews, Codex builds",
+      "url": "https://github.com/DanMcInerney/architect-loop",
+      "score": 83,
+      "by": "DanMcInerney"
+    }
+  ],
+  "ai_news": [
+    {
+      "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates",
+      "title": "Latest AI News and Breakthroughs That Matter Most | June 2026",
+      "description": "Stay ahead with the latest AI news in Mar, April, May, June 2026: major model launches, record funding rounds, and breakthroughs shaping business, work, ..."
+    },
+    {
+      "url": "https://blog.mean.ceo/latest-ai-breakthroughs-news-june-2026/",
+      "title": "Latest AI breakthroughs News | June, 2026 (STARTUP EDITION)",
+      "description": "According to TechTarget's 2026 AI and machine learning trends report, multimodal systems are becoming central to mainstream AI use because ..."
+    },
+    {
+      "url": "https://www.instagram.com/popular/ai-machine-learning-breakthrough-news-march-2026/",
+      "title": "Ai Machine Learning Breakthrough News March 2026 - Instagram",
+      "description": "Is AI shrinking entry-level jobs? Companies whose workforces are highly exposed to AI capabilities cut total employment by 4.5% on average, with the effect ..."
+    },
+    {
+      "url": "https://www.launchconsulting.com/posts/five-ai-breakthroughs-shaping-the-future-june-2025-ai-news",
+      "title": "Five AI Breakthroughs Shaping the Future: June 2025 AI News",
+      "description": "June 2025 AI highlights: GPT-5, Meta's $14B move, FDA's AI tool, and more—plus insights for every major industry."
+    },
+    {
+      "url": "https://www.reddit.com/r/ArtificialInteligence/comments/1rsrji4/morgan_stanley_warns_an_ai_breakthrough_is_coming/",
+      "title": "Morgan Stanley warns an AI breakthrough Is coming in 2026 — and ...",
+      "description": "But if AI keeps improving, what happens when cognition itself becomes scalable? It is a world where thinking just isn't scarce anymore. Strange ..."
+    },
+    {
+      "url": "https://www.facebook.com/decodedatascience/posts/-june-8-2026ai-innovation-continues-to-accelerate-as-technology-leaders-push-the/970374572461788/",
+      "title": "June 8, 2026 AI innovation continues to accelerate as ... - Facebook",
+      "description": "June 8, 2026 AI innovation continues to accelerate as technology leaders push the boundaries of intelligent systems, enterprise adoption, ..."
+    },
+    {
+      "url": "https://hai.stanford.edu/news/stanford-ai-experts-predict-what-will-happen-in-2026",
+      "title": "Stanford AI Experts Predict What Will Happen in 2026",
+      "description": "After years of fast expansion and billion-dollar bets, 2026 may mark the moment artificial intelligence confronts its actual utility."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=5NTZgIujOSQ",
+      "title": "6/15/2026 | Daily AI News from GAI Insights - YouTube",
+      "description": "... AI news, AI tools, and technological breakthroughs. We delve into a wide array of topics, including deep learning, large language models ..."
+    },
+    {
+      "url": "https://www.nvidia.com/gtc/",
+      "title": "Best of NVIDIA GTC: AI Breakthroughs and Recommended Sessions",
+      "description": "NVIDIA GTC 2026 brought together global AI leaders to explore breakthroughs in agentic AI, inference, and physical AI. Watch sessions on demand and stay ..."
+    },
+    {
+      "url": "https://www.instagram.com/reel/DX_04IiB_W-/",
+      "title": "The next era of AI starts here. Join Lisa Su, developers ... - Instagram",
+      "description": "AI Executive Summit in San Francisco June 26, 2026 THE FUTURE OF AI ... Attendees will dive into generative AI, machine learning, automation, AI ..."
+    }
+  ],
+  "developer_tools": [
+    {
+      "url": "https://medium.com/@writertripathi/top-12-developer-tools-you-should-be-using-in-2026-e39503b81bf9",
+      "title": "Top 12 Developer Tools you SHOULD be using in 2026 - Medium",
+      "description": "In 2026, top vibe coding tools include Emergent, Replit, Bolt, Base44, Lovable, Cursor, and Windsurf for AI-powered prototyping and shipping. If ..."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=dqBpHTGZU1Q",
+      "title": "Top Web Development Tools of 2026 - YouTube",
+      "description": "... frameworks and databases! ⛌ Try Wix Studio: https ... AI Coding Tools Ranked from Worst to Best (2026). Mikey No Code•99K ..."
+    },
+    {
+      "url": "https://dev.to/thebitforge/top-5-emerging-developer-tools-to-watch-in-2026-12pl",
+      "title": "Top 5 Emerging Developer Tools to Watch in 2026 - DEV Community",
+      "description": "Top 5 Emerging Developer Tools to Watch in 2026 · 1. Temporal Cloud 2.0: Workflow Orchestration That Finally Makes Sense · 2. Pkl: A Configuration ..."
+    },
+    {
+      "url": "https://www.digisoftsolution.com/blog/top-web-development-tools",
+      "title": "Top Web Development Tools in 2026 - Digisoft Solution",
+      "description": "Upgrade your web development in 2026 with top tools, AI assistants, frameworks, and CI/CD solutions for faster, secure, and scalable apps."
+    },
+    {
+      "url": "https://thebcms.com/blog/front-end-development-tools",
+      "title": "35 front-end tools developers use in 2026 - BCMS headless CMS",
+      "description": "Discover top 35 front-end tools to build high-quality web apps! Streamline coding, debugging, and design for efficient development."
+    },
+    {
+      "url": "https://www.weweb.io/blog/web-build-tools-no-code-to-ai",
+      "title": "Top 10 Web Build Tools in 2026: From No-Code to AI - WeWeb",
+      "description": "Discover the best web build tools for 2026: from classic code to no-code and AI. Compare features, backend freedom, and use cases to pick ..."
+    },
+    {
+      "url": "https://www.landbase.com/blog/fastest-growing-open-source-dev-tools",
+      "title": "12 Fastest Growing Open Source Dev Tools Companies and Startups",
+      "description": "Discover the 12 fastest-growing open source developer tools companies in 2024-2025, including AI code editors, backend platforms, ..."
+    },
+    {
+      "url": "https://javascript.plainenglish.io/the-2026-web-developer-stack-daily-tools-and-workflow-a341162b9644",
+      "title": "The 2026 Web Developer Stack Daily Tools and Workflow",
+      "description": "The essential, future-proof stack for web developers in 2026. AI Orchestration, Next.js 15 (RSC/Edge), Biome, & Turborepo for peak performance."
+    }
+  ],
+  "arxiv_papers": [
+    {
+      "url": "https://arxiv.org/list/stat.ML/recent",
+      "title": "Machine Learning - arXiv",
+      "description": "Machine Learning Authors and titles for recent submissions Fri, 12 Jun 2026 Thu, Total of 144 entries : 9 pages Subjects: Machine Learning 27 pages, 14 figures."
+    },
+    {
+      "url": "https://arxiv.org/list/cs.LG/current",
+      "title": "Machine Learning Jun 2026 - arXiv",
+      "description": "Machine Learning Authors and titles for June 2026 Total of 1406 entries. E: Efficient Spectral Energy-Guided 29 pages, 6 figures, 9 tables. Code and models are ..."
+    },
+    {
+      "url": "https://arxiv.org/list/cs.AI/current",
+      "title": "Artificial Intelligence Jun 2026 - arXiv",
+      "description": "... Machine / SPACER paper and the Context paper. Subjects: Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Databases (cs.DB); Information ..."
+    },
+    {
+      "url": "https://arxiv.org/list/cs.LG/recent",
+      "title": "Machine Learning - arXiv",
+      "description": "Machine Learning Authors and titles for recent submissions Fri, 12 Jun 2026. Total of 1273 entries. Title: Understanding Truncated Positional Encodings for ..."
+    },
+    {
+      "url": "https://arxiv.org/list/stat.ML/current",
+      "title": "Machine Learning Jun 2026 - stat.ML - arXiv",
+      "description": "Authors and titles for June 2026 Total of 176 entries. Subjects: Machine Learning. The paper studies local dynamics and warm-start analysis for alternating ..."
+    },
+    {
+      "url": "https://arxiv.org/list/cs.AI/recent",
+      "title": "Artificial Intelligence - arXiv",
+      "description": "Fri, 12 Jun 2026 (showing first 50 of 222 entries ) ... Title: Can I Buy Your KV Cache? ... Title: Under What Conditions Can a Machine Become Genuinely Creative?"
+    },
+    {
+      "url": "https://arxiv.org/html/2606.07327",
+      "title": "Six Open Questions in Machine-Learned Interatomic Potential ...",
+      "description": "Jun 2026 Six Open Questions in Machine-Learned Interatomic Potential taxonomy from the machine learning community that uses five categories — ..."
+    },
+    {
+      "url": "https://arxiv.org/list/cs.CV/current",
+      "title": "Computer Vision and Pattern Recognition Jun 2026 - arXiv",
+      "description": "Computer Vision and Pattern Recognition Authors and titles for June 2026 Total of 1383 entries. Machine Learning (cs.LG); Machine Learning (cs.LG); Machine ..."
+    },
+    {
+      "url": "https://arxiv.org/list/cs.AI/new",
+      "title": "Artificial Intelligence - arXiv",
+      "description": "Comments: This paper will be presented at IEEE ICTs4ehealth in June, 2026 ... paper at the Forty-Third International Conference on Machine Learning (ICML 2026)."
+    },
+    {
+      "url": "https://arxiv.org/list/stat.ML/new",
+      "title": "Machine Learning - stat.ML - arXiv",
+      "description": "Machine Learning. New submissions; Cross-lists; Replacements. See recent articles. Showing new listings for Thursday, 11 June 2026. Total of 53 entries. Showing ..."
+    }
+  ],
+  "huggingface_papers": [
+    {
+      "url": "https://huggingface.co/papers/trending",
+      "title": "Trending Papers - Hugging Face",
+      "description": "Agents' Last Exam (ALE) is a benchmark for evaluating AI agents on long-term, economically valuable real-world tasks across 13 industry clusters with 1K+ tasks, ..."
+    },
+    {
+      "url": "https://huggingface.co/papers/date/2026-06-04",
+      "title": "Daily Papers - Hugging Face",
+      "description": "Cosmos 3: Omnimodal World Models for Physical AI · Audio Interaction Model · Where Do Deep-Research Agents Go Wrong? · Reproducing, Analyzing, and ..."
+    },
+    {
+      "url": "https://huggingface.co/papers/date/2026-06-01",
+      "title": "Daily Papers - Hugging Face",
+      "description": "Get trending papers in your email inbox! Subscribe. Daily Papers. by ... hyc2026. 38 · Task-Focused Memorization for Multimodal Agents."
+    },
+    {
+      "url": "https://huggingface.co/papers/month/2026-06",
+      "title": "Daily Papers - Hugging Face",
+      "description": "Get trending papers in your email inbox once a day! Get trending papers in your email inbox! Subscribe. Daily Papers. by AK and the research community."
+    },
+    {
+      "url": "https://huggingface.co/papers?q=financial%20report%20interpretation",
+      "title": "Daily Papers - Hugging Face",
+      "description": "We utilize varied datasets comprising fundamental financial, market, and news data from January 2022 to June ... FinMMEval 2026 addresses ..."
+    },
+    {
+      "url": "https://huggingface.co/papers?q=descriptive%20emotion%20analysis",
+      "title": "Daily Papers - Hugging Face",
+      "description": "Building on this trajectory, MER2026 continues to follow these research trends and contains four tracks: MER-Cross shifts the focus from individual to ..."
+    },
+    {
+      "url": "https://huggingface.co/papers?q=8-bit%20floating%20point%20performance",
+      "title": "Daily Papers - Hugging Face",
+      "description": "Isambard-AI is a new, leadership-class supercomputer, designed to support AI-related research. Based on the HPE Cray EX4000 system, ..."
+    },
+    {
+      "url": "https://huggingface.co/papers?q=swe-bench",
+      "title": "Daily Papers - Hugging Face",
+      "description": "We report performance across a dozen recent LLMs evaluated on tasks collected between September 2024 and June 2025. ... Five April 2026 ..."
+    }
+  ]
+}
