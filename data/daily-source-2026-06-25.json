@@ -1,0 +1,100 @@
+{
+  "date": "2026-06-25",
+  "github_trending": [],
+  "hacker_news": [
+    {
+      "title": "RubyLLM: A single, beautiful Ruby framework for all major AI providers",
+      "url": "https://rubyllm.com/",
+      "score": 103,
+      "by": "doener"
+    },
+    {
+      "title": "We're making Bunny DNS free: because a faster internet won't build itself",
+      "url": "https://bunny.net/blog/were-making-bunny-dns-free/",
+      "score": 596,
+      "by": "dabinat"
+    },
+    {
+      "title": "Show HN: Nub – A Bun-like all-in-one toolkit for Node.js",
+      "url": "https://github.com/nubjs/nub",
+      "score": 59,
+      "by": "colinmcd"
+    },
+    {
+      "title": "Edsger Dijkstra's Library (Housed and Archived in Leuven, Belgium)",
+      "url": "https://www.dijkstrascry.com/inventory",
+      "score": 8,
+      "by": "rramadass"
+    },
+    {
+      "title": "Krea 2 Technical Report",
+      "url": "https://www.krea.ai/blog/krea-2-technical-report",
+      "score": 137,
+      "by": "mattnewton"
+    },
+    {
+      "title": "Running Windows Games on a Hobby OS with Wine",
+      "url": "https://astral-os.org/posts/2026/04/03/wine-on-astral.html",
+      "score": 29,
+      "by": "avaliosdev"
+    },
+    {
+      "title": "A Practical Guide to SSH Tunnels: Local and Remote Port Forwarding",
+      "url": "https://labs.iximiuz.com/tutorials/ssh-tunnels",
+      "score": 106,
+      "by": "signa11"
+    },
+    {
+      "title": "Founding a company in Germany: €9600, 152 days and I still can't send an invoice",
+      "url": "https://paolino.me/founding-a-company-in-germany/",
+      "score": 371,
+      "by": "earcar"
+    },
+    {
+      "title": "Haystack: Open-Source AI Framework for Production Ready Agents, RAG",
+      "url": "https://haystack.deepset.ai/",
+      "score": 50,
+      "by": "doener"
+    },
+    {
+      "title": "Genuinely, my all-time favourite image: Mamenchisaurus hochuanensis",
+      "url": "https://svpow.com/2026/06/04/genuinely-my-all-time-favourite-image-mamenchisaurus-hochuanensis/",
+      "score": 19,
+      "by": "surprisetalk"
+    },
+    {
+      "title": "Raspberry Pi Pico W as USB Wi-Fi Adapter",
+      "url": "https://gitlab.com/baiyibai/pico-usb-wifi",
+      "score": 221,
+      "by": "byb"
+    },
+    {
+      "title": "Vulnerability reports are not special anymore",
+      "url": "https://words.filippo.io/vuln-reports/",
+      "score": 355,
+      "by": "goranmoomin"
+    },
+    {
+      "title": "Show HN: Pure Effect – Reproduce production bugs on your laptop without a DB",
+      "url": "https://pure-effect.org",
+      "score": 19,
+      "by": "tie-in"
+    },
+    {
+      "title": "Statistics that live in your SQL",
+      "url": "https://kolistat.com/blog/the-stats-duck-v0-6-0/",
+      "score": 102,
+      "by": "caerbannogwhite"
+    },
+    {
+      "title": "Quebec town recognizes trees as living beings with rights",
+      "url": "https://www.cbc.ca/news/canada/montreal/terrasse-vaudreil-quebec-tree-rights-9.7243634",
+      "score": 14,
+      "by": "speckx"
+    }
+  ],
+  "ai_news": [],
+  "developer_tools": [],
+  "arxiv_papers": [],
+  "huggingface_papers": []
+}

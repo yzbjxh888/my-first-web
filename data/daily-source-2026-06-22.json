@@ -1,0 +1,294 @@
+{
+  "date": "2026-06-22",
+  "github_trending": [
+    {
+      "url": "https://github.com/trending",
+      "title": "Trending repositories on GitHub today",
+      "description": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects."
+    },
+    {
+      "url": "https://www.firecrawl.dev/blog/best-github-repos",
+      "title": "Best Trending GitHub Repositories for AI Developers to Star in 2026",
+      "description": "Best Trending GitHub Repositories for AI Developers to Star in 2026 · 1. Bumblebee · 2. Firecrawl · 3. System Design 101 · 4. developer-roadmap · 5."
+    },
+    {
+      "url": "https://github.com/explore",
+      "title": "Explore GitHub",
+      "description": "Explore is your guide to finding your next project, catching up with what's trending, and connecting with the GitHub community."
+    },
+    {
+      "url": "https://medium.com/lets-code-future/these-open-source-github-projects-are-changing-how-developers-build-software-in-2026-b0af1b5c2430",
+      "title": "These Open-Source GitHub Projects Are Changing How Developers ...",
+      "description": "These Open-Source GitHub Projects Are Changing How Developers Build Software in 2026 · 1. Ollama · 2. n8n · 3. Open WebUI · 4. LangChain · 5."
+    },
+    {
+      "url": "https://ossinsight.io/trending/ai",
+      "title": "Trending AI Repositories on GitHub — Real-Time Rankings 2026",
+      "description": "Discover the top trending AI repositories on GitHub in 2026. Real-time rankings of AI agent frameworks, LLM tools, MCP servers, coding agents, ..."
+    },
+    {
+      "url": "https://md8-habibullah.github.io/top-github-repos-list/",
+      "title": "200+ Ultimate Open-Source Repositories: The Developer's Curated ...",
+      "description": "The ultimate curated collection of 200+ high-impact open-source repositories for Web Dev, DevOps, AI, and Security. Updated for 2026. A curated, categorized, ..."
+    },
+    {
+      "url": "https://github.com/trending/go",
+      "title": "Trending Go repositories on GitHub today",
+      "description": "Trending · cilium / cilium · weaviate / weaviate · github / gh-aw · krillinai / KrillinAI · asheshgoplani / agent-deck · argoproj / argo-cd · netbirdio / netbird."
+    },
+    {
+      "url": "https://www.reddit.com/r/github/comments/1e25yiw/lets_see_your_most_popular_open_source_projects/",
+      "title": "Let's see your most popular Open Source projects! : r/github - Reddit",
+      "description": "Let's see your most popular Open Source projects! · paypal Go SDK (664 stars) https://github.com/netlify/PayPal-Go-SDK · Wit AI Go SDK (152 stars) ..."
+    },
+    {
+      "url": "https://blog.bytebytego.com/p/top-ai-github-repositories-in-2026",
+      "title": "Top AI GitHub Repositories in 2026 - ByteByteGo Newsletter",
+      "description": "OpenClaw is the breakout star of 2026 and arguably the fastest-growing open-source project in GitHub history. Created by PSPDFKit founder ..."
+    },
+    {
+      "url": "https://www.glukhov.org/developer-tools/comparisons/most-popular-go-projects-on-github/",
+      "title": "Top 19 Trending Go Projects on GitHub - January 2026 - Rost Glukhov",
+      "description": "Discover the hottest Go projects on GitHub this month, ranked by stars gained. From AI coding agents to Docker management, self-hosted apps to LLM gateways ..."
+    },
+    {
+      "url": "https://www.glukhov.org/developer-tools/comparisons/most-popular-go-projects-on-github/",
+      "title": "Top 19 Trending Go Projects on GitHub - January 2026 - Rost Glukhov",
+      "description": "Discover the hottest Go projects on GitHub this month, ranked by stars gained. From AI coding agents to Docker management, self-hosted apps to LLM gateways ..."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=FAzQa4C0AYk",
+      "title": "Top 33 GitHub Projects of January 2026 (Monthly Review #4)",
+      "description": "Comments · 35 Self-hosted Projects on Github: tududi, LeafWiki, LinguaCafe, many-notes, ignis, scratch, speakr · 31 Trending Self-Hosted Projects ..."
+    }
+  ],
+  "hacker_news": [
+    {
+      "title": "(How to Write a (Lisp) Interpreter (In Python))",
+      "url": "https://norvig.com/lispy.html",
+      "score": 15,
+      "by": "tosh"
+    },
+    {
+      "title": "Beyond All Reason (Free Total Annihilation Inspired RTS)",
+      "url": "https://www.beyondallreason.info",
+      "score": 228,
+      "by": "mosiuerbarso"
+    },
+    {
+      "title": "Who Owns Your ATProto Identity? Hint: It's Probably Not You",
+      "url": "https://kevinak.se/blog/who-actually-owns-your-atproto-identity-hint-its-probably-not-you",
+      "score": 69,
+      "by": "kevinak"
+    },
+    {
+      "title": "Commodore Made a Digital Detox Phone That Isn't Dumb",
+      "url": "https://www.wired.me/story/commodore-made-a-digital-detox-phone-that-isnt-dumb",
+      "score": 39,
+      "by": "Audiophilip"
+    },
+    {
+      "title": "The case against geometric algebra (2024)",
+      "url": "https://alexkritchevsky.com/2024/02/28/geometric-algebra.html",
+      "score": 94,
+      "by": "Hbruz0"
+    },
+    {
+      "title": "David Ahl's Basic Computer Games Ported to C",
+      "url": "https://github.com/proteanthread/bcg",
+      "score": 36,
+      "by": "theanonymousone"
+    },
+    {
+      "title": "Google Hits 50% IPv6",
+      "url": "https://blog.apnic.net/2026/04/28/google-hits-50-ipv6/",
+      "score": 303,
+      "by": "barqawiz"
+    },
+    {
+      "title": "A 3D voxel game engine written in APL",
+      "url": "https://github.com/namgyaaal/avoxelgame",
+      "score": 105,
+      "by": "sph"
+    },
+    {
+      "title": "Loupe – A iOS app that raises awareness about what native apps can see",
+      "url": "https://github.com/mysk-research/loupe",
+      "score": 423,
+      "by": "Cider9986"
+    },
+    {
+      "title": "Running MicroVMs in Proxmox VE, the Easy Way",
+      "url": "https://taoofmac.com/space/blog/2026/06/18/1845",
+      "score": 147,
+      "by": "zdw"
+    },
+    {
+      "title": "Two Qwen3 models on one DGX Spark: the residency math",
+      "url": "https://www.devashish.me/p/two-qwen3-models-on-one-dgx-spark",
+      "score": 38,
+      "by": "devashish86"
+    },
+    {
+      "title": "Fossil Fuels Are 40% of Freight Shipping Tonnage, but Half Its Fuel Use",
+      "url": "https://cleantechnica.com/2026/06/16/shipping-freight-energy-fossil-cargo/",
+      "score": 20,
+      "by": "choult"
+    },
+    {
+      "title": "Renting a sewing machine from the library",
+      "url": "https://www.bbc.com/future/article/20260618-the-weird-and-wonderful-libraries-of-finland",
+      "score": 290,
+      "by": "sohkamyung"
+    },
+    {
+      "title": "System call instrumentation on Linux/x86‑64 using memory‑indirect calls, part I",
+      "url": "https://www.humprog.org/~stephen/blog/2026/06/15/#system-call-instrumentation-on-intel-negative-result",
+      "score": 4,
+      "by": "matt_d"
+    },
+    {
+      "title": "Slow breathing modulates brain function and risk behavior",
+      "url": "https://www.cell.com/neuron/fulltext/S0896-6273(26)00339-9",
+      "score": 305,
+      "by": "croes"
+    }
+  ],
+  "ai_news": [],
+  "developer_tools": [
+    {
+      "url": "https://medium.com/@writertripathi/top-12-developer-tools-you-should-be-using-in-2026-e39503b81bf9",
+      "title": "Top 12 Developer Tools you SHOULD be using in 2026 - Medium",
+      "description": "It is 2026. And 2 weeks in, we have already seen some path-breaking tools and changes: Be it Claude, cursor, OpenCode, Ralph."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=dqBpHTGZU1Q",
+      "title": "Top Web Development Tools of 2026 - YouTube",
+      "description": "These are the top web development tools you should try in 2026. These are for website coders who are looking to improve their day to day ..."
+    },
+    {
+      "url": "https://thebcms.com/blog/front-end-development-tools",
+      "title": "35 front-end tools developers use in 2026 - BCMS headless CMS",
+      "description": "Front-end developers in 2026 rely on the following front-end tools: powerful frameworks (React, Vue, Next.js) utility-first styling (Tailwind) ..."
+    },
+    {
+      "url": "https://dev.to/thebitforge/top-5-emerging-developer-tools-to-watch-in-2026-12pl",
+      "title": "Top 5 Emerging Developer Tools to Watch in 2026 - DEV Community",
+      "description": "1. Temporal Cloud 2.0: Workflow Orchestration ・ 2. Pkl: A Configuration Language ・ open-source frontend observability stack. The open-source ..."
+    },
+    {
+      "url": "https://www.digisoftsolution.com/blog/top-web-development-tools",
+      "title": "Top Web Development Tools in 2026 - Digisoft Solution",
+      "description": "Popular backend frameworks in 2026 include Node.js (with Express or Fastify), Django, Laravel, and Spring Boot, each suited to different scalability and ..."
+    },
+    {
+      "url": "https://www.linkedin.com/posts/alexxubyte_systemdesign-coding-interviewtips-activity-7414714231758962688-IMRX",
+      "title": "Top Dev Tools for 2026: Code Editors, Version Control & More",
+      "description": "These tools help developers write, edit, and debug code with greater efficiency. Examples are Visual Code, IntelliJ IDEA, PyCharm, Cursor, ..."
+    },
+    {
+      "url": "https://javascript.plainenglish.io/the-2026-web-developer-stack-daily-tools-and-workflow-a341162b9644",
+      "title": "The 2026 Web Developer Stack Daily Tools and Workflow",
+      "description": "The essential, future-proof stack for web developers in 2026. AI Orchestration, Next.js 15 (RSC/Edge), Biome, & Turborepo for peak performance."
+    },
+    {
+      "url": "https://www.weweb.io/blog/web-build-tools-no-code-to-ai",
+      "title": "Top 10 Web Build Tools in 2026: From No-Code to AI - WeWeb",
+      "description": "Covers 8 dashboard types, templates, frameworks, and no-code options for 2026. Open source (MIT): Free. All features included; no paid tiers. ..."
+    }
+  ],
+  "arxiv_papers": [
+    {
+      "url": "https://arxiv.org/list/stat.ML/recent",
+      "title": "Machine Learning - arXiv",
+      "description": "Machine Learning Authors and titles for recent submissions Fri, 19 Jun 2026. Total of 157 entries. A Deep Neural Network for Predicting Failure Time ..."
+    },
+    {
+      "url": "https://arxiv.org/list/cs.LG/current",
+      "title": "Machine Learning Jun 2026 - arXiv",
+      "description": "Authors and titles for June 2026 Total of 3617 entries. MoE: Efficient 29 pages, 6 figures, 9 tables. Code and models are available at this"
+    },
+    {
+      "url": "https://arxiv.org/list/cs.AI/current",
+      "title": "Artificial Intelligence Jun 2026 - arXiv",
+      "description": "Subjects: Artificial Intelligence (cs.AI); Computation and Language (cs.CL); Computer Vision and Pattern Recognition (cs.CV); Machine Learning (cs."
+    },
+    {
+      "url": "https://arxiv.org/list/cs.LG/recent",
+      "title": "Machine Learning - arXiv",
+      "description": "Machine Learning Authors and titles for recent submissions Fri, 19 Jun 2026 Thu, Total of 1113 entries. Title: How Transparent is DiffusionGemma? 20 main text ..."
+    },
+    {
+      "url": "https://arxiv.org/list/stat.ML/current",
+      "title": "Machine Learning Jun 2026 - stat.ML - arXiv",
+      "description": "Authors and titles for June 2026 Total of 319 entries. Subjects: Machine Learning. The paper studies local dynamics and warm-start analysis for alternating ..."
+    },
+    {
+      "url": "https://arxiv.org/list/cs.AI/recent",
+      "title": "Artificial Intelligence - arXiv",
+      "description": "Fri, 19 Jun 2026 (showing first 50 of 220 entries ) ; [1] arXiv:2606.20544 · Toward Calibrated Mixture-of-Experts Under Distribution Shift ; [2] arXiv:2606.20532 ..."
+    },
+    {
+      "url": "https://arxiv.org/list/cs.CV/current",
+      "title": "Computer Vision and Pattern Recognition Jun 2026 - arXiv",
+      "description": "Computer Vision and Pattern Recognition Authors and titles for June 2026 Total of 1383 entries. Machine Learning (cs.LG); Machine Learning (cs.LG); Machine ..."
+    },
+    {
+      "url": "https://arxiv.org/list/cs.AR/recent",
+      "title": "Hardware Architecture - arXiv",
+      "description": "Hardware Architecture Authors and titles for recent submissions Fri, 19 Jun 2026. Machine Learning (cs.LG)"
+    },
+    {
+      "url": "https://arxiv.org/list/cs.AI/new",
+      "title": "Artificial Intelligence - arXiv",
+      "description": "Artificial Intelligence. New submissions; Cross-lists; Replacements. See recent articles. Showing new listings for Friday, 19 June 2026. Total of 312 entries."
+    },
+    {
+      "url": "https://arxiv.org/list/cs/2026-06?skip=5600",
+      "title": "Computer Science Jun 2026 - arXiv",
+      "description": "Subjects: Machine Learning (cs.LG); Artificial Intelligence (cs.AI); Computer Vision and Pattern Recognition (cs.CV). [5609] arXiv:2606.10199 [pdf, html, ..."
+    }
+  ],
+  "huggingface_papers": [
+    {
+      "url": "https://huggingface.co/papers/trending",
+      "title": "Trending Papers - Hugging Face",
+      "description": "Jun 1, 2026 Upvote. Jun 11, 2026 Upvote. Exploring the Frontier of Verifiable Reasoning in Small Language Models. Jun 9, 2026 Page. Rethinking Action Interface ..."
+    },
+    {
+      "url": "https://huggingface.co/papers/date/2026-06-05",
+      "title": "Daily Papers - Hugging Face",
+      "description": "Get trending papers. Weekly Monthly Jun 5. Hypernetwork-Generated Adapters for Code Language Models under Software Evolution UWaterloo ..."
+    },
+    {
+      "url": "https://huggingface.co/papers/date/2026-06-01",
+      "title": "Daily Papers - Hugging Face",
+      "description": "Your daily dose of AI research from AK. Get trending papers in your email inbox once a day! Daily Papers by AK. Weekly Monthly Jun 1. Automated ..."
+    },
+    {
+      "url": "https://huggingface.co/papers/month/2026-06",
+      "title": "Daily Papers - Hugging Face",
+      "description": "Your daily dose of AI research from AK. Get trending papers in your email inbox once a day! Weekly Monthly June Submitted. Generative 3D Earth Model acvlab. ..."
+    },
+    {
+      "url": "https://huggingface.co/papers?q=descriptive%20emotion%20analysis",
+      "title": "Daily Papers - Hugging Face",
+      "description": "Building on this trajectory, MER2026 continues to follow these research trends and contains four tracks: MER-Cross shifts the focus from individual to ..."
+    },
+    {
+      "url": "https://huggingface.co/papers?q=contamination-aware%20evaluation",
+      "title": "Daily Papers - Hugging Face",
+      "description": "reflecting contemporary trends and use cases. collected between September 2024 and June 2025."
+    },
+    {
+      "url": "https://huggingface.co/papers?q=onboard%20data%20collection",
+      "title": "Daily Papers - Hugging Face",
+      "description": "AMP2026: A Multi-Platform Marine Robotics Dataset for Tracking and Mapping · Marine environments present significant challenges for perception ..."
+    },
+    {
+      "url": "https://huggingface.co/papers?q=code%20sanitization",
+      "title": "Daily Papers - Hugging Face",
+      "description": "Weekly Monthly Jun 9 - Train in Vain: Functionality-Preserving Poisoning to Prevent Unauthorized Use of Code Datasets , a trend gaining momentum with AI-driven ..."
+    }
+  ]
+}

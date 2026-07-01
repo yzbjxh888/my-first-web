@@ -1,0 +1,100 @@
+{
+  "date": "2026-06-26",
+  "github_trending": [],
+  "hacker_news": [
+    {
+      "title": "Show HN: I made Google Trends for Hacker News by indexing 18 years of comments",
+      "url": "https://hackernewstrends.com",
+      "score": 171,
+      "by": "ytkimirti"
+    },
+    {
+      "title": "Ford rehires 350 engineers after AI fails to preserve expertise or train juniors",
+      "url": "https://www.bloomberg.com/news/articles/2026-06-25/ford-has-been-rehiring-quality-inspectors-after-ai-fell-short",
+      "score": 180,
+      "by": "alanwreath"
+    },
+    {
+      "title": "You can't unit test for taste",
+      "url": "https://dev.karltryggvason.com/you-cant-unit-test-for-taste/",
+      "score": 144,
+      "by": "kalli"
+    },
+    {
+      "title": "Zig's New BitCast Semantics and LLVM Back End Improvements",
+      "url": "https://ziglang.org/devlog/2026/#2026-06-25",
+      "score": 46,
+      "by": "kouosi"
+    },
+    {
+      "title": "Half-Life 2 in a Browser",
+      "url": "https://hl2.slqnt.dev/",
+      "score": 507,
+      "by": "panza"
+    },
+    {
+      "title": "Apple increases MacBook and iPad prices by 20%",
+      "url": "https://www.ft.com/content/0f067265-2baf-4b6e-8fb2-ed56daef6f3c",
+      "score": 69,
+      "by": "bazzmt"
+    },
+    {
+      "title": "Show HN: Turn native language audio into flashcards and shadowing practice",
+      "url": "https://lingochunk.com/try",
+      "score": 40,
+      "by": "alder"
+    },
+    {
+      "title": "Anthropic says Alibaba illicitly extracted Claude AI model capabilities",
+      "url": "https://www.reuters.com/world/china/anthropic-says-alibaba-illicitly-extracted-claude-ai-model-capabilities-2026-06-24/",
+      "score": 651,
+      "by": "htrp"
+    },
+    {
+      "title": "Ask HN: What surprised you about Estonia e-Residency and running an Estonian OÜ?",
+      "url": "https://news.ycombinator.com/item?id=48673801",
+      "score": 55,
+      "by": "jvilalta"
+    },
+    {
+      "title": "LastPass notifies users of yet another data breach",
+      "url": "https://9to5mac.com/2026/06/23/lastpass-notifies-users-of-yet-another-data-breach/",
+      "score": 288,
+      "by": "mooreds"
+    },
+    {
+      "title": "OpenAI unveils its first custom chip, built by Broadcom",
+      "url": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/",
+      "score": 771,
+      "by": "jamdesk"
+    },
+    {
+      "title": "Puzzling Success of Overparameterization: Lottery Tickets or Escape Dimensions?",
+      "url": "https://infoscience.epfl.ch/entities/publication/9a49779b-f9f8-448d-b3d1-737c78455309",
+      "score": 34,
+      "by": "rbanffy"
+    },
+    {
+      "title": "Wikipedia Workers in Britain set global first by seeking union recognition",
+      "url": "https://utaw.tech/news/wikipedia-recognition",
+      "score": 181,
+      "by": "chobeat"
+    },
+    {
+      "title": "Cloudflare launched self-managed OAuth for all",
+      "url": "https://blog.cloudflare.com/oauth-for-all/",
+      "score": 280,
+      "by": "terryds"
+    },
+    {
+      "title": "Lianda and the Long March",
+      "url": "https://blog.georeactor.com/books-06-26b",
+      "score": 8,
+      "by": "mapmeld"
+    }
+  ],
+  "ai_news": [],
+  "developer_tools": [],
+  "arxiv_papers": [],
+  "huggingface_papers": []
+}

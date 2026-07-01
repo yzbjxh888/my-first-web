@@ -1,0 +1,100 @@
+{
+  "date": "2026-06-24",
+  "github_trending": [],
+  "hacker_news": [
+    {
+      "title": "We're making Bunny DNS free: because a faster internet won't build itself",
+      "url": "https://bunny.net/blog/were-making-bunny-dns-free/",
+      "score": 48,
+      "by": "dabinat"
+    },
+    {
+      "title": "Vulnerability reports are not special anymore",
+      "url": "https://words.filippo.io/vuln-reports/",
+      "score": 278,
+      "by": "goranmoomin"
+    },
+    {
+      "title": "Raspberry Pi Pico W as USB Wi-Fi Adapter",
+      "url": "https://gitlab.com/baiyibai/pico-usb-wifi",
+      "score": 137,
+      "by": "byb"
+    },
+    {
+      "title": "Jerry's Map",
+      "url": "http://www.jerrysmap.com/the-map",
+      "score": 471,
+      "by": "turtleyacht"
+    },
+    {
+      "title": "Show HN: An ASCII 3D Rendering Engine",
+      "url": "https://glyphcss.com",
+      "score": 132,
+      "by": "apresmoi"
+    },
+    {
+      "title": "Why eval startups fail (2025)",
+      "url": "https://thomasliao.com/eval-startups",
+      "score": 20,
+      "by": "jxmorris12"
+    },
+    {
+      "title": "In memory of the man who put red and green squiggles under words",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260622-00/?p=112451",
+      "score": 376,
+      "by": "saikatsg"
+    },
+    {
+      "title": "FUTO Swipe – A new swipe typing model",
+      "url": "https://swipe.futo.tech/",
+      "score": 542,
+      "by": "futohq"
+    },
+    {
+      "title": "Qwen-AgentWorld: Language World Models for General Agents",
+      "url": "https://arxiv.org/abs/2606.24597",
+      "score": 105,
+      "by": "ilreb"
+    },
+    {
+      "title": "\"Fix\" MacBook Neo Cursor Lag: Record 1 Pixel of the Screen Every 10 Seconds",
+      "url": "https://gist.github.com/retroplasma/ec21767d0a8380c7ea9c2fbee1c7d6bf",
+      "score": 99,
+      "by": "retroplasma"
+    },
+    {
+      "title": "Printing Gaussian Splats",
+      "url": "https://www.patreon.com/DanyBittel/posts/printing-splats-161333338",
+      "score": 308,
+      "by": "ilnmtlbnm"
+    },
+    {
+      "title": "Ashby (YC W19) Is Hiring EMEA Engineers Who Can Design",
+      "url": "https://www.ashbyhq.com/careers?ashby_jid=87b96eef-edc1-4de4-adb6-d460126d02f8&utm_source=hn",
+      "score": 1,
+      "by": "abhikp"
+    },
+    {
+      "title": "Remaking BBC test cards to teach you video processing",
+      "url": "https://www.youtube.com/watch?v=U_6HxPkrgcg",
+      "score": 40,
+      "by": "unleaded"
+    },
+    {
+      "title": "Rhombus Language 1.0",
+      "url": "https://blog.racket-lang.org/2026/06/rhombus-v1.0.html",
+      "score": 166,
+      "by": "Decabytes"
+    },
+    {
+      "title": "Grok Build 0.1: Intelligence, Performance and Price Analysis",
+      "url": "https://artificialanalysis.ai/models/grok-build-0-1-06-16",
+      "score": 7,
+      "by": "himata4113"
+    }
+  ],
+  "ai_news": [],
+  "developer_tools": [],
+  "arxiv_papers": [],
+  "huggingface_papers": []
+}

@@ -1,0 +1,100 @@
+{
+  "date": "2026-06-28",
+  "github_trending": [],
+  "hacker_news": [
+    {
+      "title": "DSpark: Speculative decoding accelerates LLM inference [pdf]",
+      "url": "https://github.com/deepseek-ai/DeepSpec/blob/main/DSpark_paper.pdf",
+      "score": 606,
+      "by": "aurenvale"
+    },
+    {
+      "title": "OpenRA",
+      "url": "https://www.openra.net/",
+      "score": 229,
+      "by": "tosh"
+    },
+    {
+      "title": "Underarm Bowling Incident of 1981",
+      "url": "https://en.wikipedia.org/wiki/Underarm_bowling_incident_of_1981",
+      "score": 73,
+      "by": "EndXA"
+    },
+    {
+      "title": "Fintech Engineering Handbook",
+      "url": "https://w.pitula.me/fintech-engineering-handbook/",
+      "score": 275,
+      "by": "signa11"
+    },
+    {
+      "title": "Anonymous GitHub account mass-dropping undisclosed 0-days",
+      "url": "https://github.com/bikini/exploitarium",
+      "score": 60,
+      "by": "binyu"
+    },
+    {
+      "title": "Post-Mythos Cybersecurity: Keep calm and carry on",
+      "url": "https://cephalosec.com/blog/cybersecurity-in-the-post-mythos-era-keep-calm-and-carry-on/",
+      "score": 32,
+      "by": "Versipelle"
+    },
+    {
+      "title": "Suspicious Discontinuities",
+      "url": "https://danluu.com/discontinuities/",
+      "score": 60,
+      "by": "tosh"
+    },
+    {
+      "title": "Zuckerberg's Increasingly Bizarre War on Whistleblowers",
+      "url": "https://pluralistic.net/2026/06/27/zuckerstreisand-2/",
+      "score": 129,
+      "by": "HotGarbage"
+    },
+    {
+      "title": "How Many Elementary Particles Are There, Really?",
+      "url": "https://www.quantamagazine.org/how-many-elementary-particles-are-there-really-20260615/",
+      "score": 54,
+      "by": "rwmj"
+    },
+    {
+      "title": "Previewing GPT‑5.6 Sol: a next-generation model",
+      "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+      "score": 1069,
+      "by": "minimaxir"
+    },
+    {
+      "title": "If you can't hold it, you don't own it",
+      "url": "https://dervis.de/physical/",
+      "score": 153,
+      "by": "cemdervis"
+    },
+    {
+      "title": "Long Wave radio era set to end with switch-off",
+      "url": "https://www.economist.com/britain/2026/06/25/the-bbc-switches-off-its-oldest-service",
+      "score": 111,
+      "by": "edward"
+    },
+    {
+      "title": "Beer CSS – Build material design in record time",
+      "url": "https://www.beercss.com",
+      "score": 93,
+      "by": "Seb-C"
+    },
+    {
+      "title": "Nox Metals (YC S25) Is Hiring SWE",
+      "url": "https://www.ycombinator.com/companies/nox-metals/jobs/M1f1enD-software-engineer",
+      "score": 1,
+      "by": "zane_heng"
+    },
+    {
+      "title": "Researchers have developed pixels that can emit and analyse light together",
+      "url": "https://ethz.ch/en/news-and-events/eth-news/news/2026/06/a-new-type-of-pixel.html",
+      "score": 5,
+      "by": "tspng"
+    }
+  ],
+  "ai_news": [],
+  "developer_tools": [],
+  "arxiv_papers": [],
+  "huggingface_papers": []
+}

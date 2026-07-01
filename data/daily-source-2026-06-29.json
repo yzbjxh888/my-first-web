@@ -1,0 +1,100 @@
+{
+  "date": "2026-06-29",
+  "github_trending": [],
+  "hacker_news": [
+    {
+      "title": "EU Open Sources Ten-Year Network Development Planning Tools",
+      "url": "https://github.com/open-energy-transition/open-tyndp",
+      "score": 102,
+      "by": "lyoncy"
+    },
+    {
+      "title": "5k Restaurant Menus, Years 1880-1920",
+      "url": "https://pudding.cool/2026/06/menu-collection/",
+      "score": 65,
+      "by": "xbryanx"
+    },
+    {
+      "title": "The curious case of the disappearing Polish S (2015)",
+      "url": "https://aresluna.org/the-curious-case-of-the-disappearing-polish-s/",
+      "score": 91,
+      "by": "colinprince"
+    },
+    {
+      "title": "EU to legislate about Chat Control behind closed doors",
+      "url": "https://www.patrick-breyer.de/en/double-threat-to-private-communications-undemocratic-chat-control-backroom-deals-and-imminent-concessions-spark-relaunch-of-fightchatcontrol-eu/",
+      "score": 136,
+      "by": "NeutralForest"
+    },
+    {
+      "title": "A way to exclude sensitive files issue still open for OpenAI Codex",
+      "url": "https://github.com/openai/codex/issues/2847",
+      "score": 96,
+      "by": "pikseladam"
+    },
+    {
+      "title": "Flock cameras track more than your license plate, and they're spreading fast",
+      "url": "https://www.engadget.com/2203000/flock-cameras-recording-license-plate/",
+      "score": 139,
+      "by": "SanjayMehta"
+    },
+    {
+      "title": "Do Babies Dream of Baby Sheep?",
+      "url": "https://devz.cl/posts/do-babies-dream-of-electric-sheep/",
+      "score": 22,
+      "by": "DanielVZ"
+    },
+    {
+      "title": "Marfa Public Radio Puts You to Sleep",
+      "url": "https://www.marfapublicradio.org/podcast/marfa-public-radio-puts-you-to-sleep",
+      "score": 341,
+      "by": "reaperducer"
+    },
+    {
+      "title": "Michigan bill would bar employers from requiring after-hours coms with workers",
+      "url": "https://www.cbsnews.com/detroit/news/workplace-boundaries-act-employees-after-hours/",
+      "score": 46,
+      "by": "cebert"
+    },
+    {
+      "title": "California legislature agrees to upload driver's licenses to national database",
+      "url": "https://papersplease.org/wp/2026/06/27/california-legislature-agrees-to-upload-drivers-licenses-to-national-database/",
+      "score": 18,
+      "by": "iamnothere"
+    },
+    {
+      "title": "The MUMPS 76 Primer – anniversary edition",
+      "url": "https://github.com/rochus-keller/MUMPS/blob/main/docs/MUMPS_Primer.adoc",
+      "score": 29,
+      "by": "Rochus"
+    },
+    {
+      "title": "DLL that was not present in memory despite not being formally unloaded",
+      "url": "https://devblogs.microsoft.com/oldnewthing/20260625-00/?p=112467",
+      "score": 77,
+      "by": "ibobev"
+    },
+    {
+      "title": "The origins of the school system aimed to produce independent, critical thinkers",
+      "url": "https://www.cbc.ca/radio/ideas/humboldt-education-system-bildung-1.7172093",
+      "score": 62,
+      "by": "pseudolus"
+    },
+    {
+      "title": "Google limits Meta's use of its Gemini AI models",
+      "url": "https://www.cnbc.com/2026/06/28/google-limits-metas-use-of-its-gemini-ai-models-ft-reports.html",
+      "score": 73,
+      "by": "root-parent"
+    },
+    {
+      "title": "Bringing Swift to the Apple ][",
+      "url": "https://yeokhengmeng.com/2026/06/swift-on-apple-ii/",
+      "score": 29,
+      "by": "LucidLynx"
+    }
+  ],
+  "ai_news": [],
+  "developer_tools": [],
+  "arxiv_papers": [],
+  "huggingface_papers": []
+}

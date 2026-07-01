@@ -1,0 +1,100 @@
+{
+  "date": "2026-06-23",
+  "github_trending": [],
+  "hacker_news": [
+    {
+      "title": "Never Give Them Your Face",
+      "url": "https://nevergivethemyourface.com/",
+      "score": 526,
+      "by": "audiodude"
+    },
+    {
+      "title": "Pledging Another $400k to the Zig Software Foundation",
+      "url": "https://mitchellh.com/writing/zig-donation-2026",
+      "score": 469,
+      "by": "tosh"
+    },
+    {
+      "title": "Claude Code's \"extended thinking\" is a summary- not authentic thinking",
+      "url": "https://patrickmccanna.net/the-text-in-claude-codes-extended-thinking-output-is-not-authentic/",
+      "score": 136,
+      "by": "0o_MrPatrick_o0"
+    },
+    {
+      "title": "Moebius: 0.2B image inpainting model with 10B-level performance",
+      "url": "https://hustvl.github.io/Moebius/",
+      "score": 82,
+      "by": "DSemba"
+    },
+    {
+      "title": "Deno Desktop",
+      "url": "https://docs.deno.com/runtime/desktop/",
+      "score": 828,
+      "by": "GeneralMaximus"
+    },
+    {
+      "title": "Codex logging bug may write TBs to local SSDs",
+      "url": "https://github.com/openai/codex/issues/28224",
+      "score": 332,
+      "by": "vantareed"
+    },
+    {
+      "title": "GLM 5.2 vs. Opus",
+      "url": "https://techstackups.com/comparisons/glm-5.2-vs-opus/",
+      "score": 365,
+      "by": "ritzaco"
+    },
+    {
+      "title": "Die analysis of the 8087 math coprocessor's fast bit shifter (2020)",
+      "url": "https://www.righto.com/2020/05/die-analysis-of-8087-math-coprocessors.html",
+      "score": 34,
+      "by": "Jimmc414"
+    },
+    {
+      "title": "Nintendo Wii U games running from a 1980's Bernoulli disk [video]",
+      "url": "https://www.youtube.com/watch?v=8GZDOpV2OXk",
+      "score": 19,
+      "by": "zdw"
+    },
+    {
+      "title": "National Science Foundation slashes basic science to fund new tech initiative",
+      "url": "https://www.science.org/content/article/exclusive-nsf-slashes-research-programs-support-new-tech-initiative-insiders-say",
+      "score": 5,
+      "by": "strangeloops85"
+    },
+    {
+      "title": "Help I accidentally a wigglegram",
+      "url": "https://lmao.center/blog/wiggle-accidents/",
+      "score": 416,
+      "by": "gregsadetsky"
+    },
+    {
+      "title": "Granularity comes at a cost – Game Theory",
+      "url": "https://www.sidhantbansal.com/2026/Granularity-comes-at-a-cost/",
+      "score": 28,
+      "by": "sidhantbansal"
+    },
+    {
+      "title": "Did my old job only exist because of fraud?",
+      "url": "https://david.newgas.net/did-my-old-job-only-exist-because-of-fraud/",
+      "score": 757,
+      "by": "advisedwang"
+    },
+    {
+      "title": "DHL Set to Transport Goods on New Wind-Powered Cargo Ships",
+      "url": "https://www.wsj.com/pro/sustainable-business/dhl-set-to-transport-goods-on-new-wind-powered-cargo-ships-eca5d5a0",
+      "score": 63,
+      "by": "julienchastang"
+    },
+    {
+      "title": "Apertus – Open Foundation Model for Sovereign AI",
+      "url": "https://apertvs.ai/",
+      "score": 496,
+      "by": "T-A"
+    }
+  ],
+  "ai_news": [],
+  "developer_tools": [],
+  "arxiv_papers": [],
+  "huggingface_papers": []
+}
