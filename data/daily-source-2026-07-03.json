@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-03",
+  "hacker_news": [
+    {"id": 48747304, "title": "For first time, a cell built from scratch grows and divides", "url": "https://www.quantamagazine.org/for-the-first-time-a-cell-built-from-scratch-grows-and-divides-20260701/", "score": 904, "by": "defrost", "descendants": 281},
+    {"id": 48755965, "title": "Android Developer Verification: Threat masquerading as Protection", "url": "https://f-droid.org/2026/07/01/adv-malware.html", "score": 801, "by": "drewfax", "descendants": 321},
+    {"id": 48747116, "title": "FFmpeg 9.1's new AAC encoder", "url": "https://hydrogenaudio.org/index.php?topic=129691.0.html", "score": 323, "by": "ledoge", "descendants": 102},
+    {"id": 48758970, "title": "Why I'm Forced to Say Farewell: Google Management Has Lost Its Moral Compass", "url": "https://docs.google.com/document/d/1SH9QRTAlL02THgAN2AGmWe9El0_2ZJF6hhgDBx8k97c/edit?tab=t.0", "score": 308, "by": "vrganj", "descendants": 221},
+    {"id": 48753715, "title": "ZCode – Harness for GLM-5.2", "url": "https://zcode.z.ai/en", "score": 273, "by": "chvid", "descendants": 236},
+    {"id": 48750710, "title": "What to learn to be a graphics programmer", "url": "https://blog.demofox.org/2026/07/01/what-to-learn-to-be-a-graphics-programmer/", "score": 270, "by": "atan2", "descendants": 149},
+    {"id": 48746914, "title": "Monetization Gateway: Charge for any resource behind Cloudflare via x402", "url": "https://blog.cloudflare.com/monetization-gateway/", "score": 269, "by": "soheilpro", "descendants": 184},
+    {"id": 48758309, "title": "Google loses fight over record $4.7B EU antitrust fine", "url": "https://www.cnbc.com/2026/07/02/alphabet-google-android-eu-antitrust-fine-4-1-billion-euro-appeal.html", "score": 257, "by": "boshomi", "descendants": 195},
+    {"id": 48755731, "title": "Bring back crappy forums", "url": "https://tedium.co/2026/07/01/online-web-forums-retrospective/", "score": 232, "by": "pentagrama", "descendants": 139},
+    {"id": 48756602, "title": "Kimi K2.7 Code is generally available in GitHub Copilot", "url": "https://github.blog/changelog/2026-07-01-kimi-k2-7-is-now-available-in-github-copilot/", "score": 202, "by": "unliftedq", "descendants": 91},
+    {"id": 48747976, "title": "Ask HN: Who is hiring? (July 2026)", "url": "https://news.ycombinator.com/item?id=48747976", "score": 171, "by": "whoishiring", "descendants": 187},
+    {"id": 48759761, "title": "Vite+ Beta", "url": "https://voidzero.dev/posts/announcing-vite-plus-beta", "score": 170, "by": "Erenay09", "descendants": 98},
+    {"id": 48753069, "title": "Qualcomm Linux 2.0", "url": "https://www.qualcomm.com/developer/blog/2026/06/qualcomm-linux-2-now-available", "score": 124, "by": "gilgamesh3", "descendants": 64},
+    {"id": 48750989, "title": "Weave Robotics launches Isaac 1, a $7,999 home robot with Fall 2026 deliveries", "url": "https://www.weaverobotics.com/isaac-1", "score": 117, "by": "ryanmerket", "descendants": 156},
+    {"id": 48755005, "title": "Building an Open-Source Robot Vacuum – Meet Oomwoo", "url": "https://makerspet.com/blog/building-an-open-source-robot-vacuum-meet-oomwoo/", "score": 94, "by": "devicelimit", "descendants": 10}
+  ]
+}
