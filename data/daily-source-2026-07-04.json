@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-04",
+  "hacker_news": [
+    {"id": 48767347, "title": "Virginia bans sale of geolocation data", "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/virginia-bans-sale-of-geolocation-data", "score": 740, "by": "toomuchtodo", "descendants": 120},
+    {"id": 48759634, "title": "PeerTube is a free, decentralized and federated video platform", "url": "https://github.com/Chocobozzz/PeerTube", "score": 642, "by": "doener", "descendants": 322},
+    {"id": 48762098, "title": "Podman v6.0.0", "url": "https://blog.podman.io/2026/07/introducing-podman-v6-0-0/", "score": 610, "by": "soheilpro", "descendants": 239},
+    {"id": 48761944, "title": "Immich 3.0", "url": "https://github.com/immich-app/immich/discussions/29439", "score": 556, "by": "hashier", "descendants": 269},
+    {"id": 48770647, "title": "Why Switzerland has 25 gbit internet and America doesn't", "url": "https://stefan.schueller.net/posts/the-free-market-lie/", "score": 453, "by": "talonx", "descendants": 285},
+    {"id": 48763035, "title": "Since Linux 6.9, LUKS suspend stopped wiping disk-encryption keys from memory", "url": "https://mathstodon.xyz/@iblech/116769502749142438", "score": 453, "by": "IngoBlechschmid", "descendants": 200},
+    {"id": 48768992, "title": "An American Privacy Emergency", "url": "https://scottaaronson.blog/?p=9902", "score": 368, "by": "flowercalled", "descendants": 118},
+    {"id": 48769397, "title": "CarPlay Is Additive", "url": "https://www.caseyliss.com/2026/7/2/carplay-is-additive-you-dolts", "score": 354, "by": "sprawl_", "descendants": 469},
+    {"id": 48768464, "title": "crustc: entirety of `rustc`, translated to C", "url": "https://github.com/FractalFir/crustc", "score": 302, "by": "Philpax", "descendants": 59},
+    {"id": 48702874, "title": "Reality has a surprising amount of detail (2017)", "url": "https://johnsalvatier.org/blog/2017/reality-has-a-surprising-amount-of-detail", "score": 286, "by": "vinhnx", "descendants": 107},
+    {"id": 48765663, "title": "Exapunks (2018)", "url": "https://www.zachtronics.com/exapunks/", "score": 276, "by": "yu3zhou4", "descendants": 93},
+    {"id": 48768951, "title": "Right to Local Intelligence", "url": "https://righttointelligence.org/", "score": 210, "by": "thoughtpeddler", "descendants": 71},
+    {"id": 48739459, "title": "Superpowers 6", "url": "https://blog.fsck.com/2026/06/15/Superpowers-6/", "score": 178, "by": "seahorseemoji", "descendants": 73},
+    {"id": 48765639, "title": "Postgres transactions are a distributed systems superpower", "url": "https://www.dbos.dev/blog/co-locating-workflow-state-with-your-data", "score": 169, "by": "KraftyOne", "descendants": 68},
+    {"id": 48766209, "title": "EFF letter to FTC on X consent order [pdf]", "url": "https://www.eff.org/deeplinks/2026/06/eff-and-allies-xs-ftc-petition-waive-privacy-violation-order-should-be-rejected", "score": 147, "by": "Terretta", "descendants": 75}
+  ]
+}
