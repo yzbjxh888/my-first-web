@@ -1,20 +1,125 @@
 {
   "date": "2026-07-05",
   "hacker_news": [
-    {"id": 48772388, "title": "Half-Baked Product", "url": "https://weli.dev/blog/half-baked-product/", "score": 1192, "by": "weli", "descendants": 367},
-    {"id": 48774518, "title": "Valve open-source the Steam Machine e-ink screen so you can make your own", "url": "https://www.gamingonlinux.com/2026/07/valve-open-source-the-steam-machine-e-ink-screen-so-you-can-make-your-own/", "score": 531, "by": "ahlCVA", "descendants": 99},
-    {"id": 48779683, "title": "Espionage Against the European Parliament", "url": "https://citizenlab.ca/research/member-of-committee-investigating-spyware-hacked-with-pegasus/", "score": 412, "by": "ledoge", "descendants": 123},
-    {"id": 48772573, "title": "Wordgard: In-browser rich-text editor from the creator of ProseMirror", "url": "https://wordgard.net/", "score": 319, "by": "indy", "descendants": 104},
-    {"id": 48776044, "title": "Costco is the anti-Amazon", "url": "https://phenomenalworld.org/analysis/the-anti-amazon/", "score": 281, "by": "bookofjoe", "descendants": 262},
-    {"id": 48776464, "title": "60% Fable cost cut by converting code to images and having the model OCR it", "url": "https://github.com/teamchong/pxpipe", "score": 262, "by": "dimitropoulos", "descendants": 89},
-    {"id": 48775921, "title": "Jamesob's guide to running SOTA LLMs locally", "url": "https://github.com/jamesob/local-llm", "score": 245, "by": "livestyle", "descendants": 117},
-    {"id": 48777832, "title": "Holes", "url": "https://xkcd.com/3266/large/", "score": 214, "by": "caminanteblanco", "descendants": 37},
-    {"id": 48699010, "title": "A peek into Reddit's anti-spam internals", "url": "https://lyra.horse/blog/2026/06/reddit-spam-internals/", "score": 181, "by": "OuterVale", "descendants": 71},
-    {"id": 48776035, "title": "Factories are just rooms", "url": "https://interconnected.org/home/2026/07/03/factories", "score": 172, "by": "arbesman", "descendants": 71},
-    {"id": 48774509, "title": "PostgreSQL and the OOM killer: Why we use strict memory overcommit", "url": "https://www.ubicloud.com/blog/postgresql-and-the-oom-killer-why-we-use-strict-memory-overcommit", "score": 167, "by": "furkansahin", "descendants": 95},
-    {"id": 48774492, "title": "The Fall and Rise of Screwworm", "url": "https://www.construction-physics.com/p/the-fall-and-rise-of-screwworm", "score": 151, "by": "crescit\\_eundo", "descendants": 64},
-    {"id": 48766242, "title": "Show HN: Bramble – Local-first password manager", "url": "https://github.com/flythenimbus/bramble", "score": 111, "by": "MegagramEnjoyer", "descendants": 25},
-    {"id": 48763291, "title": "Flexible metaprogramming with Rhombus", "url": "https://lwn.net/SubscriberLink/1079001/67840550991151ed/", "score": 110, "by": "spdegabrielle", "descendants": 4},
-    {"id": 48780056, "title": "New serious vulnerabilities spiked around release of Claude Mythos Preview", "url": "https://epoch.ai/data-insights/cve-severity-spike", "score": 74, "by": "cubefox", "descendants": 20}
+    {
+      "by": "weli",
+      "descendants": 367,
+      "id": 48772388,
+      "score": 1192,
+      "title": "Half-Baked Product",
+      "url": "https://weli.dev/blog/half-baked-product/"
+    },
+    {
+      "by": "ahlCVA",
+      "descendants": 99,
+      "id": 48774518,
+      "score": 531,
+      "title": "Valve open-source the Steam Machine e-ink screen so you can make your own",
+      "url": "https://www.gamingonlinux.com/2026/07/valve-open-source-the-steam-machine-e-ink-screen-so-you-can-make-your-own/"
+    },
+    {
+      "by": "ledoge",
+      "descendants": 123,
+      "id": 48779683,
+      "score": 412,
+      "title": "Espionage Against the European Parliament",
+      "url": "https://citizenlab.ca/research/member-of-committee-investigating-spyware-hacked-with-pegasus/"
+    },
+    {
+      "by": "indy",
+      "descendants": 104,
+      "id": 48772573,
+      "score": 319,
+      "title": "Wordgard: In-browser rich-text editor from the creator of ProseMirror",
+      "url": "https://wordgard.net/"
+    },
+    {
+      "by": "bookofjoe",
+      "descendants": 262,
+      "id": 48776044,
+      "score": 281,
+      "title": "Costco is the anti-Amazon",
+      "url": "https://phenomenalworld.org/analysis/the-anti-amazon/"
+    },
+    {
+      "by": "dimitropoulos",
+      "descendants": 89,
+      "id": 48776464,
+      "score": 262,
+      "title": "60% Fable cost cut by converting code to images and having the model OCR it",
+      "url": "https://github.com/teamchong/pxpipe"
+    },
+    {
+      "by": "livestyle",
+      "descendants": 117,
+      "id": 48775921,
+      "score": 245,
+      "title": "Jamesob's guide to running SOTA LLMs locally",
+      "url": "https://github.com/jamesob/local-llm"
+    },
+    {
+      "by": "peterparker204",
+      "descendants": 28,
+      "id": 48730953,
+      "score": 234,
+      "title": "Hunting a 16-year-old SQLite WAL bug with TLA+",
+      "url": "https://ubuntu.com/blog/hunting-a-16-year-old-sqlite-bug-with-tla-is-dqlite-affected"
+    },
+    {
+      "by": "caminanteblanco",
+      "descendants": 37,
+      "id": 48777832,
+      "score": 214,
+      "title": "Holes",
+      "url": "https://xkcd.com/3266/large/"
+    },
+    {
+      "by": "OuterVale",
+      "descendants": 71,
+      "id": 48699010,
+      "score": 181,
+      "title": "A peek into Reddit's anti-spam internals",
+      "url": "https://lyra.horse/blog/2026/06/reddit-spam-internals/"
+    },
+    {
+      "by": "arbesman",
+      "descendants": 71,
+      "id": 48776035,
+      "score": 172,
+      "title": "Factories are just rooms",
+      "url": "https://interconnected.org/home/2026/07/03/factories"
+    },
+    {
+      "by": "furkansahin",
+      "descendants": 95,
+      "id": 48774509,
+      "score": 167,
+      "title": "PostgreSQL and the OOM killer: Why we use strict memory overcommit",
+      "url": "https://www.ubicloud.com/blog/postgresql-and-the-oom-killer-why-we-use-strict-memory-overcommit"
+    },
+    {
+      "by": "crescit_eundo",
+      "descendants": 64,
+      "id": 48774492,
+      "score": 151,
+      "title": "The Fall and Rise of Screwworm",
+      "url": "https://www.construction-physics.com/p/the-fall-and-rise-of-screwworm"
+    },
+    {
+      "by": "MegagramEnjoyer",
+      "descendants": 25,
+      "id": 48766242,
+      "score": 111,
+      "title": "Show HN: Bramble – Local-first password manager",
+      "url": "https://github.com/flythenimbus/bramble"
+    },
+    {
+      "by": "spdegabrielle",
+      "descendants": 4,
+      "id": 48763291,
+      "score": 110,
+      "title": "Flexible metaprogramming with Rhombus",
+      "url": "https://lwn.net/SubscriberLink/1079001/67840550991151ed/"
+    }
   ]
 }

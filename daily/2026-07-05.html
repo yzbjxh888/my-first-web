@@ -3,170 +3,125 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>每日技术日报 — 2026-07-05</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    .section { margin-bottom: 2rem; }
-    .section h2 { font-size: 1.25rem; margin-bottom: 1rem; padding-bottom: 0.25rem; border-bottom: 2px solid var(--border, #e2e8f0); }
-    .entry-header { display: flex; align-items: baseline; gap: 0.5rem; flex-wrap: nowrap; }
-    .entry-header .stars { flex-shrink: 0; min-width: 4.5em; text-align: right; }
-    .entry-header h3 { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin: 0; font-size: 0.95rem; font-weight: 600; }
-    .entry-header h3 a { color: var(--link, #2563eb); text-decoration: none; }
-    .entry-header h3 a:hover { text-decoration: underline; }
-    .entry-header .tag { margin-left: auto; flex-shrink: 0; display: inline-block; padding: 0.1rem 0.45rem; font-size: 0.7rem; font-weight: 600; border-radius: 4px; background: var(--tag-bg, #e2e8f0); color: var(--tag-fg, #475569); }
-    .entry-summary { margin-top: 0.25rem; font-size: 0.78rem; color: var(--text-muted, #64748b); }
-    .card-content + .card-content { border-top: 1px solid var(--border, #e2e8f0); padding-top: 0.75rem; margin-top: 0.75rem; }
-    .card-content:first-of-type { margin-top: 0; }
-    .tag-ai { background: #dbeafe; color: #1d4ed8; }
-    .tag-oss { background: #dcfce7; color: #15803d; }
-    .tag-tech { background: #f3e8ff; color: #7c3aed; }
-    .footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border, #e2e8f0); font-size: 0.75rem; color: var(--text-muted, #94a3b8); }
-  </style>
+  <title>2026-07-05 日报 | Hermes Agent</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>📰 每日技术日报</h1>
-      <p class="subtitle">2026-07-05 · 数据来源：Hacker News</p>
-    </header>
-
-    <main>
-      <div class="section">
-        <h2>🤖 AI 前沿</h2>
-        <div class="card"><div class="card-content">
-          <div class="entry-header">
-            <span class="stars">⭐⭐⭐</span>
-            <h3><a href="https://github.com/jamesob/local-llm">Jamesob's guide to running SOTA LLMs locally</a></h3>
-            <span class="tag tag-ai">AI</span>
-          </div>
-          <p class="entry-summary">🔥 热度 245 点，社区关注度高</p>
-        </div></div>
-        <div class="card"><div class="card-content">
-          <div class="entry-header">
-            <span class="stars">⭐</span>
-            <h3><a href="https://epoch.ai/data-insights/cve-severity-spike">New serious vulnerabilities spiked around release of Claude Mythos Preview</a></h3>
-            <span class="tag tag-ai">AI</span>
-          </div>
-          <p class="entry-summary">👍 热度 74 点，社区讨论正在升温</p>
-        </div></div>
-      </div>
-
-      <div class="section">
+  <div class="app-container">
+    <aside class="sidebar">
+      <div class="sidebar-brand">HERMES</div>
+      <nav class="sidebar-nav">
+        <a href="../index.html" class="nav-item"><span class="icon">📊</span>仪表板</a>
+        <a href="../daily/index.html" class="nav-item active"><span class="icon">📰</span>日报</a>
+        <a href="../skills.html" class="nav-item"><span class="icon">🛠️</span>技能</a>
+        <a href="../tools.html" class="nav-item"><span class="icon">🔧</span>工具</a>
+        <a href="../personal/about.html" class="nav-item"><span class="icon">👤</span>关于</a>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <header>
+        <h1>2026年07月05日 技术日报</h1>
+        <p class="subtitle">探索 AI 与开发者生态的最前沿</p>
+      </header>
+      <section class="card">
         <h2>🔥 开源项目</h2>
-        <div class="card"><div class="card-content">
+        <div class="card-content">
           <div class="entry-header">
-            <span class="stars">⭐⭐⭐</span>
-            <h3><a href="https://github.com/teamchong/pxpipe">60% Fable cost cut by converting code to images and having the model OCR it</a></h3>
-            <span class="tag tag-oss">OSS</span>
+            <span class="stars">⭐⭐⭐</span>            <h3><a href="https://github.com/teamchong/pxpipe" target="_blank" rel="noopener noreferrer">60% Fable cost cut by converting code to images and having the model OCR it</a></h3>            <span class="tag">开源</span>
           </div>
           <p class="entry-summary">🔥 热度 262 点，社区关注度高</p>
-        </div></div>
-        <div class="card"><div class="card-content">
+        </div>
+        <div class="card-content">
           <div class="entry-header">
-            <span class="stars">⭐⭐</span>
-            <h3><a href="https://github.com/flythenimbus/bramble">Show HN: Bramble – Local-first password manager</a></h3>
-            <span class="tag tag-oss">OSS</span>
+            <span class="stars">⭐⭐⭐</span>            <h3><a href="https://github.com/jamesob/local-llm" target="_blank" rel="noopener noreferrer">Jamesob's guide to running SOTA LLMs locally</a></h3>            <span class="tag">开源</span>
+          </div>
+          <p class="entry-summary">🔥 热度 245 点，社区关注度高</p>
+        </div>
+        <div class="card-content">
+          <div class="entry-header">
+            <span class="stars">⭐⭐</span>            <h3><a href="https://github.com/flythenimbus/bramble" target="_blank" rel="noopener noreferrer">Show HN: Bramble – Local-first password manager</a></h3>            <span class="tag">开源</span>
           </div>
           <p class="entry-summary">👍 热度 111 点，社区讨论正在升温</p>
-        </div></div>
-      </div>
-
-      <div class="section">
+        </div>
+      </section>
+      <section class="card">
         <h2>💡 技术洞见</h2>
-        <div class="card"><div class="card-content">
+        <div class="card-content">
           <div class="entry-header">
-            <span class="stars">⭐⭐⭐⭐⭐</span>
-            <h3><a href="https://weli.dev/blog/half-baked-product/">Half-Baked Product</a></h3>
-            <span class="tag tag-tech">Tech</span>
+            <span class="stars">⭐⭐⭐⭐⭐</span>            <h3><a href="https://weli.dev/blog/half-baked-product/" target="_blank" rel="noopener noreferrer">Half-Baked Product</a></h3>            <span class="tag">技术</span>
           </div>
           <p class="entry-summary">🔥 热度 1192 点，社区讨论极为活跃</p>
-        </div></div>
-        <div class="card"><div class="card-content">
+        </div>
+        <div class="card-content">
           <div class="entry-header">
-            <span class="stars">⭐⭐⭐⭐</span>
-            <h3><a href="https://www.gamingonlinux.com/2026/07/valve-open-source-the-steam-machine-e-ink-screen-so-you-can-make-your-own/">Valve open-source the Steam Machine e-ink screen so you can make your own</a></h3>
-            <span class="tag tag-tech">Tech</span>
+            <span class="stars">⭐⭐⭐⭐</span>            <h3><a href="https://www.gamingonlinux.com/2026/07/valve-open-source-the-steam-machine-e-ink-screen-so-you-can-make-your-own/" target="_blank" rel="noopener noreferrer">Valve open-source the Steam Machine e-ink screen so you can make your own</a></h3>            <span class="tag">技术</span>
           </div>
           <p class="entry-summary">🔥 热度 531 点，社区讨论极为活跃</p>
-        </div></div>
-        <div class="card"><div class="card-content">
+        </div>
+        <div class="card-content">
           <div class="entry-header">
-            <span class="stars">⭐⭐⭐</span>
-            <h3><a href="https://citizenlab.ca/research/member-of-committee-investigating-spyware-hacked-with-pegasus/">Espionage Against the European Parliament</a></h3>
-            <span class="tag tag-tech">Tech</span>
+            <span class="stars">⭐⭐⭐</span>            <h3><a href="https://citizenlab.ca/research/member-of-committee-investigating-spyware-hacked-with-pegasus/" target="_blank" rel="noopener noreferrer">Espionage Against the European Parliament</a></h3>            <span class="tag">技术</span>
           </div>
           <p class="entry-summary">🔥 热度 412 点，社区关注度高</p>
-        </div></div>
-        <div class="card"><div class="card-content">
+        </div>
+        <div class="card-content">
           <div class="entry-header">
-            <span class="stars">⭐⭐⭐</span>
-            <h3><a href="https://wordgard.net/">Wordgard: In-browser rich-text editor from the creator of ProseMirror</a></h3>
-            <span class="tag tag-tech">Tech</span>
+            <span class="stars">⭐⭐⭐</span>            <h3><a href="https://wordgard.net/" target="_blank" rel="noopener noreferrer">Wordgard: In-browser rich-text editor from the creator of ProseMirror</a></h3>            <span class="tag">技术</span>
           </div>
           <p class="entry-summary">🔥 热度 319 点，社区关注度高</p>
-        </div></div>
-        <div class="card"><div class="card-content">
+        </div>
+        <div class="card-content">
           <div class="entry-header">
-            <span class="stars">⭐⭐⭐</span>
-            <h3><a href="https://phenomenalworld.org/analysis/the-anti-amazon/">Costco is the anti-Amazon</a></h3>
-            <span class="tag tag-tech">Tech</span>
+            <span class="stars">⭐⭐⭐</span>            <h3><a href="https://phenomenalworld.org/analysis/the-anti-amazon/" target="_blank" rel="noopener noreferrer">Costco is the anti-Amazon</a></h3>            <span class="tag">技术</span>
           </div>
           <p class="entry-summary">🔥 热度 281 点，社区关注度高</p>
-        </div></div>
-        <div class="card"><div class="card-content">
+        </div>
+        <div class="card-content">
           <div class="entry-header">
-            <span class="stars">⭐⭐⭐</span>
-            <h3><a href="https://xkcd.com/3266/large/">Holes (xkcd)</a></h3>
-            <span class="tag tag-tech">Tech</span>
+            <span class="stars">⭐⭐⭐</span>            <h3><a href="https://ubuntu.com/blog/hunting-a-16-year-old-sqlite-bug-with-tla-is-dqlite-affected" target="_blank" rel="noopener noreferrer">Hunting a 16-year-old SQLite WAL bug with TLA+</a></h3>            <span class="tag">技术</span>
+          </div>
+          <p class="entry-summary">🔥 热度 234 点，社区关注度高</p>
+        </div>
+        <div class="card-content">
+          <div class="entry-header">
+            <span class="stars">⭐⭐⭐</span>            <h3><a href="https://xkcd.com/3266/large/" target="_blank" rel="noopener noreferrer">Holes</a></h3>            <span class="tag">技术</span>
           </div>
           <p class="entry-summary">🔥 热度 214 点，社区关注度高</p>
-        </div></div>
-        <div class="card"><div class="card-content">
+        </div>
+        <div class="card-content">
           <div class="entry-header">
-            <span class="stars">⭐⭐</span>
-            <h3><a href="https://lyra.horse/blog/2026/06/reddit-spam-internals/">A peek into Reddit's anti-spam internals</a></h3>
-            <span class="tag tag-tech">Tech</span>
+            <span class="stars">⭐⭐</span>            <h3><a href="https://lyra.horse/blog/2026/06/reddit-spam-internals/" target="_blank" rel="noopener noreferrer">A peek into Reddit's anti-spam internals</a></h3>            <span class="tag">技术</span>
           </div>
           <p class="entry-summary">👍 热度 181 点，社区讨论正在升温</p>
-        </div></div>
-        <div class="card"><div class="card-content">
+        </div>
+        <div class="card-content">
           <div class="entry-header">
-            <span class="stars">⭐⭐</span>
-            <h3><a href="https://interconnected.org/home/2026/07/03/factories">Factories are just rooms</a></h3>
-            <span class="tag tag-tech">Tech</span>
+            <span class="stars">⭐⭐</span>            <h3><a href="https://interconnected.org/home/2026/07/03/factories" target="_blank" rel="noopener noreferrer">Factories are just rooms</a></h3>            <span class="tag">技术</span>
           </div>
           <p class="entry-summary">👍 热度 172 点，社区讨论正在升温</p>
-        </div></div>
-        <div class="card"><div class="card-content">
+        </div>
+        <div class="card-content">
           <div class="entry-header">
-            <span class="stars">⭐⭐</span>
-            <h3><a href="https://www.ubicloud.com/blog/postgresql-and-the-oom-killer-why-we-use-strict-memory-overcommit">PostgreSQL and the OOM killer: Why we use strict memory overcommit</a></h3>
-            <span class="tag tag-tech">Tech</span>
+            <span class="stars">⭐⭐</span>            <h3><a href="https://www.ubicloud.com/blog/postgresql-and-the-oom-killer-why-we-use-strict-memory-overcommit" target="_blank" rel="noopener noreferrer">PostgreSQL and the OOM killer: Why we use strict memory overcommit</a></h3>            <span class="tag">技术</span>
           </div>
           <p class="entry-summary">👍 热度 167 点，社区讨论正在升温</p>
-        </div></div>
-        <div class="card"><div class="card-content">
+        </div>
+        <div class="card-content">
           <div class="entry-header">
-            <span class="stars">⭐⭐</span>
-            <h3><a href="https://www.construction-physics.com/p/the-fall-and-rise-of-screwworm">The Fall and Rise of Screwworm</a></h3>
-            <span class="tag tag-tech">Tech</span>
+            <span class="stars">⭐⭐</span>            <h3><a href="https://www.construction-physics.com/p/the-fall-and-rise-of-screwworm" target="_blank" rel="noopener noreferrer">The Fall and Rise of Screwworm</a></h3>            <span class="tag">技术</span>
           </div>
           <p class="entry-summary">👍 热度 151 点，社区讨论正在升温</p>
-        </div></div>
-        <div class="card"><div class="card-content">
+        </div>
+        <div class="card-content">
           <div class="entry-header">
-            <span class="stars">⭐⭐</span>
-            <h3><a href="https://lwn.net/SubscriberLink/1079001/67840550991151ed/">Flexible metaprogramming with Rhombus</a></h3>
-            <span class="tag tag-tech">Tech</span>
+            <span class="stars">⭐⭐</span>            <h3><a href="https://lwn.net/SubscriberLink/1079001/67840550991151ed/" target="_blank" rel="noopener noreferrer">Flexible metaprogramming with Rhombus</a></h3>            <span class="tag">技术</span>
           </div>
           <p class="entry-summary">👍 热度 110 点，社区讨论正在升温</p>
-        </div></div>
-      </div>
+        </div>
+      </section>
     </main>
-
-    <footer class="footer">
-      <p>📡 数据采集于 2026-07-05 · 由 Hermes Agent 自动生成 · 共 15 条</p>
-    </footer>
   </div>
 </body>
 </html>
