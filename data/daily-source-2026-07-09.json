@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-09",
+  "hacker_news": [
+    {"id": 48829312, "title": "Decoding the obfuscated bash script on a Uniqlo t-shirt", "url": "https://tris.sherliker.net/blog/obfuscated-self-evaluating-bash-script-by-cdn-akamai-being-supplied-to-consumers-via-retail-stores/", "score": 912, "by": "speerer"},
+    {"id": 48818311, "title": "Chat Control 1.0 and 2.0 Explained", "url": "https://fightchatcontrol.eu/chat-control-overview", "score": 323, "by": "gasull"},
+    {"id": 48780387, "title": "EVE Online's Carbon engine is now open source: Fenris Creations explains why", "url": "https://www.gamesindustry.biz/eve-onlines-carbon-engine-is-now-open-source-fenris-creations-explains-why", "score": 241, "by": "Stevvo"},
+    {"id": 48825749, "title": "Tenda firmware (multiple versions) contains hidden authentication backdoor", "url": "https://kb.cert.org/vuls/id/213560", "score": 241, "by": "miniBill"},
+    {"id": 48830565, "title": "Apple to increase spend with Broadcom to produce billions more U.S. chips", "url": "https://www.apple.com/newsroom/2026/07/apple-to-increase-spend-with-broadcom-to-produce-billions-more-us-chips/", "score": 193, "by": "soheilpro"},
+    {"id": 48821848, "title": "Show HN: Davit, a Apple Containers UI", "url": "https://davit.app", "score": 180, "by": "xinit"},
+    {"id": 48831785, "title": "US Food and Drug Administration rejects petition to set PFAS limits in food", "url": "https://www.theguardian.com/us-news/2026/jul/08/us-food-and-drug-administration-rejects-petition-to-set-pfas-limits-in-food", "score": 164, "by": "randycupertino"},
+    {"id": 48825664, "title": "Structure and Interpretation of Computer Programs Video Lectures (1986)", "url": "https://ocw.mit.edu/courses/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video_galleries/video-lectures/", "score": 145, "by": "gjvc"},
+    {"id": 48832212, "title": "Mistral's Robostral Navigate: a state of the art robotics navigation model", "url": "https://mistral.ai/news/robostral-navigate/", "score": 132, "by": "ottomengis"},
+    {"id": 48827092, "title": "Copy That Floppy – Cambridge guide for preserving data from fragile floppy disks", "url": "https://www.digipres.org/the-floppy-guide/", "score": 126, "by": "whiteblossom"},
+    {"id": 48819308, "title": "Why we built yet another Postgres connection pooler", "url": "https://pgdog.dev/blog/why-yet-another-connection-pooler", "score": 125, "by": "levkk"},
+    {"id": 48831565, "title": "Cloudflare Meerkat - Globally distributed consensus", "url": "https://blog.cloudflare.com/meerkat-introduction/", "score": 102, "by": "bobnamob"},
+    {"id": 48831658, "title": "OpenBSD has a use-after-free allowing local privilege escalation to root", "url": "https://nvd.nist.gov/vuln/detail/cve-2026-57589", "score": 99, "by": "linggen"},
+    {"id": 48826329, "title": "LineageOS Statistics", "url": "https://stats.lineageos.org", "score": 95, "by": "pentagrama"},
+    {"id": 48827858, "title": "GitLost: We Tricked GitHub's AI Agent into Leaking Private Repos", "url": "https://noma.security/blog/gitlost-how-we-tricked-githubs-ai-agent-into-leaking-private-repos/", "score": 88, "by": "ColinEberhardt"}
+  ]
+}
