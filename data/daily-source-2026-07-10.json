@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-10",
+  "hacker_news": [
+    {"id": 48829312, "title": "Decoding the obfuscated bash script on a Uniqlo t-shirt", "url": "https://tris.sherliker.net/blog/obfuscated-self-evaluating-bash-script-by-cdn-akamai-being-supplied-to-consumers-via-retail-stores/", "score": 912, "by": "speerer"},
+    {"id": 48835111, "title": "Grok 4.5", "url": "https://x.ai/news/grok-4-5", "score": 531, "by": "BoumTAC"},
+    {"id": 48834405, "title": "GPT‑Live", "url": "https://openai.com/index/introducing-gpt-live/", "score": 519, "by": "logickkk1"},
+    {"id": 48833715, "title": "TypeScript 7", "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-7-0/", "score": 492, "by": "DanRosenwasser"},
+    {"id": 48836233, "title": "Cloudflare Drop", "url": "https://www.cloudflare.com/drop/", "score": 339, "by": "coloneltcb"},
+    {"id": 48837877, "title": "Rewriting Bun in Rust", "url": "https://bun.com/blog/bun-in-rust", "score": 339, "by": "afturner"},
+    {"id": 48838876, "title": "John Deere owners will get the right to repair equipment under FTC settlement", "url": "https://apnews.com/article/john-deere-right-to-repair-agriculture-equipment-cb7514ffedb95c130a976af661f2bc02", "score": 332, "by": "djoldman"},
+    {"id": 48831565, "title": "Cloudflare Meerkat - Globally distributed consensus", "url": "https://blog.cloudflare.com/meerkat-introduction/", "score": 228, "by": "bobnamob"},
+    {"id": 48837396, "title": "Separating signal from noise in coding evaluations", "url": "https://openai.com/index/separating-signal-from-noise-coding-evaluations/", "score": 216, "by": "sk4rekr0w"},
+    {"id": 48832212, "title": "Mistral's Robostral Navigate: a state of the art robotics navigation model", "url": "https://mistral.ai/news/robostral-navigate/", "score": 132, "by": "ottomengis"},
+    {"id": 48834924, "title": "Show HN: Microsoft releases Flint, a visualization language for AI agents", "url": "https://microsoft.github.io/flint-chart/#/", "score": 127, "by": "chenglong-hn"},
+    {"id": 48838772, "title": "We made Grok 4.5, GPT-5.5, and Claude build the same apps", "url": "https://www.tryai.dev/blog/grok-4.5-vs-gpt-5.5-vs-claude-build-off", "score": 116, "by": "hershyb_"},
+    {"id": 48833116, "title": "Chatto is now Open Source", "url": "https://www.hmans.dev/blog/chatto-is-open-source", "score": 79, "by": "speckx"},
+    {"id": 48831587, "title": "A bug which affected only left handed users", "url": "https://shkspr.mobi/blog/2026/07/a-bug-which-only-affected-left-handed-users/", "score": 74, "by": "sixhobbits"},
+    {"id": 48836778, "title": "FAANG Simulator", "url": "https://www.abeyk.com/escape-the-rat-race/", "score": 70, "by": "nerdbiscuits"}
+  ]
+}
