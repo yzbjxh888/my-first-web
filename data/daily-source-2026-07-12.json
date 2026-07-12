@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-12",
+  "hacker_news": [
+    {"id": 48849066, "title": "GPT-5.6", "score": 1463, "by": "logickkk1", "url": "https://openai.com/index/gpt-5-6/"},
+    {"id": 48843923, "title": "EU Parliament greenlights Chat Control 1.0", "score": 1417, "by": "rapnie", "url": "https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out/"},
+    {"id": 48845049, "title": "Show HN: 18 Words", "score": 1007, "by": "pompomsheep", "url": "https://18words.com/"},
+    {"id": 48841676, "title": "Postgres rewritten in Rust, now passing 100% of the Postgres regression tests", "score": 769, "by": "SweetSoftPillow", "url": "https://github.com/malisper/pgrust"},
+    {"id": 48842459, "title": "Show HN: Getting GLM 5.2 running on my slow computer", "score": 706, "by": "vforno", "url": "https://github.com/JustVugg/colibri"},
+    {"id": 48792383, "title": "Train sim created by just one person is being called the best ever made", "score": 628, "by": "oumua_don17", "url": "https://kotaku.com/a-train-sim-created-by-just-one-person-is-being-called-the-best-ever-made-2000699429"},
+    {"id": 48847552, "title": "Hy3", "score": 502, "by": "andai", "url": "https://hy.tencent.com/research/hy3"},
+    {"id": 48845442, "title": "The glass backbone: Why the Army\u2019s logistics will break in the next war", "score": 438, "by": "baud147258", "url": "https://mwi.westpoint.edu/the-glass-backbone-why-the-armys-logistics-will-break-in-the-next-war/"},
+    {"id": 48803004, "title": "Buried Apple feature turns an iPhone into the perfect kids\u2019 dumb phone", "score": 377, "by": "PotatoNinja", "url": "https://www.wired.com/story/this-buried-apple-feature-turns-an-iphone-into-the-perfect-kids-dumb-phone/"},
+    {"id": 48838876, "title": "John Deere owners will get the right to repair equipment under FTC settlement", "score": 332, "by": "djoldman", "url": "https://apnews.com/article/john-deere-right-to-repair-agriculture-equipment-cb7514ffedb95c130a976af6612fbc02"},
+    {"id": 48846184, "title": "Muse Spark 1.1", "score": 317, "by": "ot", "url": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/"},
+    {"id": 48846281, "title": "No leap second will be introduced at the end of December 2026", "score": 307, "by": "ChrisArchitect", "url": "https://datacenter.iers.org/data/latestVersion/bulletinC.txt"},
+    {"id": 48845209, "title": "A road to Lisp: Why Lisp", "score": 288, "by": "silcoon", "url": "https://scotto.me/blog/2026-07-09-why-lisp/"},
+    {"id": 48853091, "title": "Why American ambulance rides are so expensive", "score": 279, "by": "jyunwai", "url": "https://davidoks.blog/p/why-american-ambulance-rides-are"},
+    {"id": 48849292, "title": "Interview with Mitchell Hashimoto about Ghostty and Zig", "score": 276, "by": "veqq", "url": "https://alexalejandre.com/programming/interview-with-mitchell-hashimoto/"}
+  ]
+}
