@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-14",
+  "hacker_news": [
+    {"id": 48889637, "title": "Zig Creator Calls Spade a Spade, Anthropic Blows Smoke", "url": "https://raymyers.org/post/zed-creator-calls-spade-a-spade/", "score": 1134, "by": "crowdhailer"},
+    {"id": 48886741, "title": "Ask HN: Add flag for AI-generated articles", "url": null, "score": 927, "by": "levkk"},
+    {"id": 48888331, "title": "The Graph That Should Be Front-Page News", "url": "https://www.lyrebirddreaming.com/post/the-graph-that-should-be-front-page-news", "score": 444, "by": "rakel_rakel"},
+    {"id": 48888468, "title": "Sam Neill has died", "url": "https://www.theguardian.com/film/2026/jul/13/sam-neill-death-actor-aged-78", "score": 411, "by": "j4mie"},
+    {"id": 48892512, "title": "Grok uploaded my user directory to xAI's servers", "url": "https://twitter.com/a_green_being/status/2076598897779020159", "score": 392, "by": "tnolet"},
+    {"id": 48834309, "title": "GhostLock, a stack-UAF that has existed in all Linux distributions for 15 years", "url": "https://nebusec.ai/research/ionstack-part-2/", "score": 355, "by": "ranger_danger"},
+    {"id": 48854168, "title": "Vint Cerf, \"father of the Internet\", is retiring", "url": "https://techcrunch.com/2026/06/30/the-father-of-the-internet-is-finally-retiring/", "score": 349, "by": "compiler-guy"},
+    {"id": 48882569, "title": "LARP – Revenue infrastructure for serious founders", "url": "https://www.larp.website/", "score": 304, "by": "BerislavLopac"},
+    {"id": 48827126, "title": "So you want to learn physics (second edition, 2021)", "url": "https://www.susanrigetti.com/physics", "score": 292, "by": "azhenley"},
+    {"id": 48885643, "title": "Cyberpunk Comics, Manga and Graphic Novels", "url": "https://shellzine.net/cyberpunk-comics/", "score": 268, "by": "zdw"},
+    {"id": 48882716, "title": "Migrating a production AI agent to GPT-5.6: 2.2x faster, 27% cheaper", "url": "https://ploy.ai/blog/migrating-a-production-ai-agent-to-gpt-5-6", "score": 245, "by": "brryant"},
+    {"id": 48892468, "title": "Grok CLI uploaded the whole home directory to GCS", "url": "https://twitter.com/i/status/2076598897779020159", "score": 242, "by": "denysvitali"},
+    {"id": 48882056, "title": "How to read more books", "url": "https://scotto.me/blog/2026-07-12-how-to-read-more-books/", "score": 229, "by": "silcoon"},
+    {"id": 48890959, "title": "A voxel Tokyo in real Japan time – ride the Yamanote line and study Japanese", "url": "https://jivx.com/densha", "score": 225, "by": "momentmaker"},
+    {"id": 48888518, "title": "Backtrack-Free Cursive", "url": "https://mmapped.blog/posts/52-backtrack-free-cursive", "score": 200, "by": "dmit"}
+  ]
+}
