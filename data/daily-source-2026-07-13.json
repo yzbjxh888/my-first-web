@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-13",
+  "hacker_news": [
+    {"id": 48843923, "title": "EU Parliament greenlights Chat Control 1.0", "url": "https://www.patrick-breyer.de/en/eu-parliament-greenlights-chat-control-1-0-breyer-our-children-lose-out/", "score": 1614, "by": "rapnie"},
+    {"id": 48849066, "title": "GPT-5.6", "url": "https://openai.com/index/gpt-5-6/", "score": 1463, "by": "logickkk1"},
+    {"id": 48845049, "title": "Show HN: 18 Words", "url": "https://18words.com/", "score": 1007, "by": "pompomsheep"},
+    {"id": 48841676, "title": "Postgres rewritten in Rust, now passing 100% of the Postgres regression tests", "url": "https://github.com/malisper/pgrust", "score": 809, "by": "SweetSoftPillow"},
+    {"id": 48842459, "title": "Show HN: Getting GLM 5.2 running on my slow computer", "url": "https://github.com/JustVugg/colibri", "score": 706, "by": "vforno"},
+    {"id": 48792383, "title": "Train sim created by just one person is being called the best ever made", "url": "https://kotaku.com/a-train-sim-created-by-just-one-person-is-being-called-the-best-ever-made-2000699429", "score": 628, "by": "oumua_don17"},
+    {"id": 48847552, "title": "Hy3", "url": "https://hy.tencent.com/research/hy3", "score": 502, "by": "andai"},
+    {"id": 48845442, "title": "The glass backbone: Why the Army's logistics will break in the next war", "url": "https://mwi.westpoint.edu/the-glass-backbone-why-the-armys-logistics-will-break-in-the-next-war/", "score": 438, "by": "baud147258"},
+    {"id": 48846184, "title": "Muse Spark 1.1", "url": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/", "score": 408, "by": "ot"},
+    {"id": 48803004, "title": "Buried Apple feature turns an iPhone into the perfect kids' dumb phone", "url": "https://www.wired.com/story/this-buried-apple-feature-turns-an-iphone-into-the-perfect-kids-dumb-phone/", "score": 384, "by": "PotatoNinja"},
+    {"id": 48838876, "title": "John Deere owners will get the right to repair equipment under FTC settlement", "url": "https://apnews.com/article/john-deere-right-to-repair-agriculture-equipment-cb7514ffedb95c130a976af661f2bc02", "score": 332, "by": "djoldman"},
+    {"id": 48846281, "title": "No leap second will be introduced at the end of December 2026", "url": "https://datacenter.iers.org/data/latestVersion/bulletinC.txt", "score": 307, "by": "ChrisArchitect"},
+    {"id": 48845209, "title": "A road to Lisp: Why Lisp", "url": "https://scotto.me/blog/2026-07-09-why-lisp/", "score": 288, "by": "silcoon"},
+    {"id": 48853091, "title": "Why American ambulance rides are so expensive", "url": "https://davidoks.blog/p/why-american-ambulance-rides-are", "score": 279, "by": "jyunwai"},
+    {"id": 48849292, "title": "Interview with Mitchell Hashimoto about Ghostty and Zig", "url": "https://alexalejandre.com/programming/interview-with-mitchell-hashimoto/", "score": 276, "by": "veqq"}
+  ]
+}
