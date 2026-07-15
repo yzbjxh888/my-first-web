@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-16",
+  "hacker_news": [
+    {"id": 48869989, "title": "Your 'app' could have been a webpage (so I fixed it for you)", "url": "https://danq.me/2026/07/09/your-app-could-have-been-a-webpage/", "score": 849, "by": "MrVandemar"},
+    {"id": 48901569, "title": "Japan develops a method to recover up to 90% of lithium from used EV batteries", "url": "https://tech.supercarblondie.com/japan-recovers-up-to-90-of-lithium-from-used-ev-batteries/", "score": 719, "by": "donohoe"},
+    {"id": 48905248, "title": "How to stop Claude from saying load-bearing", "url": "https://jola.dev/posts/how-to-stop-claude-from-saying-load-bearing", "score": 575, "by": "shintoist"},
+    {"id": 48896665, "title": "Building and shipping Mac and iOS apps without opening Xcode", "url": "https://scottwillsey.com/building-and-shipping-mac-and-ios-apps-without-ever-opening-xcode/", "score": 542, "by": "speckx"},
+    {"id": 48905028, "title": "Codex starts encrypting sub-agent prompts", "url": "https://github.com/openai/codex/issues/28058", "score": 422, "by": "embedding-shape"},
+    {"id": 48901010, "title": "The git history command", "url": "https://lalitm.com/post/git-history/", "score": 387, "by": "turbocon"},
+    {"id": 48905290, "title": "Germany set to restrict its Freedom of Information Act", "url": "https://www.dw.com/en/germany-freedom-of-information-act/a-77939695", "score": 253, "by": "robtherobber"},
+    {"id": 48900191, "title": "An Englishwoman who sketched India before photography took hold", "url": "https://www.bbc.com/news/articles/cm2drrv6q54o", "score": 214, "by": "1659447091"},
+    {"id": 48902791, "title": "Just Let Me Write Digits", "url": "https://gendx.dev/blog/2026/07/13/input-digits.html", "score": 151, "by": "brandon_bot"},
+    {"id": 48905091, "title": "Codex scraped the ICM website and discovered 2026 Fields Medal winner list", "url": "https://phemex.com/news/article/2026-fields-medal-winners-list-leaked-includes-two-peking-university-alumni-92948", "score": 148, "by": "zaikunzhang"},
+    {"id": 48872833, "title": "How to build a circular LCD clock", "url": "https://blinry.org/lcd-clock/", "score": 142, "by": "birdculture"},
+    {"id": 48902026, "title": "YouTrackDB is a general-use object-oriented graph database", "url": "https://github.com/JetBrains/youtrackdb", "score": 140, "by": "gjvc"},
+    {"id": 48903715, "title": "Alternative(s) to run CUDA on non-Nvidia hardware", "url": "https://www.hpcwire.com/2026/07/09/spectral-compute-aims-to-set-cuda-free-will-it-succeed/", "score": 139, "by": "alok-g"},
+    {"id": 48902320, "title": "Australian energy retailers must provide three hours of free daytime electricity", "url": "https://lenergy.com.au/free-daytime-electricity-is-coming-heres-how-it-actually-works/", "score": 138, "by": "i2oc"},
+    {"id": 48901235, "title": "Is x86 ready to ACE it?", "url": "https://chipsandcheese.com/p/is-x86-ready-to-ace-it", "score": 88, "by": "mfiguiere"}
+  ]
+}
