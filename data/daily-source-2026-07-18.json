@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-18",
+  "hacker_news": [
+    {"id": 48935342, "title": "Kimi K3: Open Frontier Intelligence", "url": "https://www.kimi.com/blog/kimi-k3", "score": 1559, "by": "vincent_s"},
+    {"id": 48932539, "title": "OnePlus halts operations in USA and Europe", "url": "https://community.oneplus.com/thread/2170715118587871237", "score": 538, "by": "pilililo2"},
+    {"id": 48936584, "title": "Decoy Font", "url": "https://www.mixfont.com/experiments/decoy-font", "score": 303, "by": "ray__"},
+    {"id": 48936451, "title": "NotebookLM is now Gemini Notebook", "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/", "score": 185, "by": "xnx"},
+    {"id": 48935951, "title": "Immersive Linear Algebra Book with Interactive Figures (2015)", "url": "https://immersivemath.com/ila/", "score": 138, "by": "srean"},
+    {"id": 48939896, "title": "Mathematics of Data Science", "url": "https://arxiv.org/abs/2607.11938", "score": 130, "by": "Anon84"},
+    {"id": 48936880, "title": "Detecting LLM-Generated Texts with \"Classical\" Machine Learning", "url": "https://blog.lyc8503.net/en/post/llm-classifier/", "score": 121, "by": "uneven9434"},
+    {"id": 48934286, "title": "Goes-19 weather satellite enters Safe Hold mode", "url": "https://www.spaceweather.gov/news/goes-19-safe-hold", "score": 96, "by": "yabones"},
+    {"id": 48939641, "title": "The privacy problems hidden in your period tracker", "url": "https://www.bbc.com/future/article/20260715-how-period-trackers-share-womens-private-details", "score": 94, "by": "tchalla"},
+    {"id": 48935687, "title": "How to Train a Gen AI Kick Drum Model on Your Old Linux Desktop with 6GB VRAM", "url": "https://www.zhinit.dev/blog/training-a-kick-drum-diffusion-model", "score": 93, "by": "zhinit"},
+    {"id": 48936426, "title": "Microsoft Comic Chat is now open source", "url": "https://opensource.microsoft.com/blog/2026/07/16/microsoft-comic-chat-is-now-open-source/", "score": 90, "by": "jervant"},
+    {"id": 48939742, "title": "Helium escaping from atmosphere of nearby rocky exoplanet in a habitable zone", "url": "https://www.science.org/doi/10.1126/science.aea9708", "score": 81, "by": "anyonecancode"},
+    {"id": 48939662, "title": "LM Studio Bionic: the AI agent for open models", "url": "https://lmstudio.ai/blog/introducing-lm-studio-bionic", "score": 58, "by": "minimaxir"},
+    {"id": 48932722, "title": "Abstracting Effects with Continuations", "url": "https://crowdhailer.me/2026-07-15/abstracting-effects-with-continuations/", "score": 32, "by": "crowdhailer"},
+    {"id": 48941123, "title": "Show HN: Mojibake – a low-level Unicode library written in C", "url": "https://mojibake.zaerl.com/", "score": 30, "by": "program"}
+  ]
+}
