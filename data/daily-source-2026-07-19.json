@@ -1,0 +1,110 @@
+{
+  "date": "2026-07-19",
+  "hacker_news": [
+    {
+      "id": 48945241,
+      "title": "AWS: Inaccurate Estimated Billing Data – $1.7 billion",
+      "url": "https://health.aws.amazon.com/health/status",
+      "score": 943,
+      "by": "nprateem"
+    },
+    {
+      "id": 48947825,
+      "title": "The state of open source AI",
+      "url": "https://stateofopensource.ai/",
+      "score": 465,
+      "by": "rellem"
+    },
+    {
+      "id": 48947717,
+      "title": "Kimi K3, and what we can still learn from the pelican benchmark",
+      "url": "https://simonwillison.net/2026/Jul/16/kimi-k3/",
+      "score": 378,
+      "by": "droidjj"
+    },
+    {
+      "id": 48946303,
+      "title": "Apple targets dozens of OpenAI employees with legal letters",
+      "url": "https://www.ft.com/content/1b8c9d52-88a9-426b-ba47-f1f181859166",
+      "score": 372,
+      "by": "merksittich"
+    },
+    {
+      "id": 48947560,
+      "title": "First atmosphere found on Earth-like planet in habitable zone of distant star",
+      "url": "https://www.bbc.com/news/articles/cy4kdd1e0ejo",
+      "score": 311,
+      "by": "neversaydie"
+    },
+    {
+      "id": 48936584,
+      "title": "Decoy Font",
+      "url": "https://www.mixfont.com/experiments/decoy-font",
+      "score": 303,
+      "by": "ray__"
+    },
+    {
+      "id": 48947490,
+      "title": "Three ways people respond to a problem (other than solving it)",
+      "url": "https://improvesomething.today/responses-to-problems/",
+      "score": 262,
+      "by": "surprisetalk"
+    },
+    {
+      "id": 48854988,
+      "title": "Camera Chase Vehicle",
+      "url": "https://transistor-man.com/gimbal_camera_rover.html",
+      "score": 212,
+      "by": "geerlingguy"
+    },
+    {
+      "id": 48951461,
+      "title": "The Zilog Z80 has turned 50",
+      "url": "https://goliath32.com/blog/z80.html",
+      "score": 184,
+      "by": "st_goliath"
+    },
+    {
+      "id": 48947455,
+      "title": "A Road to Lisp: Which Lisp",
+      "url": "https://scotto.me/blog/2026-07-17-which-lisp/",
+      "score": 176,
+      "by": "silcoon"
+    },
+    {
+      "id": 48950518,
+      "title": "Lego building instructions through time",
+      "url": "https://www.lego.com/en-us/history/articles/d-lego-building-instructions-through-time",
+      "score": 149,
+      "by": "NaOH"
+    },
+    {
+      "id": 48899847,
+      "title": "Lobste.rs is now running on SQLite",
+      "url": "https://lobste.rs/s/ko1ji1",
+      "score": 147,
+      "by": "abetusk"
+    },
+    {
+      "id": 48947548,
+      "title": "Show HN: Watch bots interact with an SSH honeypot in real time",
+      "url": "https://honeypotlive.cc/",
+      "score": 129,
+      "by": "tusksm"
+    },
+    {
+      "id": 48948597,
+      "title": "Frame – Linux X server in Assembly",
+      "url": "https://isene.org/2026/07/Frame.html",
+      "score": 123,
+      "by": "guybedo"
+    },
+    {
+      "id": 48947201,
+      "title": "More Bounce to the Ounce",
+      "url": "https://mceglowski.substack.com/p/more-bounce-to-the-ounce",
+      "score": 109,
+      "by": "pavel_lishin"
+    }
+  ]
+}
