@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-21",
+  "hacker_news": [
+    {"id": 48979269, "title": "China's open-weights AI strategy is winning", "url": "https://werd.io/american-ai-is-locked-down-and-proprietary-its-losing/", "score": 1036, "by": "benwerd"},
+    {"id": 48978605, "title": "Hacker wipes Romania's land registry database", "url": "https://news.risky.biz/risky-bulletin-hacker-wipes-romanias-entire-land-registry-database/", "score": 518, "by": "speckx"},
+    {"id": 48981703, "title": "Kimi Work", "url": "https://www.kimi.com/products/kimi-work", "score": 265, "by": "ms7892"},
+    {"id": 48981620, "title": "Jelly UI: Soft-body physics for native HTML form controls", "url": "https://jelly-ui.com/", "score": 236, "by": "baldvinmar"},
+    {"id": 48986731, "title": "Flock Credibility Lost as It Repeatedly Lies to City Councils, Police, & Public", "url": "https://www.aclu.org/news/privacy-technology/tracking-alpr-cameras/flock-safety-credibility-lost-as-it-repeatedly-lies-to-city-councils-police-departments-and-public-across-the-country", "score": 207, "by": "StatsAreFun"},
+    {"id": 48978350, "title": "LEDs' potential to save our night skies", "url": "https://spectrum.ieee.org/led-light-pollution", "score": 205, "by": "defrost"},
+    {"id": 48979120, "title": "Perfection is not over-engineering", "url": "https://var0.xyz/posts/perfection-is-not-over-engineering.html", "score": 196, "by": "var0xyz"},
+    {"id": 48981206, "title": "How we measured AI writing across arXiv, and where the measurement breaks", "url": "https://unslop.run/blog/measuring-ai-writing-on-arxiv", "score": 190, "by": "dopamine_daddy"},
+    {"id": 48977128, "title": "Who's Afraid of Chinese Models?", "url": "https://stratechery.com/2026/whos-afraid-of-chinese-models/", "score": 169, "by": "mfiguiere"},
+    {"id": 48982681, "title": "Nativ: Run frontier open models locally on your Mac", "url": "https://blaizzy.github.io/nativ/", "score": 159, "by": "aratahikari5"},
+    {"id": 48986091, "title": "Jellyfin founder Andrew leaves team", "url": "https://forum.jellyfin.org/t/project-leadership-changes", "score": 151, "by": "swat535"},
+    {"id": 48979931, "title": "Corners Don't Look Like That: Regarding Screenspace Ambient Occlusion (2012)", "url": "https://nothings.org/gamedev/ssao/", "score": 144, "by": "firephox"},
+    {"id": 48978792, "title": "Shinjuku Station in 3D", "url": "https://satoshi7190.github.io/Shinjuku-indoor-threejs-demo/", "score": 141, "by": "Gecko4072"},
+    {"id": 48982535, "title": "Agent swarms and the new model economics", "url": "https://cursor.com/blog/agent-swarm-model-economics", "score": 102, "by": "jlaneve"},
+    {"id": 48987863, "title": "Five US tech giants' hidden debts soar to $1.65T on opaque AI funding", "url": "https://asia.nikkei.com/business/five-us-tech-giants-hidden-debts-soar-to-1.65tn-on-opaque-ai-funding", "score": 97, "by": "NordStreamYacht"}
+  ]
+}
