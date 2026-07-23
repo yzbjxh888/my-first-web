@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-24",
+  "hacker_news": [
+    {"id": 49010345, "title": "Terence Tao's ChatGPT conversation about the Jacobian Conjecture counterexample", "url": "https://chatgpt.com/share/6a5fdc7a-d6f8-83e8-bbea-8deb42cfed56", "score": 958, "by": "gmays"},
+    {"id": 49012070, "title": "John C. Dvorak has died", "url": "https://twitter.com/na_announce/status/2079952538040672302", "score": 752, "by": "coleca"},
+    {"id": 49008211, "title": "Show HN: Bento - An entire PowerPoint in one HTML file (edit+view+data+collab)", "url": "https://bento.page/slides/", "score": 635, "by": "starfallg"},
+    {"id": 49010167, "title": "GigaToken: ~1000x faster Language model tokenization", "url": "https://github.com/marcelroed/gigatoken/", "score": 475, "by": "syrusakbary"},
+    {"id": 49010129, "title": "Are AI Labs Pelicanmaxxing?", "url": "https://dylancastillo.co/posts/pelicanmaxxing.html", "score": 416, "by": "dcastm"},
+    {"id": 49005787, "title": "The startup's Postgres survival guide", "url": "https://hatchet.run/blog/postgres-survival-guide", "score": 358, "by": "abelanger"},
+    {"id": 49005747, "title": "So Reddit has decided that plain HTML is unsafe", "url": "https://www.cole-k.com/2026/07/21/reddit/", "score": 354, "by": "montroser"},
+    {"id": 49008440, "title": "Making", "url": "https://beej.us/blog/data/ai-making/", "score": 310, "by": "erikschoster"},
+    {"id": 49010648, "title": "Everyone Should Know SIMD", "url": "https://mitchellh.com/writing/everyone-should-know-simd", "score": 293, "by": "WadeGrimridge"},
+    {"id": 49015588, "title": "Codeberg Bans Cryptocurrency Projects", "url": "https://codeberg.org/Codeberg/org/pulls/1254", "score": 264, "by": "intunderflow"},
+    {"id": 49006195, "title": "Back to Kagi", "url": "https://blog.melashri.net/micro/back-to-kagi/", "score": 230, "by": "speckx"},
+    {"id": 49005973, "title": "Businesses with ugly AI menu redesigns", "url": "https://blog.fiddery.com/businesses-with-ugly-ai-menu-redesigns/", "score": 219, "by": "speckx"},
+    {"id": 48917135, "title": "Nobody knows what a used GPU cluster is worth", "url": "https://ciphertalk.substack.com/p/nobody-knows-what-a-used-gpu-cluster", "score": 196, "by": "rbanffy"},
+    {"id": 49007247, "title": "Quality non-fiction books are the antithesis of AI slop", "url": "https://resobscura.substack.com/p/quality-non-fiction-books-are-the", "score": 192, "by": "benbreen"},
+    {"id": 49007626, "title": "Ghost Cut – Or why Cut and Paste is broken everywhere", "url": "https://ishmael.textualize.io/blog/ghost-cut/", "score": 156, "by": "willm"}
+  ]
+}
