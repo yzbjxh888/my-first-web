@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-25",
+  "hacker_news": [
+    {"id": 49022152, "title": "Writing by hand is good for your brain", "url": "https://nealstephenson.substack.com/p/writing-by-hand-is-good-for-your", "score": 942, "by": "dwwoelfel"},
+    {"id": 49023016, "title": "Startup founders urge U.S. government not to shut off Chinese open weight AI", "url": "https://www.politico.com/news/2026/07/22/startup-founders-urge-trump-not-to-shut-off-chinese-open-weight-ai-01008992", "score": 705, "by": "theanonymousone"},
+    {"id": 49015639, "title": "OpenAI\u2019s accidental attack against Hugging Face is science fiction that happened", "url": "https://simonwillison.net/2026/Jul/22/openai-cyberattack/", "score": 559, "by": "abhisek"},
+    {"id": 49021856, "title": "I regret migrating to Codeberg", "url": "https://xn--gckvb8fzb.com/i-regret-migrating-to-codeberg/", "score": 470, "by": "boramalper"},
+    {"id": 49022038, "title": "Software rendering in 500 lines of bare C++", "url": "https://haqr.eu/tinyrenderer/", "score": 274, "by": "mpweiher"},
+    {"id": 49023019, "title": "Why Software Factories Fail (or: harness engineering is not enough)", "url": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/wsff.md", "score": 234, "by": "dhorthy"},
+    {"id": 49026810, "title": "Show HN: Echo \u2013 Fable-level results at 1/3 the cost using open-weight models", "url": "", "score": 212, "by": "adam_rida"},
+    {"id": 49021783, "title": "Astronomers may have found the first exomoon", "url": "https://www.eso.org/public/news/eso2610/", "score": 212, "by": "MarcoDewey"},
+    {"id": 49021597, "title": "DARPA, U.S. Air Force fly AI-controlled F-16", "url": "https://www.darpa.mil/news/2026/darpa-us-air-force-fly-ai-controlled-f-16", "score": 210, "by": "r2sk5t"},
+    {"id": 49022634, "title": "Learn OpenGL, extensive tutorial resource for learning Modern OpenGL", "url": "https://learnopengl.com/", "score": 204, "by": "ibobev"},
+    {"id": 49028927, "title": "98.css", "url": "https://jdan.github.io/98.css/#status-bar", "score": 164, "by": "lopespm"},
+    {"id": 49007221, "title": "The Beam Engine", "url": "https://glinscott.github.io/beam-engine/", "score": 140, "by": "glinscott"},
+    {"id": 49022137, "title": "Fields Medals 2026", "url": "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-2026", "score": 136, "by": "nill0"},
+    {"id": 49022911, "title": "Show HN: Palmier Pro \u2013 Open-source macOS video editor built for AI", "url": "https://github.com/palmier-io/palmier-pro", "score": 134, "by": "harrisontin"},
+    {"id": 49031796, "title": "Flux 3", "url": "https://bfl.ai/blog/flux-3", "score": 106, "by": "ThouYS"}
+  ]
+}
