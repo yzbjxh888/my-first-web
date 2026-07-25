@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-26",
+  "hacker_news": [
+    {"id": 49038433, "title": "Claude Opus 5", "url": "https://www.anthropic.com/news/claude-opus-5", "score": 1719, "by": "alvis"},
+    {"id": 49034292, "title": "My security camera shipped a GitHub admin token in its login page", "url": "https://hhh.hn/hanwha-github-token/", "score": 478, "by": "hhh"},
+    {"id": 49043724, "title": "Hannah Fry Wins the Leelavati Prize in 2026 for Mathematics Outreach", "url": "https://www.maths.cam.ac.uk/features/professor-hannah-fry-wins-leelavati-prize", "score": 475, "by": "agnishom"},
+    {"id": 48973835, "title": "India's first privately-developed rocket reaches orbit on debut launch", "url": "https://arstechnica.com/space/2026/07/indias-first-privately-developed-rocket-reaches-orbit-on-dramatic-debut-launch/", "score": 447, "by": "sohkamyung"},
+    {"id": 49034868, "title": "Half-Life 2 running natively on HaikuOS", "url": "https://discuss.haiku-os.org/t/haiku-nvidia-porting-nvidia-driver-for-turing-gpus/16520?page=18", "score": 289, "by": "m0do1"},
+    {"id": 49045159, "title": "Android May Soon Restrict On-Device ADB", "url": "https://kitsumed.github.io/blog/posts/android-may-soon-restrict-on-device-adb/", "score": 224, "by": "shscs911"},
+    {"id": 49033240, "title": "IRGC claims it destroyed Amazon's Bahrain data center", "url": "https://houseofsaud.com/irgc-claims-destroyed-amazon-bahrain-data-center/", "score": 217, "by": "thisislife2"},
+    {"id": 49045040, "title": "ARC-AGI Leaderboard", "url": "https://arcprize.org/leaderboard", "score": 158, "by": "rzk"},
+    {"id": 49040296, "title": "Postgres LISTEN/NOTIFY actually scales", "url": "https://www.dbos.dev/blog/postgres-listen-notify-scalability", "score": 148, "by": "KraftyOne"},
+    {"id": 48981665, "title": "GC and Exceptions in Wasmtime", "url": "https://bytecodealliance.org/articles/wasmtime-gc", "score": 116, "by": "phickey"},
+    {"id": 49033110, "title": "Future euro banknote design proposals", "url": "https://www.ecb.europa.eu/euro/banknotes/future_banknotes/html/all-design-proposals.en.html", "score": 103, "by": "robin_reala"},
+    {"id": 49024938, "title": "Kimi K3 exploited the latest Redis server", "url": "https://twitter.com/fried_rice/status/2080059356322918777", "score": 103, "by": "Alifatisk"},
+    {"id": 49008512, "title": "An old patent inspired the new \"Y-zipper\", a three-sided fastener", "url": "https://news.mit.edu/2026/three-sided-y-zipper-design-0504", "score": 90, "by": "crescit_eundo"},
+    {"id": 49044492, "title": "UK AISI / Caisi Preliminary Assessment of Kimi K3's Cyber Capabilities", "url": "https://www.nist.gov/news-events/news/2026/07/uk-aisi-caisi-preliminary-assessment-kimi-k3s-cyber-capabilities", "score": 79, "by": "walrus01"},
+    {"id": 49046525, "title": "The Fedora 45 Sausage Factory", "url": "https://supakeen.com/weblog/the-fedora-45-sausage-factory/", "score": 78, "by": "6581"}
+  ]
+}
