@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-28",
+  "hacker_news": [
+    {"id": 49057175, "title": "Kill The Cookie Banner", "url": "https://killthecookiebanner.eu/", "score": 714, "by": "rapnie"},
+    {"id": 49055169, "title": "GrapheneOS protections against data extraction from locked devices", "url": "https://discuss.grapheneos.org/d/40700-grapheneos-protections-against-data-extraction-from-locked-devices", "score": 406, "by": "Cider9986"},
+    {"id": 49057241, "title": "Htmx 4.0, the first JavaScript library to release exclusively on the Game Boy", "url": "https://swag.htmx.org/en-cad/products/htmx-4-the-game", "score": 393, "by": "rcy"},
+    {"id": 49057574, "title": "Google Discloses $94.1B in SpaceX Stock, Marking 6% Stake", "url": "https://www.wsj.com/tech/google-discloses-94-1-billion-in-spacex-stock-marking-6-stake-91655d7c", "score": 320, "by": "1vuio0pswjnm7"},
+    {"id": 49060856, "title": "Decker, a platform that builds on the legacy of Hypercard and classic macOS", "url": "https://beyondloom.com/decker/", "score": 306, "by": "tosh"},
+    {"id": 49059367, "title": "Design is compromise", "url": "https://stephango.com/design-is-compromise", "score": 275, "by": "ankitg12"},
+    {"id": 49058669, "title": "London Gatwick has launched a robotic airport parking service", "url": "https://aerospaceglobalnews.com/news/gatwick-airport-robotic-parking-stanley-robotics/", "score": 256, "by": "agotterer"},
+    {"id": 49057666, "title": "Show HN: Reverse Minesweeper", "url": "https://sunflowersgame.com/", "score": 195, "by": "pompomsheep"},
+    {"id": 49060978, "title": "The Strongest El Niño Ever", "url": "https://www.theclimatebrink.com/p/the-strongest-el-nino-ever", "score": 184, "by": "ndsipa_pomu"},
+    {"id": 48997828, "title": "Some more things about Django I've been enjoying", "url": "https://jvns.ca/blog/2026/07/21/more-nice-django-things/", "score": 168, "by": "surprisetalk"},
+    {"id": 49060724, "title": "Introduction to Data-Oriented Design [pdf]", "url": "https://www.gamedevs.org/uploads/introduction-to-data-oriented-design.pdf", "score": 166, "by": "tosh"},
+    {"id": 49057398, "title": "Go Analysis Framework: modular static analysis by go team", "url": "https://pkg.go.dev/golang.org/x/tools/go/analysis", "score": 163, "by": "AbuAssar"},
+    {"id": 49022355, "title": "I learned PCB design, 3D printing and C just to listen to music", "url": "https://pentaton.app/blog/2026-07-12-introducing-pentaton-lp/", "score": 154, "by": "interfeco"},
+    {"id": 49024980, "title": "Rethinking legal education in the AI era", "url": "https://www.law.uchicago.edu/news/ai-strategy-statement", "score": 149, "by": "jjwiseman"},
+    {"id": 49006049, "title": "What's Under Your Feet in New York City?", "url": "https://practical.engineering/blog/2026/7/21/whats-under-your-feet-in-new-york-city", "score": 141, "by": "sohkamyung"}
+  ]
+}
