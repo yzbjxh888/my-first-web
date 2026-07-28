@@ -1,0 +1,110 @@
+{
+  "date": "2026-07-29",
+  "hacker_news": [
+    {
+      "id": 49076057,
+      "title": "Our position on open-weights models",
+      "url": "https://www.anthropic.com/news/position-open-weights-models",
+      "score": 715,
+      "by": "surprisetalk"
+    },
+    {
+      "id": 49080664,
+      "title": "7.1 Earthquake in Japan",
+      "url": "https://www.data.jma.go.jp/multi/quake/quake_detail.html?eventID=20260728163528&lang=en",
+      "score": 658,
+      "by": "krembo"
+    },
+    {
+      "id": 49083314,
+      "title": "New HIV vaccine shows unprecedented success in preclinical study",
+      "url": "https://www.lji.org/news-events/news/post/new-hiv-vaccine-shows-unprecedented-success-in-preclinical-study/",
+      "score": 307,
+      "by": "codebyaditya"
+    },
+    {
+      "id": 49036068,
+      "title": "How to Survive Boiling Water",
+      "url": "https://taxa.substack.com/p/how-to-survive-boiling-water",
+      "score": 278,
+      "by": "cainxinth"
+    },
+    {
+      "id": 49082022,
+      "title": "Kimi Linear: An Expressive, Efficient Attention Architecture",
+      "url": "https://arxiv.org/abs/2510.26692",
+      "score": 168,
+      "by": "ronfriedhaber"
+    },
+    {
+      "id": 49082695,
+      "title": "Mondragon Corporation – a federation of co-operatives",
+      "url": "https://en.wikipedia.org/wiki/Mondragon_Corporation",
+      "score": 140,
+      "by": "brnt"
+    },
+    {
+      "id": 49078454,
+      "title": "A $500 RL fine-tune of a 9B open model beat frontier models on catalog review",
+      "url": "https://fermisense.com/when-machines-take-the-wheel/",
+      "score": 108,
+      "by": "ilreb"
+    },
+    {
+      "id": 49081644,
+      "title": "Google's Beyond Zero: Enterprise Security for the AI Era",
+      "url": "https://spawn-queue.acm.org/doi/10.1145/3819083",
+      "score": 100,
+      "by": "jordigg"
+    },
+    {
+      "id": 49081783,
+      "title": "DMARC Has Been Public Since 2012. 68.4% of Domains Still Don't Enforce It",
+      "url": "https://ciphercue.com/blog/dmarc-enforcement-gap-rua-fragmentation-2026",
+      "score": 93,
+      "by": "adulion"
+    },
+    {
+      "id": 49083239,
+      "title": "Show HN: Formally verified 3D CSG: Trust 93 lines spec, not 1000 lines AI code",
+      "url": "https://github.com/schildep/verified-3d-mesh-intersection",
+      "score": 76,
+      "by": "permute"
+    },
+    {
+      "id": 49040650,
+      "title": "Show HN: Scala Tutorials – interactive Scala 3 lessons in the browser",
+      "url": "https://scalatutorials.com",
+      "score": 59,
+      "by": "eranation"
+    },
+    {
+      "id": 49083132,
+      "title": "What AI developers could learn from Charles Bukowski?",
+      "url": "https://galjot.si/what-ai-developers-could-learn-from-charles-bukowski",
+      "score": 52,
+      "by": "sedovsek"
+    },
+    {
+      "id": 49082550,
+      "title": "Fast Remediation Is the New Trust Model (JFrog and OpenAI Zero-Day Findings)",
+      "url": "https://jfrog.com/blog/jfrog-and-openai-collaboration-on-zero-day-security-findings/",
+      "score": 48,
+      "by": "882542F3884314B"
+    },
+    {
+      "id": 49042438,
+      "title": "Dolmenwood: Fantasy RPG built around the acclaimed Old-School Essentials rules",
+      "url": "https://necroticgnome.com/collections/dolmenwood",
+      "score": 40,
+      "by": "doener"
+    },
+    {
+      "id": 49085280,
+      "title": "Harmony Explained: Progress Towards a Scientific Theory of Music (2012)",
+      "url": "https://arxiv.org/abs/1202.4212",
+      "score": 29,
+      "by": "surprisetalk"
+    }
+  ]
+}
