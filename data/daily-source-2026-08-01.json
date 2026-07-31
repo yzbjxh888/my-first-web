@@ -1,0 +1,110 @@
+{
+  "date": "2026-08-01",
+  "hacker_news": [
+    {
+      "id": 49112744,
+      "title": "Read this before you buy that TV streaming stick",
+      "url": "https://krebsonsecurity.com/2026/07/read-this-before-you-buy-that-tv-streaming-stick/",
+      "score": 635,
+      "by": "speckx"
+    },
+    {
+      "id": 49111237,
+      "title": "Gemini Robotics 2 brings whole body intelligence to robots",
+      "url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+      "score": 606,
+      "by": "ai2027"
+    },
+    {
+      "id": 49113929,
+      "title": "UEFA and its national associations will not participate in FIFA competitions",
+      "url": "https://www.uefa.com/news-media/news/02a7-213a92896eb0-54dfe454f3e1000--statement-on-behalf-of-uefa-and-its-55-national-associations/",
+      "score": 531,
+      "by": "dickfickling"
+    },
+    {
+      "id": 49118781,
+      "title": "The session you cannot take with you",
+      "url": "https://earendil.com/posts/session-portability/",
+      "score": 509,
+      "by": "apitman"
+    },
+    {
+      "id": 49119559,
+      "title": "DeepSeek-V4-Flash Update",
+      "url": "https://api-docs.deepseek.com/updates/",
+      "score": 509,
+      "by": "dnhkng"
+    },
+    {
+      "id": 49112232,
+      "title": "Stacked PRs are now live on GitHub",
+      "url": "https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/",
+      "score": 493,
+      "by": "tomzorz"
+    },
+    {
+      "id": 49112867,
+      "title": "Advancing the price-performance frontier with GPT-5.6",
+      "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/",
+      "score": 379,
+      "by": "tedsanders"
+    },
+    {
+      "id": 49117099,
+      "title": "The AI Aesthetic",
+      "url": "https://blog.jim-nielsen.com/2026/ai-aesthetic/",
+      "score": 256,
+      "by": "montroser"
+    },
+    {
+      "id": 49117284,
+      "title": "The Religion of Speed",
+      "url": "https://graybeard.ing/the-religion-of-speed/",
+      "score": 254,
+      "by": "MobiusHorizons"
+    },
+    {
+      "id": 49108685,
+      "title": "GCC steering committee announces AI policy",
+      "url": "https://lwn.net/Articles/1086041/",
+      "score": 237,
+      "by": "arto"
+    },
+    {
+      "id": 49117266,
+      "title": "Premier league bans gambling sponsors",
+      "url": "https://www.footyheadlines.com/2646571793/betting-ban-takes-effect-no-more-gambling-sponsors-in-the-premier-league.html",
+      "score": 226,
+      "by": "paoliniluis"
+    },
+    {
+      "id": 49116922,
+      "title": "Investigating three real-world incidents in our cybersecurity evaluations",
+      "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
+      "score": 202,
+      "by": "surprisetalk"
+    },
+    {
+      "id": 49110308,
+      "title": "The lost civic life of movie rental stores",
+      "url": "https://thereader.mitpress.mit.edu/the-lost-civic-life-of-movie-rental-stores/",
+      "score": 198,
+      "by": "facundo_olano"
+    },
+    {
+      "id": 49113059,
+      "title": "We Gave GPT 5.6 Sol a Real Business. It Lied, Spammed, and Lost $447",
+      "url": "https://www.bottlenecklabs.com/blog/autonomously-run-businesses",
+      "score": 185,
+      "by": "Areibman"
+    },
+    {
+      "id": 49120097,
+      "title": "Google fixed more Chrome bugs in June than over the past two years, thanks to AI",
+      "url": "https://blog.google/security/chrome-stronger-with-every-update/",
+      "score": 177,
+      "by": "Garbage"
+    }
+  ]
+}
