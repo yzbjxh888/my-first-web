@@ -1,0 +1,20 @@
+{
+  "date": "2026-08-02",
+  "hacker_news": [
+    {"id": 49124218, "title": "Elevators", "url": "https://john.fun/elevators", "score": 1173, "by": "Jrh0203"},
+    {"id": 49126604, "title": "qm – Multiplayer agent harness for work", "url": "https://github.com/yc-software/qm", "score": 562, "by": "tosh"},
+    {"id": 49132058, "title": "Ten advances in mathematics and theoretical computer science", "url": "https://openai.com/index/ten-advances-in-mathematics/", "score": 299, "by": "milkshakes"},
+    {"id": 49123386, "title": "Run Kimi K3 using 29 GB of RAM at 0.50 tok/s", "url": "https://github.com/sqliteai/waste", "score": 298, "by": "marcobambini"},
+    {"id": 49096605, "title": "Software for One", "url": "https://www.ajwaxman.com/writing/software-for-one", "score": 190, "by": "awaxman11"},
+    {"id": 49129990, "title": "How to Exist", "url": "https://www.raptitude.com/2026/07/how-to-exist/", "score": 185, "by": "walterbell"},
+    {"id": 49091614, "title": "A tiny holdout building in the middle of Macy's is back in view", "url": "https://ephemeralnewyork.wordpress.com/2026/07/27/hidden-by-billboards-for-over-100-years-the-tiny-holdout-building-in-the-middle-of-macys-is-back-in-view/", "score": 136, "by": "donohoe"},
+    {"id": 49134694, "title": "A Surveillance Treaty in Disguise: Canada Signs UN Cybercrime Convention", "url": "https://www.michaelgeist.ca/2026/07/a-surveillance-treaty-in-disguise-the-trouble-with-canadas-quiet-decision-to-sign-the-un-cybercrime-convention/", "score": 119, "by": "iamnothere"},
+    {"id": 49133889, "title": "RipGrep musl binaries occasionally segfault during very-large searches", "url": "https://github.com/BurntSushi/ripgrep/issues/3494", "score": 114, "by": "throwaway2037"},
+    {"id": 49117089, "title": "The Absurdity of Albert Camus", "url": "https://www.historytoday.com/archive/portrait-author-historian/absurdity-albert-camus", "score": 91, "by": "apollinaire"},
+    {"id": 49132460, "title": "RamenHaus", "url": "https://ramen.haus/", "score": 86, "by": "oler"},
+    {"id": 49130604, "title": "Flint: A Visualization Language for the AI Era", "url": "https://microsoft.github.io/flint-chart/", "score": 81, "by": "vinhnx"},
+    {"id": 49096847, "title": "G'mic 4.0: Squaring the Pixel, Easier", "url": "https://gmic.eu/gmic40/", "score": 67, "by": "dtschump"},
+    {"id": 49130726, "title": "The development pipeline is a production system", "url": "https://sundry.jerryorr.com/2026/07/31/development-pipeline-is-a-production-system", "score": 59, "by": "firefoxd"},
+    {"id": 49134599, "title": "The Art of 64-bit Assembly", "url": "https://nostarch.com/art-64-bit-assembly-v2", "score": 58, "by": "0x54MUR41"}
+  ]
+}
