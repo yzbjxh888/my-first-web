@@ -1,0 +1,20 @@
+{
+  "date": "2026-08-03",
+  "hacker_news": [
+    {"id": 49136821, "title": "How Google helped destroy adoption of RSS feeds (2023)", "url": "https://openrss.org/blog/how-google-helped-destroy-adoption-of-rss-feeds", "score": 492, "by": "pudgywalsh"},
+    {"id": 49138188, "title": "Diátaxis", "url": "https://diataxis.fr/", "score": 393, "by": "ryanseys"},
+    {"id": 49135257, "title": "Cursor removed cost information from the usage page and CSV export", "url": "https://forum.cursor.com/t/usage-page-to-token-amount-what/167153", "score": 320, "by": "EugeneOZ"},
+    {"id": 49138302, "title": "Seedance 2.5", "url": "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5", "score": 285, "by": "njaremko"},
+    {"id": 49133889, "title": "RipGrep musl binaries occasionally segfault during very-large searches", "url": "https://github.com/BurntSushi/ripgrep/issues/3494", "score": 276, "by": "throwaway2037"},
+    {"id": 49130604, "title": "Flint: A Visualization Language for the AI Era", "url": "https://microsoft.github.io/flint-chart/", "score": 266, "by": "jandeboevrie"},
+    {"id": 49136736, "title": "NetBSD 11.0", "url": "https://blog.netbsd.org/tnf/entry/netbsd_11_0_released", "score": 261, "by": "jaypatelani"},
+    {"id": 49132460, "title": "RamenHaus", "url": "https://ramen.haus/", "score": 236, "by": "oler"},
+    {"id": 49138045, "title": "The Silicon Valley Founder Meat Grinder", "url": "https://zaksa.zip/blog/silicon-valley-founder-meat-grinder/", "score": 220, "by": "Kaizeras"},
+    {"id": 49136063, "title": "A directory of people who love RSS", "url": "https://andrewshell.org/2026/07/i-%E2%99%A5-rss/", "score": 175, "by": "speckx"},
+    {"id": 49105013, "title": "Manual: •.,:;…!?·", "url": "https://type.today/en/journal/dots", "score": 127, "by": "behnamoh"},
+    {"id": 49134694, "title": "A Surveillance Treaty in Disguise: Canada Signs UN Cybercrime Convention", "url": "https://www.michaelgeist.ca/2026/07/a-surveillance-treaty-in-disguise-the-trouble-with-canadas-quiet-decision-to-sign-the-un-cybercrime-convention/", "score": 119, "by": "iamnothere"},
+    {"id": 49138443, "title": "YC founder asks desperate job seekers to tattoo themselves for an interview", "url": "https://sfstandard.com/2026/07/30/lemonlime-tattoo-job-interview/", "score": 111, "by": "theanonymousone"},
+    {"id": 49120230, "title": "Just because a game is on disc doesn't mean it will work in the future", "url": "https://arstechnica.com/gaming/2026/07/the-disc-is-not-the-game-physical-releases-increasingly-require-extra-downloads/", "score": 107, "by": "rbanffy"},
+    {"id": 49135245, "title": "Explorative modeling: Train on the best of K guesses", "url": "https://alexiglad.github.io/blog/2026/explorative_modeling/", "score": 107, "by": "DSemba"}
+  ]
+}
