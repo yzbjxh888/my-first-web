@@ -1,0 +1,20 @@
+{
+  "date": "2026-08-04",
+  "hacker_news": [
+    {"id": 49150470, "title": "Qwen3.8-Max: A New Bar for Coding and Cowork", "url": "https://qwen.ai/blog?id=qwen3.8", "score": 530, "by": "ai2027"},
+    {"id": 49147263, "title": "SwiftUI After 7 Years", "url": "https://ykvm.com/2026/07/swiftui-a-story-of-mediocrity/", "score": 252, "by": "mpweiher"},
+    {"id": 49140998, "title": "Karpathy's Pelican", "url": "https://xcancel.com/karpathy/status/2083749667410727319", "score": 247, "by": "delichon"},
+    {"id": 49145937, "title": "Show HN: Kakehashi – Experimental userspace to run macOS binaries on Linux ARM", "url": "https://github.com/wie-project/kakehashi", "score": 241, "by": "vlad_kalinkin"},
+    {"id": 49097961, "title": "Developers are attached to tools because tools encode trust", "url": "https://stackoverflow.blog/2026/07/29/developers-are-attached-to-tools-because-tools-encode-trust/", "score": 240, "by": "HieronymusBosch"},
+    {"id": 49084324, "title": "Note-Taking and Personal Knowledge Management", "url": "https://unattributed.cc/note-taking-and-personal-knowledge-management", "score": 240, "by": "surprisetalk"},
+    {"id": 49145590, "title": "How the words we teach English language learners changed", "url": "https://pudding.cool/2026/07/essential-words/", "score": 236, "by": "c-oreills"},
+    {"id": 49151734, "title": "More German than many Germans", "url": "https://mertbulan.com/more-german-than-many-germans/", "score": 219, "by": "mertbio"},
+    {"id": 49149966, "title": "Show HN: Isopolis – Isometric pixel map of SF", "url": "https://sf.isopolis.city/", "score": 208, "by": "nuwandavek"},
+    {"id": 49078283, "title": "Norway became a global salmon behemoth. Now it's facing the consequences", "url": "https://www.abc.net.au/news/2026-07-28/how-norway-s-salmon-industry-became-a-global-behemoth/106949872", "score": 193, "by": "CHB0403085482"},
+    {"id": 49152842, "title": "Bonsai: Janestreet's UI Library", "url": "https://github.com/janestreet/bonsai", "score": 188, "by": "KolmogorovComp"},
+    {"id": 49119751, "title": "Show HN: A Handwritten Blogging Platform", "url": "https://handwritten.blog/", "score": 164, "by": "emilesilvis"},
+    {"id": 49123003, "title": "When transit passes were designed by hand (2022)", "url": "https://letterformarchive.org/news/milwaukee-transit-passes/", "score": 149, "by": "nate"},
+    {"id": 49149746, "title": "Why Book Corners won't sync contributions back to OpenStreetMap", "url": "https://www.andreagrandi.it/posts/why-book-corners-wont-sync-contributions-back-to-openstreetmap/", "score": 134, "by": "pizzaiolo"},
+    {"id": 49122655, "title": "Autoregressive Language Model on the 6502 Processor", "url": "https://mattbeton.com/blog/bitnet-6502.html", "score": 126, "by": "nmstoker"}
+  ]
+}
