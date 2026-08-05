@@ -1,0 +1,110 @@
+{
+  "date": "2026-08-05",
+  "hacker_news": [
+    {
+      "id": 49173165,
+      "title": "In Memory of My Wife, Elise Cawley, with Thanks for 36 Wonderful Years",
+      "url": "https://writings.stephenwolfram.com/2026/08/in-memory-of-my-wife-elise-cawley-1961-2026-with-thanks-for-36-wonderful-years/",
+      "score": 680,
+      "by": "jdcampolargo"
+    },
+    {
+      "id": 49170479,
+      "title": "Apple says more ex-employees may have taken confidential data to OpenAI",
+      "url": "https://techcrunch.com/2026/08/04/apple-says-more-ex-employees-may-have-taken-confidential-data-to-openai/",
+      "score": 328,
+      "by": "thewebguyd"
+    },
+    {
+      "id": 49170165,
+      "title": "Show HN: Simple algorithm and color space to generate diverse skin tones",
+      "url": "https://toneyalexander.github.io/inclusive-color-space/",
+      "score": 275,
+      "by": "automatoney"
+    },
+    {
+      "id": 49167448,
+      "title": "Xbox goes down. You can't play games you own on disc",
+      "url": "https://birchtree.me/blog/xbox-goes-down-you-cant-play-games-you-own-on-disc/",
+      "score": 215,
+      "by": "surprisetalk"
+    },
+    {
+      "id": 49166386,
+      "title": "DeepSeek V4 Flash on a Single AMD MI300X",
+      "url": "https://github.com/ryanzhou/deepseek-v4-flash-mi300x",
+      "score": 181,
+      "by": "zhoutong"
+    },
+    {
+      "id": 49172836,
+      "title": "Waymo – Dallas Open to All",
+      "url": "https://waymo.com/blog/shorts/dallas-open-to-all/",
+      "score": 169,
+      "by": "xnx"
+    },
+    {
+      "id": 49162653,
+      "title": "There Will Come Soft Rains (1950) [pdf]",
+      "url": "https://users.wpi.edu/~zrbutzke/Docs/BradburyStories(1).pdf",
+      "score": 148,
+      "by": "pmg101"
+    },
+    {
+      "id": 49175826,
+      "title": "AI fuels more than half of cybercrime in Africa as scams surge – Interpol",
+      "url": "https://www.africanews.com/2026/08/04/ai-fuels-more-than-half-of-cybercrime-in-africa-as-digital-scams-surge-interpol/",
+      "score": 143,
+      "by": "bookofjoe"
+    },
+    {
+      "id": 49167147,
+      "title": "Everything I Know (1975)",
+      "url": "https://www.bfi.org/about-fuller/everything-i-know/",
+      "score": 133,
+      "by": "simonebrunozzi"
+    },
+    {
+      "id": 49175192,
+      "title": "Thanks FedEx, This Is Why We Keep Getting Phished (2024)",
+      "url": "https://www.troyhunt.com/thanks-fedex-this-is-why-we-keep-getting-phished/",
+      "score": 100,
+      "by": "stymaar"
+    },
+    {
+      "id": 49171766,
+      "title": "The Warp Agent CLI",
+      "url": "https://www.warp.dev/blog/introducing-the-warp-agent-cli-coding-agent",
+      "score": 93,
+      "by": "emschwartz"
+    },
+    {
+      "id": 49164896,
+      "title": "Harness Engineering for Self-Improvement",
+      "url": "https://lilianweng.github.io/posts/2026-07-04-harness/",
+      "score": 89,
+      "by": "tosh"
+    },
+    {
+      "id": 49174407,
+      "title": "Oxide Computer raises $445M (SEC Form D)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1795071/000179507126000002/xslFormDX01/primary_doc.xml",
+      "score": 89,
+      "by": "depr"
+    },
+    {
+      "id": 49172405,
+      "title": "Hop.earth – OpenStreetMap based car racing game",
+      "url": "https://hop.earth/?server=lkhr7&route=fQ5nuu9R",
+      "score": 78,
+      "by": "faebi"
+    },
+    {
+      "id": 49173984,
+      "title": "Show HN: Maple-Preview – ternary 20B MoE running at 120 tok/s on a iPhone",
+      "url": "https://deepgrove.ai/maple-preview",
+      "score": 65,
+      "by": "edwardbzhang"
+    }
+  ]
+}
