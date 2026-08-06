@@ -1,0 +1,110 @@
+{
+  "date": "2026-08-07",
+  "hacker_news": [
+    {
+      "id": 49195231,
+      "title": "Mario Meets Pareto",
+      "url": "https://www.mayerowitz.io/blog/mario-meets-pareto",
+      "score": 553,
+      "by": "theanonymousone"
+    },
+    {
+      "id": 49184960,
+      "title": "Discovery Loop",
+      "url": "https://www.discoveryloop.com/",
+      "score": 376,
+      "by": "xtreak29"
+    },
+    {
+      "id": 49168622,
+      "title": "How to Make a Nintendo 64 Game in 2026",
+      "url": "https://phoboslab.org/log/2026/08/xibalba64-making-of",
+      "score": 362,
+      "by": "atan2"
+    },
+    {
+      "id": 49182996,
+      "title": "Cloudflare OS: an open platform for agents, apps, and work",
+      "url": "https://blog.cloudflare.com/cloudflare-os/",
+      "score": 315,
+      "by": "speckx"
+    },
+    {
+      "id": 49187256,
+      "title": "Zed DeltaDB",
+      "url": "https://zed.dev/deltadb",
+      "score": 305,
+      "by": "ahamez"
+    },
+    {
+      "id": 49185983,
+      "title": "Atlassian Rovo Exfiltrates Data, Bypassing Controls",
+      "url": "https://www.promptarmor.com/resources/atlassian-rovo-exfiltrates-data",
+      "score": 245,
+      "by": "hackerBanana"
+    },
+    {
+      "id": 49189287,
+      "title": "The title cards in Blade Runner are amazing",
+      "url": "https://randsinrepose.com/archives/blade-runner-title-cards/",
+      "score": 241,
+      "by": "ExMachina73"
+    },
+    {
+      "id": 49184755,
+      "title": "Changes at Google DeepMind: Demis Hassabis from CEO to Chair, Jeff Dean departs",
+      "url": "https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum/",
+      "score": 218,
+      "by": "colesantiago"
+    },
+    {
+      "id": 49096439,
+      "title": "Pareto Front",
+      "url": "https://en.wikipedia.org/wiki/Pareto_front",
+      "score": 165,
+      "by": "binyu"
+    },
+    {
+      "id": 49197137,
+      "title": "Show HN: I spent 2 years designing a mechanical Magic Keyboard",
+      "url": "https://electronicmaterialsoffice.com/",
+      "score": 165,
+      "by": "aemerson_"
+    },
+    {
+      "id": 49151991,
+      "title": "Branchless Rust: Making a Filter 4x Faster by Removing an If",
+      "url": "https://www.greyblake.com/blog/branchless-rust/",
+      "score": 142,
+      "by": "greyblake"
+    },
+    {
+      "id": 49187061,
+      "title": "Born Against, or why hobby programming communities are against LLM usage",
+      "url": "https://blog.fogus.me/llm/born-against.html",
+      "score": 118,
+      "by": "lladnar"
+    },
+    {
+      "id": 49189234,
+      "title": "NVIDIA\u2019s Vera Whitepaper Has a Thread Loose",
+      "url": "https://chipsandcheese.com/p/nvidias-vera-whitepaper-has-a-thread",
+      "score": 117,
+      "by": "pella"
+    },
+    {
+      "id": 49129008,
+      "title": "Unearthing my 1996 windowed OS in machine code for Am29000 homebrew computer",
+      "url": "https://nanochess.org/the_am29000_computer.html",
+      "score": 102,
+      "by": "nanochess"
+    },
+    {
+      "id": 49192566,
+      "title": "Crime Pays but Botany Doesn\u2019t",
+      "url": "https://www.crimepaysbutbotanydoesnt.com/reading-list",
+      "score": 100,
+      "by": "DarkContinent"
+    }
+  ]
+}
