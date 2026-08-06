@@ -1,0 +1,20 @@
+{
+  "date": "2026-08-06",
+  "hacker_news": [
+    {"id": 49181099, "title": "Civilian plane crash in New Mexico tied to military GPS blocking", "url": "https://www.wired.com/story/a-civilian-plane-crashed-in-new-mexico-was-the-militarys-tech-to-blame/", "score": 459, "by": "dzdt"},
+    {"id": 49184960, "title": "Discovery Loop", "url": "https://www.discoveryloop.com/", "score": 376, "by": "xtreak29"},
+    {"id": 49182996, "title": "Cloudflare OS: an open platform for agents, apps, and work", "url": "https://blog.cloudflare.com/cloudflare-os/", "score": 315, "by": "speckx"},
+    {"id": 49187256, "title": "Zed DeltaDB", "url": "https://zed.dev/deltadb", "score": 305, "by": "ahamez"},
+    {"id": 49187977, "title": "Meta Ran Ads That Contained AI-Generated Child Sexual Abuse Imagery", "url": "https://www.wired.com/story/meta-ran-ads-that-contained-ai-generated-child-sexual-abuse-imagery/", "score": 269, "by": "malshe"},
+    {"id": 49181083, "title": "Position: LLMs Can't Jump", "url": "https://openreview.net/redirect?forum%2Fid%3DklU4737opt", "score": 257, "by": "theanonymousone"},
+    {"id": 49184755, "title": "Changes at Google DeepMind: Demis Hassabis from CEO to Chair, Jeff Dean departs", "url": "https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum/", "score": 218, "by": "colesantiago"},
+    {"id": 49185983, "title": "Atlassian Rovo Exfiltrates Data, Bypassing Controls", "url": "https://www.promptarmor.com/resources/atlassian-rovo-exfiltrates-data", "score": 180, "by": "hackerBanana"},
+    {"id": 49183115, "title": "Aristotle quotes on virtue, knowledge, and happiness", "url": "https://www.campion.edu.au/blog/top-25-aristotle-quotes-on-virtue-knowledge-and-happiness/", "score": 165, "by": "teleforce"},
+    {"id": 49184216, "title": "The Valley of Webhooks", "url": "https://weli.dev/blog/the-valley-of-webhooks/", "score": 125, "by": "weli"},
+    {"id": 49185370, "title": "I'm leaving OpenAI to build telepathy", "url": "https://naomibashkansky.com/blog/telepathy/", "score": 122, "by": "devanshp"},
+    {"id": 49187061, "title": "Born Against, or why hobby programming communities are against LLM usage", "url": "https://blog.fogus.me/llm/born-against.html", "score": 118, "by": "lladnar"},
+    {"id": 49176192, "title": "Western Sahara", "url": "https://en.wikipedia.org/wiki/Western_Sahara", "score": 114, "by": "brudgers"},
+    {"id": 49182946, "title": "Building an Advanced Agentic Harness", "url": "https://data4sci.com/blog/building-an-advanced-agentic-harness", "score": 108, "by": "Anon84"},
+    {"id": 49115096, "title": "Discovery of a multicomponent alloy forged by the Hiroshima atomic blast", "url": "https://www.science.org/doi/10.1126/sciadv.aeg8299", "score": 108, "by": "_____k"}
+  ]
+}
