@@ -1,0 +1,20 @@
+{
+  "date": "2026-08-09",
+  "hacker_news": [
+    {"id": 49214008, "title": "DeepSeek V4 Flash 0731", "url": "https://arcprize.org/results/deepseek-v4-flash-0731", "score": 631, "by": "tosh"},
+    {"id": 49209539, "title": "What happens if an entire class of workers loses faith in their careers", "url": "https://www.noemamag.com/why-is-everyone-in-tech-so-sad/", "score": 496, "by": "RickJWagner"},
+    {"id": 49207236, "title": "2027 memory capacity is reportedly sold out", "url": "https://www.ign.com/articles/ramageddon-continues-another-year-as-2027-memory-capacity-is-reportedly-sold-out", "score": 448, "by": "inigyou"},
+    {"id": 49213754, "title": "Oracle bans AI-generated code from OpenJDK", "url": "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code", "score": 426, "by": "delduca"},
+    {"id": 49204352, "title": "New Mexico court orders Meta to pay $567m over harms to children\u2019s mental health", "url": "https://www.theguardian.com/technology/2026/aug/06/new-mexico-court-meta", "score": 365, "by": "boplicity"},
+    {"id": 49217993, "title": "The Nixpkgs core team has disbanded", "url": "https://discourse.nixos.org/t/the-nixpkgs-core-team-has-disbanded/79413", "score": 301, "by": "Meleagris"},
+    {"id": 49214098, "title": "Assembly Hall of Shame", "url": "https://github.com/xoreaxeaxeax/asm-hall-of-shame", "score": 287, "by": "piotrgrabowski"},
+    {"id": 49208535, "title": "Making Postgres 300x faster for analytics: batching, operator fusion, and SIMD", "url": "https://malisper.me/how-we-made-postgres-hundreds-of-times-faster-the-query-engine/", "score": 265, "by": "poly2it"},
+    {"id": 49216946, "title": "U.S. Department of Energy Launches the Genesis Open Models Initiative", "url": "https://genesisopenmodels.anl.gov/", "score": 235, "by": "moelf"},
+    {"id": 49214770, "title": "Ancient Library \u2013 1,060 Greek/Latin texts, click any word to parse it", "url": "https://ancientlibrary.net/", "score": 235, "by": "aagha"},
+    {"id": 49213029, "title": "Responding to the next frontier of critical cyber capabilities", "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/", "score": 194, "by": "artninja1988"},
+    {"id": 49214468, "title": "Managing AI Coding Costs at Scale", "url": "https://www.databricks.com/blog/managing-ai-coding-costs-scale", "score": 190, "by": "moonikakiss"},
+    {"id": 49209385, "title": "Show HN: Wyzer Programming Language", "url": "https://github.com/Wyzer-Lang/wyzer", "score": 185, "by": "v0id_isgood"},
+    {"id": 49211921, "title": "An all-sky map of half a million supermassive black holes", "url": "https://www.sdss.org/black-hole-mapper-release-20/", "score": 182, "by": "MarcoDewey"},
+    {"id": 49216362, "title": "Water system controllers don\u2019t belong on the internet, says ex-NSA chief", "url": "https://www.theregister.com/security/2026/08/07/water-system-controllers-dont-belong-on-the-internet-says-ex-nsa-chief-after-suspected-iran-attacks/5285070", "score": 180, "by": "Bender"}
+  ]
+}
