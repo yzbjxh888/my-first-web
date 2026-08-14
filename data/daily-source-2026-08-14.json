@@ -1,0 +1,20 @@
+{
+  "date": "2026-08-14",
+  "hacker_news": [
+    {"id": 49289112, "title": "Gemini 3.7 Flash", "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/", "score": 549, "by": "thisisauserid"},
+    {"id": 49289844, "title": "Accelerating GPT-5.6 Sol Ultrafast", "url": "https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai", "score": 372, "by": "pr337h4m"},
+    {"id": 49288889, "title": "Mistral OCR 4.1", "url": "https://docs.mistral.ai/models/ocr-4-1", "score": 239, "by": "spelk"},
+    {"id": 49289512, "title": "Choose Boring Technology (2015)", "url": "https://mcfunley.com/choose-boring-technology", "score": 228, "by": "tosh"},
+    {"id": 49285770, "title": "Ordinary abundance", "url": "https://ordinaryabundance.com/", "score": 195, "by": "yen223"},
+    {"id": 49289465, "title": "Donkey.bas is 45 Years Old – 131 line of Glory", "url": "https://donkeybas.com/", "score": 181, "by": "jkrauska"},
+    {"id": 49290299, "title": "Understanding is the new bottleneck", "url": "https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck", "score": 176, "by": "sebg"},
+    {"id": 49286485, "title": "Kubernetes on Oxide: How customer needs shaped our integrations", "url": "https://oxide.computer/blog/kubernetes-on-oxide", "score": 152, "by": "stevehipwell"},
+    {"id": 49290215, "title": "Single log line is 49KB+ (ext4) / 110KB+ (btrfs) of systemd-journald disk writes", "url": "https://github.com/systemd/systemd/issues/40262", "score": 138, "by": "ValdikSS"},
+    {"id": 49289532, "title": "Where did the old web go? We followed 657,607 links to find out", "url": "https://0.mk/blog/link-rot", "score": 121, "by": "tdx"},
+    {"id": 49285244, "title": "DeepSeek Harness", "url": "https://github.com/deepseek-ai/deepseek-harness", "score": 109, "by": "bjin"},
+    {"id": 49285327, "title": "Choosing an AI model: one prompt, 11 models, different results", "url": "https://www.netlify.com/blog/one-prompt-11-models-very-different-results/", "score": 92, "by": "toddmorey"},
+    {"id": 49287153, "title": "Text AI watermarks will always be trivial to remove", "url": "https://www.seangoedecke.com/text-ai-watermarks/", "score": 92, "by": "pseudolus"},
+    {"id": 49289654, "title": "How Compaction Works in Pi", "url": "https://earendil.com/posts/compaction-in-pi/", "score": 89, "by": "tosh"},
+    {"id": 49283063, "title": "Launch HN: Bullet (YC S26) – A Faster Coding Agent", "url": "https://www.codewithbullet.com", "score": 80, "by": "adi1"}
+  ]
+}
