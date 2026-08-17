@@ -1,0 +1,20 @@
+{
+  "date": "2026-08-18",
+  "hacker_news": [
+    {"id": 49296740, "title": "Why does Opus 5 feel worse to work with?", "url": "https://mun-logadan.github.io/why-does-opus-5-feel-worse/", "score": 845, "by": "numeri"},
+    {"id": 49289112, "title": "Gemini 3.7 Flash", "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/", "score": 549, "by": "thisisauserid"},
+    {"id": 49290299, "title": "Understanding is the new bottleneck", "url": "https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck", "score": 439, "by": "sebg"},
+    {"id": 49285770, "title": "Ordinary Abundance", "url": "https://ordinaryabundance.com/", "score": 392, "by": "yen223"},
+    {"id": 49285418, "title": "Nine PBS sues Iron Mountain over blocked access to archival data", "url": "https://current.org/2026/08/nine-pbs-sues-iron-mountain-over-blocked-access-to-archival-data/", "score": 377, "by": "vinayakborkar"},
+    {"id": 49290166, "title": "Hello, me. It's been a while", "url": "https://themech.net/2026/08/hello-me-its-been-a-while/", "score": 375, "by": "somesoftdev"},
+    {"id": 49289844, "title": "Accelerating GPT-5.6 Sol Ultrafast", "url": "https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai", "score": 372, "by": "pr337h4m"},
+    {"id": 49289465, "title": "Donkey.bas is 45 Years Old – 131 line of Glory", "url": "https://donkeybas.com/", "score": 272, "by": "jkrauska"},
+    {"id": 49290215, "title": "Single log line is 49KB+ (ext4) / 110KB+ (btrfs) of systemd-journald disk writes", "url": "https://github.com/systemd/systemd/issues/40262", "score": 260, "by": "ValdikSS"},
+    {"id": 49288889, "title": "Mistral OCR 4.1", "url": "https://docs.mistral.ai/models/ocr-4-1", "score": 239, "by": "spelk"},
+    {"id": 49289512, "title": "Choose Boring Technology (2015)", "url": "https://mcfunley.com/choose-boring-technology", "score": 228, "by": "tosh"},
+    {"id": 49289532, "title": "Where did the old web go? We followed 657,607 links to find out", "url": "https://0.mk/blog/link-rot", "score": 225, "by": "tdx"},
+    {"id": 49294997, "title": "GLM-5.3: Frontier Coding with Emergent Cyber Capabilities", "url": "https://z.ai/blog/glm-5.3", "score": 224, "by": "pella"},
+    {"id": 49293324, "title": "Bluesky Protocol Services", "url": "https://atproto.com/blog/introducing-bluesky-protocol-services", "score": 212, "by": "danabramov"},
+    {"id": 49289654, "title": "How Compaction Works in Pi", "url": "https://earendil.com/posts/compaction-in-pi/", "score": 209, "by": "tosh"}
+  ]
+}
