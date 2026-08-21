@@ -1,0 +1,110 @@
+{
+  "date": "2026-08-22",
+  "hacker_news": [
+    {
+      "id": 49378957,
+      "title": "The August 17 outage",
+      "url": "https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/",
+      "score": 580,
+      "by": "0xedb"
+    },
+    {
+      "id": 49362689,
+      "title": "HTML Can Do That",
+      "url": "https://chrisburnell.com/html-can-do-that/",
+      "score": 557,
+      "by": "encyclopedism"
+    },
+    {
+      "id": 49347543,
+      "title": "I like 'em thick: an apology to my English teachers",
+      "url": "https://www.experimental-history.com/p/i-like-em-thick",
+      "score": 550,
+      "by": "Ariarule"
+    },
+    {
+      "id": 49374269,
+      "title": "Malicious Rust crate Arrayref runs a build-time payload",
+      "url": "https://safedep.io/arrayref-proc-macro1-rust-build-time-malware/",
+      "score": 390,
+      "by": "abhisek"
+    },
+    {
+      "id": 49368886,
+      "title": "CIA funding helped keep NeXT afloat in the 80s",
+      "url": "https://www.wsj.com/tech/steve-jobs-apple-next-cia-161b65f9?st=NWWds1&reflink=desktopwebshare_permalink",
+      "score": 327,
+      "by": "EwanG"
+    },
+    {
+      "id": 49375996,
+      "title": "Vomit: Clean up Claude 5's token output with a separate LLM",
+      "url": "https://github.com/zachahn/vomit",
+      "score": 291,
+      "by": "Bluestein"
+    },
+    {
+      "id": 49383026,
+      "title": "AI companies destroy physical books – let's scan rare books before it's too late",
+      "url": "https://annas-archive.gl/blog/physical-destruction.html",
+      "score": 283,
+      "by": "Cider9986"
+    },
+    {
+      "id": 49378243,
+      "title": "Consumer Rights Wiki",
+      "url": "https://consumerrights.wiki/w/Main_Page",
+      "score": 273,
+      "by": "gregsadetsky"
+    },
+    {
+      "id": 49378768,
+      "title": "Show HN: Huzzah – a novel approach to coding with AI",
+      "url": "https://www.danielvaughn.dev/posts/huzzah/",
+      "score": 213,
+      "by": "danielvaughn"
+    },
+    {
+      "id": 49360140,
+      "title": "Stop Anthropomorphizing Intermediate Tokens as Reasoning/Thinking Traces",
+      "url": "https://arxiv.org/abs/2504.09762",
+      "score": 199,
+      "by": "nunodonato"
+    },
+    {
+      "id": 49377853,
+      "title": "I should have loved biology (2020)",
+      "url": "https://jsomers.net/i-should-have-loved-biology/",
+      "score": 194,
+      "by": "tyre"
+    },
+    {
+      "id": 49385860,
+      "title": "Small, native web tricks worth remembering",
+      "url": "https://htmlcat.net/",
+      "score": 180,
+      "by": "marcomezzavilla"
+    },
+    {
+      "id": 49384180,
+      "title": "Japan tried to build an operating system for the world, the US intervened",
+      "url": "https://www.xda-developers.com/japan-tried-build-operating-system-entire-world-us-government-intervened/",
+      "score": 160,
+      "by": "rdmuser"
+    },
+    {
+      "id": 49384896,
+      "title": "The Lost Treasure of Sid Meier's Pirates",
+      "url": "https://remapradio.com/articles/the-lost-treasure-of-sid-meiers-pirates/",
+      "score": 150,
+      "by": "spankibalt"
+    },
+    {
+      "id": 49375719,
+      "title": "Anti-AI fonts are useless and harmful",
+      "url": "https://blog.yaros.ae/anti-ai-fonts-are-useless-and-harmful/",
+      "score": 147,
+      "by": "speckx"
+    }
+  ]
+}
