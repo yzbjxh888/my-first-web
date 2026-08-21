@@ -1,0 +1,110 @@
+{
+  "date": "2026-08-21",
+  "hacker_news": [
+    {
+      "id": 49379550,
+      "title": "Aaron Swartz was prosecuted for scraping, while Meta does it without consequence",
+      "url": "https://blog.curiousquail.com/im-upset-again-about-a-co-creator-of-rss-being-prosecuted-for-something-meta-is-doing-with-little-consequence/",
+      "score": 1236,
+      "by": "speckx"
+    },
+    {
+      "id": 49372583,
+      "title": "AliExpress runs silent WebAudio fingerprinting that breaks Bluetooth multipoint",
+      "url": "https://blog.laserphile.com/2026/08/aliexpress-webpage-keeping-multipoint.html",
+      "score": 930,
+      "by": "emctech"
+    },
+    {
+      "id": 49362689,
+      "title": "HTML Can Do That",
+      "url": "https://chrisburnell.com/html-can-do-that/",
+      "score": 647,
+      "by": "encyclopedism"
+    },
+    {
+      "id": 49347543,
+      "title": "I like 'em thick: an apology to my English teachers",
+      "url": "https://www.experimental-history.com/p/i-like-em-thick",
+      "score": 632,
+      "by": "Ariarule"
+    },
+    {
+      "id": 49374269,
+      "title": "Malicious Rust crate Arrayref runs a build-time payload",
+      "url": "https://safedep.io/arrayref-proc-macro1-rust-build-time-malware/",
+      "score": 429,
+      "by": "abhisek"
+    },
+    {
+      "id": 49378957,
+      "title": "The August 17 outage",
+      "url": "https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/",
+      "score": 409,
+      "by": "0xedb"
+    },
+    {
+      "id": 49368886,
+      "title": "CIA funding helped keep NeXT afloat in the 80s",
+      "url": "https://www.wsj.com/tech/steve-jobs-apple-next-cia-161b65f9?st=NWWds1&reflink=desktopwebshare_permalink",
+      "score": 375,
+      "by": "EwanG"
+    },
+    {
+      "id": 49348079,
+      "title": "Mojo is now open source",
+      "url": "https://www.modular.com/blog/mojo-open-source",
+      "score": 373,
+      "by": "visheshdembla"
+    },
+    {
+      "id": 49348141,
+      "title": "Git at any scale",
+      "url": "https://cursor.com/blog/git-at-any-scale",
+      "score": 304,
+      "by": "meetpateltech"
+    },
+    {
+      "id": 49378243,
+      "title": "Consumer Rights Wiki",
+      "url": "https://consumerrights.wiki/w/Main_Page",
+      "score": 259,
+      "by": "gregsadetsky"
+    },
+    {
+      "id": 49378768,
+      "title": "Show HN: Huzzah – a novel approach to coding with AI",
+      "url": "https://www.danielvaughn.dev/posts/huzzah/",
+      "score": 251,
+      "by": "danielvaughn"
+    },
+    {
+      "id": 49377853,
+      "title": "I should have loved biology (2020)",
+      "url": "https://jsomers.net/i-should-have-loved-biology/",
+      "score": 221,
+      "by": "tyre"
+    },
+    {
+      "id": 49376265,
+      "title": "Linux 7.2",
+      "url": "https://www.igalia.com/2026/08/19/Linux-72-Released.html",
+      "score": 217,
+      "by": "mariuz"
+    },
+    {
+      "id": 49375996,
+      "title": "Vomit: Clean up Claude 5's token output with a separate LLM",
+      "url": "https://github.com/zachahn/vomit",
+      "score": 212,
+      "by": "Bluestein"
+    },
+    {
+      "id": 49360140,
+      "title": "Stop Anthropomorphizing Intermediate Tokens as Reasoning/Thinking Traces",
+      "url": "https://arxiv.org/abs/2504.09762",
+      "score": 209,
+      "by": "nunodonato"
+    }
+  ]
+}
